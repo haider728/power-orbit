@@ -6,7 +6,7 @@ import AnimatedTitle from "@/components/elements/AnimatedTitle";
 
 async function getArticles() {
     const res = await fetch(
-        "https://power-orbit-omega.vercel.app/api/articles?populate=*",
+        "https://apnabike.arhomeservices.com/api/articles?populate=*",
         { cache: "no-store" }
     );
 
@@ -41,7 +41,7 @@ export default async function BlogPage() {
                                         <Image
                                             src={
                                                 data.cover?.data?.attributes?.url
-                                                    ? `https://power-orbit-omega.vercel.app${data.cover.data.url}`
+                                                    ? `https://apnabike.arhomeservices.com${data.cover.data.url}`
                                                     : "/assets/images/blog/blog-page-1-1.jpg"
                                             }
                                             alt="blog"

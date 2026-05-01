@@ -21,7 +21,7 @@ type Article = {
 
 async function getArticles() {
     const res = await fetch(
-        "https://power-orbit-omega.vercel.app/api/articles?populate=*",
+        "https://apnabike.arhomeservices.com/api/articles?populate=*",
         { cache: "no-store" }
     );
 
@@ -54,9 +54,9 @@ export default async function BlogPage() {
                             // ✅ STRAPI V5 SAFE IMAGE HANDLING
                             const imageUrl =
                                 data?.image?.url
-                                    ? `https://power-orbit-omega.vercel.app${data.image.url}`
+                                    ? `https://apnabike.arhomeservices.com${data.image.url}`
                                     : data?.image?.data?.attributes?.url
-                                    ? `https://power-orbit-omega.vercel.app${data.image.data.attributes.url}`
+                                    ? `https://apnabike.arhomeservices.com${data.image.data.attributes.url}`
                                     : null;
 
                             return (
