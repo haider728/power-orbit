@@ -1,0 +1,106 @@
+:root {
+  --techguru-base: #4c36d5;
+  --techguru-base-rgb: 76, 54, 213;
+  --techguru-accent-two: #318be2;
+  --techguru-brand-gradient: linear-gradient(270deg, var(--techguru-base) 0%, var(--techguru-accent-two) 100%);
+}
+
+html,
+body {
+  background:
+    radial-gradient(700px 360px at 50% 12%, rgba(143, 130, 255, 0.22) 0%, rgba(143, 130, 255, 0) 65%),
+    radial-gradient(620px 320px at 78% 82%, rgba(100, 182, 255, 0.16) 0%, rgba(100, 182, 255, 0) 68%),
+    #060610;
+  background-attachment: fixed;
+}
+
+.page-wrapper {
+  background: transparent;
+  overflow: visible !important;
+}
+
+.about-two,
+.banner-one,
+.counter-one,
+.why-choose-one,
+.sliding-text,
+.sliding-text-three,
+.process-one,
+.portfolio-one,
+.blog-one,
+.services-one,
+.team-one,
+.team-two,
+.team-page,
+.team-carousel-page,
+.testimonial-one,
+.feature-one,
+.pricing-one,
+.faq-one,
+.contact-one,
+.cta-one,
+.footer-one,
+.footer-two {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+.team-two::before,
+.team-page::before,
+.team-carousel-page::before {
+  background-color: transparent !important;
+}
+
+.about-one {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+[class^="about-one__shape"],
+[class*=" about-one__shape"],
+[class^="counter-one__shape"],
+[class*=" counter-one__shape"],
+[class^="blog-one__shape"],
+[class*=" blog-one__shape"] {
+  display: none !important;
+}
+
+.thm-btn::before,
+.thm-btn::after,
+.main-menu__top-social a:before,
+.main-menu .main-menu__list > li > a::before,
+.sticky-header .main-menu__list > li > a::before {
+  background: var(--techguru-brand-gradient) !important;
+}
+
+.thm-btn,
+.newsletter-one__contact-form .thm-btn,
+.newsletter-two__form .thm-btn {
+  background: var(--techguru-brand-gradient) !important;
+}
+
+.thm-btn {
+  border-color: rgba(var(--techguru-base-rgb), 0.9) !important;
+}
+
+.thm-btn:hover {
+  color: #ffffff !important;
+}
+
+.section-title__title span,
+.main-slider__title span,
+.main-slider-two__title span,
+.product-details__title span,
+.footer-widget__title-box h3 span {
+  background: none !important;
+  -webkit-background-clip: initial;
+  background-clip: initial;
+  -webkit-text-fill-color: initial;
+  color: #4F95F1 !important;
+}
+
+.close-btn:hover,
+.icon i,
+[class*="__icon"] i {
+  color: var(--techguru-base) !important;
+}

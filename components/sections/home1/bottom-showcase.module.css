@@ -1,0 +1,27 @@
+.section {
+  position: relative;
+  padding: 40px 0 120px;
+  background: transparent;
+}
+
+.visualWrap {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(143, 130, 255, 0.25);
+  box-shadow: 0 30px 80px rgba(16, 18, 56, 0.55);
+}
+
+.visualWrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(7, 10, 36, 0.06) 0%, rgba(7, 10, 36, 0.24) 100%);
+  pointer-events: none;
+}
+
+.visual {
+  width: 100%;
+  height: auto;
+  display: block;
+}

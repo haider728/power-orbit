@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" fill="none">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A1A2D"/>
+      <stop offset="100%" stop-color="#1B4165"/>
+    </linearGradient>
+    <radialGradient id="spark" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(450 350) rotate(90) scale(320 520)">
+      <stop stop-color="#11B3AA" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#11B3AA" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg3)"/>
+  <rect width="900" height="1200" fill="url(#spark)"/>
+  <rect x="100" y="140" width="700" height="920" rx="30" fill="#0D1E33" stroke="#285074" stroke-width="3"/>
+  <circle cx="250" cy="350" r="52" fill="#173556"/>
+  <circle cx="450" cy="260" r="52" fill="#1A4064"/>
+  <circle cx="640" cy="420" r="52" fill="#1F4A70"/>
+  <circle cx="290" cy="580" r="52" fill="#1C4369"/>
+  <circle cx="520" cy="620" r="52" fill="#214E76"/>
+  <circle cx="690" cy="760" r="52" fill="#24577F"/>
+  <path d="M250 350L450 260L640 420L520 620L690 760L290 580L250 350Z" stroke="#11B3AA" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="180" y="860" width="540" height="130" rx="18" fill="#122A45"/>
+  <rect x="220" y="900" width="180" height="12" rx="6" fill="#11B3AA"/>
+  <rect x="220" y="928" width="420" height="10" rx="5" fill="#2D5475"/>
+</svg>

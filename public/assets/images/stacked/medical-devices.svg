@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" fill="none">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#091A2E"/>
+      <stop offset="100%" stop-color="#153558"/>
+    </linearGradient>
+    <radialGradient id="pulse" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(680 250) rotate(35) scale(360 450)">
+      <stop stop-color="#11B3AA" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#11B3AA" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg2)"/>
+  <rect width="900" height="1200" fill="url(#pulse)"/>
+  <rect x="150" y="120" width="600" height="980" rx="42" fill="#0C1B30" stroke="#2B567A" stroke-width="4"/>
+  <rect x="225" y="200" width="450" height="110" rx="18" fill="#122A45"/>
+  <rect x="250" y="240" width="230" height="16" rx="8" fill="#11B3AA"/>
+  <rect x="225" y="350" width="450" height="300" rx="22" fill="#112844"/>
+  <path d="M260 500H320L360 430L420 560L470 470H640" stroke="#11B3AA" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="225" y="700" width="210" height="330" rx="22" fill="#14304F"/>
+  <rect x="465" y="700" width="210" height="330" rx="22" fill="#193B5E"/>
+  <circle cx="330" cy="830" r="58" fill="#11B3AA" fill-opacity="0.2" stroke="#11B3AA" stroke-width="6"/>
+  <rect x="530" y="790" width="80" height="140" rx="12" fill="#11B3AA" fill-opacity="0.35"/>
+</svg>

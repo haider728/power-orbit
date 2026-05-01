@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="264" height="72" viewBox="0 0 264 72" fill="none">
+  <rect x="1" y="1" width="262" height="70" rx="14" fill="#0A1B2F" stroke="#1D4B70" stroke-width="2"/>
+  <path d="M40 20C32.268 20 26 26.268 26 34C26 41.732 32.268 48 40 48C47.732 48 54 41.732 54 34C54 26.268 47.732 20 40 20ZM40 26C44.418 26 48 29.582 48 34C48 38.418 44.418 42 40 42C35.582 42 32 38.418 32 34C32 29.582 35.582 26 40 26Z" fill="#11B3AA"/>
+  <path d="M60 33H76C79.866 33 83 36.134 83 40V48H77V41C77 38.791 75.209 37 73 37H60V33Z" fill="#11B3AA"/>
+  <text x="98" y="45" fill="#E7FBFA" font-size="24" font-family="Arial, Helvetica, sans-serif" font-weight="700">SHEFAA</text>
+</svg>
