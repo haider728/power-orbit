@@ -39,7 +39,7 @@ export default function Blog() {
     const fetchBlogs = async () => {
       try {
         const res = await fetch(
-          "http://localhost:1337/api/articles?populate=*"
+          "https://power-orbit-omega.vercel.app/api/articles?populate=*"
         );
         const data = await res.json();
 
@@ -103,7 +103,7 @@ export default function Blog() {
                   <div className="blog-two__single">
                     <div className="blog-two__img">
                       <Image
-                        src={primaryImageUrl ? `http://localhost:1337${primaryImageUrl}` : "/assets/images/blog/blog-2-1.jpg"}
+                        src={primaryImageUrl ? `https://power-orbit-omega.vercel.app${primaryImageUrl}` : "/assets/images/blog/blog-2-1.jpg"}
                         alt="Image"
                         width={531}
                         height={257}
@@ -147,7 +147,7 @@ export default function Blog() {
                     <Image
                       src={
                         blogImageUrl
-                          ? `http://localhost:1337${blogImageUrl}`
+                          ? `https://power-orbit-omega.vercel.app${blogImageUrl}`
                           : "/assets/images/blog/blog-2-2.jpg"
                       }
                       alt="Image"

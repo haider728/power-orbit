@@ -21,7 +21,7 @@ type Article = {
 
 async function getArticles() {
     const res = await fetch(
-        "http://localhost:1337/api/articles?populate=*",
+        "https://power-orbit-omega.vercel.app/api/articles?populate=*",
         { cache: "no-store" }
     );
 
@@ -54,9 +54,9 @@ export default async function BlogPage() {
                             // ✅ STRAPI V5 SAFE IMAGE HANDLING
                             const imageUrl =
                                 data?.image?.url
-                                    ? `http://localhost:1337${data.image.url}`
+                                    ? `https://power-orbit-omega.vercel.app${data.image.url}`
                                     : data?.image?.data?.attributes?.url
-                                    ? `http://localhost:1337${data.image.data.attributes.url}`
+                                    ? `https://power-orbit-omega.vercel.app${data.image.data.attributes.url}`
                                     : null;
 
                             return (
