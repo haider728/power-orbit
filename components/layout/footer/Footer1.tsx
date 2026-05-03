@@ -38,7 +38,7 @@ export default function Footer1() {
                                             <div className="site-footer-two__contact-content">
                                                 <h5 className="site-footer-two__contact-title">Location</h5>
                                                 <p className="site-footer-two__contact-info">
-                                                    123 Main Street, Apt 4BNew <br /> York, NY 10001USA
+                                                9523 King Khaled St, Al Tubayshi, EDGA2389, 2389, <br /> Dammam 32233, Saudi Arabia 
                                                 </p>
                                             </div>
                                         </li>

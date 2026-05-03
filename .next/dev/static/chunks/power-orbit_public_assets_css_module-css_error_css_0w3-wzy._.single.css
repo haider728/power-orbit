@@ -1,0 +1,51 @@
+/* [project]/power-orbit/public/assets/css/module-css/error.css [app-client] (css) */
+.error-page {
+  background: var(--techguru-black);
+  z-index: 1;
+  padding: 140px 0;
+  display: block;
+  position: relative;
+}
+
+.error-page__inner {
+  display: block;
+  position: relative;
+}
+
+.error-page__img {
+  mix-blend-mode: luminosity;
+  display: block;
+  position: relative;
+}
+
+.error-page__img img {
+  width: auto;
+}
+
+.error-page__content {
+  margin-top: 62px;
+  display: block;
+  position: relative;
+}
+
+.error-page__content h2 {
+  color: var(--techguru-white);
+  text-transform: capitalize;
+  margin-bottom: 14px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 35px;
+}
+
+.error-page__content p {
+  color: var(--techguru-gray);
+  margin: 0;
+}
+
+.error-page__content .btn-box {
+  margin-top: 21px;
+  display: block;
+  position: relative;
+}
+
+/*# sourceMappingURL=power-orbit_public_assets_css_module-css_error_css_0w3-wzy._.single.css.map*/

@@ -1,0 +1,1013 @@
+/* [project]/power-orbit/public/assets/css/module-css/footer.css [app-client] (css) */
+.site-footer {
+  z-index: 1;
+  background-color: #060610;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.site-footer:before {
+  content: "";
+  background-color: rgba(var(--techguru-white-rgb), .05);
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+}
+
+.site-footer__shape-1 {
+  mix-blend-mode: lighten;
+  opacity: .2;
+  z-index: -1;
+  animation: 4s ease-in-out infinite leftRight;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.site-footer__shape-1 img {
+  width: auto;
+}
+
+.site-footer__shape-2 {
+  mix-blend-mode: lighten;
+  opacity: .2;
+  z-index: -1;
+  animation: 3s ease-in-out infinite topBottom;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.site-footer__shape-2 img {
+  width: auto;
+}
+
+.site-footer__shape-3 {
+  opacity: .7;
+  filter: blur(120px);
+  z-index: -1;
+  background: radial-gradient(50% 50%, #6669d89e 0%, #070c1400 100%);
+  width: 730px;
+  height: 765px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.site-footer__shape-4 {
+  opacity: .7;
+  filter: blur(120px);
+  z-index: -1;
+  background: radial-gradient(50% 50%, #d866c39e 0%, #070c1400 100%);
+  width: 730px;
+  height: 765px;
+  position: absolute;
+  bottom: -135px;
+  left: 595px;
+}
+
+.site-footer__shape-5 {
+  opacity: .7;
+  filter: blur(120px);
+  z-index: -1;
+  background: radial-gradient(50% 50%, #6669d89e 0%, #070c1400 100%);
+  width: 730px;
+  height: 765px;
+  position: absolute;
+  bottom: 0;
+  right: 250px;
+}
+
+.site-footer__top {
+  z-index: 1;
+  padding: 60px 0;
+  display: block;
+  position: relative;
+}
+
+.site-footer__top-bg {
+  opacity: .2;
+  z-index: -1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  inset: 0;
+}
+
+.site-footer__top-inner {
+  z-index: 1;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.site-footer__logo, .site-footer__top-text-box {
+  display: block;
+  position: relative;
+}
+
+.site-footer__top-text {
+  color: var(--techguru-white);
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.site-footer__btn-box {
+  display: block;
+  position: relative;
+}
+
+.site-footer__btn {
+  color: var(--techguru-white);
+  z-index: 1;
+  border-radius: 35px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 22px 48px 21px;
+  font-size: 24px;
+  font-weight: 500;
+  display: inline-flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.site-footer__btn:hover {
+  color: var(--techguru-black);
+}
+
+.site-footer__btn:before {
+  content: "";
+  -webkit-mask-composite: xor;
+  visibility: visible;
+  opacity: 1;
+  z-index: -1;
+  background: linear-gradient(90deg, #3d72fc, #5cb0e9) border-box;
+  border: 1px solid #0000;
+  border-radius: 35px;
+  transition: all .5s;
+  position: absolute;
+  inset: 0;
+  -webkit-mask-image: linear-gradient(#fff 0 0), linear-gradient(#fff 0 0);
+  -webkit-mask-position: 0 0, 0 0;
+  -webkit-mask-size: auto, auto;
+  -webkit-mask-repeat: repeat, repeat;
+  -webkit-mask-clip: padding-box, border-box;
+  -webkit-mask-origin: padding-box, border-box;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  -webkit-mask-source-type: auto, auto;
+  mask-mode: match-source, match-source;
+}
+
+.site-footer__btn:after {
+  background-color: var(--techguru-base);
+  content: "";
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
+  border-radius: 35px;
+  width: 50%;
+  height: 0;
+  transition: all .4s ease-in-out;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.site-footer__btn:hover:after {
+  visibility: visible;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.site-footer__main-content-box {
+  z-index: 1;
+  padding: 80px 0;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.site-footer__main-content-box:before {
+  content: "";
+  -webkit-mask-composite: xor;
+  visibility: visible;
+  opacity: .2;
+  z-index: -1;
+  background: linear-gradient(90deg, #3d72fc, #5cb0e9) border-box;
+  border: 1px solid #0000;
+  transition: all .5s;
+  position: absolute;
+  top: -1px;
+  left: 0;
+  right: 0;
+  -webkit-mask-image: linear-gradient(#fff 0 0), linear-gradient(#fff 0 0);
+  -webkit-mask-position: 0 0, 0 0;
+  -webkit-mask-size: auto, auto;
+  -webkit-mask-repeat: repeat, repeat;
+  -webkit-mask-clip: padding-box, border-box;
+  -webkit-mask-origin: padding-box, border-box;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  -webkit-mask-source-type: auto, auto;
+  mask-mode: match-source, match-source;
+}
+
+.site-footer__main-content-box:after {
+  content: "";
+  -webkit-mask-composite: xor;
+  visibility: visible;
+  opacity: .2;
+  z-index: -1;
+  background: linear-gradient(90deg, #3d72fc, #5cb0e9) border-box;
+  border: 1px solid #0000;
+  transition: all .5s;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  -webkit-mask-image: linear-gradient(#fff 0 0), linear-gradient(#fff 0 0);
+  -webkit-mask-position: 0 0, 0 0;
+  -webkit-mask-size: auto, auto;
+  -webkit-mask-repeat: repeat, repeat;
+  -webkit-mask-clip: padding-box, border-box;
+  -webkit-mask-origin: padding-box, border-box;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  -webkit-mask-source-type: auto, auto;
+  mask-mode: match-source, match-source;
+}
+
+.footer-widget__contact, .footer-widget__contact-list, .footer-widget__contact-list li {
+  display: block;
+  position: relative;
+}
+
+.footer-widget__contact-list li + li {
+  margin-top: 51px;
+}
+
+.footer-widget__contact-list li:before {
+  content: "";
+  background: linear-gradient(90deg, #8f88ff00 0%, #8f88ff 50%, #8f88ff00 100%);
+  height: 1px;
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  right: 150px;
+}
+
+.footer-widget__contact-list li:last-child:before {
+  display: none;
+}
+
+.footer-widget__contact-list li .icon-box {
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 13px;
+  display: flex;
+  position: relative;
+}
+
+.footer-widget__contact-list li .icon-box span {
+  color: var(--techguru-white);
+  align-items: center;
+  font-size: 18px;
+  display: flex;
+  position: relative;
+}
+
+.footer-widget__contact-list li .icon-box p {
+  color: var(--techguru-white);
+  font-size: 20px;
+  font-weight: 700;
+  font-family: var(--techguru-font);
+}
+
+.footer-widget__contact-list li .text {
+  display: block;
+  position: relative;
+}
+
+.footer-widget__contact-list li .text p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.footer-widget__contact-list li .text p a {
+  display: block;
+  position: relative;
+}
+
+.footer-widget__contact-list li .text p a.mail-box {
+  color: var(--techguru-gray);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer-widget__contact-list li .text p a.mail-box:hover {
+  color: var(--techguru-base);
+}
+
+.footer-widget__contact-list li .text p a.call-number {
+  padding-top: 4px;
+  font-size: 24px;
+}
+
+.footer-widget__contact-list li .text p a.call-number:hover {
+  color: var(--techguru-white);
+}
+
+.footer-widget__quick-links {
+  margin-left: 25px;
+  padding-left: 55px;
+  display: block;
+  position: relative;
+}
+
+.footer-widget__quick-links:before {
+  content: "";
+  background-color: rgba(var(--techguru-white-rgb), .1);
+  width: 1px;
+  position: absolute;
+  top: -80px;
+  bottom: -146px;
+  left: 0;
+}
+
+.footer-widget__title {
+  color: var(--techguru-white);
+  text-transform: capitalize;
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  display: block;
+  position: relative;
+}
+
+.footer-widget__quick-links-list {
+  display: block;
+  position: relative;
+}
+
+.footer-widget__quick-links-list li + li {
+  margin-top: 16px;
+}
+
+.footer-widget__quick-links-list li a {
+  color: var(--techguru-white);
+  font-size: 18px;
+  font-weight: 400;
+  transition: all .5s;
+  display: inline-block;
+  position: relative;
+}
+
+.footer-widget__quick-links-list li a:hover {
+  color: var(--techguru-base);
+}
+
+.footer-widget__quick-links-list li a:before {
+  background-color: var(--techguru-base);
+  content: "";
+  transform-origin: 0;
+  height: 2px;
+  transition: transform .5s;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  transform: scale(0, 1);
+}
+
+.footer-widget__quick-links-list li a:hover:before {
+  transform-origin: 100%;
+  transform: scale(1);
+}
+
+.footer-widget__support {
+  margin-right: 25px;
+  padding-left: 55px;
+  display: block;
+  position: relative;
+}
+
+.footer-widget__support:before {
+  content: "";
+  background-color: rgba(var(--techguru-white-rgb), .1);
+  width: 1px;
+  position: absolute;
+  top: -80px;
+  bottom: -146px;
+  left: 0;
+}
+
+.footer-widget__support:after {
+  content: "";
+  background-color: rgba(var(--techguru-white-rgb), .1);
+  width: 1px;
+  position: absolute;
+  top: -80px;
+  bottom: -146px;
+  right: 0;
+}
+
+.footer-widget__newsletter, .footer-widget__newsletter-box {
+  display: block;
+  position: relative;
+}
+
+.footer-widget__newsletter-text {
+  margin-bottom: 27px;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.site-footer__newsletter-form, .site-footer__newsletter-input {
+  display: block;
+  position: relative;
+}
+
+.site-footer__newsletter-input input[type="email"] {
+  color: var(--techguru-white);
+  border: 1px solid rgba(var(--techguru-white-rgb), .2);
+  background: none;
+  border-radius: 16px;
+  outline: none;
+  width: 100%;
+  height: 60px;
+  padding: 0 60px 0 25px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.site-footer__newsletter-btn {
+  width: 48px;
+  height: 48px;
+  color: var(--techguru-white);
+  background: linear-gradient(270deg, #fa5674 0%, #6065d4 100%);
+  border: none;
+  border-radius: 10px;
+  padding: 0;
+  font-size: 18px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.site-footer__newsletter-btn span {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.site-footer__newsletter-form .checked-box {
+  margin-top: 4px;
+  display: block;
+  position: relative;
+}
+
+.site-footer__newsletter-form .checked-box label {
+  color: var(--techguru-white);
+  text-transform: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  font-family: var(--techguru-font);
+  margin-bottom: 0;
+  margin-right: 0;
+  padding-left: 30px;
+  display: inline-block;
+  position: relative;
+}
+
+.site-footer__newsletter-form .checked-box input[type="checkbox"] {
+  display: none;
+}
+
+.site-footer__newsletter-form .checked-box input[type="checkbox"] + label span {
+  vertical-align: middle;
+  cursor: pointer;
+  background: none;
+  border: 0;
+  border-radius: 4px;
+  width: 20px;
+  height: 20px;
+  transition: all .3s;
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+
+.site-footer__newsletter-form .checked-box label span:after {
+  content: "";
+  -webkit-mask-composite: xor;
+  visibility: visible;
+  opacity: 1;
+  z-index: -1;
+  background: linear-gradient(90deg, #6065d4, #fa5674) border-box;
+  border: 1px solid #0000;
+  border-radius: 4px;
+  transition: all .5s;
+  position: absolute;
+  inset: 0;
+  -webkit-mask-image: linear-gradient(#fff 0 0), linear-gradient(#fff 0 0);
+  -webkit-mask-position: 0 0, 0 0;
+  -webkit-mask-size: auto, auto;
+  -webkit-mask-repeat: repeat, repeat;
+  -webkit-mask-clip: padding-box, border-box;
+  -webkit-mask-origin: padding-box, border-box;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  -webkit-mask-source-type: auto, auto;
+  mask-mode: match-source, match-source;
+}
+
+.site-footer__newsletter-form .checked-box label span:before {
+  border-bottom: 2px solid var(--techguru-white);
+  border-right: 2px solid var(--techguru-white);
+  content: "";
+  pointer-events: none;
+  transform-origin: 66% 66%;
+  opacity: 0;
+  width: 6px;
+  height: 9px;
+  transition: all .15s ease-in-out;
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  transform: rotate(45deg);
+}
+
+.site-footer__newsletter-form.checked-box input[type="checkbox"]:checked + label span {
+  border-color: var(--techguru-white);
+}
+
+.site-footer__newsletter-form .checked-box input[type="checkbox"]:checked + label span:before {
+  opacity: 1;
+}
+
+.site-footer__social-box {
+  margin-top: 49px;
+  display: block;
+  position: relative;
+}
+
+.site-footer__social-title {
+  color: var(--techguru-white);
+  margin-bottom: 16px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.site-footer__social-box-inner {
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  position: relative;
+}
+
+.site-footer__social-box-inner a {
+  border: 1px solid rgba(var(--techguru-white-rgb), .2);
+  width: 48px;
+  height: 48px;
+  color: var(--techguru-white);
+  z-index: 1;
+  background-color: #0000;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  transition: all .5s;
+  display: flex;
+  position: relative;
+}
+
+.site-footer__social-box-inner a:before {
+  content: "";
+  transform-origin: center;
+  transform-style: preserve-3d;
+  z-index: -1;
+  background: linear-gradient(270deg, #fa5674 0%, #6065d4 100%);
+  border-radius: 50%;
+  transition: all .4s cubic-bezier(.62, .21, .45, 1.52);
+  position: absolute;
+  inset: 0;
+  transform: scale(0);
+}
+
+.site-footer__social-box-inner a:hover:before {
+  transform: scaleX(1);
+}
+
+.site-footer__bottom {
+  padding: 44.5px 0;
+  display: block;
+  position: relative;
+}
+
+.site-footer__bottom-inner {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.site-footer__copyright {
+  display: block;
+  position: relative;
+}
+
+.site-footer__copyright-text {
+  color: var(--techguru-white);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.site-footer__copyright-text a {
+  color: var(--techguru-white);
+}
+
+.site-footer__copyright-text a:hover {
+  color: var(--techguru-base);
+}
+
+.site-footer-two {
+  z-index: 1;
+  background-color: #060610;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.site-footer-two:before {
+  content: "";
+  background-color: rgba(#060610, .05);
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+}
+
+.site-footer-two__shape-1 {
+  opacity: .4;
+  filter: blur(120px);
+  z-index: -1;
+  background: radial-gradient(50% 50%, #6669d89e 0%, #070c1400 100%);
+  border-radius: 50%;
+  width: 730px;
+  height: 765px;
+  position: absolute;
+  top: -100px;
+  left: -70px;
+}
+
+.site-footer-two__shape-2 {
+  opacity: .4;
+  filter: blur(120px);
+  z-index: -1;
+  background: radial-gradient(50% 50%, #d866c39e 0%, #070c1400 100%);
+  border-radius: 50%;
+  width: 730px;
+  height: 765px;
+  position: absolute;
+  bottom: -255px;
+  left: 595px;
+}
+
+.site-footer-two__shape-3 {
+  opacity: .4;
+  filter: blur(120px);
+  z-index: -1;
+  background: radial-gradient(50% 50%, #6669d89e 0%, #070c1400 100%);
+  border-radius: 50%;
+  width: 730px;
+  height: 765px;
+  position: absolute;
+  top: -100px;
+  right: 250px;
+}
+
+.site-footer-two__top {
+  padding: 50px 0;
+  display: block;
+  position: relative;
+}
+
+.site-footer-two__about {
+  background-color: rgba(var(--techguru-white-rgb), .1);
+  border-radius: 40px;
+  padding: 45px 48px 43px;
+  display: block;
+  position: relative;
+}
+
+.site-footer-two__logo {
+  margin-bottom: 78px;
+  display: block;
+  position: relative;
+}
+
+.site-footer-two__contact-list {
+  display: block;
+  position: relative;
+}
+
+.site-footer-two__contact-list li {
+  gap: 17px;
+  display: flex;
+  position: relative;
+}
+
+.site-footer-two__contact-list li + li {
+  margin-top: 70px;
+}
+
+.site-footer-two__contact-list li:before {
+  content: "";
+  background: linear-gradient(90deg, #8f88ff 14%, #8f88ff00 100%);
+  height: 1px;
+  position: absolute;
+  top: -40px;
+  left: 0;
+  right: 169px;
+}
+
+.site-footer-two__contact-icon {
+  z-index: 1;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.site-footer-two__contact-icon:before {
+  content: "";
+  z-index: -1;
+  background: linear-gradient(270deg, #5cb0e9 0%, #3d72fc 100%);
+  position: absolute;
+  inset: 0;
+}
+
+.site-footer-two__contact-icon span {
+  color: var(--techguru-white);
+  font-size: 18px;
+  display: inline-block;
+  position: relative;
+}
+
+.site-footer-two__contact-content {
+  flex: 1;
+  display: block;
+  position: relative;
+}
+
+.site-footer-two__contact-title {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(270deg, #5cb0e9 0%, #3d72fc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.site-footer-two__contact-info {
+  color: var(--techguru-white);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.site-footer-two__contact-info a {
+  display: block;
+  position: relative;
+}
+
+.site-footer-two__contact-mail {
+  color: var(--techguru-white);
+}
+
+.site-footer-two__contact-mail:hover {
+  color: var(--techguru-base);
+}
+
+.site-footer-two__contact-phone {
+  color: var(--techguru-white);
+}
+
+.site-footer-two__contact-phone:hover {
+  color: var(--techguru-base);
+}
+
+.footer-widget-two__quick-links {
+  margin-top: 77px;
+  margin-left: 50px;
+  display: block;
+  position: relative;
+}
+
+.footer-widget-two__title {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(270deg, #5cb0e9 0%, #3d72fc 100%);
+  text-transform: capitalize;
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin-bottom: 29px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  display: block;
+  position: relative;
+}
+
+.footer-widget-two__quick-links-list {
+  display: block;
+  position: relative;
+}
+
+.footer-widget-two__quick-links-list li + li {
+  margin-top: 14px;
+}
+
+.footer-widget-two__quick-links-list li a {
+  color: var(--techguru-gray);
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all .5s;
+  display: inline-flex;
+  position: relative;
+}
+
+.footer-widget-two__quick-links-list li a:hover {
+  color: var(--techguru-base);
+}
+
+.footer-widget-two__quick-links-list li a:before {
+  background-color: var(--techguru-base);
+  content: "";
+  transform-origin: 0;
+  height: 2px;
+  transition: transform .5s;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  transform: scale(0, 1);
+}
+
+.footer-widget-two__quick-links-list li a:hover:before {
+  transform-origin: 100%;
+  transform: scale(1);
+}
+
+.footer-widget-two__support {
+  margin-top: 77px;
+  padding-left: 100px;
+  display: block;
+  position: relative;
+}
+
+.footer-widget-two__support:before {
+  content: "";
+  opacity: .2;
+  background: linear-gradient(0deg, #fa567400 0%, #6065d5 100%);
+  width: 1px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 15px;
+}
+
+.footer-widget-two__services {
+  margin-top: 77px;
+  padding-left: 108px;
+  display: block;
+  position: relative;
+}
+
+.footer-widget-two__services:before {
+  content: "";
+  opacity: .2;
+  background: linear-gradient(0deg, #fa567400 0%, #6065d5 100%);
+  width: 1px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 30px;
+}
+
+.site-footer-two__bottom {
+  border-top: 1px solid rgba(var(--techguru-gray-rgb), .2);
+  padding: 30.5px 0;
+  display: block;
+  position: relative;
+}
+
+.site-footer-two__bottom-inner {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.site-footer-two__copyright {
+  display: block;
+  position: relative;
+}
+
+.site-footer-two__copyright-text {
+  color: var(--techguru-white);
+  font-weight: 500;
+}
+
+.site-footer-two__copyright-text a {
+  color: var(--techguru-white);
+}
+
+.site-footer-two__copyright-text a:hover {
+  color: var(--techguru-base);
+}
+
+.site-footer-two__social-box {
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px;
+  display: flex;
+  position: relative;
+}
+
+.site-footer-two__social-title {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(270deg, #fa5674 0%, #6065d4 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.site-footer-two__social-box-inner {
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  position: relative;
+}
+
+.site-footer-two__social-box-inner a {
+  border: 1px solid rgba(var(--techguru-white-rgb), .2);
+  width: 48px;
+  height: 48px;
+  color: var(--techguru-white);
+  z-index: 1;
+  background-color: #0000;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  transition: all .5s;
+  display: flex;
+  position: relative;
+}
+
+.site-footer-two__social-box-inner a:before {
+  content: "";
+  transform-origin: center;
+  transform-style: preserve-3d;
+  z-index: -1;
+  background: linear-gradient(270deg, #fa5674 0%, #6065d4 100%);
+  border-radius: 50%;
+  transition: all .4s cubic-bezier(.62, .21, .45, 1.52);
+  position: absolute;
+  inset: 0;
+  transform: scale(0);
+}
+
+.site-footer-two__social-box-inner a:hover:before {
+  transform: scaleX(1);
+}
+
+/*# sourceMappingURL=power-orbit_public_assets_css_module-css_footer_css_0w3-wzy._.single.css.map*/

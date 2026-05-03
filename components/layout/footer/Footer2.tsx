@@ -45,8 +45,7 @@ export default function Footer1() {
                                                 <p>Location</p>
                                             </div>
                                             <div className="text">
-                                                <p>123 Main Street, Apt 4BNew <br />
-                                                    York, NY 10001USA</p>
+                                                <p>dammam</p>
                                             </div>
                                         </li>
                                         <li>

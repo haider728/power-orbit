@@ -1,0 +1,94 @@
+/* [project]/power-orbit/public/assets/css/module-css/gallery.css [app-client] (css) */
+.gallery-page {
+  padding: 140px 0 130px;
+  display: block;
+  position: relative;
+}
+
+.gallery-page .row {
+  --bs-gutter-x: 10px;
+}
+
+.gallery-page .container {
+  max-width: 1572px;
+}
+
+.gallery-page__single {
+  margin-bottom: 10px;
+  display: block;
+  position: relative;
+}
+
+.gallery-page__img {
+  z-index: 1;
+  border-radius: 10px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-page__img:before {
+  content: "";
+  background-color: rgba(var(--techguru-black-rgb), .85);
+  opacity: 0;
+  z-index: 2;
+  border-radius: 10px;
+  transition: all .7s;
+  position: absolute;
+  inset: 0 0 -2px;
+  transform: translateY(50px);
+}
+
+.gallery-page__single:hover .gallery-page__img:before {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gallery-page__img-box {
+  z-index: 1;
+  border-radius: 8px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-page__img img {
+  border-radius: 8px;
+  width: 100%;
+}
+
+.gallery-page__icon {
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  inset: 0;
+}
+
+.gallery-page__icon a {
+  width: 50px;
+  height: 50px;
+  color: var(--techguru-white);
+  opacity: 0;
+  z-index: 2;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  transition: all .7s;
+  display: flex;
+  transform: translateY(-50px);
+}
+
+.gallery-page__single:hover .gallery-page__icon a {
+  opacity: 1;
+  transition-delay: .3s;
+  transform: translateY(0);
+}
+
+.gallery-page__icon a:hover {
+  color: var(--techguru-base);
+}
+
+/*# sourceMappingURL=power-orbit_public_assets_css_module-css_gallery_css_0w3-wzy._.single.css.map*/

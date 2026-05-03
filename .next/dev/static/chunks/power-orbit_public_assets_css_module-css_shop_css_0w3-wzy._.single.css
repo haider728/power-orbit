@@ -1,0 +1,3208 @@
+/* [project]/power-orbit/public/assets/css/module-css/shop.css [app-client] (css) */
+.product {
+  padding: 160px 0;
+  display: block;
+  position: relative;
+}
+
+.product__sidebar {
+  display: block;
+  position: relative;
+}
+
+.product__sidebar-single + .product__sidebar-single {
+  margin-top: 30px;
+}
+
+.product__sidebar-title {
+  color: var(--techguru-white);
+  margin: 0 0 22px;
+  padding-left: 27px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  display: block;
+  position: relative;
+}
+
+.product__sidebar-title:before {
+  content: "";
+  background-color: var(--techguru-white);
+  clip-path: polygon(0 0, 0 100%, 100% 50%);
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: 1px;
+  left: 0;
+}
+
+.shop-search {
+  background-color: rgba(var(--techguru-white-rgb), .1);
+  border-radius: 10px;
+  padding: 30px;
+  display: block;
+  position: relative;
+}
+
+.shop-search form {
+  position: relative;
+}
+
+.shop-search form input[type="search"], .shop-search form input[type="text"] {
+  background-color: var(--techguru-black);
+  width: 100%;
+  height: 60px;
+  color: var(--techguru-gray);
+  font-size: 16px;
+  font-family: var(--techguru-font);
+  border: none;
+  outline: none;
+  padding-left: 30px;
+  padding-right: 60px;
+  font-weight: 500;
+}
+
+.shop-search form ::placeholder {
+  color: inherit;
+  opacity: 1;
+}
+
+.shop-search form button[type="submit"] {
+  background-color: var(--techguru-base);
+  color: var(--techguru-white);
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  padding: 0;
+  font-size: 18px;
+  transition: all .5s;
+  display: flex;
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  right: 5px;
+}
+
+.shop-search form button:hover[type="submit"] {
+  background-color: var(--techguru-white);
+  color: var(--techguru-black);
+}
+
+.product__price-ranger {
+  background-color: rgba(var(--techguru-white-rgb), .1);
+  border-radius: 10px;
+  margin: 0;
+  padding: 27px 30px 30px;
+  position: relative;
+}
+
+.product__price-ranger.price-ranger {
+  margin-top: 7px;
+  margin-bottom: 0;
+}
+
+.product__price-ranger .price-ranger .ui-widget-content {
+  background: var(--techguru-white);
+  border: none;
+  border-radius: 5px;
+  height: 5px;
+}
+
+.product__price-ranger .price-ranger .ui-slider-handle {
+  background: var(--techguru-base);
+  cursor: pointer;
+  z-index: 2;
+  border: 0;
+  border-radius: 50%;
+  outline: none;
+  height: 14px;
+  margin-left: -2px;
+  position: absolute;
+  top: -5px;
+  width: 14px !important;
+}
+
+.product__price-ranger .price-ranger .ui-slider .ui-slider-range {
+  background: var(--techguru-base);
+  height: 5px;
+}
+
+.product__price-ranger .price-ranger #slider-range {
+  margin-top: 0;
+  margin-left: 3px;
+  margin-right: 0;
+  position: relative;
+}
+
+.product__price-ranger .price-ranger .ranger-min-max-block {
+  margin-top: 17px;
+  display: block;
+  position: relative;
+}
+
+.product__price-ranger .price-ranger .ranger-min-max-block input {
+  display: inline-block;
+}
+
+.product__price-ranger .price-ranger .ranger-min-max-block input[type="submit"] {
+  background: var(--techguru-black);
+  float: right;
+  text-align: center;
+  color: var(--techguru-white);
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: .1em;
+  border: none;
+  border-radius: 20px;
+  margin-top: 0;
+  padding: 5px 20px;
+  font-size: 12px;
+  font-weight: 700;
+  display: block;
+  position: relative;
+}
+
+.product__price-ranger .price-ranger .ranger-min-max-block input[type="text"] {
+  color: var(--techguru-gray);
+  text-align: center;
+  background-color: #0000;
+  border: none;
+  width: 40px;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  display: inline-block;
+  position: relative;
+}
+
+.product__price-ranger .price-ranger .ranger-min-max-block span {
+  color: var(--techguru-gray);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 40px;
+  display: inline-block;
+  position: relative;
+  left: -2px;
+}
+
+.shop-category {
+  background-color: rgba(var(--techguru-white-rgb), .1);
+  border-radius: 10px;
+  padding: 29px 30px 30px;
+  display: block;
+  position: relative;
+}
+
+.shop-category ul {
+  display: block;
+  position: relative;
+}
+
+.shop-category ul li {
+  text-transform: capitalize;
+  color: var(--techguru-gray);
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 24px;
+  position: relative;
+}
+
+.shop-category ul li:last-child {
+  margin-bottom: 0;
+}
+
+.shop-category ul li a {
+  text-transform: capitalize;
+  color: var(--techguru-gray);
+  background-color: var(--techguru-black);
+  z-index: 1;
+  border-radius: 10px;
+  padding: 13px 15px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  transition: all .3s;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.shop-category ul li:hover a {
+  color: var(--techguru-base);
+}
+
+.shop-category ul li a:after {
+  background-color: rgba(var(--techguru-white-rgb), .05);
+  content: "";
+  opacity: 1;
+  width: 30px;
+  color: var(--techguru-white);
+  z-index: 1;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  line-height: 30px;
+  transition: all .2s linear .1s;
+  display: flex;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  right: 5px;
+  font-family: icomoon !important;
+}
+
+.shop-product-tags {
+  background: rgba(var(--techguru-white-rgb), .1);
+  z-index: 1;
+  border-radius: 10px;
+  padding: 25px 20px 30px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.shop-product__tags-list {
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  position: relative;
+}
+
+.shop-product__tags-list a {
+  color: var(--techguru-white);
+  background: var(--techguru-black);
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  transition: all .4s;
+  display: flex;
+}
+
+.shop-product__tags-list a:hover {
+  color: var(--techguru-black);
+  background: var(--techguru-base);
+}
+
+.shop-product-rating {
+  background: rgba(var(--techguru-white-rgb), .1);
+  z-index: 1;
+  border-radius: 10px;
+  padding: 25px 30px 30px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.sidebar-rating-box {
+  display: block;
+  position: relative;
+}
+
+.sidebar-rating-box ul {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.sidebar-rating-box ul li {
+  display: block;
+  position: relative;
+}
+
+.sidebar-rating-box ul li + li {
+  margin-top: 30px;
+}
+
+.sidebar-rating-box ul li input[type="radio"] {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.sidebar-rating-box ul li label {
+  color: #ffc009;
+  cursor: pointer;
+  padding-left: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  transition: all .2s linear .1s;
+  display: block;
+  position: relative;
+}
+
+.sidebar-rating-box ul li label span.gray {
+  color: #dddbdb;
+}
+
+.sidebar-rating-box ul li input[type="radio"] + label i {
+  border: 1px solid rgba(var(--techguru-white-rgb), .1);
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  transition: all .2s linear .1s;
+  position: absolute;
+  top: 1px;
+  left: 0;
+  overflow: hidden;
+}
+
+.sidebar-rating-box ul li label i:before {
+  content: "";
+  background-color: var(--techguru-base);
+  border-radius: 0%;
+  transition: all .2s linear .1s;
+  position: absolute;
+  inset: -1px;
+  transform: scale(0);
+}
+
+.sidebar-rating-box ul li input[type="radio"]:checked + label i {
+  border-color: var(--techguru-base);
+}
+
+.sidebar-rating-box ul li input[type="radio"]:checked + label i:before {
+  transform: scale(1);
+}
+
+.shop-product-recent-products {
+  background-color: rgba(var(--techguru-white-rgb), .1);
+  border-radius: 10px;
+  padding: 29px 30px 27px;
+  display: block;
+  position: relative;
+}
+
+.shop-product-recent-products ul {
+  display: block;
+  position: relative;
+}
+
+.shop-product-recent-products ul li {
+  border-bottom: 1px solid rgba(var(--techguru-white-rgb), .1);
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  position: relative;
+}
+
+.shop-product-recent-products ul li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.shop-product-recent-products ul li .img {
+  background-color: var(--techguru-black);
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.shop-product-recent-products ul li .img:before {
+  background: rgba(var(--techguru-black-rgb), .5);
+  opacity: 0;
+  z-index: 1;
+  content: "";
+  width: 100%;
+  height: 100%;
+  transition: all .7s ease-in-out .1s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.shop-product-recent-products ul li:hover .img:before {
+  opacity: 1;
+}
+
+.shop-product-recent-products ul li .img img {
+  width: 100%;
+  transition: all .5s;
+  transform: scale(1.05);
+}
+
+.shop-product-recent-products ul li:hover .img img {
+  transform: scale(1);
+}
+
+.shop-product-recent-products ul li .img a {
+  color: var(--techguru-white);
+  z-index: 5;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 0;
+  display: flex;
+  position: absolute;
+  inset: 0;
+  transform: translateY(10px)scale(0);
+}
+
+.shop-product-recent-products ul li:hover .img a {
+  transform: translateY(0)scale(1);
+}
+
+.shop-product-recent-products ul li .img a:hover {
+  color: var(--techguru-base);
+  transform: translateY(0)scale(1);
+}
+
+.shop-product-recent-products ul li .content {
+  flex: 1;
+  margin-left: 20px;
+  display: block;
+  position: relative;
+}
+
+.shop-product-recent-products ul li .content .title {
+  display: block;
+  position: relative;
+}
+
+.shop-product-recent-products ul li .content .title h5 {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.shop-product-recent-products ul li .content .title h5 a {
+  color: var(--techguru-white);
+  transition: all .2s linear .1s;
+}
+
+.shop-product-recent-products ul li .content .title h5 a:hover {
+  color: var(--techguru-base);
+}
+
+.shop-product-recent-products ul li .content .price {
+  padding: 5px 0;
+  display: block;
+  position: relative;
+}
+
+.shop-product-recent-products ul li .content .price p {
+  color: var(--techguru-base);
+}
+
+.shop-product-recent-products ul li .content .review {
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.shop-product-recent-products ul li .content .review i {
+  color: #ffc009;
+  font-size: 12px;
+}
+
+.shop-product-recent-products ul li .content .review i.color {
+  color: #dddbdb;
+}
+
+.shop-product-recent-products ul li .content .review i + i {
+  margin-left: 5px;
+}
+
+.product__items {
+  display: block;
+  position: relative;
+}
+
+.product__showing-result {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-right: 130px;
+  display: flex;
+  position: relative;
+}
+
+.product__showing-text-box {
+  display: block;
+  position: relative;
+}
+
+.product__showing-text {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.product__showing-sort {
+  width: 100%;
+  max-width: 340px;
+  display: block;
+  position: relative;
+}
+
+.product__showing-sort .select-box .nice-select {
+  background-color: rgba(var(--techguru-white-rgb), .1);
+  color: var(--techguru-gray);
+  cursor: pointer;
+  border-radius: 10px;
+  width: 100%;
+  height: 70px;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 70px;
+}
+
+.product__showing-sort .select-box .nice-select .icon {
+  top: 28px;
+  right: 30px;
+}
+
+.product__showing-sort .select-box .nice-select .select-inner {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.product__showing-sort .select-box .nice-select .list {
+  border-radius: 5px;
+}
+
+.product__showing-sort .select-box .nice-select:after {
+  position: absolute;
+  right: 30px;
+}
+
+.product__all, .product__all-tab {
+  display: block;
+  position: relative;
+}
+
+.product__all-tab-button {
+  z-index: 5;
+  position: absolute;
+  top: -100px;
+  right: 0;
+}
+
+.product__all-tab-button ul {
+  background-color: rgba(var(--techguru-white-rgb), .1);
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  display: flex;
+  position: relative;
+}
+
+.product__all-tab-button ul li {
+  cursor: pointer;
+  background-color: var(--techguru-white);
+  border-radius: 3px;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  transition: all .2s linear;
+  display: flex;
+  position: relative;
+  box-shadow: 0 0 35px #0003;
+}
+
+.product__all-tab-button ul li:hover, .product__all-tab-button ul li.active-btn {
+  background-color: var(--techguru-base);
+}
+
+.product__all-tab-button ul li + li {
+  margin-left: 10px;
+}
+
+.product__all-tab-button-icon {
+  color: var(--techguru-base);
+  font-size: 18px;
+  line-height: 0;
+  transition: all .2s linear .1s;
+  display: block;
+  position: relative;
+}
+
+.product__all-tab-button-icon.one {
+  transform: rotate(90deg);
+}
+
+.product__all-tab-button ul li:hover .product__all-tab-button-icon, .product__all-tab-button ul li.active-btn .product__all-tab-button-icon {
+  color: var(--techguru-white);
+}
+
+.product__all-tab .tabs-content-box {
+  display: block;
+  position: relative;
+}
+
+.product__all-tab .tab-content-box-item {
+  z-index: 5;
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.product__all-tab .tab-content-box-item .product__all-tab-content-box-item {
+  transform-origin: top bottom;
+  transition: all .7s;
+  transform: translateY(5px);
+}
+
+.product__all-tab .tab-content-box-item.tab-content-box-item-active .product__all-tab-content-box-item {
+  opacity: 1;
+  transform-origin: bottom top;
+  transform: translateY(0);
+}
+
+.product__all-tab-single {
+  display: block;
+  position: relative;
+}
+
+.single-product-style1 {
+  border: 1px solid rgba(var(--techguru-white-rgb), .1);
+  z-index: 1;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding: 0 0 30px;
+  transition: all .5s;
+  display: block;
+  position: relative;
+}
+
+.single-product-style1:hover {
+  box-shadow: 0 10px 60px #0000000d;
+}
+
+.single-product-style1__img {
+  background-color: rgba(var(--techguru-white-rgb), .05);
+  z-index: 1;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.single-product-style1__img img:first-child {
+  z-index: 1;
+  opacity: 0;
+  filter: blur(10px);
+  position: absolute;
+  inset: 0;
+  transform: translateX(50%)scaleX(2);
+}
+
+.single-product-style1:hover .single-product-style1__img img:first-child {
+  opacity: 1;
+  filter: blur();
+  transform: translateX(0)scaleX(1);
+}
+
+.single-product-style1:hover .single-product-style1__img img:nth-child(2) {
+  opacity: 0;
+  filter: blur(10px);
+  transform: translateX(-50%)scaleX(2);
+}
+
+.single-product-style1__img img {
+  width: 100%;
+  transition: all .5s;
+  display: block;
+  position: relative;
+}
+
+.single-product-style1__overlay {
+  z-index: 5;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.single-product-style1__overlay li {
+  display: block;
+  position: relative;
+}
+
+.single-product-style1__overlay li + li {
+  margin-top: 8px;
+}
+
+.single-product-style1__overlay li p {
+  background-color: var(--techguru-black);
+  width: 70px;
+  color: var(--techguru-base);
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  line-height: 35px;
+  display: flex;
+  position: relative;
+  box-shadow: 0 0 35px #0003;
+}
+
+.single-product-style1__info {
+  opacity: 0;
+  z-index: 5;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+  transition: all .4s linear;
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  transform: translateY(40px);
+}
+
+.single-product-style1:hover .single-product-style1__info {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.single-product-style1__info li {
+  display: block;
+  position: relative;
+}
+
+.single-product-style1__info li + li {
+  margin-left: 8px;
+}
+
+.single-product-style1__info li a {
+  background-color: var(--techguru-white);
+  width: 35px;
+  height: 35px;
+  color: var(--techguru-black);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  line-height: 0;
+  transition: all .2s linear .1s;
+  display: flex;
+  position: relative;
+  box-shadow: 0 0 35px #0003;
+}
+
+.single-product-style1__info li a:hover {
+  color: var(--techguru-white);
+  background-color: var(--techguru-base);
+}
+
+.single-product-style1__content {
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 33px 15px 0;
+  display: flex;
+  position: relative;
+}
+
+.single-product-style1__content-left {
+  display: block;
+  position: relative;
+}
+
+.single-product-style1__content-left h4 {
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.single-product-style1__content-left h4 a {
+  color: var(--techguru-white);
+  transition: all .5s;
+}
+
+.single-product-style1__content-left h4 a:hover {
+  color: var(--techguru-base);
+}
+
+.single-product-style1__content-left p {
+  color: var(--techguru-gray);
+  margin-top: 4px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.single-product-style1__content-left p del {
+  color: var(--techguru-base);
+  margin-right: 5px;
+}
+
+.single-product-style1__content-right {
+  display: block;
+  position: relative;
+}
+
+.single-product-style1__review {
+  background-color: rgba(var(--techguru-white-rgb), .1);
+  align-items: center;
+  padding: 3.5px 10px;
+  display: flex;
+  position: relative;
+  top: -9px;
+}
+
+.single-product-style1__review i {
+  color: var(--techguru-base);
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.single-product-style1__review p {
+  color: var(--techguru-white);
+  font-weight: 500;
+}
+
+.single-product-style2 {
+  border: 1px solid rgba(var(--techguru-white-rgb), .1);
+  z-index: 1;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  transition: all .5s;
+  display: block;
+  position: relative;
+}
+
+.single-product-style2:hover {
+  box-shadow: 0 10px 60px #0000000d;
+}
+
+.single-product-style2 .row {
+  --bs-gutter-x: 0px;
+  align-items: center;
+}
+
+.single-product-style2__img {
+  background-color: rgba(var(--techguru-white-rgb), .05);
+  z-index: 1;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.single-product-style2__img img:first-child {
+  z-index: 1;
+  opacity: 0;
+  filter: blur(10px);
+  position: absolute;
+  inset: 0;
+  transform: translateX(50%)scaleX(2);
+}
+
+.single-product-style2:hover .single-product-style2__img img:first-child {
+  opacity: 1;
+  filter: blur();
+  transform: translateX(0)scaleX(1);
+}
+
+.single-product-style2:hover .single-product-style2__img img:nth-child(2) {
+  opacity: 0;
+  filter: blur(10px);
+  transform: translateX(-50%)scaleX(2);
+}
+
+.single-product-style2__img img {
+  width: 100%;
+  transition: all .5s;
+  display: block;
+  position: relative;
+}
+
+.single-product-style2__content {
+  padding: 0 20px;
+  display: block;
+  position: relative;
+}
+
+.single-product-style2__review {
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.single-product-style2__review i {
+  color: var(--techguru-base);
+  font-size: 16px;
+}
+
+.single-product-style2__review i + i {
+  margin-left: 5px;
+}
+
+.single-product-style2__text {
+  padding-top: 17px;
+  display: block;
+  position: relative;
+}
+
+.single-product-style2__text h4 {
+  text-transform: capitalize;
+  margin-bottom: 1px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.single-product-style2__text h4 a {
+  color: var(--techguru-white);
+  transition: all .5s;
+}
+
+.single-product-style2__text h4 a:hover {
+  color: var(--techguru-base);
+}
+
+.single-product-style2__text p {
+  color: var(--techguru-gray);
+  margin-top: 4px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.single-product-style2__text p del {
+  color: var(--techguru-base);
+  margin-right: 5px;
+}
+
+.single-product-style2__info {
+  align-items: center;
+  padding-top: 16px;
+  display: flex;
+  position: relative;
+}
+
+.single-product-style2__info li {
+  display: block;
+  position: relative;
+}
+
+.single-product-style2__info li + li {
+  margin-left: 8px;
+}
+
+.single-product-style2__info li a {
+  background-color: var(--techguru-white);
+  width: 35px;
+  height: 35px;
+  color: var(--techguru-black);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  line-height: 0;
+  transition: all .2s linear .1s;
+  display: flex;
+  position: relative;
+  box-shadow: 0 0 35px #0003;
+}
+
+.single-product-style2__info li a:hover {
+  color: var(--techguru-white);
+  background-color: var(--techguru-base);
+}
+
+.styled-pagination {
+  width: 100%;
+  height: auto;
+  padding-top: 30px;
+  display: block;
+  position: relative;
+}
+
+.styled-pagination li {
+  margin-right: 11px;
+  display: inline-block;
+  position: relative;
+}
+
+.styled-pagination li:last-child {
+  margin-right: 0;
+}
+
+.styled-pagination li a {
+  width: 40px;
+  height: 40px;
+  color: rgba(var(--techguru-gray-rgb), .5);
+  border: 1px solid rgba(var(--techguru-gray-rgb), .5);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 40px;
+  font-family: var(--techguru-font);
+  z-index: 1;
+  background: none;
+  border-radius: 50%;
+  transition: all .5s;
+  display: inline-block;
+  position: relative;
+}
+
+.styled-pagination li:hover a, .styled-pagination li.active a {
+  color: var(--techguru-white);
+  background: var(--techguru-base);
+  border-color: var(--techguru-base);
+}
+
+.styled-pagination li.prev a, .styled-pagination li.next a {
+  color: rgba(var(--techguru-gray-rgb), .5);
+  border-radius: 50%;
+}
+
+.styled-pagination li.prev a:hover, .styled-pagination li.next a:hover {
+  color: var(--techguru-white);
+}
+
+.styled-pagination li a span:before {
+  color: rgba(var(--techguru-gray-rgb), .5);
+  font-size: 14px;
+  font-weight: 700;
+  transition: all .2s linear .1s;
+  position: relative;
+  top: 0;
+}
+
+.styled-pagination li a:hover span:before, .styled-pagination li.active a span:before {
+  color: var(--techguru-white);
+}
+
+.product-details {
+  z-index: 1;
+  padding: 140px 0;
+  display: block;
+  position: relative;
+}
+
+.product-details__left {
+  margin-right: 80px;
+  display: block;
+  position: relative;
+}
+
+.product-details__left-inner {
+  display: block;
+  position: relative;
+}
+
+.product-details__thumb-box {
+  max-width: 400px;
+  margin-top: 20px;
+  display: block;
+  position: relative;
+}
+
+#shop-details-one__thumb {
+  z-index: 10;
+}
+
+.product-details__thumb-img {
+  cursor: pointer;
+  background-color: rgba(var(--techguru-white-rgb), .05);
+  border-radius: 10px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 125px !important;
+}
+
+.product-details__thumb-img img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.product-details__thumb-img:before {
+  content: "";
+  background-color: var(--techguru-base);
+  opacity: 0;
+  height: 2px;
+  transition: all .5s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#shop-details-one__thumb .swiper-slide-thumb-active .product-details__thumb-img:before {
+  opacity: 1;
+}
+
+.product-details__content-box {
+  display: block;
+  position: relative;
+}
+
+.product-details__img {
+  background-color: rgba(var(--techguru-white-rgb), .05);
+  border-radius: 10px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-details__img img {
+  border: 1px solid rgba(var(--techguru-white-rgb), .1);
+  border-radius: 10px;
+  width: 100%;
+}
+
+.product-details__nav {
+  z-index: 100;
+  flex-direction: row;
+  justify-content: space-between;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  right: 5px;
+  transform: translateY(-50%);
+}
+
+.product-details__nav .swiper-button-next, .product-details__nav .swiper-button-prev {
+  width: 60px;
+  height: 60px;
+  color: var(--techguru-white);
+  background-color: var(--techguru-black);
+  text-align: center;
+  opacity: 1;
+  z-index: 100;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-size: 25px;
+  transition: all .5s;
+  display: flex;
+  position: relative;
+  inset: auto;
+}
+
+.product-details__nav .swiper-button-next:hover, .product-details__nav .swiper-button-prev:hover {
+  color: var(--techguru-white);
+  background-color: var(--techguru-base);
+}
+
+.product-details__nav .swiper-button-next {
+  margin-top: 0;
+}
+
+.product-details__nav .swiper-button-next i, .product-details__nav .swiper-button-prev i {
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.product-details__nav .swiper-button-next:after, .product-details__nav .swiper-button-prev:after {
+  display: none;
+}
+
+.product-details__right {
+  margin-top: -9px;
+  display: block;
+  position: relative;
+}
+
+.product-details__top {
+  display: block;
+  position: relative;
+}
+
+.product-details__title {
+  color: var(--techguru-white);
+  text-transform: capitalize;
+  margin: 0;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+.product-details__title span {
+  color: var(--techguru-base);
+  letter-spacing: 0;
+  margin-left: 25px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  display: inline-block;
+  position: relative;
+}
+
+.product-details__reveiw {
+  border-bottom: 1px solid rgba(var(--techguru-white-rgb), .1);
+  align-items: center;
+  margin-top: 26px;
+  margin-bottom: 28px;
+  padding-bottom: 37px;
+  display: flex;
+}
+
+.product-details__reveiw i {
+  color: var(--techguru-base);
+  font-size: 16px;
+}
+
+.product-details__reveiw i + i {
+  margin-left: 4px;
+}
+
+.product-details__reveiw span {
+  color: var(--techguru-gray);
+  margin-left: 18px;
+  font-size: 16px;
+  line-height: 1;
+  position: relative;
+  top: 1px;
+}
+
+.product-details__content {
+  display: block;
+  position: relative;
+}
+
+.product-details__content-text1 {
+  margin: 0 0 31px;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.product-details__content-text2 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.product-details__select {
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 30px;
+  display: flex;
+  position: relative;
+}
+
+.product-details__select-size {
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.product-details__select-size h3 {
+  margin-right: 15px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.product-details__select-size ul {
+  flex-wrap: wrap;
+  flex: 1;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  position: relative;
+}
+
+.product-details__select-size ul li {
+  width: 45px;
+  height: 35px;
+  display: block;
+  position: relative;
+}
+
+.product-details__select-size ul li input[type="radio"] {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.product-details__select-size ul li label {
+  width: 45px;
+  height: 35px;
+  color: var(--techguru-white);
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  transition: all .2s linear .1s;
+  display: flex;
+  position: relative;
+}
+
+.product-details__select-size ul li input[type="radio"]:checked + label {
+  color: var(--techguru-black);
+  font-weight: 500;
+}
+
+.product-details__select-size ul li input[type="radio"] + label i {
+  border: 1px solid rgba(var(--techguru-white-rgb), .1);
+  z-index: -1;
+  border-radius: 5px;
+  width: 45px;
+  height: 35px;
+  transition: all .2s linear .1s;
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.product-details__select-size ul li label i:before {
+  content: "";
+  opacity: 0;
+  background-color: var(--techguru-base);
+  border-radius: 5px;
+  transition: all .2s linear .1s;
+  position: absolute;
+  inset: -1px;
+  transform: scale(.3);
+}
+
+.product-details__select-size ul li input[type="radio"]:checked + label i {
+  border-color: var(--techguru-base);
+}
+
+.product-details__select-size ul li input[type="radio"]:checked + label i:before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.product-details__inner {
+  margin-top: 30px;
+  margin-bottom: 25px;
+  display: block;
+  position: relative;
+}
+
+.product-details__quantity {
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.product-details__quantity-title {
+  margin: 0 20px 0 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.product-details__quantity .quantity-box {
+  border-radius: 0;
+  width: 98px;
+  height: 50px;
+  position: relative;
+}
+
+.product-details__quantity .quantity-box input {
+  border: 1px solid rgba(var(--techguru-white-rgb), .1);
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  width: 98px;
+  height: 50px;
+  font-family: var(--techguru-font);
+  color: var(--techguru-gray);
+  background-color: rgba(var(--techguru-white-rgb), .1);
+  border-radius: 10px;
+  outline: none;
+  padding-left: 30px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.product-details__quantity .quantity-box button {
+  width: 24px;
+  height: 24px;
+  color: var(--techguru-gray);
+  background-color: #0000;
+  background-color: rgba(var(--techguru-white-rgb), .1);
+  border: none;
+  border-left: 1px solid rgba(var(--techguru-white-rgb), .1);
+  border-top-right-radius: 10px;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 8px;
+  display: flex;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+}
+
+.product-details__quantity .quantity-box button.sub {
+  border-top: 1px solid rgba(var(--techguru-white-rgb), .1);
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 10px;
+  top: auto;
+  bottom: 1px;
+}
+
+.product-details__buttons-boxes {
+  align-items: center;
+  gap: 10px;
+  margin-top: 25px;
+  display: flex;
+  position: relative;
+}
+
+.product-details__buttons-1, .product-details__buttons-2, .product-details__social, .product-details__social .title {
+  display: block;
+  position: relative;
+}
+
+.product-details__social .title h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.product-details__social-link {
+  align-items: center;
+  margin-top: 20px;
+  display: flex;
+  position: relative;
+}
+
+.product-details__social-link a {
+  color: var(--techguru-white);
+  background-color: rgba(var(--techguru-white-rgb), .1);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  font-size: 15px;
+  transition: all .2s linear .1s;
+  display: flex;
+  position: relative;
+}
+
+.product-details__social-link a + a {
+  margin-left: 10px;
+}
+
+.product-details__social-link a:hover {
+  color: var(--techguru-black);
+  background-color: var(--techguru-base);
+}
+
+.product-description {
+  z-index: 1;
+  padding: 0 0 130px;
+  display: block;
+  position: relative;
+}
+
+.product-details__description, .product-details__main-tab-box {
+  display: block;
+  position: relative;
+}
+
+.product-details__main-tab-box .tab-buttons {
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  line-height: 0;
+  display: flex;
+  position: relative;
+}
+
+.product-details__main-tab-box .tab-buttons .tab-btn {
+  display: inline-block;
+  position: relative;
+}
+
+.product-details__main-tab-box .tab-buttons .tab-btn span {
+  text-align: center;
+  color: var(--techguru-white);
+  background-color: rgba(var(--techguru-white-rgb), .1);
+  text-transform: capitalize;
+  cursor: pointer;
+  z-index: 1;
+  padding: 16px 25px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  transition: all .3s;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-details__main-tab-box .tab-buttons .tab-btn.active-btn span {
+  color: var(--techguru-black);
+}
+
+.product-details__main-tab-box .tab-buttons .tab-btn span:before {
+  content: "";
+  background-color: var(--techguru-base);
+  z-index: -1;
+  height: 0%;
+  transition: all .3s;
+  position: absolute;
+  inset: 0;
+}
+
+.product-details__main-tab-box .tab-buttons .tab-btn.active-btn span:before {
+  height: 100%;
+}
+
+.product-details__main-tab-box .tabs-content {
+  display: block;
+  position: relative;
+}
+
+.product-details__main-tab-box .tabs-content .tab {
+  z-index: 10;
+  transition: all .6s;
+  display: none;
+  position: relative;
+  transform: translateY(35px);
+}
+
+.product-details__main-tab-box .tabs-content .tab.active-tab {
+  margin-top: 0;
+  display: block;
+  transform: translateY(0);
+}
+
+.product-details__tab-content-inner {
+  border: 1px solid rgba(var(--techguru-white-rgb), .1);
+  padding: 40px 40px 50px;
+  display: block;
+  position: relative;
+}
+
+.product-details__description-content {
+  display: block;
+  position: relative;
+}
+
+.product-description__list {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: block;
+  position: relative;
+}
+
+.product-description__list ul {
+  display: block;
+  position: relative;
+}
+
+.product-description__list ul li {
+  margin-bottom: 2px;
+  display: block;
+  position: relative;
+}
+
+.product-description__list ul li:last-child {
+  margin-bottom: 0;
+}
+
+.product-description__list ul li p {
+  color: var(--techguru-white);
+  margin: 0;
+  font-weight: 500;
+}
+
+.product-description__list ul li p span:before {
+  color: var(--techguru-base);
+  margin-right: 11px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 17px;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+}
+
+.product-details__additional-information-content {
+  display: block;
+  position: relative;
+}
+
+.product-details__additional-information-text-1 {
+  padding-bottom: 24px;
+}
+
+.review-one, .comments-area {
+  display: block;
+  position: relative;
+}
+
+.review-one__title {
+  margin-bottom: 36px;
+  display: block;
+  position: relative;
+}
+
+.review-one__title h3 {
+  text-transform: capitalize;
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.comments-area .comment-box {
+  border-bottom: 1px solid rgba(var(--techguru-white-rgb), .1);
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  display: block;
+  position: relative;
+}
+
+.comments-area .comment {
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.comments-area .comment-box .author-thumb {
+  border-radius: 50%;
+  width: 165px;
+  height: 165px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.comments-area .comment-box .author-thumb img {
+  width: 100%;
+}
+
+.comments-area .comment-box .author-thumb figure {
+  margin: 0;
+}
+
+.review-one__content {
+  flex: 1;
+  padding-left: 45px;
+  display: block;
+  position: relative;
+}
+
+.review-one__content-top {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  display: flex;
+  position: relative;
+}
+
+.review-one__content-top .info {
+  display: block;
+  position: relative;
+}
+
+.review-one__content-top .info h2 {
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.review-one__content-top .info h2 span {
+  color: var(--techguru-base);
+  letter-spacing: 0;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--techguru-font);
+}
+
+.review-one__content-top .reply-btn {
+  display: block;
+  position: relative;
+}
+
+.review-one__content-top .reply-btn i:before {
+  color: var(--techguru-base);
+  font-size: 15px;
+}
+
+.review-one__content-bottom {
+  display: block;
+  position: relative;
+}
+
+.review-one__content-bottom p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.review-form-one {
+  padding: 16px 0 0;
+  display: block;
+  position: relative;
+}
+
+.review-form-one__inner {
+  display: block;
+  position: relative;
+}
+
+.review-form-one__title {
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.review-form-one__rate-box {
+  align-items: center;
+  margin-top: 17px;
+  margin-bottom: 37px;
+  display: flex;
+  position: relative;
+}
+
+.review-form-one__rate-text {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.review-form-one__rate {
+  align-items: center;
+  margin-left: 17px;
+  display: flex;
+  position: relative;
+}
+
+.review-form-one__rate i {
+  color: var(--techguru-base);
+  font-size: 16px;
+}
+
+.review-form-one__rate i + i {
+  margin-left: 5px;
+}
+
+.review-form-one__form {
+  display: block;
+  position: relative;
+}
+
+.review-form-one__form .row {
+  --bs-gutter-x: 20px;
+}
+
+.review-form-one__input-box textarea {
+  color: var(--techguru-gray);
+  background-color: rgba(var(--techguru-white-rgb), .05);
+  border: 1px solid rgba(var(--techguru-white-rgb), .1);
+  border-radius: 10px;
+  outline: none;
+  width: 100%;
+  height: 160px;
+  margin-bottom: 0;
+  padding: 20px 30px 30px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.review-form-one__input-box.text-message-box {
+  height: 160px;
+}
+
+.review-form-one__input-box {
+  margin-bottom: 20px;
+  display: block;
+  position: relative;
+}
+
+.review-form-one__input-box input[type="text"], .review-form-one__input-box input[type="email"] {
+  border: 1px solid rgba(var(--techguru-white-rgb), .1);
+  background-color: rgba(var(--techguru-white-rgb), .05);
+  width: 100%;
+  height: 50px;
+  color: var(--techguru-gray);
+  border-radius: 10px;
+  outline: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+}
+
+.review-form-one__form .thm-btn {
+  border: none;
+}
+
+.related-products {
+  padding: 0 0 110px;
+  display: block;
+  position: relative;
+}
+
+.related-products__title {
+  padding-bottom: 52px;
+  display: block;
+  position: relative;
+}
+
+.related-products__title h3 {
+  text-transform: capitalize;
+  margin-bottom: 16px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1em;
+}
+
+.related-products__title p {
+  margin: 0;
+}
+
+.single-product-style1.instyle--2 {
+  margin-bottom: 0;
+}
+
+.cart-page {
+  padding: 132px 0 140px;
+  display: block;
+  position: relative;
+}
+
+.cart-page .table-responsive {
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  display: block;
+  position: relative;
+  overflow-x: auto;
+}
+
+@media (max-width: 1199px) {
+  .cart-table {
+    min-width: 1170px;
+  }
+}
+
+.cart-table {
+  margin-bottom: 0;
+}
+
+.cart-table thead th {
+  color: var(--techguru-white);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  font-family: var(--techguru-font);
+  border: none;
+  padding: 0 0 22px;
+}
+
+.cart-table thead th:last-child {
+  text-align: right;
+}
+
+.cart-table tbody tr {
+  vertical-align: middle;
+}
+
+.cart-table tbody tr:last-child {
+  border-bottom: 1px solid rgba(var(--techguru-white-rgb), .1);
+}
+
+.cart-table tbody td {
+  color: var(--techguru-gray);
+  vertical-align: middle;
+  border-top: 1px solid rgba(var(--techguru-white-rgb), .1);
+  border-bottom: 1px solid rgba(var(--techguru-white-rgb), .1);
+  padding: 30px 0;
+  font-size: 18px;
+}
+
+.cart-table tbody td:last-child {
+  text-align: right;
+}
+
+.cart-table .product-box {
+  align-items: center;
+  display: flex;
+}
+
+.cart-table .product-box .img-box {
+  background-color: rgba(var(--techguru-white-rgb), .05);
+  border-radius: 10px;
+  width: 120px;
+  margin-right: 35px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.cart-table .product-box .img-box img {
+  border: 1px solid rgba(var(--techguru-white-rgb), .1);
+  border-radius: 10px;
+  width: 100%;
+}
+
+.cart-table h3 {
+  text-transform: capitalize;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.cart-table h3 a {
+  color: var(--techguru-white);
+  transition: all .2s linear .1s;
+}
+
+.cart-table h3 a:hover {
+  color: var(--techguru-base);
+}
+
+.cart-table .quantity-box {
+  border-radius: 0;
+  width: 98px;
+  height: 50px;
+  position: relative;
+}
+
+.cart-table .quantity-box input {
+  border: 1px solid rgba(var(--techguru-white-rgb), .1);
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  width: 98px;
+  height: 50px;
+  font-family: var(--techguru-font);
+  color: var(--techguru-gray);
+  background-color: rgba(var(--techguru-white-rgb), .1);
+  border-radius: 10px;
+  outline: none;
+  padding-left: 30px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.cart-table .quantity-box button {
+  width: 24px;
+  height: 24px;
+  color: var(--thm-black);
+  background-color: #0000;
+  background-color: rgba(var(--techguru-white-rgb), .1);
+  border: none;
+  border-left: 1px solid rgba(var(--techguru-white-rgb), .1);
+  border-top-right-radius: 10px;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 8px;
+  display: flex;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+}
+
+.cart-table .quantity-box button.sub {
+  border-top: 1px solid rgba(var(--techguru-white-rgb), .1);
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 10px;
+  top: auto;
+  bottom: 1px;
+}
+
+.cart-table .cross-icon {
+  display: block;
+  position: relative;
+}
+
+.cart-table .cross-icon i:before {
+  color: var(--techguru-white);
+  font-size: 16px;
+  display: inline-block;
+  position: relative;
+}
+
+.cart-page__right {
+  margin-left: 20px;
+  display: block;
+  position: relative;
+}
+
+.cart-page__sidebar {
+  background-color: rgba(var(--techguru-white-rgb), .05);
+  border-radius: 10px;
+  padding: 28px 20px 30px;
+  display: block;
+  position: relative;
+  box-shadow: 0 10px 60px #00000012;
+}
+
+.cart-page__shipping {
+  display: block;
+  position: relative;
+}
+
+.cart-page__shipping-title {
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.cart-page__shipping-form {
+  display: block;
+  position: relative;
+}
+
+.cart-page__shipping-form .row {
+  --bs-gutter-x: 20px;
+}
+
+.cart-page__shipping-input-box {
+  margin-bottom: 20px;
+  display: block;
+  position: relative;
+}
+
+.cart-page__shipping-input-box .select-box .nice-select {
+  background-color: rgba(var(--techguru-white-rgb), .1);
+  color: var(--techguru-gray);
+  cursor: pointer;
+  border-radius: 8px;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 50px;
+}
+
+.cart-page__shipping-input-box .select-box .nice-select .select-inner {
+  padding: 0 20px;
+}
+
+.cart-page__shipping-input-box .select-box .nice-select:after {
+  position: absolute;
+  right: 20px;
+}
+
+.cart-page__shipping-input-box input[type="email"], .cart-page__shipping-input-box input[type="text"] {
+  background-color: rgba(var(--techguru-white-rgb), .1);
+  width: 100%;
+  height: 50px;
+  color: var(--techguru-gray);
+  font-size: 16px;
+  font-family: var(--techguru-font);
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 400;
+}
+
+.cart-page__btn-box {
+  display: block;
+  position: relative;
+}
+
+.cart-page__btn-box .thm-btn {
+  border: none;
+  justify-content: center;
+  width: 100%;
+  padding: 18px 25px 17px;
+}
+
+.cart-page__coupon-code {
+  border-top: 1px solid rgba(var(--techguru-white-rgb), .1);
+  border-bottom: 1px solid rgba(var(--techguru-white-rgb), .1);
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding-top: 23px;
+  padding-bottom: 30px;
+  display: block;
+  position: relative;
+}
+
+.cart-page__coupon-code-title {
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.cart-page__coupon-code-text {
+  margin-bottom: 16px;
+}
+
+.cart-page__coupon-code-form {
+  display: block;
+  position: relative;
+}
+
+.cart-page__coupon-code-form input[type="email"], .cart-page__coupon-code-form input[type="text"] {
+  background-color: rgba(var(--techguru-white-rgb), .1);
+  width: 100%;
+  height: 50px;
+  color: var(--techguru-gray);
+  font-size: 16px;
+  font-family: var(--techguru-font);
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 400;
+}
+
+.cart-page__coupon-code-form .thm-btn {
+  border: none;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+  padding: 18px 25px 17px;
+}
+
+.cart-total {
+  margin-bottom: 20px;
+  display: block;
+  position: relative;
+}
+
+.cart-total li {
+  color: var(--techguru-gray);
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+}
+
+.cart-total li + li {
+  margin-top: 15px;
+}
+
+.cart-total li span:first-child {
+  color: var(--techguru-white);
+  text-align: right;
+  width: 140px;
+  margin-right: 80px;
+  font-size: 18px;
+  font-weight: 700;
+  display: block;
+}
+
+.cart-total-amount {
+  color: var(--techguru-base);
+}
+
+.cart-page__buttons {
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  position: relative;
+}
+
+.cart-page__buttons-1, .cart-page__buttons-2 {
+  display: block;
+  position: relative;
+}
+
+.checkout-page {
+  z-index: 1;
+  padding: 140px 0;
+  display: block;
+  position: relative;
+}
+
+.checkout-page .billing_details {
+  border: 1px solid rgba(var(--techguru-white-rgb), .1);
+  border-radius: 10px;
+  padding: 53px 50px 60px;
+  display: block;
+  position: relative;
+}
+
+.billing_title {
+  margin-bottom: 45px;
+  display: block;
+  position: relative;
+}
+
+.billing_title p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.billing_title a {
+  color: var(--techguru-base);
+}
+
+.billing_title h2 {
+  margin: 16px 0 0;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.billing_details_form {
+  display: block;
+  position: relative;
+}
+
+.billing_details_form .bs-gutter-x-20 {
+  --bs-gutter-x: 20px;
+}
+
+.billing_details_form .btn-light, .billing_details_form .btn-light:hover {
+  border: none;
+}
+
+.billing_input_box {
+  margin-bottom: 20px;
+  display: block;
+  position: relative;
+}
+
+.billing_input_box input[type="text"], .billing_input_box input[type="email"], .billing_input_box input[type="tel"] {
+  border: 1px solid rgba(var(--techguru-white-rgb), .1);
+  background-color: rgba(var(--techguru-white-rgb), .05);
+  width: 100%;
+  height: 60px;
+  color: var(--techguru-gray);
+  border-radius: 10px;
+  outline: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+}
+
+.billing_input_box textarea {
+  color: var(--techguru-gray);
+  border: 1px solid rgba(var(--techguru-white-rgb), .1);
+  background-color: rgba(var(--techguru-white-rgb), .05);
+  resize: none;
+  border-radius: 10px;
+  outline: none;
+  width: 100%;
+  height: 140px;
+  padding-top: 13px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+}
+
+.billing_input_box textarea:focus {
+  border: 1px solid rgba(var(--techguru-white-rgb), .1);
+}
+
+.billing_details .checked-box {
+  margin-top: 17px;
+  display: block;
+  position: relative;
+}
+
+.billing_details .checked-box label {
+  color: var(--techguru-gray);
+  text-transform: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  font-family: var(--techguru-font);
+  margin-bottom: 0;
+  margin-right: 0;
+  padding-left: 30px;
+  display: inline-block;
+  position: relative;
+}
+
+.billing_details .checked-box input[type="checkbox"] {
+  display: none;
+}
+
+.billing_details .checked-box input[type="checkbox"] + label span {
+  vertical-align: middle;
+  background-color: #0000;
+  background: var(--techguru-base);
+  cursor: pointer;
+  border: 0;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  transition: all .3s;
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+
+.billing_details .checked-box label span:before {
+  border-bottom: 2px solid var(--techguru-black);
+  border-right: 2px solid var(--techguru-black);
+  content: "";
+  pointer-events: none;
+  transform-origin: 66% 66%;
+  opacity: 0;
+  width: 6px;
+  height: 9px;
+  transition: all .15s ease-in-out;
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  transform: rotate(45deg);
+}
+
+.billing_details.checked-box input[type="checkbox"]:checked + label span {
+  border-color: var(--techguru-white);
+}
+
+.billing_details .checked-box input[type="checkbox"]:checked + label span:before {
+  opacity: 1;
+}
+
+.billing_details_form .select-box .nice-select {
+  border: 1px solid rgba(var(--techguru-white-rgb), .1);
+  background-color: rgba(var(--techguru-white-rgb), .05);
+  color: var(--techguru-gray);
+  cursor: pointer;
+  border-radius: 10px;
+  width: 100%;
+  height: 60px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 60px;
+}
+
+.billing_details_form .select-box .nice-select .select-inner {
+  padding: 0 30px;
+}
+
+.billing_details_form .select-box .nice-select:after {
+  position: absolute;
+  right: 30px;
+}
+
+.billing_details_form-btns {
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 36px;
+  display: flex;
+  position: relative;
+}
+
+.billing_details_form-btn-1 {
+  display: block;
+  position: relative;
+}
+
+.billing_details_form-btn-1 .thm-btn {
+  border: none;
+}
+
+.billing_details_form-btn-2 {
+  display: block;
+  position: relative;
+}
+
+.billing_details_form-btn-2 .thm-btn {
+  border: none;
+}
+
+.sidebar-order-summary {
+  border: 1px solid rgba(var(--techguru-white-rgb), .1);
+  z-index: 1;
+  border-radius: 10px;
+  padding: 37px 30px 45px;
+  display: block;
+  position: relative;
+}
+
+.sidebar-order-summary .title-box {
+  margin-bottom: 35px;
+  padding-bottom: 3px;
+  display: block;
+  position: relative;
+}
+
+.sidebar-order-summary .title-box:before {
+  background: var(--techguru-base);
+  content: "";
+  width: 50px;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.sidebar-order-summary .title-box:after {
+  background: var(--techguru-white);
+  content: "";
+  width: 3px;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 37px;
+}
+
+.sidebar-order-summary .title-box h3 {
+  text-transform: capitalize;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.sidebar-order-summary__list {
+  display: block;
+  position: relative;
+}
+
+.sidebar-order-summary__list > li {
+  border-top: 1px solid rgba(var(--techguru-white-rgb), .1);
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 0 12px;
+  display: flex;
+  position: relative;
+}
+
+.sidebar-order-summary__list > li:last-child {
+  border-bottom: 1px solid rgba(var(--techguru-white-rgb), .1);
+}
+
+.sidebar-order-summary__list > li > .left-text {
+  display: block;
+  position: relative;
+}
+
+.sidebar-order-summary__list > li > .left-text p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.sidebar-order-summary__list > li > .right-text {
+  display: block;
+  position: relative;
+}
+
+.sidebar-order-summary__list > li > .right-text p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.sidebar-order-summary__list > li > .right-text > ul, .sidebar-order-summary__list > li > .right-text > ul > li {
+  display: block;
+  position: relative;
+}
+
+.sidebar-order-summary__list > li > .right-text > ul > li + li {
+  margin-top: 5px;
+}
+
+.sidebar-order-summary__list > li > .right-text > ul > li input[type="radio"] {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.sidebar-order-summary__list > li > .right-text > ul > li label {
+  text-align: right;
+  cursor: pointer;
+  padding-right: 24px;
+  font-size: 18px;
+  font-weight: 400;
+  transition: all .2s linear .1s;
+  display: block;
+  position: relative;
+}
+
+.sidebar-order-summary__list > li > .right-text > ul > li input[type="radio"] + label i {
+  border: 1px solid rgba(var(--techguru-white-rgb), .1);
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  transition: all .2s linear .1s;
+  position: absolute;
+  top: 6px;
+  right: 0;
+  overflow: hidden;
+}
+
+.sidebar-order-summary__list > li > .right-text > ul > li label i:before {
+  content: "";
+  background-color: var(--techguru-base);
+  border-radius: 50%;
+  transition: all .2s linear .1s;
+  position: absolute;
+  inset: -1px;
+  transform: scale(0);
+}
+
+.sidebar-order-summary__list > li > .right-text > ul > li input[type="radio"]:checked + label i {
+  border-color: var(--techguru-base);
+}
+
+.sidebar-order-summary__list > li > .right-text > ul > li input[type="radio"]:checked + label i:before {
+  transform: scale(1);
+}
+
+.sidebar-order-summary__Payment {
+  margin-top: 37px;
+  display: block;
+  position: relative;
+}
+
+.checkout__payment {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.checkout__payment__item + .checkout__payment__item {
+  margin-top: 23px;
+}
+
+.checkout__payment__title {
+  color: var(--techguru-white);
+  cursor: pointer;
+  align-items: center;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+}
+
+.checkout__payment__title:before {
+  content: "";
+  background-color: rgba(var(--techguru-white-rgb), .05);
+  border: 2px solid rgba(var(--techguru-white-rgb), .1);
+  width: 20px;
+  height: 20px;
+  color: var(--techguru-white);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  font-family: "Font Awesome 5 Pro";
+  font-size: 10px;
+  font-weight: 900;
+  transition: all .5s;
+  display: flex;
+  position: relative;
+  top: 0;
+}
+
+.checkout__payment__item--active .checkout__payment__title:before {
+  background-color: var(--techguru-base);
+  border-color: var(--techguru-base);
+  color: var(--techguru-black);
+  content: "";
+}
+
+.checkout__payment__content {
+  color: var(--techguru-gray);
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  display: block;
+  position: relative;
+}
+
+.sidebar-order-summary__bottom {
+  display: block;
+  position: relative;
+}
+
+.sidebar-order-summary__bottom .text1 {
+  margin-bottom: 0;
+}
+
+.sidebar-order-summary__bottom .text1 a {
+  color: var(--techguru-base);
+  text-decoration: underline;
+}
+
+.sidebar-order-summary__checked {
+  margin-top: 20px;
+  display: block;
+  position: relative;
+}
+
+.sidebar-order-summary__checked label {
+  color: var(--techguru-gray);
+  text-transform: none;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 27px;
+  font-family: var(--techguru-font);
+  margin-bottom: 0;
+  margin-right: 0;
+  padding-left: 30px;
+  display: inline-block;
+  position: relative;
+}
+
+.sidebar-order-summary__checked label a {
+  color: var(--techguru-base);
+}
+
+.sidebar-order-summary__checked input[type="checkbox"] {
+  display: none;
+}
+
+.sidebar-order-summary__checked input[type="checkbox"] + label span {
+  vertical-align: middle;
+  background-color: #0000;
+  background: var(--techguru-base);
+  cursor: pointer;
+  border: 0;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  transition: all .3s;
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+
+.sidebar-order-summary__checked label span:before {
+  border-bottom: 2px solid var(--techguru-black);
+  border-right: 2px solid var(--techguru-black);
+  content: "";
+  pointer-events: none;
+  transform-origin: 66% 66%;
+  opacity: 0;
+  width: 6px;
+  height: 9px;
+  transition: all .15s ease-in-out;
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  transform: rotate(45deg);
+}
+
+.sidebar-order-summary__checked input[type="checkbox"]:checked + label span {
+  border-color: var(--techguru-white);
+}
+
+.sidebar-order-summary__checked input[type="checkbox"]:checked + label span:before {
+  opacity: 1;
+}
+
+.sidebar-order-summary__btn {
+  margin-top: 27px;
+  line-height: 0;
+  display: block;
+  position: relative;
+}
+
+.wishlist-page {
+  padding: 140px 0;
+  display: block;
+  position: relative;
+}
+
+.wishlist-page .table-responsive {
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  display: block;
+  position: relative;
+  overflow-x: auto;
+}
+
+@media (max-width: 1199px) {
+  .wishlist-table {
+    min-width: 1170px;
+  }
+}
+
+.wishlist-table {
+  margin-bottom: 0;
+}
+
+.wishlist-table thead th {
+  color: var(--techguru-white);
+  border: none;
+  border-top: 1px solid rgba(var(--techguru-white-rgb), .1);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  font-family: var(--techguru-font);
+  text-align: center;
+  padding: 22px 0;
+}
+
+.wishlist-table tbody tr {
+  vertical-align: middle;
+}
+
+.wishlist-table tbody tr:last-child {
+  border-bottom: 1px solid rgba(var(--techguru-white-rgb), .1);
+}
+
+.wishlist-table tbody td {
+  color: var(--techguru-gray);
+  vertical-align: middle;
+  border-top: 1px solid rgba(var(--techguru-white-rgb), .1);
+  border-bottom: 1px solid rgba(var(--techguru-white-rgb), .1);
+  text-align: center;
+  padding: 30px 0;
+  font-size: 18px;
+}
+
+.wishlist-table .product-box {
+  align-items: center;
+  display: flex;
+}
+
+.wishlist-table .cross-icon {
+  display: block;
+  position: relative;
+}
+
+.wishlist-table .cross-icon i:before {
+  color: var(--techguru-white);
+  font-size: 16px;
+  display: inline-block;
+  position: relative;
+}
+
+.wishlist-table .product-box .img-box {
+  border-radius: 0;
+  width: 120px;
+  margin-left: 35px;
+  margin-right: 35px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.wishlist-table .product-box .img-box img {
+  border: 1px solid rgba(var(--techguru-white-rgb), .1);
+  border-radius: 10px;
+  width: 100%;
+}
+
+.wishlist-table h3 {
+  text-transform: capitalize;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.wishlist-table h3 a {
+  color: var(--techguru-white);
+  transition: all .2s linear .1s;
+}
+
+.wishlist-table h3 a:hover {
+  color: var(--techguru-base);
+}
+
+.product-details__social.two {
+  margin-top: 42px;
+}
+
+.sign-up-one {
+  background-color: var(--techguru-black);
+  z-index: 1;
+  padding: 132px 0 140px;
+  display: block;
+  position: relative;
+}
+
+.sign-up-one .container {
+  max-width: 620px;
+}
+
+.sign-up-one__form {
+  display: block;
+  position: relative;
+}
+
+.sign-up-one__form .inner-title {
+  padding-bottom: 60px;
+  display: block;
+  position: relative;
+}
+
+.sign-up-one__form .inner-title h2 {
+  text-transform: capitalize;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1em;
+}
+
+.sign-up-one__form form {
+  background-color: rgba(var(--techguru-white-rgb), .05);
+  border-radius: 10px;
+  padding: 60px 50px 52px;
+  display: block;
+  position: relative;
+  box-shadow: 0 0 80px #0000000f;
+}
+
+.sign-up-one__form form .form-group {
+  margin-bottom: 20px;
+  display: block;
+  position: relative;
+}
+
+.sign-up-one__form form .input-box {
+  display: block;
+  position: relative;
+}
+
+.sign-up-one__form form input[type="text"], .sign-up-one__form form input[type="email"] {
+  border: 1px solid rgba(var(--techguru-white-rgb), .1);
+  background-color: rgba(var(--techguru-white-rgb), .05);
+  width: 100%;
+  height: 60px;
+  color: var(--techguru-gray);
+  font-size: 16px;
+  font-family: var(--techguru-font);
+  border-radius: 10px;
+  outline: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-style: normal;
+  font-weight: 400;
+  transition: all .5s;
+  display: block;
+  position: relative;
+}
+
+.sign-up-one__form form input[type="text"]:focus, .sign-up-one__form form input[type="email"]:focus {
+  border-color: var(--techguru-black);
+  background-color: var(--techguru-black);
+}
+
+.sign-up-one__form form input[type="text"]::-webkit-input-placeholder {
+  color: var(--techguru-gray);
+}
+
+.sign-up-one__form form input[type="text"]:-moz-placeholder-shown {
+  color: var(--techguru-gray);
+}
+
+.sign-up-one__form form input[type="text"]::-moz-placeholder {
+  color: var(--techguru-gray);
+}
+
+.sign-up-one__form form input[type="text"]:-ms-placeholder-shown {
+  color: var(--techguru-gray);
+}
+
+.sign-up-one__form form input[type="email"]::-webkit-input-placeholder {
+  color: var(--techguru-gray);
+}
+
+.sign-up-one__form form input[type="email"]:-moz-placeholder-shown {
+  color: var(--techguru-gray);
+}
+
+.sign-up-one__form form input[type="email"]::-moz-placeholder {
+  color: var(--techguru-gray);
+}
+
+.sign-up-one__form form input[type="email"]:-ms-placeholder-shown {
+  color: var(--techguru-gray);
+}
+
+.sign-up-one__form form .thm-btn {
+  border: none;
+  justify-content: center;
+  width: 100%;
+}
+
+.sign-up-one__form form .google-facebook {
+  align-items: center;
+  margin-top: 10px;
+  display: flex;
+  position: relative;
+}
+
+.sign-up-one__form form .google-facebook a {
+  border: 1px solid rgba(var(--techguru-white-rgb), .1);
+  background-color: rgba(var(--techguru-white-rgb), .05);
+  color: var(--techguru-white);
+  font-size: 16px;
+  line-height: 28px;
+  font-family: var(--techguru-font);
+  letter-spacing: -.01em;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  font-weight: 500;
+  transition: all .2s linear .1s;
+  display: flex;
+  position: relative;
+}
+
+.sign-up-one__form form .google-facebook a:hover {
+  border: 1px solid var(--techguru-black);
+  background-color: var(--techguru-black);
+}
+
+.sign-up-one__form form .google-facebook a + a {
+  margin-left: 14px;
+}
+
+.sign-up-one__form form .google-facebook a .icon {
+  margin-right: 10px;
+  line-height: 0;
+  display: block;
+  position: relative;
+}
+
+.sign-up-one__form form .create-account {
+  padding-top: 22px;
+  display: block;
+  position: relative;
+}
+
+.sign-up-one__form form .create-account p {
+  margin: 0;
+}
+
+.sign-up-one__form form .create-account p a {
+  font-weight: 500;
+}
+
+.sign-up-one__form form .create-account p a:hover {
+  color: var(--techguru-base);
+}
+
+.login-one {
+  background-color: var(--techguru-black);
+  z-index: 1;
+  padding: 132px 0 140px;
+  display: block;
+  position: relative;
+}
+
+.login-one .container {
+  max-width: 620px;
+}
+
+.login-one__form {
+  display: block;
+  position: relative;
+}
+
+.login-one__form .inner-title {
+  padding-bottom: 60px;
+  display: block;
+  position: relative;
+}
+
+.login-one__form .inner-title h2 {
+  text-transform: capitalize;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1em;
+}
+
+.login-one__form form {
+  background-color: rgba(var(--techguru-white-rgb), .05);
+  border-radius: 10px;
+  padding: 60px 50px 52px;
+  display: block;
+  position: relative;
+  box-shadow: 0 0 80px #0000000f;
+}
+
+.login-one__form form .form-group {
+  margin-bottom: 20px;
+  display: block;
+  position: relative;
+}
+
+.login-one__form form .input-box {
+  display: block;
+  position: relative;
+}
+
+.login-one__form form input[type="text"], .login-one__form form input[type="email"] {
+  border: 1px solid rgba(var(--techguru-white-rgb), .1);
+  background-color: rgba(var(--techguru-white-rgb), .05);
+  width: 100%;
+  height: 60px;
+  color: var(--techguru-gray);
+  font-size: 16px;
+  font-family: var(--techguru-font);
+  border-radius: 10px;
+  outline: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-style: normal;
+  font-weight: 400;
+  transition: all .5s;
+  display: block;
+  position: relative;
+}
+
+.login-one__form form input[type="text"]:focus, .login-one__form form input[type="email"]:focus {
+  border-color: var(--techguru-black);
+  background-color: var(--techguru-black);
+}
+
+.login-one__form form input[type="text"]::-webkit-input-placeholder {
+  color: var(--techguru-gray);
+}
+
+.login-one__form form input[type="text"]:-moz-placeholder-shown {
+  color: var(--techguru-gray);
+}
+
+.login-one__form form input[type="text"]::-moz-placeholder {
+  color: var(--techguru-gray);
+}
+
+.login-one__form form input[type="text"]:-ms-placeholder-shown {
+  color: var(--techguru-gray);
+}
+
+.login-one__form form input[type="email"]::-webkit-input-placeholder {
+  color: var(--techguru-gray);
+}
+
+.login-one__form form input[type="email"]:-moz-placeholder-shown {
+  color: var(--techguru-gray);
+}
+
+.login-one__form form input[type="email"]::-moz-placeholder {
+  color: var(--techguru-gray);
+}
+
+.login-one__form form input[type="email"]:-ms-placeholder-shown {
+  color: var(--techguru-gray);
+}
+
+.login-one__form form .thm-btn {
+  border: none;
+  justify-content: center;
+  width: 100%;
+}
+
+.login-one__form form .remember-forget {
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  display: flex;
+  position: relative;
+}
+
+.login-one__form form .checked-box1 {
+  min-height: 26px;
+  display: block;
+  position: relative;
+}
+
+.login-one__form form .checked-box1 input[type="checkbox"] {
+  display: none;
+}
+
+.login-one__form form .checked-box1 label {
+  color: var(--techguru-gray);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  font-family: var(--techguru-font);
+  padding-left: 25px;
+  display: inline-block;
+  position: relative;
+}
+
+.login-one__form form .checked-box1 input[type="checkbox"] + label span {
+  cursor: pointer;
+  background-color: #0000;
+  border: 1px solid #e3e4ea;
+  border-radius: 4px;
+  width: 16px;
+  height: 16px;
+  transition: all .3s;
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+.login-one__form form .checked-box1 label span:before {
+  content: "";
+  background: var(--techguru-base);
+  border-radius: 2px;
+  width: 8px;
+  height: 8px;
+  margin: 3px auto 0;
+  transition: all .3s;
+  position: absolute;
+  inset: 0;
+  transform: scale(0);
+}
+
+.login-one__form form .checked-box1 input[type="checkbox"]:checked + label span {
+  border-color: var(--techguru-base);
+}
+
+.login-one__form form .checked-box1 input[type="checkbox"]:checked + label span:before {
+  transform: scale(1);
+}
+
+.login-one__form form .forget {
+  display: block;
+  position: relative;
+}
+
+.login-one__form form .forget a {
+  color: var(--techguru-gray);
+  font-size: 16px;
+  line-height: 26px;
+  font-family: var(--techguru-font);
+  font-weight: 400;
+  transition: all .2s linear .1s;
+}
+
+.login-one__form form .forget a:hover {
+  color: var(--techguru-base);
+}
+
+.login-one__form form .create-account {
+  padding-top: 25px;
+  display: block;
+  position: relative;
+}
+
+.login-one__form form .create-account p {
+  color: var(--techguru-gray);
+}
+
+.login-one__form form .create-account p a {
+  color: var(--techguru-base);
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=power-orbit_public_assets_css_module-css_shop_css_0w3-wzy._.single.css.map*/

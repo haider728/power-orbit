@@ -1,0 +1,170 @@
+/* [project]/power-orbit/public/assets/css/module-css/banner.css [app-client] (css) */
+.banner-one {
+  z-index: 1;
+  padding: 306px 0 0;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-one__bg {
+  opacity: .09;
+  z-index: -1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  inset: 0;
+}
+
+.banner-one__shape-bg {
+  z-index: -1;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 192px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.banner-one__inner {
+  text-align: center;
+  display: block;
+  position: relative;
+}
+
+.banner-one__title {
+  color: var(--techguru-white);
+  margin-bottom: 20px;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 1.2em;
+}
+
+.banner-one__title span {
+  color: var(--techguru-base);
+}
+
+.banner-one__btn-box {
+  display: block;
+  position: relative;
+}
+
+.banner-one__btn-box .thm-btn {
+  background: linear-gradient(270deg, #5cb0e9 0%, #3d72fc 100%);
+}
+
+.banner-one__img-box {
+  z-index: 1;
+  margin-top: 50px;
+  display: block;
+  position: relative;
+}
+
+.banner-one__img {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+}
+
+.banner-one__img img {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  width: 100%;
+}
+
+.banner-one__video-link {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%)translateX(-50%);
+}
+
+.banner-one__video-link .play-btn {
+  text-align: center;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  color: var(--techguru-white);
+  -o-transition: all .5s ease;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 60px;
+  transition: all .5s;
+  display: flex;
+  position: relative;
+}
+
+.banner-one__video-link .play-btn:after {
+  content: "";
+  z-index: -1;
+  background: linear-gradient(270deg, #5cb0e9 0%, #3d72fc 100%);
+  border-radius: 50%;
+  position: absolute;
+  inset: 0;
+}
+
+.banner-one__video-link .play-btn:before {
+  content: "";
+  -webkit-mask-composite: xor;
+  visibility: visible;
+  opacity: .2;
+  z-index: -1;
+  background: linear-gradient(90deg, #8f88ff, #5cb0e9) border-box;
+  border: 10px solid #0000;
+  border-radius: 50%;
+  transition: all .5s;
+  position: absolute;
+  inset: -10px;
+  -webkit-mask-image: linear-gradient(#fff 0 0), linear-gradient(#fff 0 0);
+  -webkit-mask-position: 0 0, 0 0;
+  -webkit-mask-size: auto, auto;
+  -webkit-mask-repeat: repeat, repeat;
+  -webkit-mask-clip: padding-box, border-box;
+  -webkit-mask-origin: padding-box, border-box;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  -webkit-mask-source-type: auto, auto;
+  mask-mode: match-source, match-source;
+}
+
+.banner-one__video-link .play-btn:hover {
+  background-color: var(--techguru-base);
+  color: var(--techguru-black);
+}
+
+.banner-one__video-link .ripple, .banner-one__video-link .play-btn .ripple:before, .banner-one__video-link .play-btn .ripple:after {
+  -ms-box-shadow: 0 0 0 0 rgba(var(--techguru-white-rgb), .6);
+  -o-box-shadow: 0 0 0 0 rgba(var(--techguru-white-rgb), .6);
+  width: 76px;
+  height: 76px;
+  box-shadow: 0 0 0 0 rgba(var(--techguru-white-rgb), .6);
+  border-radius: 50%;
+  animation: 3s infinite ripple;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner-one__video-link .play-btn .ripple:before {
+  content: "";
+  animation-delay: .9s;
+  position: absolute;
+}
+
+.banner-one__video-link .play-btn .ripple:after {
+  content: "";
+  animation-delay: .6s;
+  position: absolute;
+}
+
+/*# sourceMappingURL=power-orbit_public_assets_css_module-css_banner_css_0w3-wzy._.single.css.map*/

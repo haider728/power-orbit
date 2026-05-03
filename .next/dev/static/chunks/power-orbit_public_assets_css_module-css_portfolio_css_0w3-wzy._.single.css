@@ -1,0 +1,1157 @@
+/* [project]/power-orbit/public/assets/css/module-css/portfolio.css [app-client] (css) */
+.portfolio-one {
+  z-index: 1;
+  background-color: #060610;
+  padding: 140px 0 133px;
+  display: block;
+  position: relative;
+}
+
+.portfolio-one__big-text {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(#ffffff1a 0%, #9990 100%);
+  text-transform: capitalize;
+  z-index: -1;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 467px;
+  font-weight: 900;
+  line-height: 1em;
+  position: absolute;
+  top: 94px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.portfolio-one__shape-1 {
+  opacity: .6;
+  z-index: -1;
+  position: absolute;
+  top: 140px;
+  left: 0;
+}
+
+.portfolio-one__shape-1 img {
+  width: auto;
+}
+
+.portfolio-one__shape-2 {
+  opacity: .6;
+  z-index: -1;
+  position: absolute;
+  top: 20%;
+  right: 0;
+}
+
+.portfolio-one__shape-2 img {
+  width: auto;
+}
+
+.portfolio-one .row {
+  --bs-gutter-x: 60px;
+}
+
+.portfolio-one__top {
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 58px;
+  display: flex;
+  position: relative;
+}
+
+.portfolio-one__top .section-title {
+  margin-bottom: 0;
+}
+
+.portfolio-one__round-text-box {
+  display: block;
+  position: relative;
+  top: 3px;
+}
+
+.portfolio-one__round-text-box-outer, .portfolio-one__round-text-box-inner {
+  width: 170px;
+  height: 170px;
+  display: block;
+  position: relative;
+}
+
+.portfolio-one__curved-circle {
+  color: var(--techguru-white);
+  font-size: 18px;
+  font-weight: 700;
+  position: absolute;
+  top: 10px;
+  left: 85px;
+  height: 170px !important;
+}
+
+.portfolio-one__round-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%)translateY(-50%);
+}
+
+.portfolio-one__round-icon img {
+  width: auto;
+}
+
+.portfolio-one__single, .portfolio-one__img-box {
+  display: block;
+  position: relative;
+}
+
+.portfolio-one__img {
+  z-index: 1;
+  border-radius: 40px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-one__img:before {
+  content: "";
+  background: var(--techguru-black);
+  opacity: 0;
+  z-index: 1;
+  transition: all .5s;
+  position: absolute;
+  inset: 0;
+}
+
+.portfolio-one__single:hover .portfolio-one__img:before {
+  opacity: .4;
+}
+
+.portfolio-one__tag {
+  z-index: 2;
+  align-items: center;
+  gap: 16px;
+  display: flex;
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+}
+
+.portfolio-one__tag span {
+  background-color: var(--techguru-base);
+  color: #2f4858;
+  border-radius: 22px;
+  padding: 9px 20px 8px;
+  font-size: 16px;
+  font-weight: 700;
+  transition: all .5s;
+  display: inline-block;
+  position: relative;
+}
+
+.portfolio-one__tag span:hover {
+  color: #05173d;
+}
+
+.portfolio-one__img img {
+  border-radius: 40px;
+  width: 100%;
+  transition: transform 1s ease-in-out;
+  transform: scale3d(1, 1, 1);
+}
+
+.portfolio-one__single:hover .portfolio-one__img img {
+  transform: scale(1.05)rotate(0);
+}
+
+.portfolio-one__content {
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 24px;
+  padding-left: 50px;
+  display: flex;
+  position: relative;
+}
+
+.portfolio-one__title-box {
+  display: block;
+  position: relative;
+}
+
+.portfolio-one__title {
+  text-transform: capitalize;
+  margin-bottom: 12px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+}
+
+.portfolio-one__title a {
+  color: var(--techguru-white);
+}
+
+.portfolio-one__title a:hover {
+  color: var(--techguru-base);
+}
+
+.portfolio-one__arrow {
+  display: block;
+  position: relative;
+}
+
+.portfolio-one__arrow a {
+  width: 48px;
+  height: 48px;
+  color: var(--techguru-white);
+  z-index: 1;
+  background: linear-gradient(270deg, #5cb0e9 0%, #3d72fc 100%);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  display: flex;
+  position: relative;
+}
+
+.portfolio-one__arrow a span {
+  transform: rotate(-45deg);
+}
+
+.portfolio-one__arrow a:hover {
+  color: var(--techguru-black);
+}
+
+.portfolio-one__arrow a:before {
+  content: "";
+  background-color: var(--techguru-base);
+  transform-origin: center;
+  transform-style: preserve-3d;
+  z-index: -1;
+  border-radius: 50%;
+  transition: all .4s cubic-bezier(.62, .21, .45, 1.52);
+  position: absolute;
+  inset: 0;
+  transform: scale(0);
+}
+
+.portfolio-one__arrow a:hover:before {
+  transform: scaleX(1);
+}
+
+.portfolio-one__year {
+  position: absolute;
+  top: 51px;
+  left: -12px;
+  transform: rotate(-90deg);
+}
+
+.portfolio-one__year:before {
+  content: "";
+  background: linear-gradient(270deg, #3d72fc 0%, #5cb0e9 100%);
+  width: 25px;
+  height: 2px;
+  position: absolute;
+  bottom: 14px;
+  left: -35px;
+}
+
+.portfolio-one__year span {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(270deg, #5cb0e9 0%, #3d72fc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.portfolio-two {
+  z-index: 1;
+  background-color: #060610;
+  padding: 140px 0;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-two:before {
+  content: "";
+  background-color: rgba(#060610, .05);
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+}
+
+.portfolio-two__shape-1 {
+  opacity: .4;
+  mix-blend-mode: lighten;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.portfolio-two__shape-1 img {
+  width: auto;
+}
+
+.portfolio-two__shape-2 {
+  filter: blur(120px);
+  opacity: .4;
+  z-index: -1;
+  background: radial-gradient(50% 50%, #fa567499 0%, #070c1400 100%);
+  position: absolute;
+  inset: 2.89% 56.34% 17.84% 0%;
+}
+
+.portfolio-two__shape-3 {
+  opacity: .3;
+  filter: blur(120px);
+  z-index: -1;
+  background: radial-gradient(50% 50%, #d866c39e 0%, #070c1400 100%);
+  position: absolute;
+  inset: 17.91% 20.71% 2.81% 35.62%;
+}
+
+.portfolio-two__shape-4 {
+  opacity: .4;
+  filter: blur(120px);
+  z-index: -1;
+  background: radial-gradient(50% 50%, #fa5674a1 0%, #070c1400 100%);
+  position: absolute;
+  inset: 2.89% 0% 17.84% 56.34%;
+}
+
+.portfolio-two__box {
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: -15px;
+  margin-right: -15px;
+  display: flex;
+  position: relative;
+}
+
+.portfolio-two__box li {
+  flex: 0 0 50%;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  transition: all .5s;
+  position: relative;
+}
+
+.portfolio-two__box li.active {
+  flex: 0 0 50%;
+}
+
+.portfolio-two__box-content {
+  z-index: 1;
+  min-height: 500px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.single-portfolio-two__bg {
+  z-index: -1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 24px;
+  transition: all .5s;
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.single-portfolio-two__bg:before {
+  content: "";
+  opacity: 0;
+  transform-origin: top;
+  background: linear-gradient(#05173d00 0%, #05173df2 100%);
+  border-radius: 24px;
+  transition: all .5s;
+  position: absolute;
+  inset: 0 -5px;
+  transform: perspective(540px)rotateY(0)translateY(-100px);
+}
+
+.portfolio-two__box li.active .single-portfolio-two__bg:before {
+  opacity: .95;
+  transition-delay: .5s;
+  transform: perspective(540px)rotateY(0)translateY(0);
+}
+
+.single-portfolio-two__bg:after {
+  content: "";
+  opacity: 1;
+  background: linear-gradient(#05173d00 0%, #05173df2 100%);
+  border-radius: 24px;
+  transition: all .5s;
+  position: absolute;
+  inset: 0 -5px;
+}
+
+.portfolio-two__title {
+  opacity: 1;
+  z-index: 2;
+  transition: all .5s;
+  position: absolute;
+  bottom: 112px;
+  left: -40px;
+  transform: rotate(-90deg);
+}
+
+.portfolio-two__title h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+.portfolio-two__title h3 a {
+  color: var(--techguru-white);
+}
+
+.portfolio-two__box li.active .portfolio-two__title {
+  opacity: 0;
+}
+
+.portfolio-two__content-box {
+  opacity: 0;
+  transform-origin: top;
+  z-index: 2;
+  align-items: center;
+  gap: 20px;
+  transition: all .5s;
+  display: flex;
+  position: absolute;
+  bottom: 23px;
+  left: 25px;
+  right: 10px;
+  transform: perspective(540px)rotateY(0)translateY(-100px);
+}
+
+.portfolio-two__box li.active .portfolio-two__content-box {
+  opacity: 1;
+  transition-delay: .5s;
+  transform: perspective(540px)rotateY(0)translateY(0);
+}
+
+.portfolio-two__icon {
+  display: block;
+  position: relative;
+}
+
+.portfolio-two__icon a {
+  width: 48px;
+  height: 48px;
+  color: var(--techguru-white);
+  z-index: 1;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  display: flex;
+}
+
+.portfolio-two__icon a:before {
+  content: "";
+  z-index: -1;
+  background: linear-gradient(270deg, #5cb0e9 0%, #3d72fc 100%);
+  border-radius: 50%;
+  position: absolute;
+  inset: 0;
+}
+
+.portfolio-two__icon a:after {
+  content: "";
+  opacity: 0;
+  z-index: -1;
+  background: linear-gradient(270deg, #fa5674 0%, #6065d4 100%);
+  border-radius: 50%;
+  transition: all .5s;
+  position: absolute;
+  inset: 0;
+}
+
+.portfolio-two__icon a:hover:after {
+  opacity: 1;
+}
+
+.portfolio-two__title-box {
+  flex: 1;
+  display: block;
+  position: relative;
+}
+
+.portfolio-two__title-2 {
+  margin-bottom: 8px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+.portfolio-two__title-2 a {
+  color: var(--techguru-white);
+}
+
+.portfolio-two__title-2 a:hover {
+  color: var(--techguru-base);
+}
+
+.portfolio-two__text {
+  color: var(--techguru-white);
+}
+
+.portfolio-two__carousel {
+  padding-bottom: 20px;
+}
+
+.portfolio-two__carousel .swiper-nav {
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0 !important;
+}
+
+.portfolio-two__carousel .swiper-nav .swiper-next {
+  cursor: pointer;
+  z-index: 1;
+  background-color: #0000;
+  border-radius: 12px;
+  width: 44px;
+  height: 44px;
+  margin: 0;
+  font-size: 20px;
+  line-height: 44px;
+  transition: all .5s;
+  display: inline-block;
+  position: relative;
+}
+
+.portfolio-two__carousel .swiper-nav .swiper-next:after {
+  content: "";
+  -webkit-mask-composite: xor;
+  visibility: visible;
+  opacity: 1;
+  z-index: -1;
+  background: linear-gradient(90deg, #3d72fc, #5cb0e9) border-box;
+  border: 1px solid #0000;
+  border-radius: 12px;
+  transition: all .5s;
+  position: absolute;
+  inset: 0;
+  -webkit-mask-image: linear-gradient(#fff 0 0), linear-gradient(#fff 0 0);
+  -webkit-mask-position: 0 0, 0 0;
+  -webkit-mask-size: auto, auto;
+  -webkit-mask-repeat: repeat, repeat;
+  -webkit-mask-clip: padding-box, border-box;
+  -webkit-mask-origin: padding-box, border-box;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  -webkit-mask-source-type: auto, auto;
+  mask-mode: match-source, match-source;
+}
+
+.portfolio-two__carousel .swiper-nav .swiper-prev {
+  cursor: pointer;
+  z-index: 1;
+  background-color: #0000;
+  border-radius: 12px;
+  width: 44px;
+  height: 44px;
+  margin: 0;
+  font-size: 20px;
+  line-height: 44px;
+  transition: all .5s;
+  display: inline-block;
+  position: relative;
+}
+
+.portfolio-two__carousel .swiper-nav .swiper-prev:after {
+  content: "";
+  -webkit-mask-composite: xor;
+  visibility: visible;
+  opacity: 1;
+  z-index: -1;
+  background: linear-gradient(90deg, #3d72fc, #5cb0e9) border-box;
+  border: 1px solid #0000;
+  border-radius: 12px;
+  transition: all .5s;
+  position: absolute;
+  inset: 0;
+  -webkit-mask-image: linear-gradient(#fff 0 0), linear-gradient(#fff 0 0);
+  -webkit-mask-position: 0 0, 0 0;
+  -webkit-mask-size: auto, auto;
+  -webkit-mask-repeat: repeat, repeat;
+  -webkit-mask-clip: padding-box, border-box;
+  -webkit-mask-origin: padding-box, border-box;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  -webkit-mask-source-type: auto, auto;
+  mask-mode: match-source, match-source;
+}
+
+.portfolio-two__carousel .swiper-nav .swiper-next {
+  margin-left: 5px;
+}
+
+.portfolio-two__carousel .swiper-nav .swiper-prev {
+  margin-right: 5px;
+}
+
+.portfolio-two__carousel .swiper-nav .swiper-next span, .portfolio-two__carousel .swiper-nav .swiper-prev span {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(270deg, #5cb0e9 0%, #3d72fc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s;
+  display: flex;
+  position: relative;
+  top: 10px;
+}
+
+.portfolio-two__carousel .swiper-nav .swiper-next:hover span, .portfolio-two__carousel .swiper-nav .swiper-prev:hover span {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(270deg, #fff 0% 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.portfolio-two__carousel .swiper-nav .swiper-prev span {
+  transform: rotateY(180deg);
+}
+
+.portfolio-two__carousel .swiper-nav .swiper-next:hover, .portfolio-two__carousel .swiper-nav .swiper-prev:hover {
+  background: linear-gradient(270deg, #5cb0e9 0%, #3d72fc 100%);
+}
+
+.portfolio-two__carousel .swiper-pagination {
+  text-align: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  display: inline-flex;
+  position: relative;
+  width: auto !important;
+  margin: 60px auto 0 !important;
+}
+
+.portfolio-two__carousel .swiper-pagination .swiper-pagination-bullet {
+  opacity: 1;
+  z-index: 1;
+  background: linear-gradient(270deg, #fa567433, #6065d433);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  transition: all .1s linear .1s;
+  display: inline-block;
+  position: relative;
+}
+
+.portfolio-two__carousel .swiper-pagination .swiper-pagination-bullet:after {
+  content: "";
+  background-color: var(--techguru-base);
+  z-index: -1;
+  border-radius: 50%;
+  transition: all .2s linear .1s;
+  position: absolute;
+  inset: 3px;
+  transform: scaleX(0);
+}
+
+.portfolio-two__carousel .swiper-pagination .swiper-pagination-bullet-active:after {
+  transform: scaleX(1);
+}
+
+@media (min-width: 768px) {
+  .portfolio-two__box li {
+    flex: 1;
+  }
+
+  .portfolio-two__box li.active {
+    flex: 1.9;
+  }
+
+  .portfolio-two__box li.active .portfolio-two__box-content .img-holder-img-bg {
+    opacity: .8;
+    transform: perspective(630px)rotateX(0);
+  }
+
+  .portfolio-two__box li.active .portfolio-two__box-content .portfolio-two__box-content-inner {
+    opacity: 1;
+    transition-delay: .5s;
+    transform: perspective(630px)rotateY(0)translateY(0);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .portfolio-two {
+    padding: 100px 0;
+  }
+
+  .portfolio-two__box li.active {
+    flex: 0 0 100%;
+  }
+
+  .portfolio-two__box-content {
+    min-height: 500px;
+  }
+}
+
+.portfolio-page {
+  z-index: 1;
+  padding: 140px 0;
+  display: block;
+  position: relative;
+}
+
+.portfolio-page .portfolio-one__big-text {
+  top: -67px;
+}
+
+.portfolio-page .portfolio-one__single {
+  margin-bottom: 23px;
+}
+
+.portfolio-page .portfolio-one__title {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.portfolio-details {
+  counter-reset: count;
+  z-index: 1;
+  padding: 120px 0 136px;
+  display: block;
+  position: relative;
+}
+
+.portfolio-details__top {
+  border-bottom: 1px solid rgba(var(--techguru-white-rgb), .1);
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  position: relative;
+}
+
+.portfolio-details__title-and-social {
+  display: block;
+  position: relative;
+}
+
+.portfolio-details__top-title {
+  color: var(--techguru-white);
+  margin-bottom: 32px;
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 84px;
+}
+
+.portfolio-details__social-box {
+  align-items: center;
+  gap: 18px;
+  display: flex;
+  position: relative;
+}
+
+.portfolio-details__social-box p {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.portfolio-details__social {
+  align-items: center;
+  gap: 15px;
+  display: flex;
+  position: relative;
+}
+
+.portfolio-details__social a {
+  border: 1px solid rgba(var(--techguru-white-rgb), .2);
+  width: 48px;
+  height: 48px;
+  color: var(--techguru-white);
+  z-index: 1;
+  border-radius: 14px;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-details__social a:before {
+  content: "";
+  opacity: 0;
+  z-index: -1;
+  background: linear-gradient(270deg, #fa5674 0%, #6065d4 100%);
+  border: 1px solid #fff3;
+  border-radius: 14px;
+  transition: all .5s;
+  position: absolute;
+  inset: 0;
+}
+
+.portfolio-details__social a:hover:before {
+  opacity: 1;
+}
+
+.portfolio-details__get-touch {
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-details__get-touch a {
+  width: 200px;
+  height: 200px;
+  color: var(--techguru-white);
+  z-index: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  display: flex;
+  position: relative;
+}
+
+.portfolio-details__get-touch a:hover {
+  color: var(--techguru-base);
+}
+
+.portfolio-details__get-touch:before {
+  content: "";
+  -webkit-mask-composite: xor;
+  visibility: visible;
+  opacity: 1;
+  z-index: -1;
+  background: linear-gradient(90deg, #3d72fc, #5cb0e9) border-box;
+  border: 1px solid #0000;
+  border-radius: 50%;
+  transition: all .5s;
+  position: absolute;
+  inset: 0;
+  -webkit-mask-image: linear-gradient(#fff 0 0), linear-gradient(#fff 0 0);
+  -webkit-mask-position: 0 0, 0 0;
+  -webkit-mask-size: auto, auto;
+  -webkit-mask-repeat: repeat, repeat;
+  -webkit-mask-clip: padding-box, border-box;
+  -webkit-mask-origin: padding-box, border-box;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  -webkit-mask-source-type: auto, auto;
+  mask-mode: match-source, match-source;
+}
+
+.portfolio-details__get-touch a span {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(270deg, #5cb0e9 0%, #3d72fc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.portfolio-details__get-touch-shape {
+  background: linear-gradient(270deg, #5cb0e9 0%, #3d72fc 100%);
+  border-radius: 50%;
+  width: 68px;
+  height: 68px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.portfolio-details__portfolio-list-inner {
+  display: block;
+  position: relative;
+}
+
+.portfolio-details__portfolio-list {
+  align-items: flex-start;
+  gap: 200px;
+  display: flex;
+  position: relative;
+}
+
+.portfolio-details__portfolio-list li {
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  max-width: 250px;
+  display: flex;
+  position: relative;
+}
+
+.portfolio-details__portfolio-list li .icon {
+  z-index: 1;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  position: relative;
+}
+
+.portfolio-details__portfolio-list li .icon:before {
+  content: "";
+  z-index: -1;
+  background: linear-gradient(270deg, #5cb0e9 0%, #3d72fc 100%);
+  border-radius: 50%;
+  position: absolute;
+  inset: 0;
+}
+
+.portfolio-details__portfolio-list li .icon:after {
+  content: "";
+  opacity: 0;
+  z-index: -1;
+  background: linear-gradient(270deg, #fa5674 0%, #6065d4 100%);
+  border-radius: 50%;
+  transition: all .5s;
+  position: absolute;
+  inset: 0;
+}
+
+.portfolio-details__portfolio-list li:hover .icon:after {
+  opacity: 1;
+}
+
+.portfolio-details__portfolio-list li .icon span {
+  color: var(--techguru-white);
+  font-size: 20px;
+  display: inline-block;
+  position: relative;
+}
+
+.portfolio-details__portfolio-list li .content {
+  flex: 1;
+  display: block;
+  position: relative;
+}
+
+.portfolio-details__portfolio-list li .content span {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(270deg, #5cb0e9 0%, #3d72fc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.portfolio-details__portfolio-list li .content p {
+  color: var(--techguru-white);
+  text-transform: capitalize;
+  margin-top: 2px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.portfolio-details__portfolio-list-2 {
+  margin: 28px 0 60px;
+}
+
+.portfolio-details__portfolio-page {
+  display: block;
+  position: relative;
+}
+
+.portfolio-details__portfolio-page li {
+  align-items: flex-start;
+  gap: 190px;
+  display: flex;
+  position: relative;
+}
+
+.portfolio-details__portfolio-page li + li {
+  margin-top: 60px;
+}
+
+.portfolio-details__count {
+  display: block;
+  position: relative;
+}
+
+.portfolio-details__count:before {
+  counter-increment: count 1;
+  content: "0"counter(count);
+  color: var(--techguru-gray);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  display: inline-block;
+  position: relative;
+}
+
+.portfolio-details__portfolio-content {
+  display: block;
+  position: relative;
+}
+
+.portfolio-details__title-1 {
+  color: var(--techguru-white);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+}
+
+.portfolio-details__text-1 {
+  margin: 13px 0 60px;
+}
+
+.portfolio-details__img-1 {
+  display: block;
+  position: relative;
+}
+
+.portfolio-details__img-1 img {
+  border-radius: 20px;
+  width: 100%;
+}
+
+.portfolio-details__title-2 {
+  color: var(--techguru-white);
+  margin-bottom: 12px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+}
+
+.portfolio-details__points-box-two {
+  align-items: flex-start;
+  gap: 250px;
+  margin-bottom: 60px;
+  display: flex;
+  position: relative;
+}
+
+.portfolio-details__points-two {
+  display: block;
+  position: relative;
+}
+
+.portfolio-details__points-two-single {
+  align-items: flex-start;
+  gap: 15px;
+  display: flex;
+  position: relative;
+}
+
+.portfolio-details__points-two-single + .portfolio-details__points-two-single {
+  margin-top: 20px;
+}
+
+.portfolio-details__points-two-single .icon {
+  display: inline-block;
+  position: relative;
+}
+
+.portfolio-details__points-two-single .icon span {
+  color: var(--techguru-base);
+  font-size: 16px;
+  display: inline-block;
+  position: relative;
+}
+
+.portfolio-details__img-box {
+  display: block;
+  position: relative;
+}
+
+.portfolio-details__img-box-img {
+  margin-bottom: 30px;
+  display: block;
+  position: relative;
+}
+
+.portfolio-details__img-box-img img {
+  border-radius: 20px;
+  width: 100%;
+}
+
+.portfolio-details__title-3 {
+  color: var(--techguru-white);
+  margin-bottom: 13px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+}
+
+.portfolio-details__portfolio-page li:nth-child(5) {
+  margin-top: 31px;
+}
+
+.portfolio-details__portfolio-list-three {
+  display: block;
+  position: relative;
+}
+
+.portfolio-details__portfolio-list-three-single {
+  align-items: flex-start;
+  gap: 15px;
+  display: flex;
+  position: relative;
+}
+
+.portfolio-details__portfolio-list-three-single + .portfolio-details__portfolio-list-three-single {
+  margin-top: 23px;
+}
+
+.portfolio-details__portfolio-list-three-single .icon {
+  display: inline-block;
+  position: relative;
+}
+
+.portfolio-details__portfolio-list-three-single .icon span {
+  color: var(--techguru-base);
+  font-size: 16px;
+  display: inline-block;
+  position: relative;
+}
+
+.portfolio-details__portfolio-list-three-single .content {
+  flex: 1;
+  display: block;
+  position: relative;
+}
+
+.portfolio-details__portfolio-list-three-single .content h5 {
+  color: var(--techguru-gray);
+  margin-bottom: 3px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.portfolio-details__img-box-2 {
+  display: block;
+  position: relative;
+}
+
+.portfolio-details__img-box-2 img {
+  border-radius: 20px;
+  width: 100%;
+}
+
+.portfolio-details__text-5 {
+  margin: 12px 0 13px;
+}
+
+.portfolio-details__text-6 {
+  color: var(--techguru-white);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+}
+
+/*# sourceMappingURL=power-orbit_public_assets_css_module-css_portfolio_css_0w3-wzy._.single.css.map*/

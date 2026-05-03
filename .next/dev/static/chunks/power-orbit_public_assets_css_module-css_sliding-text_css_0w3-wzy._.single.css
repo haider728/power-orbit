@@ -1,0 +1,223 @@
+/* [project]/power-orbit/public/assets/css/module-css/sliding-text.css [app-client] (css) */
+.sliding-text {
+  z-index: 2;
+  background: linear-gradient(270deg, #ff3c5f 0%, #565ce6 100%);
+  padding: 24px 0;
+  display: block;
+  position: relative;
+}
+
+.sliding-text__wrap {
+  display: block;
+  position: relative;
+}
+
+.sliding-text__list {
+  flex-wrap: nowrap;
+  align-items: center;
+  width: fit-content;
+  display: flex;
+  position: relative;
+}
+
+.sliding-text__list li {
+  float: left;
+  display: flex;
+  position: relative;
+}
+
+.sliding-text__title {
+  color: var(--techguru-white);
+  letter-spacing: -.02em;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  font-family: var(--techguru-font-two);
+  text-transform: capitalize;
+  z-index: 1;
+  background: linear-gradient(266.69deg, #fff3 2.9%, #fff0 96.45%);
+  border-radius: 40px;
+  align-items: center;
+  padding: 20px 32px;
+  font-style: normal;
+  transition: all .3s;
+  display: flex;
+  position: relative;
+}
+
+.sliding-text__title:after {
+  content: "";
+  -webkit-mask-composite: xor;
+  visibility: visible;
+  opacity: 1;
+  z-index: -1;
+  background: linear-gradient(90deg, #ffd25d, #ffd25d03) border-box;
+  border: 1px solid #0000;
+  border-radius: 40px;
+  transition: all .5s;
+  position: absolute;
+  inset: 0;
+  -webkit-mask-image: linear-gradient(#fff 0 0), linear-gradient(#fff 0 0);
+  -webkit-mask-position: 0 0, 0 0;
+  -webkit-mask-size: auto, auto;
+  -webkit-mask-repeat: repeat, repeat;
+  -webkit-mask-clip: padding-box, border-box;
+  -webkit-mask-origin: padding-box, border-box;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  -webkit-mask-source-type: auto, auto;
+  mask-mode: match-source, match-source;
+}
+
+.sliding-text__list li span {
+  -webkit-mask-composite: xor;
+  visibility: visible;
+  opacity: 1;
+  background: linear-gradient(-90deg, #fff, #ffffff03) border-box;
+  border: 1px solid #0000;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  transition: all .5s;
+  display: block;
+  position: relative;
+  -webkit-mask-image: linear-gradient(#fff 0 0), linear-gradient(#fff 0 0);
+  -webkit-mask-position: 0 0, 0 0;
+  -webkit-mask-size: auto, auto;
+  -webkit-mask-repeat: repeat, repeat;
+  -webkit-mask-clip: padding-box, border-box;
+  -webkit-mask-origin: padding-box, border-box;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  -webkit-mask-source-type: auto, auto;
+  mask-mode: match-source, match-source;
+}
+
+.sliding-text-two__wrap {
+  padding-top: 100px;
+  display: block;
+  position: relative;
+}
+
+.sliding-text-two__list {
+  flex-wrap: nowrap;
+  align-items: center;
+  width: fit-content;
+  display: flex;
+  position: relative;
+}
+
+.sliding-text-two__list li {
+  float: left;
+  margin-left: 12px;
+  display: flex;
+  position: relative;
+}
+
+.sliding-text-two__title {
+  color: var(--techguru-white);
+  letter-spacing: .04em;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  font-family: var(--techguru-font-two);
+  text-transform: uppercase;
+  z-index: 1;
+  border-radius: 40px;
+  align-items: center;
+  padding: 11px 28px;
+  font-style: normal;
+  display: flex;
+  position: relative;
+}
+
+.sliding-text-two__title:after {
+  content: "";
+  -webkit-mask-composite: xor;
+  visibility: visible;
+  opacity: 1;
+  z-index: -1;
+  background: linear-gradient(90deg, #8f88ff4d, #5cb0e91a) border-box;
+  border: 1px solid #0000;
+  border-radius: 40px;
+  transition: all .5s;
+  position: absolute;
+  inset: 0;
+  -webkit-mask-image: linear-gradient(#fff 0 0), linear-gradient(#fff 0 0);
+  -webkit-mask-position: 0 0, 0 0;
+  -webkit-mask-size: auto, auto;
+  -webkit-mask-repeat: repeat, repeat;
+  -webkit-mask-clip: padding-box, border-box;
+  -webkit-mask-origin: padding-box, border-box;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  -webkit-mask-source-type: auto, auto;
+  mask-mode: match-source, match-source;
+}
+
+.sliding-text-three {
+  z-index: 2;
+  background: linear-gradient(270deg, #fa5674 0%, #6065d4 100%);
+  padding: 16px 0;
+  display: block;
+  position: relative;
+}
+
+.sliding-text-three__wrap {
+  display: block;
+  position: relative;
+}
+
+.sliding-text-three__list {
+  flex-wrap: nowrap;
+  align-items: center;
+  width: fit-content;
+  display: flex;
+  position: relative;
+}
+
+.sliding-text-three__list li {
+  float: left;
+  display: flex;
+  position: relative;
+}
+
+.sliding-text-three__title {
+  color: var(--techguru-white);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: var(--techguru-font-two);
+  text-transform: uppercase;
+  align-items: center;
+  margin-left: 25px;
+  margin-right: 25px;
+  font-style: normal;
+  display: flex;
+  position: relative;
+}
+
+.sliding-text-three__title:before {
+  width: 0;
+  color: var(--techguru-base);
+  white-space: nowrap;
+  content: attr(data-hover);
+  transition: all .5s cubic-bezier(.17, .67, .32, .87);
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.sliding-text-three__list li:hover .sliding-text-three__title:before {
+  width: 100%;
+}
+
+.sliding-text-three__list li span {
+  color: var(--techguru-base);
+  font-size: 24px;
+  display: inline-block;
+  position: relative;
+}
+
+/*# sourceMappingURL=power-orbit_public_assets_css_module-css_sliding-text_css_0w3-wzy._.single.css.map*/

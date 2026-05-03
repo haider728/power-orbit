@@ -1,0 +1,67 @@
+/* [project]/power-orbit/app/theme-overrides.css [app-client] (css) */
+:root {
+  --techguru-base: #4c36d5;
+  --techguru-base-rgb: 76, 54, 213;
+  --techguru-accent-two: #318be2;
+  --techguru-brand-gradient: linear-gradient(270deg, var(--techguru-base) 0%, var(--techguru-accent-two) 100%);
+}
+
+html, body {
+  background-color: #060610;
+  background-image: radial-gradient(700px 360px at 50% 12%, #8f82ff38 0%, #8f82ff00 65%), radial-gradient(620px 320px at 78% 82%, #64b6ff29 0%, #64b6ff00 68%), none;
+  background-position: 0 0, 0 0, 0 0;
+  background-repeat: repeat, repeat, repeat;
+  background-size: auto, auto, auto;
+  background-attachment: fixed;
+  background-origin: padding-box, padding-box, padding-box;
+  background-clip: border-box, border-box, border-box;
+}
+
+.page-wrapper {
+  background: none;
+  overflow: visible !important;
+}
+
+.about-two, .banner-one, .counter-one, .why-choose-one, .sliding-text, .sliding-text-three, .process-one, .portfolio-one, .blog-one, .services-one, .team-one, .team-two, .team-page, .team-carousel-page, .testimonial-one, .feature-one, .pricing-one, .faq-one, .contact-one, .cta-one, .footer-one, .footer-two {
+  background-color: #0000 !important;
+  background-image: none !important;
+}
+
+.team-two:before, .team-page:before, .team-carousel-page:before {
+  background-color: #0000 !important;
+}
+
+.about-one {
+  background-color: #0000 !important;
+  background-image: none !important;
+}
+
+[class^="about-one__shape"], [class*=" about-one__shape"], [class^="counter-one__shape"], [class*=" counter-one__shape"], [class^="blog-one__shape"], [class*=" blog-one__shape"] {
+  display: none !important;
+}
+
+.thm-btn:before, .thm-btn:after, .main-menu__top-social a:before, .main-menu .main-menu__list > li > a:before, .sticky-header .main-menu__list > li > a:before, .thm-btn, .newsletter-one__contact-form .thm-btn, .newsletter-two__form .thm-btn {
+  background: var(--techguru-brand-gradient) !important;
+}
+
+.thm-btn {
+  border-color: rgba(var(--techguru-base-rgb), .9) !important;
+}
+
+.thm-btn:hover {
+  color: #fff !important;
+}
+
+.section-title__title span, .main-slider__title span, .main-slider-two__title span, .product-details__title span, .footer-widget__title-box h3 span {
+  -webkit-background-clip: initial;
+  background-clip: initial;
+  -webkit-text-fill-color: initial;
+  color: #4f95f1 !important;
+  background: none !important;
+}
+
+.close-btn:hover, .icon i, [class*="__icon"] i {
+  color: var(--techguru-base) !important;
+}
+
+/*# sourceMappingURL=power-orbit_app_theme-overrides_css_0w3-wzy._.single.css.map*/

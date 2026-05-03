@@ -1,0 +1,96 @@
+/* [project]/power-orbit/public/assets/css/module-css/page-header.css [app-client] (css) */
+.page-header {
+  z-index: 1;
+  padding: 248px 0 150px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-header__bg {
+  z-index: -1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  inset: 0;
+}
+
+.page-header__bg:before {
+  content: "";
+  background: linear-gradient(90deg, #0000 0%, #000 100%);
+  position: absolute;
+  inset: 0;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.page-header__bg:after {
+  content: "";
+  background-image: -ms-linear-gradient(-90deg, #101015 0%, #10101500 60%);
+  z-index: 1;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.page-header__inner {
+  display: block;
+  position: relative;
+}
+
+.page-header__inner h2 {
+  color: var(--techguru-white);
+  text-transform: capitalize;
+  margin-bottom: 15px;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 70px;
+}
+
+.thm-breadcrumb__box {
+  background-color: rgba(var(--techguru-white-rgb), .12);
+  z-index: 1;
+  border-radius: 4px;
+  padding: 2px 12px 3px;
+  display: inline-block;
+  position: relative;
+}
+
+.thm-breadcrumb {
+  display: inline-block;
+  position: relative;
+}
+
+.thm-breadcrumb li {
+  color: var(--techguru-white);
+  font-size: 16px;
+  font-weight: 700;
+  transition: all .5s;
+  display: inline-block;
+  position: relative;
+}
+
+.thm-breadcrumb li + li {
+  margin-left: 8px;
+}
+
+.thm-breadcrumb li span {
+  font-size: 10px;
+}
+
+.thm-breadcrumb li a {
+  color: var(--techguru-white);
+  align-items: center;
+  gap: 8px;
+  transition: all .5s;
+  display: inline-flex;
+  position: relative;
+}
+
+.thm-breadcrumb li:hover a {
+  color: var(--techguru-base);
+}
+
+/*# sourceMappingURL=power-orbit_public_assets_css_module-css_page-header_css_0w3-wzy._.single.css.map*/

@@ -1,0 +1,544 @@
+/* [project]/power-orbit/public/assets/css/module-css/contact.css [app-client] (css) */
+.contact-one {
+  z-index: 1;
+  background-color: #0b192c;
+  padding: 140px 0;
+  display: block;
+  position: relative;
+}
+
+.contact-one__bg-shape {
+  z-index: -1;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 825px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.contact-one__left {
+  z-index: 1;
+  background: #38445a;
+  border-radius: 20px;
+  padding: 40px 30px 30px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 11px 38px #8f88ff0f;
+}
+
+.contact-one__left:before {
+  content: "";
+  -webkit-mask-composite: xor;
+  visibility: visible;
+  opacity: 1;
+  z-index: -1;
+  background: linear-gradient(90deg, #5cb0e90a, #8f88ff0d) border-box;
+  border: 3px solid #0000;
+  border-radius: 20px;
+  transition: all .5s;
+  position: absolute;
+  inset: 0;
+  -webkit-mask-image: linear-gradient(#fff 0 0), linear-gradient(#fff 0 0);
+  -webkit-mask-position: 0 0, 0 0;
+  -webkit-mask-size: auto, auto;
+  -webkit-mask-repeat: repeat, repeat;
+  -webkit-mask-clip: padding-box, border-box;
+  -webkit-mask-origin: padding-box, border-box;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  -webkit-mask-source-type: auto, auto;
+  mask-mode: match-source, match-source;
+}
+
+.contact-one__from-title {
+  color: var(--techguru-white);
+  margin-bottom: 46px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.contact-one__form {
+  display: block;
+  position: relative;
+}
+
+.contact-one__input-box {
+  margin-bottom: 31px;
+  transition: all .5s;
+  display: block;
+  position: relative;
+}
+
+.contact-one__input-box:hover:before {
+  background: linear-gradient(90deg, #6065d4, #fa5674) border-box;
+}
+
+.contact-one__input-box:before {
+  content: "";
+  -webkit-mask-composite: xor;
+  visibility: visible;
+  opacity: 1;
+  background: linear-gradient(90deg, #5cb0e933, #8f88ff4d) border-box;
+  border: 1px solid #0000;
+  border-radius: 16px;
+  transition: all .5s;
+  position: absolute;
+  inset: 0;
+  -webkit-mask-image: linear-gradient(#fff 0 0), linear-gradient(#fff 0 0);
+  -webkit-mask-position: 0 0, 0 0;
+  -webkit-mask-size: auto, auto;
+  -webkit-mask-repeat: repeat, repeat;
+  -webkit-mask-clip: padding-box, border-box;
+  -webkit-mask-origin: padding-box, border-box;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  -webkit-mask-source-type: auto, auto;
+  mask-mode: match-source, match-source;
+}
+
+.contact-one__input-title {
+  color: #c5c8cd;
+  margin-bottom: 7px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.contact-one__input-box input[type="text"], .contact-one__input-box input[type="email"] {
+  color: #b3b4b7;
+  z-index: 1;
+  background-color: #0000;
+  border: none;
+  border-radius: 16px;
+  outline: none;
+  width: 100%;
+  height: 52px;
+  padding-left: 15px;
+  padding-right: 45px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 52px;
+  display: block;
+  position: relative;
+}
+
+.contact-one__input-box .select-box {
+  z-index: 99;
+  width: 100%;
+}
+
+.contact-one__input-box .nice-select .list {
+  z-index: 999999;
+}
+
+.contact-one__input-box .nice-select {
+  color: #b3b4b7;
+  float: none;
+  z-index: 3;
+  background-color: #0000;
+  border: none;
+  border-radius: 16px;
+  outline: none;
+  width: 100%;
+  height: 52px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 52px;
+  display: block;
+}
+
+.contact-one__input-box .nice-select:after {
+  z-index: 10;
+  border-bottom: 2px solid #b3b4b7;
+  border-right: 2px solid #b3b4b7;
+  width: 8px;
+  height: 8px;
+  margin-top: 0;
+  position: absolute;
+  top: 22px;
+  right: 30px;
+}
+
+.contact-one__input-box .nice-select .option {
+  color: var(--techguru-black);
+}
+
+.contact-one__input-box .nice-select .option.selected {
+  font-weight: 500;
+}
+
+.contact-one__input-box .nice-select .option:hover, .contact-one__input-box .nice-select .option.focus, .contact-one__input-box .nice-select .option.selected.focus {
+  color: var(--techguru-white);
+}
+
+.contact-one__input-box textarea {
+  width: 100%;
+  height: 200px;
+  color: var(--techguru-gray);
+  background-color: #0000;
+  border: none;
+  border-radius: 16px;
+  outline: none;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 45px;
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+  position: relative;
+}
+
+.contact-one__input-box.text-message-box {
+  height: 200px;
+  margin-bottom: 30px;
+}
+
+.contact-one__btn-box {
+  display: block;
+  position: relative;
+}
+
+.contact-one__btn-box .thm-btn {
+  border: none;
+}
+
+.contact-one__input-icon {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+}
+
+.contact-one__input-icon span {
+  color: #b3b4b7;
+  font-size: 18px;
+  display: inline-block;
+  position: relative;
+}
+
+.contact-one__left-shape-1 {
+  opacity: .1;
+  z-index: -1;
+  background: linear-gradient(270deg, #5cb0e9 0%, #3d72fc 100%);
+  border-radius: 50%;
+  width: 138px;
+  height: 138px;
+  position: absolute;
+  bottom: -57px;
+  right: -10px;
+}
+
+.contact-one__left-shape-2 {
+  opacity: .1;
+  z-index: -1;
+  background: linear-gradient(270deg, #5cb0e9 0%, #3d72fc 100%);
+  border-radius: 50%;
+  width: 138px;
+  height: 138px;
+  position: absolute;
+  bottom: -28px;
+  right: -54px;
+}
+
+.contact-one__right {
+  margin-top: 10px;
+  margin-left: 40px;
+  display: block;
+  position: relative;
+}
+
+.contact-one__right .section-title {
+  margin-bottom: 24px;
+}
+
+.contact-one__list {
+  width: 100%;
+  max-width: 406px;
+  margin-top: 43px;
+  display: block;
+  position: relative;
+}
+
+.contact-one__list li {
+  border-bottom: 1px solid rgba(var(--techguru-white-rgb), .24);
+  align-items: flex-start;
+  gap: 25px;
+  padding-bottom: 31px;
+  display: flex;
+  position: relative;
+}
+
+.contact-one__list li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.contact-one__list li + li {
+  margin-top: 27px;
+}
+
+.contact-one__list li .icon {
+  z-index: 1;
+  background: linear-gradient(270deg, #5cb0e9 0%, #3d72fc 100%);
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  transition: all .5s;
+  display: flex;
+  position: relative;
+  top: 5px;
+}
+
+.contact-one__list li .icon:before {
+  content: "";
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
+  background: linear-gradient(270deg, #fa5674 0%, #6065d4 100%);
+  border-radius: 12px;
+  width: 50%;
+  height: 0;
+  transition: all .4s ease-in-out;
+  position: absolute;
+  inset: 0;
+}
+
+.contact-one__list li:hover .icon:before {
+  visibility: visible;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-one__list li .icon span {
+  color: var(--techguru-white);
+  font-size: 22px;
+  display: inline-block;
+  position: relative;
+}
+
+.contact-one__list li .content {
+  flex: 1;
+  display: block;
+  position: relative;
+}
+
+.contact-one__list li .content h4 {
+  color: var(--techguru-white);
+  margin-bottom: 4px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.contact-one__list li .content p a {
+  color: var(--techguru-gray);
+}
+
+.contact-one__list li .content p a:hover {
+  color: var(--techguru-base);
+}
+
+.contact-two {
+  z-index: 1;
+  background-color: #101d30;
+  padding: 140px 0;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-two__bg {
+  z-index: 1;
+  background-position: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  width: calc(25% - 85px);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.contact-two__shape-1 {
+  mix-blend-mode: lighten;
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.contact-two__shape-1 img {
+  width: auto;
+}
+
+.contact-two__shape-2 {
+  filter: blur(120px);
+  opacity: .3;
+  z-index: -1;
+  background: radial-gradient(50% 50%, #6065d5bf 0%, #070c1400 100%);
+  position: absolute;
+  inset: -5.75% 41.88% -5.73% 8.02%;
+}
+
+.contact-two__left {
+  margin-left: 150px;
+  display: block;
+  position: relative;
+}
+
+.contact-two__left .section-title {
+  margin-bottom: 22px;
+}
+
+.contact-two__contact-list {
+  width: 100%;
+  max-width: 410px;
+  margin-top: 30px;
+  display: block;
+  position: relative;
+}
+
+.contact-two__contact-list li {
+  background-color: #ffffff0a;
+  border: 1px solid #ffffff1a;
+  border-radius: 20px;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 19px 15px 13px;
+  display: flex;
+  position: relative;
+}
+
+.contact-two__contact-list li + li {
+  margin-top: 12px;
+}
+
+.contact-two__contact-list li .icon {
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  position: relative;
+}
+
+.contact-two__contact-list li .icon:before {
+  content: "";
+  z-index: -1;
+  background: linear-gradient(270deg, #5cb0e9 0%, #3d72fc 100%);
+  border-radius: 16px;
+  position: absolute;
+  inset: 0;
+}
+
+.contact-two__contact-list li .icon:after {
+  content: "";
+  opacity: 0;
+  z-index: -1;
+  background: linear-gradient(270deg, #fa5674 0%, #6065d4 100%);
+  border-radius: 16px;
+  transition: all .5s;
+  position: absolute;
+  inset: 0;
+}
+
+.contact-two__contact-list li:hover .icon:after {
+  opacity: 1;
+}
+
+.contact-two__contact-list li .icon span {
+  color: var(--techguru-white);
+  font-size: 20px;
+  display: inline-block;
+  position: relative;
+}
+
+.contact-two__contact-list li .content {
+  flex: 1;
+  display: block;
+  position: relative;
+}
+
+.contact-two__contact-list li .content span {
+  text-transform: capitalize;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(270deg, #5cb0e9 0%, #3d72fc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.contact-two__contact-list li .content p {
+  color: var(--techguru-white);
+  margin-top: 1px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 31px;
+}
+
+.contact-two__contact-list li .content p a {
+  color: var(--techguru-white);
+}
+
+.contact-two__contact-list li .content p a:hover {
+  color: var(--techguru-base);
+}
+
+.contact-two__right {
+  background-color: rgba(var(--techguru-white-rgb), .05);
+  border-radius: 20px;
+  padding: 35px;
+  display: block;
+  position: relative;
+}
+
+.contact-two__sliding-text-list {
+  flex-wrap: nowrap;
+  align-items: center;
+  width: fit-content;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.contact-two__sliding-text-list li {
+  float: left;
+  margin-left: 60px;
+  display: flex;
+  position: relative;
+}
+
+.contact-two__sliding-text-title {
+  font-size: 200px;
+  font-weight: 400;
+  line-height: 251px;
+  font-family: var(--techguru-font-two);
+  text-transform: uppercase;
+  background: linear-gradient(#ffffff0d 0%, #fff0 67.4%);
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  align-items: center;
+  font-style: normal;
+  display: flex;
+  position: relative;
+}
+
+/*# sourceMappingURL=power-orbit_public_assets_css_module-css_contact_css_0w3-wzy._.single.css.map*/

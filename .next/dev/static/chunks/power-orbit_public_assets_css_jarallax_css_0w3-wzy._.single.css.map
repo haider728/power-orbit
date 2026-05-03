@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/power-orbit/public/assets/css/jarallax.css"],"sourcesContent":[".jarallax {\n    position: relative;\n    z-index: 0;\n}\n.jarallax > .jarallax-img {\n    position: absolute;\n    -o-object-fit: cover;\n       object-fit: cover;\n    /* support for plugin https://github.com/bfred-it/object-fit-images */\n    font-family: 'object-fit: cover;';\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    z-index: -1;\n}"],"names":[],"mappings":"AAAA;;;;;AAIA"}}]
+}

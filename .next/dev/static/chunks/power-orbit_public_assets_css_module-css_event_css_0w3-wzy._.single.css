@@ -1,0 +1,439 @@
+/* [project]/power-orbit/public/assets/css/module-css/event.css [app-client] (css) */
+.event-one {
+  background-color: var(--techguru-black);
+  z-index: 1;
+  padding: 140px 0 110px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.event-one:before {
+  content: "";
+  background-color: rgba(var(--techguru-white-rgb), .05);
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+}
+
+.event-one__shape-1 {
+  mix-blend-mode: screen;
+  opacity: .2;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.event-one__shape-1 img {
+  width: auto;
+}
+
+.event-one__shape-2 {
+  mix-blend-mode: screen;
+  opacity: .1;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: -30px;
+}
+
+.event-one__shape-2 img {
+  width: auto;
+}
+
+.event-one__shape-3 {
+  opacity: .4;
+  filter: blur(120px);
+  z-index: -1;
+  background: radial-gradient(50% 50%, #6669d8 0%, #070c1400 100%);
+  border-radius: 50%;
+  width: 962px;
+  height: 964px;
+  position: absolute;
+  top: 0;
+  left: -265px;
+}
+
+.event-one__shape-4 {
+  opacity: .4;
+  filter: blur(120px);
+  z-index: -1;
+  background: radial-gradient(50% 50%, #fa5674a1 0%, #070c1400 100%);
+  border-radius: 50%;
+  width: 962px;
+  height: 964px;
+  position: absolute;
+  bottom: 0;
+  right: -315px;
+}
+
+.event-one__top {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 58px;
+  display: flex;
+  position: relative;
+}
+
+.event-one__top .section-title {
+  margin-bottom: 0;
+}
+
+.event-one__top-btn-box {
+  display: block;
+  position: relative;
+  top: -11px;
+}
+
+.event-one__bottom, .event-one__left {
+  display: block;
+  position: relative;
+}
+
+.event-one__img {
+  z-index: 1;
+  border-radius: 40px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.event-one__img img {
+  border-radius: 40px;
+  width: 100%;
+}
+
+.event-one__video-link {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%)translateX(-50%);
+}
+
+.event-one__video-link .play-btn {
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  color: var(--techguru-white);
+  cursor: pointer;
+  -o-transition: all .5s ease;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 60px;
+  transition: all .5s;
+  display: flex;
+  position: relative;
+}
+
+.event-one__video-link .play-btn:after {
+  content: "";
+  z-index: -1;
+  background: linear-gradient(270deg, #5cb0e9 0%, #3d72fc 100%);
+  border-radius: 50%;
+  position: absolute;
+  inset: 0;
+}
+
+.event-one__video-link .play-btn:before {
+  content: "";
+  -webkit-mask-composite: xor;
+  visibility: visible;
+  opacity: .2;
+  z-index: -1;
+  background: linear-gradient(90deg, #8f88ff, #5cb0e9) border-box;
+  border: 10px solid #0000;
+  border-radius: 50%;
+  transition: all .5s;
+  position: absolute;
+  inset: -10px;
+  -webkit-mask-image: linear-gradient(#fff 0 0), linear-gradient(#fff 0 0);
+  -webkit-mask-position: 0 0, 0 0;
+  -webkit-mask-size: auto, auto;
+  -webkit-mask-repeat: repeat, repeat;
+  -webkit-mask-clip: padding-box, border-box;
+  -webkit-mask-origin: padding-box, border-box;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  -webkit-mask-source-type: auto, auto;
+  mask-mode: match-source, match-source;
+}
+
+.event-one__video-link .play-btn:hover {
+  background-color: var(--techguru-base);
+  color: var(--techguru-black);
+}
+
+.event-one__video-link .ripple, .event-one__video-link .play-btn .ripple:before, .event-one__video-link .play-btn .ripple:after {
+  -ms-box-shadow: 0 0 0 0 rgba(var(--techguru-white-rgb), .6);
+  -o-box-shadow: 0 0 0 0 rgba(var(--techguru-white-rgb), .6);
+  width: 76px;
+  height: 76px;
+  box-shadow: 0 0 0 0 rgba(var(--techguru-white-rgb), .6);
+  border-radius: 50%;
+  animation: 3s infinite ripple;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.event-one__video-link .play-btn .ripple:before {
+  content: "";
+  animation-delay: .9s;
+  position: absolute;
+}
+
+.event-one__video-link .play-btn .ripple:after {
+  content: "";
+  animation-delay: .6s;
+  position: absolute;
+}
+
+.event-one__right {
+  margin-left: 50px;
+  display: block;
+  position: relative;
+}
+
+.event-one__single {
+  z-index: 1;
+  background-color: #151c30;
+  border-radius: 40px;
+  margin-bottom: 30px;
+  display: block;
+  position: relative;
+}
+
+.event-one__single:before {
+  content: "";
+  border: 1px solid rgba(var(--techguru-white-rgb), .1);
+  z-index: -1;
+  border-radius: 40px;
+  position: absolute;
+  inset: 0;
+}
+
+.event-one__title-and-countdown-box {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  display: flex;
+  position: relative;
+}
+
+.event-one__title {
+  display: block;
+  position: relative;
+}
+
+.event-one__title h5 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34px;
+}
+
+.event-one__title h5 a {
+  color: var(--techguru-white);
+}
+
+.event-one__title h5 a:hover {
+  color: var(--techguru-base);
+}
+
+.event-one__title p {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.event-one__countdown-box, .event-one__countdown-box .timer-box {
+  display: block;
+  position: relative;
+}
+
+.event-one__countdown-box .timer-box .countdown-timer .event-one-countdown {
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 35px;
+  display: flex;
+  position: relative;
+}
+
+.event-one__countdown-box .timer-box .countdown-timer li {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.event-one__countdown-box .timer-box .countdown-timer li:before {
+  content: ":";
+  color: var(--techguru-white);
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  left: -20px;
+}
+
+.event-one__countdown-box .timer-box .countdown-timer li:first-child:before {
+  display: none;
+}
+
+.event-one__countdown-box .timer-box .countdown-timer li .box {
+  text-align: center;
+  display: block;
+  position: relative;
+}
+
+.event-one__countdown-box .timer-box .countdown-timer li span.days, .event-one__countdown-box .timer-box .countdown-timer li span.hours, .event-one__countdown-box .timer-box .countdown-timer li span.minutes, .event-one__countdown-box .timer-box .countdown-timer li span.seconds {
+  text-transform: capitalize;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(270deg, #fa5674 0%, #6065d4 100%);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  font-family: var(--techguru-font);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.event-one__countdown-box .timer-box .countdown-timer li span.timeRef {
+  color: var(--techguru-gray);
+  text-transform: uppercase;
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  display: block;
+  position: relative;
+}
+
+.event-one__meta-and-btn-box {
+  border: 1px solid rgba(var(--techguru-white-rgb), .1);
+  z-index: 2;
+  background-color: #2d384e;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 30px;
+  display: flex;
+  position: relative;
+}
+
+.event-one__meta {
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.event-one__meta li {
+  display: block;
+  position: relative;
+}
+
+.event-one__meta li + li {
+  margin-left: 18px;
+}
+
+.event-one__meta li a {
+  color: var(--techguru-gray);
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  transition: all .5s;
+  display: flex;
+  position: relative;
+}
+
+.event-one__meta li a:hover {
+  color: var(--techguru-base);
+}
+
+.event-one__meta li a span {
+  color: var(--techguru-base);
+  margin-right: 6px;
+  font-size: 16px;
+  position: relative;
+}
+
+.event-one__btn-box {
+  display: block;
+  position: relative;
+}
+
+.event-one__btn {
+  color: var(--techguru-white);
+  z-index: 1;
+  border-radius: 22px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 24px 9px;
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.event-one__btn:hover {
+  color: var(--techguru-black);
+}
+
+.event-one__btn:before {
+  content: "";
+  -webkit-mask-composite: xor;
+  visibility: visible;
+  opacity: 1;
+  z-index: -1;
+  background: linear-gradient(90deg, #6065d4, #fa5674) border-box;
+  border: 1px solid #0000;
+  border-radius: 35px;
+  transition: all .5s;
+  position: absolute;
+  inset: 0;
+  -webkit-mask-image: linear-gradient(#fff 0 0), linear-gradient(#fff 0 0);
+  -webkit-mask-position: 0 0, 0 0;
+  -webkit-mask-size: auto, auto;
+  -webkit-mask-repeat: repeat, repeat;
+  -webkit-mask-clip: padding-box, border-box;
+  -webkit-mask-origin: padding-box, border-box;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  -webkit-mask-source-type: auto, auto;
+  mask-mode: match-source, match-source;
+}
+
+.event-one__btn:after {
+  background-color: var(--techguru-base);
+  content: "";
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
+  border-radius: 22px;
+  width: 50%;
+  height: 0;
+  transition: all .4s ease-in-out;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.event-one__btn:hover:after {
+  visibility: visible;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=power-orbit_public_assets_css_module-css_event_css_0w3-wzy._.single.css.map*/

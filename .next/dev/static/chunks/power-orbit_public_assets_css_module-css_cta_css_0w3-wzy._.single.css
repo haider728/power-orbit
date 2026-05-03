@@ -1,0 +1,254 @@
+/* [project]/power-orbit/public/assets/css/module-css/cta.css [app-client] (css) */
+.cta-one {
+  background-color: var(--techguru-black);
+  z-index: 1;
+  padding: 108px 0;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-one__shape-bg {
+  opacity: .2;
+  mix-blend-mode: soft-light;
+  z-index: -1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  inset: 0;
+}
+
+.cta-one__inner {
+  z-index: 1;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.cta-one__title {
+  color: var(--techguru-white);
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+.cta-one__contact-info {
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  display: flex;
+  position: relative;
+}
+
+.cta-one__contact-icon {
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.cta-one__contact-icon span {
+  color: var(--techguru-white);
+  font-size: 45px;
+  display: inline-block;
+  position: relative;
+}
+
+.cta-one__contact-details {
+  flex: 1;
+  display: block;
+  position: relative;
+}
+
+.cta-one__contact-details p {
+  color: var(--techguru-white);
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.cta-one__contact-details h4 {
+  margin-top: 8px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.cta-one__contact-details h4 a, .cta-one__contact-details h4 a:hover {
+  color: var(--techguru-base);
+}
+
+.cta-two {
+  z-index: 1;
+  display: block;
+  position: relative;
+}
+
+.cta-two__shape-1 {
+  opacity: .1;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cta-two__shape-1 img {
+  width: auto;
+}
+
+.cta-two__shape-2 {
+  opacity: .1;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.cta-two__shape-2 img {
+  width: auto;
+}
+
+.cta-two__bg-color {
+  z-index: -1;
+  background: linear-gradient(270deg, #5cb0e9 0%, #3d72fc 100%);
+  position: absolute;
+  inset: 100px 0 0;
+}
+
+.cta-two__left {
+  margin-top: 185px;
+  display: block;
+  position: relative;
+}
+
+.cta-two__left .section-title {
+  margin-bottom: 32px;
+}
+
+.cta-two__left .section-title__tagline {
+  -webkit-text-fill-color: var(--techguru-white);
+  background: none;
+  background-clip: none;
+  color: var(--techguru-white);
+}
+
+.cta-two__left .section-title__tagline-shape-1, .cta-two__left .section-title__tagline-shape-2 {
+  background: linear-gradient(270deg, #fff 0% 100%);
+}
+
+.cta-two__btn-box {
+  display: block;
+  position: relative;
+}
+
+.cta-two__btn-box .thm-btn {
+  color: var(--techguru-black);
+  background: linear-gradient(270deg, #fff 0% 100%);
+}
+
+.cta-two__right {
+  background-color: #445366;
+  border-top-right-radius: 12px;
+  margin-left: 18px;
+  padding: 38px 50px 40px;
+  display: block;
+  position: relative;
+}
+
+.cta-two__right:before {
+  content: "";
+  border-top: 100px solid #0000;
+  border-right: 60px solid #445366ab;
+  position: absolute;
+  top: 0;
+  left: -60px;
+}
+
+.cta-two__title {
+  color: var(--techguru-white);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.cta-two__text {
+  color: var(--techguru-white);
+  margin: 17px 0 30px;
+}
+
+.cta-two__list {
+  display: block;
+  position: relative;
+}
+
+.cta-two__list li {
+  border-top: 1px solid rgba(var(--techguru-white-rgb), .24);
+  align-items: flex-start;
+  gap: 25px;
+  padding-top: 30px;
+  display: flex;
+  position: relative;
+}
+
+.cta-two__list li + li {
+  margin-top: 30px;
+}
+
+.cta-two__list li .icon {
+  z-index: 1;
+  background: linear-gradient(270deg, #5cb0e9 0%, #3d72fc 100%);
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  position: relative;
+}
+
+.cta-two__list li .icon:before {
+  content: "";
+  opacity: 0;
+  z-index: -1;
+  background: linear-gradient(270deg, #fa5674 0%, #6065d4 100%);
+  border-radius: 12px;
+  transition: all .5s;
+  position: absolute;
+  inset: 0;
+}
+
+.cta-two__list li:hover .icon:before {
+  opacity: 1;
+}
+
+.cta-two__list li .icon span {
+  color: var(--techguru-white);
+  font-size: 20px;
+  display: inline-block;
+  position: relative;
+}
+
+.cta-two__list li .content {
+  flex: 1;
+  display: block;
+  position: relative;
+}
+
+.cta-two__list li .content h4 {
+  color: var(--techguru-white);
+  margin-bottom: 4px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.cta-two__list li .content p a {
+  color: var(--techguru-gray);
+}
+
+.cta-two__list li .content p a:hover {
+  color: var(--techguru-base);
+}
+
+/*# sourceMappingURL=power-orbit_public_assets_css_module-css_cta_css_0w3-wzy._.single.css.map*/

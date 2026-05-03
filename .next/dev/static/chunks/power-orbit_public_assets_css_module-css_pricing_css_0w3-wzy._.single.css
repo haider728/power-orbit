@@ -1,0 +1,616 @@
+/* [project]/power-orbit/public/assets/css/module-css/pricing.css [app-client] (css) */
+.pricing-one {
+  background-color: var(--techguru-black);
+  z-index: 1;
+  padding: 140px 0 110px;
+  display: block;
+  position: relative;
+}
+
+.pricing-one__single {
+  z-index: 1;
+  background: linear-gradient(157.36deg, #0c182c 0%, #0c182c1a 98.82%);
+  border-radius: 40px;
+  margin-bottom: 30px;
+  padding: 43px 45px 45px;
+  transition: all .5s;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-one__single:after {
+  content: "";
+  opacity: 0;
+  z-index: -1;
+  background: linear-gradient(157.36deg, #083174 0%, #0c182c1a 98.82%);
+  width: 100%;
+  height: 100%;
+  transition: all .3s ease-out;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  transform: translate(0%);
+}
+
+.pricing-one__single.active:after {
+  opacity: .8;
+}
+
+.pricing-one__single:before {
+  content: "";
+  -webkit-mask-composite: xor;
+  visibility: visible;
+  opacity: 1;
+  z-index: -1;
+  background: linear-gradient(-70deg, #8f88ff00, #5cb0e9) border-box;
+  border: 1px solid #0000;
+  border-radius: 40px;
+  transition: all .5s;
+  position: absolute;
+  inset: 0;
+  -webkit-mask-image: linear-gradient(#fff 0 0), linear-gradient(#fff 0 0);
+  -webkit-mask-position: 0 0, 0 0;
+  -webkit-mask-size: auto, auto;
+  -webkit-mask-repeat: repeat, repeat;
+  -webkit-mask-clip: padding-box, border-box;
+  -webkit-mask-origin: padding-box, border-box;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  -webkit-mask-source-type: auto, auto;
+  mask-mode: match-source, match-source;
+}
+
+.pricing-one__icon {
+  z-index: 2;
+  position: absolute;
+  top: 46px;
+  right: 46px;
+}
+
+.pricing-one__icon img {
+  width: auto;
+}
+
+.pricing-one__sub-title {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: var(--techguru-font-two);
+  color: var(--techguru-base);
+  text-transform: uppercase;
+}
+
+.pricing-one__price {
+  color: var(--techguru-white);
+  margin: 14px 0 19px;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.pricing-one__text {
+  text-transform: capitalize;
+  color: var(--techguru-white);
+  padding-bottom: 31px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.pricing-one__bdr {
+  background: linear-gradient(270deg, #fff0 32%, #7b98f6 99%, #8f88ff 100%);
+  width: 100%;
+  height: 1px;
+  margin-bottom: 27px;
+  display: block;
+  position: relative;
+}
+
+.pricing-one__points-title {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(270deg, #5cb0e9 0%, #3d72fc 100%);
+  text-transform: capitalize;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34px;
+}
+
+.pricing-one__points {
+  margin: 23px 0 40px;
+  display: block;
+  position: relative;
+}
+
+.pricing-one__points li {
+  align-items: center;
+  gap: 15px;
+  display: flex;
+  position: relative;
+}
+
+.pricing-one__points li + li {
+  margin-top: 20px;
+}
+
+.pricing-one__points li .icon {
+  display: inline-block;
+  position: relative;
+}
+
+.pricing-one__points li .icon span {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(270deg, #5cb0e9 0%, #3d72fc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 17px;
+  display: inline-block;
+  position: relative;
+}
+
+.pricing-one__points li:nth-child(4) .icon span, .pricing-one__points li:nth-child(5) .icon span {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(270deg, #c5c8cd 0% 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  transform: rotate(-45deg);
+}
+
+.pricing-one__points li p {
+  color: var(--techguru-white);
+}
+
+.pricing-one__points li:nth-child(4) p, .pricing-one__points li:nth-child(5) p {
+  color: #c5c8cd;
+}
+
+.pricing-one__btn-box {
+  display: block;
+  position: relative;
+}
+
+.pricing-one__btn {
+  vertical-align: middle;
+  -webkit-appearance: none;
+  width: 100%;
+  color: var(--techguru-white);
+  text-transform: capitalize;
+  z-index: 1;
+  background: linear-gradient(270deg, #fa5674 0%, #6065d4 100%);
+  border-radius: 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 25px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  transition: all .5s linear;
+  display: inline-flex;
+  position: relative;
+  overflow: hidden;
+  outline: none !important;
+}
+
+.pricing-one__btn:hover {
+  color: var(--techguru-white);
+}
+
+.pricing-one__btn:after {
+  content: "";
+  opacity: 0;
+  z-index: -1;
+  background: linear-gradient(270deg, #5cb0e9 0%, #3d72fc 100%);
+  width: 100%;
+  height: 100%;
+  transition: all .3s ease-out;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  transform: translate(0%);
+}
+
+.pricing-one__btn:hover:after {
+  opacity: .8;
+}
+
+.pricing-two {
+  background-color: var(--techguru-black);
+  z-index: 1;
+  padding: 140px 0;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-two__sec-shape-1 {
+  opacity: .4;
+  filter: blur(120px);
+  z-index: -1;
+  background: radial-gradient(50% 50%, #6065d5a8 0%, #070c1400 100%);
+  position: absolute;
+  inset: -7.86% 54.64% 5.58% -20.57%;
+}
+
+.pricing-two__sec-shape-2 {
+  opacity: .3;
+  filter: blur(120px);
+  z-index: -1;
+  background: radial-gradient(50% 50%, #6669d8 0%, #070c1400 100%);
+  position: absolute;
+  inset: 0% 17.99% .69%;
+}
+
+.pricing-two__sec-shape-3 {
+  opacity: .7;
+  filter: blur(120px);
+  z-index: -1;
+  background: radial-gradient(50% 50%, #8f88ff6e 0%, #070c1400 100%);
+  position: absolute;
+  inset: 7.86% -36.77% -18.7% 65.31%;
+}
+
+.pricing-two__main-tab-box {
+  display: block;
+  position: relative;
+}
+
+.pricing-two__main-tab-box .tab-buttons {
+  border-radius: 40px;
+  justify-content: center;
+  align-items: center;
+  width: 390px;
+  height: 50px;
+  margin: 0 auto 50px;
+  display: flex;
+  position: relative;
+}
+
+.pricing-two__main-tab-box .tab-buttons:before {
+  content: "";
+  -webkit-mask-composite: xor;
+  visibility: visible;
+  opacity: 1;
+  z-index: -1;
+  background: linear-gradient(90deg, #6065d4, #fa5674) border-box;
+  border: 1px solid #0000;
+  border-radius: 25px;
+  transition: all .5s;
+  position: absolute;
+  inset: 0;
+  -webkit-mask-image: linear-gradient(#fff 0 0), linear-gradient(#fff 0 0);
+  -webkit-mask-position: 0 0, 0 0;
+  -webkit-mask-size: auto, auto;
+  -webkit-mask-repeat: repeat, repeat;
+  -webkit-mask-clip: padding-box, border-box;
+  -webkit-mask-origin: padding-box, border-box;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  -webkit-mask-source-type: auto, auto;
+  mask-mode: match-source, match-source;
+}
+
+.pricing-two__main-tab-box .tab-buttons .tab-btn {
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.pricing-two__main-tab-box .tab-buttons .tab-btn + .tab-btn {
+  margin-left: 0;
+}
+
+.pricing-two__main-tab-box .tab-buttons .tab-btn span {
+  text-align: center;
+  color: var(--techguru-white);
+  cursor: pointer;
+  text-transform: uppercase;
+  z-index: 1;
+  background-color: #0000;
+  border-radius: 25px;
+  padding: 17px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  transition: all .5s linear;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-two__main-tab-box .tab-buttons .tab-btn span:before {
+  content: "";
+  z-index: -1;
+  background: linear-gradient(270deg, #fa5674 0%, #6065d4 100%);
+  height: 0%;
+  transition: all .3s;
+  position: absolute;
+  inset: 0;
+}
+
+.pricing-two__main-tab-box .tab-buttons .tab-btn.active-btn span:before {
+  height: 100%;
+}
+
+.pricing-two__main-tab-box .tabs-content {
+  display: block;
+  position: relative;
+}
+
+.pricing-two__main-tab-box .tabs-content .tab {
+  z-index: 10;
+  transition: all .6s;
+  display: none;
+  position: relative;
+  transform: translateX(35px);
+}
+
+.pricing-two__main-tab-box .tabs-content .tab.active-tab {
+  margin-top: 0;
+  display: block;
+  transform: translateX(0);
+}
+
+.pricing-two__inner {
+  margin-left: 30px;
+  margin-right: 30px;
+  display: block;
+  position: relative;
+}
+
+.pricing-two__inner .row {
+  --bs-gutter-x: 0px;
+}
+
+.pricing-two__single {
+  border: 1px solid rgba(var(--techguru-white-rgb), .1);
+  z-index: 1;
+  background-color: #1d253f;
+  border-radius: 40px;
+  padding: 40px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-two__single-shape-1 {
+  opacity: .05;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.pricing-two__single-shape-1 img {
+  width: auto;
+}
+
+.pricing-two__single-shape-2 {
+  opacity: .1;
+  mix-blend-mode: screen;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.pricing-two__single-shape-2 img {
+  width: auto;
+}
+
+.pricing-two__shape-1 {
+  opacity: .05;
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+
+.pricing-two__shape-1 img {
+  width: auto;
+}
+
+.pricing-two__shape-2 {
+  opacity: .05;
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.pricing-two__shape-2 img {
+  width: auto;
+}
+
+.pricing-two__shape-3 {
+  opacity: .05;
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.pricing-two__shape-3 img {
+  width: auto;
+}
+
+.pricing-two__single-1 {
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-top: 50px;
+}
+
+.pricing-two__single-3 {
+  border-left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-top: 50px;
+}
+
+.pricing-two__single-2 {
+  background: linear-gradient(360deg, #10183c 0%, #14235c 100%);
+  border: 0;
+  box-shadow: 0 0 20px #0000001f;
+}
+
+.pricing-two__single-3 {
+  border-left: 0;
+}
+
+.pricing-two__sub-title {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: var(--techguru-font-two);
+  color: var(--techguru-base);
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  position: relative;
+}
+
+.pricing-two__price {
+  color: var(--techguru-white);
+  text-align: center;
+  margin: 14px 0 19px;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.pricing-two__text {
+  text-transform: capitalize;
+  color: var(--techguru-white);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.pricing-two__btn-box {
+  margin: 31px 0 26px;
+  display: block;
+  position: relative;
+}
+
+.pricing-two__btn {
+  vertical-align: middle;
+  -webkit-appearance: none;
+  width: 100%;
+  color: var(--techguru-white);
+  text-transform: capitalize;
+  z-index: 1;
+  background: linear-gradient(270deg, #fa5674 0%, #6065d4 100%);
+  border-radius: 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 25px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  transition: all .5s linear;
+  display: inline-flex;
+  position: relative;
+  overflow: hidden;
+  outline: none !important;
+}
+
+.pricing-two__btn:hover {
+  color: var(--techguru-white);
+}
+
+.pricing-two__btn:after {
+  content: "";
+  opacity: 0;
+  z-index: -1;
+  background: linear-gradient(270deg, #5cb0e9 0%, #3d72fc 100%);
+  width: 100%;
+  height: 100%;
+  transition: all .3s ease-out;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  transform: translate(0%);
+}
+
+.pricing-two__btn:hover:after {
+  opacity: .8;
+}
+
+.pricing-two__points-title {
+  color: var(--techguru-base);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34px;
+}
+
+.pricing-two__points {
+  margin: 23px 0 0;
+  display: block;
+  position: relative;
+}
+
+.pricing-two__points li {
+  align-items: center;
+  gap: 15px;
+  display: flex;
+  position: relative;
+}
+
+.pricing-two__points li + li {
+  margin-top: 20px;
+}
+
+.pricing-two__points li .icon {
+  display: inline-block;
+  position: relative;
+}
+
+.pricing-two__points li .icon span {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(270deg, #5cb0e9 0%, #3d72fc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 17px;
+  display: inline-block;
+  position: relative;
+}
+
+.pricing-two__single-2 .pricing-two__points li:nth-child(3) .icon span {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(270deg, #5cb0e9 0%, #3d72fc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  transform: rotate(0);
+}
+
+.pricing-two__points li:nth-child(3) .icon span, .pricing-two__points li:nth-child(4) .icon span, .pricing-two__points li:nth-child(5) .icon span {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(270deg, #c5c8cd 0% 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  transform: rotate(-45deg);
+}
+
+.pricing-two__points li p {
+  color: var(--techguru-white);
+}
+
+.pricing-two__points li:nth-child(4) p, .pricing-two__points li:nth-child(5) p {
+  color: #c5c8cd;
+}
+
+.pricing-two__unlimited-offer {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+/*# sourceMappingURL=power-orbit_public_assets_css_module-css_pricing_css_0w3-wzy._.single.css.map*/

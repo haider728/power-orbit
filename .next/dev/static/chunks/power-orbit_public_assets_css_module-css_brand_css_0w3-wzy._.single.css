@@ -1,0 +1,75 @@
+/* [project]/power-orbit/public/assets/css/module-css/brand.css [app-client] (css) */
+.brand-one {
+  border-top: 1px solid rgba(var(--techguru-white-rgb), .2);
+  z-index: 1;
+  margin-top: 140px;
+  padding: 25px 0 25px 535px;
+  display: block;
+  position: relative;
+}
+
+.brand-one__left {
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  display: flex;
+  position: relative;
+}
+
+.brand-one__left:before {
+  content: "";
+  background-color: rgba(var(--techguru-white-rgb), .2);
+  width: 1px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -15px;
+}
+
+.brand-one__img-list {
+  flex-wrap: wrap;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.brand-one__img-list li {
+  display: block;
+  position: relative;
+}
+
+.brand-one__img-list li + li {
+  margin-left: -15px;
+}
+
+.brand-one__img-box {
+  border-radius: 50%;
+  width: 48px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.brand-one__img-box img {
+  border: 1px solid var(--techguru-gray);
+  border-radius: 50%;
+  width: 100%;
+}
+
+.brand-one__right, .brand-one__carousel, .brand-one__single, .brand-one__img {
+  display: block;
+  position: relative;
+}
+
+.brand-one__img img {
+  opacity: .2;
+  margin: 0 auto;
+  transition: all .5s;
+  width: auto !important;
+}
+
+.brand-one__single:hover .brand-one__img img {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=power-orbit_public_assets_css_module-css_brand_css_0w3-wzy._.single.css.map*/

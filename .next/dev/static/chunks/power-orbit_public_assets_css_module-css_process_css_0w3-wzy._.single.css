@@ -1,0 +1,346 @@
+/* [project]/power-orbit/public/assets/css/module-css/process.css [app-client] (css) */
+.process-one {
+  background-color: var(--techguru-black);
+  counter-reset: count;
+  z-index: 1;
+  padding: 132px 0 133px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.process-one:before {
+  content: "";
+  background-color: rgba(var(--techguru-white-rgb), .05);
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+}
+
+.process-one__bg-shape {
+  opacity: .1;
+  z-index: -1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 192px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.process-one__shape-1 {
+  z-index: -1;
+  position: absolute;
+  bottom: 80px;
+  left: 730px;
+}
+
+.process-one__shape-1 img {
+  width: auto;
+}
+
+.process-one__shape-2 {
+  opacity: .3;
+  filter: blur(120px);
+  z-index: -1;
+  background: radial-gradient(50% 50%, #6669d8 0%, #070c1400 100%);
+  position: absolute;
+  inset: -29.21% 49.9% -1.72% 0%;
+}
+
+.process-one__shape-3 {
+  opacity: .7;
+  filter: blur(120px);
+  z-index: -1;
+  background: radial-gradient(50% 50%, #e8165566 0%, #070c1400 100%);
+  width: 740px;
+  height: 456px;
+  position: absolute;
+  top: 145px;
+  right: 320px;
+}
+
+.process-one__left {
+  margin-top: 34px;
+  display: block;
+  position: relative;
+}
+
+.process-one__left .section-title {
+  margin-bottom: 25px;
+}
+
+.process-one__btn-box {
+  margin-top: 23px;
+  display: block;
+  position: relative;
+}
+
+.process-one__right {
+  margin-left: 30px;
+  display: block;
+  position: relative;
+}
+
+.process-one__process-list {
+  display: block;
+  position: relative;
+}
+
+.process-one__process-list:before {
+  content: "";
+  opacity: .1;
+  background: linear-gradient(270deg, #fa5674 0%, #6065d4 100%);
+  width: 2px;
+  height: 432px;
+  position: absolute;
+  top: 50%;
+  left: 49%;
+  transform: translateX(-50%)translateY(-50%);
+}
+
+.process-one__process-list li {
+  align-items: center;
+  gap: 135px;
+  display: flex;
+  position: relative;
+}
+
+.process-one__process-list li + li {
+  margin-top: 42px;
+}
+
+.process-one__process-count {
+  display: block;
+  position: relative;
+}
+
+.process-one__process-count:before {
+  counter-increment: count 1;
+  content: "0"counter(count);
+  background: linear-gradient(#ffffff4a 0%, #08111f00 100%);
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  text-transform: capitalize;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 80px;
+  font-family: var(--techguru-font-two);
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  position: relative;
+}
+
+.process-one__process-content {
+  display: block;
+  position: relative;
+}
+
+.process-one__process-title {
+  color: var(--techguru-white);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+}
+
+.process-one__process-text {
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.process-one__process-list li:first-child {
+  margin-left: 188px;
+}
+
+.process-one__process-list li:nth-child(3) {
+  margin-left: 171px;
+}
+
+.process-one__process-list li:nth-child(2) .process-one__process-content {
+  text-align: right;
+}
+
+.process-one__process-content:before {
+  content: "";
+  background: linear-gradient(270deg, #fa5674 0%, #6065d4 100%);
+  border-radius: 50%;
+  width: 20.45px;
+  height: 20.45px;
+  position: absolute;
+  top: 50%;
+  left: -73.5px;
+  transform: translateY(-50%);
+}
+
+.process-one__process-list li:nth-child(2) .process-one__process-content:before {
+  left: inherit;
+  background: linear-gradient(270deg, #5cb0e9 0%, #3d72fc 100%);
+  right: -85.5px;
+}
+
+.process-two {
+  counter-reset: count;
+  z-index: 1;
+  padding: 140px 0 110px;
+  display: block;
+  position: relative;
+}
+
+.process-two__bg {
+  z-index: -1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  inset: 0;
+}
+
+.process-two__bg:before {
+  content: "";
+  z-index: -1;
+  background: linear-gradient(#090e14b3 0%, #060610 100%);
+  position: absolute;
+  inset: 0;
+}
+
+.process-two__bg-shape {
+  z-index: -1;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 192px;
+  display: none;
+  position: absolute;
+  top: 295px;
+  left: 0;
+  right: 0;
+}
+
+.process-two .section-title {
+  margin-bottom: 78px;
+}
+
+.process-two ul li:first-child, .process-two ul li:nth-child(3) {
+  margin-top: 80px;
+}
+
+.process-two__single {
+  text-align: center;
+  margin-bottom: 23px;
+  display: block;
+  position: relative;
+}
+
+.process-two__count {
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+}
+
+.process-two__count:before {
+  width: 80px;
+  height: 80px;
+  color: var(--techguru-white);
+  counter-increment: count 1;
+  content: "0"counter(count);
+  z-index: 1;
+  background: linear-gradient(270deg, #5cb0e9 0%, #3d72fc 100%);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.process-two ul li:nth-child(2) .process-two__count:before {
+  background: linear-gradient(270deg, #5cb0e9 0%, #3d72fc 100%);
+}
+
+.process-two__count:after {
+  content: "";
+  -webkit-mask-composite: xor;
+  z-index: -1;
+  background: linear-gradient(-90deg, #5cb0e9, #3d72fc) border-box;
+  border: 1px solid #0000;
+  border-radius: 50%;
+  position: absolute;
+  inset: 0;
+  -webkit-mask-image: linear-gradient(#fff 0 0), linear-gradient(#fff 0 0);
+  -webkit-mask-position: 0 0, 0 0;
+  -webkit-mask-size: auto, auto;
+  -webkit-mask-repeat: repeat, repeat;
+  -webkit-mask-clip: padding-box, border-box;
+  -webkit-mask-origin: padding-box, border-box;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  -webkit-mask-source-type: auto, auto;
+  mask-mode: match-source, match-source;
+}
+
+.process-two ul li:nth-child(2) .process-two__count:after {
+  -webkit-mask-composite: xor;
+  background: linear-gradient(-90deg, #5cb0e9, #3d72fc) border-box;
+  border: 1px solid #0000;
+  -webkit-mask-image: linear-gradient(#fff 0 0), linear-gradient(#fff 0 0);
+  -webkit-mask-position: 0 0, 0 0;
+  -webkit-mask-size: auto, auto;
+  -webkit-mask-repeat: repeat, repeat;
+  -webkit-mask-clip: padding-box, border-box;
+  -webkit-mask-origin: padding-box, border-box;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  -webkit-mask-source-type: auto, auto;
+  mask-mode: match-source, match-source;
+}
+
+.process-two__title {
+  color: var(--techguru-white);
+  margin: 19px 0 12px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34px;
+}
+
+.process-two__text {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.process-two__shape-1 {
+  position: absolute;
+  top: 55px;
+  left: -142px;
+}
+
+.process-two__shape-1 img {
+  width: auto;
+}
+
+.process-two__shape-2 {
+  position: absolute;
+  top: 25px;
+  right: -142px;
+}
+
+.process-two__shape-2 img {
+  width: auto;
+}
+
+/*# sourceMappingURL=power-orbit_public_assets_css_module-css_process_css_0w3-wzy._.single.css.map*/

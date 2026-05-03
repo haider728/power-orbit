@@ -1,0 +1,680 @@
+/* [project]/power-orbit/public/assets/css/custom-animate.css [app-client] (css) */
+@keyframes rotateme {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounceright {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(3px);
+  }
+}
+
+.rotate-me {
+  -ms-animation-name: rotateme;
+  -ms-animation-duration: 24s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  animation-name: rotateme;
+  animation-duration: 24s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+@keyframes float-bob {
+  0% {
+    transform: translateX(-100px);
+  }
+
+  50% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(-100px);
+  }
+}
+
+.float-bob {
+  -ms-animation-name: float-bob;
+  -ms-animation-duration: 7s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  animation-name: float-bob;
+  animation-duration: 7s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes circle {
+  0% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    width: 200%;
+    height: 200%;
+  }
+}
+
+.zoominout {
+  -ms-animation-name: zoomInOut;
+  -ms-animation-duration: 3s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: ease-in-out;
+  animation-name: zoomInOut;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bgSlideReverse {
+  0% {
+    background-position: 0 0;
+  }
+
+  20% {
+    background-position: 100px 0;
+  }
+
+  40% {
+    background-position: 200px 0;
+  }
+
+  60% {
+    background-position: 150px 0;
+  }
+
+  80% {
+    background-position: 100px 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes bgSlideReverse2 {
+  0% {
+    background-position: 0 0;
+  }
+
+  20% {
+    background-position: -100px 0;
+  }
+
+  40% {
+    background-position: -200px 0;
+  }
+
+  60% {
+    background-position: -150px 0;
+  }
+
+  80% {
+    background-position: -100px 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes banner-animate {
+  0% {
+    transform: translateX(-1000px);
+  }
+
+  50% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(-1000px);
+  }
+}
+
+.banner-animate {
+  -ms-animation-name: banner-animate;
+  -ms-animation-duration: 70s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  animation-name: banner-animate;
+  animation-duration: 70s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes ripple {
+  70% {
+    box-shadow: 0 0 0 40px #0aa5cd00;
+  }
+
+  100% {
+    box-shadow: 0 0 #0aa5cd00;
+  }
+}
+
+@keyframes animation1 {
+  0%, 100% {
+    transform: rotate(0)translateX(0);
+  }
+
+  25%, 75% {
+    transform: rotate(5deg)translateX(15px);
+  }
+
+  50% {
+    transform: rotate(10deg)translateX(30px);
+  }
+}
+
+@animation2 {
+  0% {
+    transform: rotateY(0deg)
+  }
+
+  100% {
+    transform: rotateY(360deg)
+  }
+}
+
+@keyframes animation2 {
+  0% {
+    transform: rotateY(0);
+  }
+
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes bgSlide {
+  0% {
+    background-position: 0 0;
+  }
+
+  20% {
+    background-position: -100px 0;
+  }
+
+  40% {
+    background-position: -200px 0;
+  }
+
+  60% {
+    background-position: -150px 0;
+  }
+
+  80% {
+    background-position: -100px 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes ribbonRotate {
+  0%, 100% {
+    transform: rotate(0);
+  }
+
+  25%, 75% {
+    transform: rotate(15deg);
+  }
+
+  50% {
+    transform: rotate(30deg);
+  }
+}
+
+@keyframes footerFish {
+  0%, 100% {
+    transform: translateX(0)translateY(0)rotate(0);
+  }
+
+  25%, 75% {
+    transform: translateX(20px)translateY(30px)rotate(25deg);
+  }
+
+  50% {
+    transform: translateX(40px)translateY(60px)rotate(45deg);
+  }
+}
+
+@keyframes contactSwimmer {
+  0%, 100% {
+    transform: translateX(0)translateY(0)rotate(0);
+  }
+
+  25%, 75% {
+    transform: translateX(15px)translateY(20px)rotate(10deg);
+  }
+
+  50% {
+    transform: translateX(60px)translateY(35px)rotate(15deg);
+  }
+}
+
+@keyframes float-bob-y {
+  0% {
+    transform: translateY(-20px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+.float-bob-y {
+  animation-name: float-bob-y;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes footerTree {
+  0%, 100% {
+    transform: rotate(0)translateX(0);
+  }
+
+  25%, 75% {
+    transform: rotate(5deg)translateX(15px);
+  }
+
+  50% {
+    transform: rotate(10deg)translateX(30px);
+  }
+}
+
+.footertree {
+  animation: 5s ease-in infinite footerTree;
+}
+
+@service_hexagon_2 {
+  0% {
+    transform: rotateY(0deg)
+  }
+
+  100% {
+    transform: rotateY(360deg)
+  }
+}
+
+@keyframes service_hexagon_2 {
+  0% {
+    transform: rotateY(0);
+  }
+
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes rotateScale {
+  from {
+    transform: rotate(0)scale(1);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotatescale {
+  -ms-animation-name: rotateScale;
+  -ms-animation-duration: 20s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  animation-name: rotateScale;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bubbleMover {
+  0% {
+    transform: translateY(0)translateX(0)rotate(0);
+  }
+
+  30% {
+    transform-origin: center;
+    transform: translateY(30px)translateX(50px)rotate(15deg);
+  }
+
+  50% {
+    transform-origin: 100% 100%;
+    transform: translateY(50px)translateX(100px)rotate(45deg);
+  }
+
+  80% {
+    transform-origin: 0 0;
+    transform: translateY(30px)translateX(50px)rotate(15deg);
+  }
+
+  100% {
+    transform-origin: center;
+    transform: translateY(0)translateX(0)rotate(0);
+  }
+}
+
+.shapemover {
+  animation-name: shapeMover;
+  animation-duration: 9s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shapeMover {
+  0%, 100% {
+    transform: perspective(400px)translateY(0)rotate(0)translateZ(0)translateX(0);
+  }
+
+  50% {
+    transform: perspective(400px)rotate(0)translateZ(20px)translateY(20px)translateX(20px);
+  }
+}
+
+@keyframes shapeMover-2 {
+  0%, 100% {
+    transform: perspective(400px)translateY(0)rotate(0)translateZ(0)translateX(0);
+  }
+
+  50% {
+    transform: perspective(400px)rotate(-45deg)translateZ(20px)translateY(20px)translateX(20px);
+  }
+}
+
+@keyframes banner3Shake {
+  0% {
+    transform: rotate3d(0, 1, 0, 0);
+  }
+
+  30% {
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+
+  60% {
+    transform: rotate3d(1, 0, 0, 0);
+  }
+
+  80% {
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+
+  100% {
+    transform: rotate3d(0, 1, 0, 0);
+  }
+}
+
+@keyframes squareMover {
+  0%, 100% {
+    transform: translate(0)rotate(0);
+  }
+
+  20%, 60% {
+    transform: translate(20px, 40px)rotate(180deg);
+  }
+
+  30%, 80% {
+    transform: translate(40px, 60px)rotate(0);
+  }
+}
+
+@keyframes treeMove {
+  0%, 100% {
+    transform: rotate(0)translateX(0);
+  }
+
+  25%, 75% {
+    transform: rotate(5deg)translateX(15px);
+  }
+
+  50% {
+    transform: rotate(10deg)translateX(30px);
+  }
+}
+
+.zoom-fade {
+  -ms-animation-name: zoom-fade;
+  -ms-animation-duration: 5s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  animation-name: zoom-fade;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes zoom-fade {
+  0% {
+    transform: scale(.9)translateX(-50%);
+  }
+
+  50% {
+    transform: scale(1)translateX(-50%);
+  }
+
+  100% {
+    transform: scale(.9)translateX(-50%);
+  }
+}
+
+.zoom-fade-2 {
+  -ms-animation-name: zoom-fade-2;
+  -ms-animation-duration: 5s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  animation-name: zoom-fade-2;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes zoom-fade-2 {
+  0% {
+    transform: scale(.9)translateX(0%)translateY(0%);
+  }
+
+  50% {
+    transform: scale(1)translateX(0%)translateY(0%);
+  }
+
+  100% {
+    transform: scale(.9)translateX(0%)translateY(0%);
+  }
+}
+
+@keyframes btnIconMove {
+  0% {
+    transform: rotate(0)translate(0);
+  }
+
+  50% {
+    transform: rotate(20deg)translate(10px);
+  }
+
+  100% {
+    transform: rotate(0)translate(0);
+  }
+}
+
+@keyframes ImgBounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-30px);
+  }
+}
+
+.img-bounce {
+  animation: 5s ease-in-out infinite alternate ImgBounce;
+}
+
+@-moz-keyframessquares {
+  0% {
+    transform: scale(1);
+    opacity: 0
+  }
+
+  20% {
+    transform: scale(1.24);
+    opacity: 1
+  }
+
+  100% {
+    transform: scale(2.1);
+    opacity: 0
+  }
+}
+
+@keyframes squares {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+
+  20% {
+    opacity: 1;
+    transform: scale(1.24);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(2.1);
+  }
+}
+
+@keyframes float-bob-x {
+  0% {
+    transform: translateX(-30px);
+  }
+
+  50% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(-30px);
+  }
+}
+
+.float-bob-x {
+  animation-name: float-bob-x;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes float-bob-x-2 {
+  0% {
+    transform: translateX(-30px)translateY(-50%);
+  }
+
+  50% {
+    transform: translateX(-10px)translateY(-50%);
+  }
+
+  100% {
+    transform: translateX(-30px)translateY(-50%);
+  }
+}
+
+.float-bob-x-2 {
+  animation-name: float-bob-x-2;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes float-bob-y-2 {
+  0% {
+    transform: translateY(-20%)translateX(-50%);
+  }
+
+  50% {
+    transform: translateY(-10%)translateX(-50%);
+  }
+
+  100% {
+    transform: translateY(-20%)translateX(-50%);
+  }
+}
+
+.float-bob-y-2 {
+  animation-name: float-bob-y-2;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes leftRight {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes topBottom {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes textRotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.text-rotate-box {
+  animation: 10s linear infinite alternate forwards textRotate;
+}
+
+/*# sourceMappingURL=power-orbit_public_assets_css_custom-animate_css_0w3-wzy._.single.css.map*/
