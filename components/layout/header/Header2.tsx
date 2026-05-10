@@ -18,14 +18,14 @@ export default function Header2({ scroll, handleMobileMenu, handlePopup, handleS
       <header className={`main-header-two ${scroll ? "fixed-header" : ""}`}>
         <div className="main-menu-two__top">
             <div className="main-menu-two__top-inner">
-                <p className="main-menu-two__top-text">Power Orbit Built on LEGACY, Driven by VISION </p>
+                <p className="main-menu-two__top-text">Power Orbit formerly known as Digital Myth Solution</p>
                 <ul className="list-unstyled main-menu-two__contact-list">
                     <li>
                         <div className="icon">
-                            <i className="icon-pin"></i>
+                            {/* <i className="icon-pin"></i>. */}
                         </div>
                         <div className="text">
-                            <p>King Khaled St, Al Tubayshi, Dammam, Saudi Arabia</p>
+                            {/* <p>King Khaled St, Al Tubayshi, Dammam, Saudi Arabia</p> */}
                         </div>
                     </li>
                     <li>
