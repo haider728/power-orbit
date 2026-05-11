@@ -400,14 +400,14 @@ function Footer1() {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                                            href: "/about",
+                                                            href: "",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                     className: "icon-right-arrow-2"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/power-orbit/components/layout/footer/Footer1.tsx",
                                                                     lineNumber: 65,
-                                                                    columnNumber: 65
+                                                                    columnNumber: 59
                                                                 }, this),
                                                                 "Terms & Condition"
                                                             ]
@@ -469,14 +469,14 @@ function Footer1() {
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                                            href: "/404",
+                                                            href: "",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                     className: "icon-right-arrow-2"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/power-orbit/components/layout/footer/Footer1.tsx",
                                                                     lineNumber: 70,
-                                                                    columnNumber: 63
+                                                                    columnNumber: 59
                                                                 }, this),
                                                                 "404 Page"
                                                             ]
@@ -647,42 +647,19 @@ function Footer1() {
                                                                     className: "icon-right-arrow-2"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/power-orbit/components/layout/footer/Footer1.tsx",
-                                                                    lineNumber: 88,
-                                                                    columnNumber: 59
-                                                                }, this),
-                                                                "Smart Environment Management"
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/power-orbit/components/layout/footer/Footer1.tsx",
-                                                            lineNumber: 88,
-                                                            columnNumber: 45
-                                                        }, this)
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/power-orbit/components/layout/footer/Footer1.tsx",
-                                                        lineNumber: 88,
-                                                        columnNumber: 41
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                                            href: "",
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                    className: "icon-right-arrow-2"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/power-orbit/components/layout/footer/Footer1.tsx",
-                                                                    lineNumber: 90,
+                                                                    lineNumber: 89,
                                                                     columnNumber: 59
                                                                 }, this),
                                                                 "Video Telematics"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/power-orbit/components/layout/footer/Footer1.tsx",
-                                                            lineNumber: 90,
+                                                            lineNumber: 89,
                                                             columnNumber: 45
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/power-orbit/components/layout/footer/Footer1.tsx",
-                                                        lineNumber: 90,
+                                                        lineNumber: 89,
                                                         columnNumber: 41
                                                     }, this)
                                                 ]
@@ -742,19 +719,19 @@ function Footer1() {
                                                         children: "Power Orbit"
                                                     }, void 0, false, {
                                                         fileName: "[project]/power-orbit/components/layout/footer/Footer1.tsx",
-                                                        lineNumber: 107,
+                                                        lineNumber: 106,
                                                         columnNumber: 84
                                                     }, this),
                                                     " All rights reserved"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/power-orbit/components/layout/footer/Footer1.tsx",
-                                                lineNumber: 106,
+                                                lineNumber: 105,
                                                 columnNumber: 41
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/power-orbit/components/layout/footer/Footer1.tsx",
-                                            lineNumber: 105,
+                                            lineNumber: 104,
                                             columnNumber: 37
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -765,90 +742,76 @@ function Footer1() {
                                                     children: "Follow Us:"
                                                 }, void 0, false, {
                                                     fileName: "[project]/power-orbit/components/layout/footer/Footer1.tsx",
-                                                    lineNumber: 111,
+                                                    lineNumber: 110,
                                                     columnNumber: 41
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "site-footer-two__social-box-inner",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                                            href: "/#",
+                                                            href: "https://www.facebook.com/EagleIoT/",
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                 className: "icon-facebook"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/power-orbit/components/layout/footer/Footer1.tsx",
-                                                                lineNumber: 113,
-                                                                columnNumber: 61
+                                                                lineNumber: 112,
+                                                                columnNumber: 93
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/power-orbit/components/layout/footer/Footer1.tsx",
-                                                            lineNumber: 113,
+                                                            lineNumber: 112,
                                                             columnNumber: 45
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                                            href: "/#",
-                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "icon-dribble"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/power-orbit/components/layout/footer/Footer1.tsx",
-                                                                lineNumber: 114,
-                                                                columnNumber: 61
-                                                            }, this)
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/power-orbit/components/layout/footer/Footer1.tsx",
-                                                            lineNumber: 114,
-                                                            columnNumber: 45
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                                            href: "/#",
+                                                            href: "https://www.linkedin.com/company/eagle-iot",
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                 className: "icon-linkedin"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/power-orbit/components/layout/footer/Footer1.tsx",
-                                                                lineNumber: 116,
-                                                                columnNumber: 61
+                                                                lineNumber: 115,
+                                                                columnNumber: 101
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/power-orbit/components/layout/footer/Footer1.tsx",
-                                                            lineNumber: 116,
+                                                            lineNumber: 115,
                                                             columnNumber: 45
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/power-orbit/components/layout/footer/Footer1.tsx",
-                                                    lineNumber: 112,
+                                                    lineNumber: 111,
                                                     columnNumber: 41
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/power-orbit/components/layout/footer/Footer1.tsx",
-                                            lineNumber: 110,
+                                            lineNumber: 109,
                                             columnNumber: 37
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/power-orbit/components/layout/footer/Footer1.tsx",
-                                    lineNumber: 104,
+                                    lineNumber: 103,
                                     columnNumber: 33
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/power-orbit/components/layout/footer/Footer1.tsx",
-                                lineNumber: 103,
+                                lineNumber: 102,
                                 columnNumber: 29
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/power-orbit/components/layout/footer/Footer1.tsx",
-                            lineNumber: 102,
+                            lineNumber: 101,
                             columnNumber: 25
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/power-orbit/components/layout/footer/Footer1.tsx",
-                        lineNumber: 101,
+                        lineNumber: 100,
                         columnNumber: 21
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/power-orbit/components/layout/footer/Footer1.tsx",
-                    lineNumber: 100,
+                    lineNumber: 99,
                     columnNumber: 17
                 }, this)
             ]

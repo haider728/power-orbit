@@ -62,12 +62,12 @@ export default function Footer1() {
                                 <div className="footer-widget-two__support">
                                     <h4 className="footer-widget-two__title">Support</h4>
                                     <ul className="footer-widget-two__quick-links-list list-unstyled">
-                                        <li><Link href="/about"><span className="icon-right-arrow-2"></span>Terms &
+                                        <li><Link href=""><span className="icon-right-arrow-2"></span>Terms &
                                                 Condition</Link></li>
                                         <li><Link href=""><span className="icon-right-arrow-2"></span>FAQs</Link></li>
                                         <li><Link href=""><span className="icon-right-arrow-2"></span>Contact Us</Link>
                                         </li>
-                                        <li><Link href="/404"><span className="icon-right-arrow-2"></span>404 Page</Link></li>
+                                        <li><Link href=""><span className="icon-right-arrow-2"></span>404 Page</Link></li>
                                         <li><Link href=""><span className="icon-right-arrow-2"></span>Live Chat</Link>
                                         </li>
                                         <li><Link href=""><span className="icon-right-arrow-2"></span>Our Services</Link>
@@ -85,8 +85,7 @@ export default function Footer1() {
                                             </Link>
                                         </li>
                                         <li><Link href=""><span className="icon-right-arrow-2"></span>Cold Chain Management</Link></li>
-                                        <li><Link href=""><span className="icon-right-arrow-2"></span>Smart Environment Management</Link>
-                                        </li>
+                                        {/* <li><Link href=""><span className="icon-right-arrow-2"></span>Smart Environment Management</Link>                                        </li> */}
                                         <li><Link href=""><span className="icon-right-arrow-2"></span>Video Telematics</Link>
                                         </li>
                                         {/* <li><Link href=""><span className="icon-right-arrow-2"></span>Personal
@@ -110,10 +109,10 @@ export default function Footer1() {
                                     <div className="site-footer-two__social-box">
                                         <h4 className="site-footer-two__social-title">Follow Us:</h4>
                                         <div className="site-footer-two__social-box-inner">
-                                            <Link href="/#"><span className="icon-facebook"></span></Link>
-                                            <Link href="/#"><span className="icon-dribble"></span></Link>
+                                            <Link href="https://www.facebook.com/EagleIoT/"><span className="icon-facebook"></span></Link>
+                                            {/* <Link href="/#"><span className="icon-instagram"></span></Link> */}
 
-                                            <Link href="/#"><span className="icon-linkedin"></span></Link>
+                                            <Link href="https://www.linkedin.com/company/eagle-iot"><span className="icon-linkedin"></span></Link>
                                         </div>
                                     </div>
                                 </div>
