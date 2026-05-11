@@ -122,12 +122,12 @@ export default function Banner() {
                     <div className="swiper-slide">
                         <div className="main-slider-two__bg"
                             style={{ backgroundImage: "url(/assets/images/backgrounds/slider-2-2.jpg)" }}></div>
-                        <ul className="list-unstyled main-slider-two__menu">
+                        {/* <ul className="list-unstyled main-slider-two__menu">
                             <li><Link href="/about">Help</Link></li>
                             <li><Link href="/contact">Support</Link></li>
                             <li><Link href="/faq">Faqs</Link></li>
-                        </ul>
-                        <div className="main-slider-two__social-box">
+                        </ul> */}
+                        {/* <div className="main-slider-two__social-box">
                             <h4 className="main-slider-two__social-title">Follow Us:</h4>
                             <div className="main-slider-two__social-box-inner">
                                 <Link href="/#"><span className="icon-facebook"></span></Link>
@@ -135,9 +135,9 @@ export default function Banner() {
 
                                 <Link href="/#"><span className="icon-linkedin"></span></Link>
                             </div>
-                        </div>
+                        </div> */}
 
-                        <div className="main-slider-two__shape-1"></div>
+                        {/* <div className="main-slider-two__shape-1"></div> */}
                         <div className="main-slider-two__shape-2 float-bob-x">
                             <Image src="/assets/images/shapes/main-slider-two-shape-2.png" alt="shape" width={588} height={519} priority />
                         </div>
@@ -183,12 +183,12 @@ export default function Banner() {
                     <div className="swiper-slide">
                         <div className="main-slider-two__bg"
                             style={{ backgroundImage: "url(/assets/images/backgrounds/slider-2-3.jpg)" }}></div>
-                        <ul className="list-unstyled main-slider-two__menu">
+                        {/* <ul className="list-unstyled main-slider-two__menu">
                             <li><Link href="/about">Help</Link></li>
                             <li><Link href="/contact">Support</Link></li>
                             <li><Link href="/faq">Faqs</Link></li>
-                        </ul>
-                        <div className="main-slider-two__social-box">
+                        </ul> */}
+                        {/* <div className="main-slider-two__social-box">
                             <h4 className="main-slider-two__social-title">Follow Us:</h4>
                             <div className="main-slider-two__social-box-inner">
                                 <Link href="/#"><span className="icon-facebook"></span></Link>
@@ -196,9 +196,9 @@ export default function Banner() {
 
                                 <Link href="/#"><span className="icon-linkedin"></span></Link>
                             </div>
-                        </div>
+                        </div> */}
 
-                        <div className="main-slider-two__shape-1"></div>
+                        {/* <div className="main-slider-two__shape-1"></div> */}
                         <div className="main-slider-two__shape-2 float-bob-x">
                             <Image src="/assets/images/shapes/main-slider-two-shape-2.png" alt="shape" width={588} height={519} priority />
                         </div>
