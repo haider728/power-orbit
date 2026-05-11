@@ -188,7 +188,7 @@ export default function MobileMenu({ isSidebar, handleMobileMenu }: MobileMenuPr
           <ul className="mobile-nav__contact list-unstyled">
             <li>
               <i className="fa fa-envelope"></i>
-              <Link href="mailto:needhelp@techguru.com">needhelp@techguru.com</Link>
+              <Link href="mailto:info@eagle-iot.com">info@eagle-iot.com</Link>
             </li>
             <li>
               <i className="fas fa-phone"></i>

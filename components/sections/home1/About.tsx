@@ -29,7 +29,7 @@ export default function About() {
                       priority
                     />
                   </div>
-                  <div className="about-two__img-2">
+                  {/* <div className="about-two__img-2">
                     <Image
                       src="/assets/images/resources/about-two-img-2.jpg"
                       alt="Telematics innovation"
@@ -37,7 +37,7 @@ export default function About() {
                       height={344}
                       priority
                     />
-                  </div>
+                  </div> */}
                   <div className="about-two__shape-1" aria-hidden />
                 </div>
               </div>

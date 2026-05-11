@@ -85,7 +85,7 @@ export default function Footer1() {
                                             </Link>
                                         </li>
                                         <li><Link href=""><span className="icon-right-arrow-2"></span>Cold Chain Management</Link></li>
-                                        <li><Link href=""><span className="icon-right-arrow-2"></span>Smart City Solutions</Link>
+                                        <li><Link href=""><span className="icon-right-arrow-2"></span>Smart Environment Management</Link>
                                         </li>
                                         <li><Link href=""><span className="icon-right-arrow-2"></span>Video Telematics</Link>
                                         </li>
@@ -104,7 +104,7 @@ export default function Footer1() {
                                 <div className="site-footer-two__bottom-inner">
                                     <div className="site-footer-two__copyright">
                                         <p className="site-footer-two__copyright-text">
-                                            ⓒ Copyright {new Date().getFullYear()} <Link href="/#">techguru</Link> All rights reserved
+                                            ⓒ Copyright {new Date().getFullYear()} <Link href="/">Power Orbit</Link> All rights reserved
                                         </p>
                                     </div>
                                     <div className="site-footer-two__social-box">
