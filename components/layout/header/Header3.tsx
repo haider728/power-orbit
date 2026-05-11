@@ -7,10 +7,9 @@ import Menu from "../Menu";
 type Header3Props = {
   scroll: boolean;
   handleMobileMenu: () => void;
-  handlePopup: () => void;
 };
 
-export default function Header3({ scroll, handleMobileMenu, handlePopup }: Header3Props) {
+export default function Header3({ scroll, handleMobileMenu }: Header3Props) {
   return (
     <>
       {/* main header */}
@@ -73,10 +72,6 @@ export default function Header3({ scroll, handleMobileMenu, handlePopup }: Heade
                             <Menu/>
                         </div>
                         <div className="main-menu__right">
-                            <div className="main-menu__search-box">
-                                <Link href="#"
-                                    className="main-menu__search searcher-toggler-box icon-search-interface-symbol" onClick={handlePopup}></Link>
-                            </div>
                             <div className="main-menu__btn-box">
                                 <Link href="/contact" className="thm-btn">Get in Touch<span
                                         className="icon-right-arrow"></span></Link>
@@ -103,10 +98,6 @@ export default function Header3({ scroll, handleMobileMenu, handlePopup }: Heade
                                 <Menu/>
                             </div>
                             <div className="main-menu__right">
-                                <div className="main-menu__search-box">
-                                    <Link href="#"
-                                        className="main-menu__search searcher-toggler-box icon-search-interface-symbol" onClick={handlePopup}></Link>
-                                </div>
                                 <div className="main-menu__btn-box">
                                     <Link href="/contact" className="thm-btn">Get in Touch<span
                                             className="icon-right-arrow"></span></Link>

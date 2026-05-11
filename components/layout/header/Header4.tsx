@@ -7,11 +7,10 @@ import OnepageMenu_Two from "../OnepageMenu_Two";
 type Header4Props = {
   scroll: boolean;
   handleMobileMenu: () => void;
-  handlePopup: () => void;
   handleSidebar: () => void;
 };
 
-export default function Header4({ scroll, handleMobileMenu, handlePopup }: Header4Props) {
+export default function Header4({ scroll, handleMobileMenu }: Header4Props) {
   return (
     <>
       {/* main header */}
@@ -74,10 +73,6 @@ export default function Header4({ scroll, handleMobileMenu, handlePopup }: Heade
                             <OnepageMenu_Two/>
                         </div>
                         <div className="main-menu__right">
-                            <div className="main-menu__search-box">
-                                <Link href="#"
-                                    className="main-menu__search searcher-toggler-box icon-search-interface-symbol" onClick={handlePopup}></Link>
-                            </div>
                             <div className="main-menu__btn-box">
                                 <Link href="/contact" className="thm-btn">Get in Touch<span
                                         className="icon-right-arrow"></span></Link>
@@ -104,10 +99,6 @@ export default function Header4({ scroll, handleMobileMenu, handlePopup }: Heade
                             <OnepageMenu_Two/>
                         </div>
                         <div className="main-menu__right">
-                            <div className="main-menu__search-box">
-                                <Link href="#"
-                                    className="main-menu__search searcher-toggler-box icon-search-interface-symbol" onClick={handlePopup}></Link>
-                            </div>
                             <div className="main-menu__btn-box">
                                 <Link href="/contact" className="thm-btn">Get in Touch<span
                                         className="icon-right-arrow"></span></Link>

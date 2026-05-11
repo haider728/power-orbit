@@ -7,11 +7,10 @@ import Menu from "../Menu";
 type Header1Props = {
   scroll: boolean;
   handleMobileMenu: () => void;
-  handlePopup: () => void;
   handleSidebar: () => void;
 };
 
-export default function Header1({ scroll, handleMobileMenu, handlePopup, handleSidebar }: Header1Props) {
+export default function Header1({ scroll, handleMobileMenu, handleSidebar }: Header1Props) {
   return (
     <>
       {/* main header */}
@@ -61,10 +60,6 @@ export default function Header1({ scroll, handleMobileMenu, handlePopup, handleS
                         <Menu/>
                     </div>
                     <div className="main-menu-two__right">
-                        <div className="main-menu-two__search-box">
-                            <Link href="#"
-                                className="main-menu-two__search searcher-toggler-box icon-search-interface-symbol" onClick={handlePopup}></Link>
-                        </div>
                         <div className="main-menu-two__nav-sidebar-icon">
                             <Link className="navSidebar-button" href="#" onClick={handleSidebar}>
                                 <span className="icon-dots-menu-one"></span>
@@ -92,10 +87,6 @@ export default function Header1({ scroll, handleMobileMenu, handlePopup, handleS
                         <Menu/>
                     </div>
                     <div className="main-menu-two__right">
-                        <div className="main-menu-two__search-box">
-                            <Link href="#"
-                                className="main-menu-two__search searcher-toggler-box icon-search-interface-symbol" onClick={handlePopup}></Link>
-                        </div>
                         <div className="main-menu-two__nav-sidebar-icon">
                             <Link className="navSidebar-button" href="#" onClick={handleSidebar}>
                                 <span className="icon-dots-menu-one"></span>

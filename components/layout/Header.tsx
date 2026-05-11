@@ -4,7 +4,6 @@
 import { useState, useEffect, useCallback } from "react";
 import BackToTop from "../elements/BackToTop";
 import DataBg from "../elements/DataBg";
-import SearchPopup from "./SearchPopup";
 import SidebarPopup from "./SidebarPopup";
 
 import Header1 from "./header/Header1";
@@ -21,7 +20,6 @@ interface HeaderProps {
 export default function Header({ style = 1 }: HeaderProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenu, setMobileMenu] = useState(false);
-  const [isPopupOpen, setPopupOpen] = useState(false);
   const [isSidebar, setSidebar] = useState(false);
   const handleSidebar = () => setSidebar((s) => !s);
 
@@ -40,16 +38,10 @@ export default function Header({ style = 1 }: HeaderProps) {
     }
   }, [isMobileMenu]);
 
-  // Toggle search popup
-  const handlePopup = useCallback(() => {
-    setPopupOpen((prev) => !prev);
-  }, []);
-
   const headerProps = {
     scroll: isScrolled,
     isMobileMenu,
     handleMobileMenu,
-    handlePopup,
     handleSidebar,
   };
 
@@ -69,9 +61,6 @@ export default function Header({ style = 1 }: HeaderProps) {
 
       {/* Header variant */}
       {headers[style] ?? <Header1 {...headerProps} />}
-
-      {/* Search popup */}
-      <SearchPopup isPopup={isPopupOpen} handlePopup={handlePopup} />
 
       {/* sidebar popup */}
       <SidebarPopup isOpen={isSidebar} onClose={handleSidebar} />
