@@ -1916,32 +1916,8 @@ function Portfolio() {
                             className: "section-title text-center sec-title-animation animation-style1",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "section-title__tagline-box",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "section-title__tagline-shape-1"
-                                        }, void 0, false, {
-                                            fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                            lineNumber: 88,
-                                            columnNumber: 25
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "section-title__tagline",
-                                            children: "Our Clients "
-                                        }, void 0, false, {
-                                            fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                            lineNumber: 89,
-                                            columnNumber: 25
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "section-title__tagline-shape-2"
-                                        }, void 0, false, {
-                                            fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                            lineNumber: 90,
-                                            columnNumber: 25
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
+                                    className: "section-title__tagline-box"
+                                }, void 0, false, {
                                     fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
                                     lineNumber: 87,
                                     columnNumber: 21
@@ -2010,7 +1986,7 @@ function Portfolio() {
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                         className: "single-portfolio-two__bg",
                                                                         style: {
-                                                                            backgroundImage: "url(assets/images/project/portfolio-2-1.jpg)"
+                                                                            backgroundImage: "url(/assets/images/project/portfolio-2-1.jpg)"
                                                                         }
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
@@ -2022,16 +1998,8 @@ function Portfolio() {
                                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                                                 href: "/portfolio-detailsl",
-                                                                                children: [
-                                                                                    "Transportation &  ",
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                                                                        fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                        lineNumber: 110,
-                                                                                        columnNumber: 108
-                                                                                    }, this),
-                                                                                    " Logistics "
-                                                                                ]
-                                                                            }, void 0, true, {
+                                                                                children: "Transportation & Logistics"
+                                                                            }, void 0, false, {
                                                                                 fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
                                                                                 lineNumber: 110,
                                                                                 columnNumber: 57
@@ -2082,16 +2050,8 @@ function Portfolio() {
                                                                                         className: "portfolio-two__title-2",
                                                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                                                             href: "/portfolio-detailsl",
-                                                                                            children: [
-                                                                                                "Transportation & ",
-                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                                                                                    fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                                    lineNumber: 119,
-                                                                                                    columnNumber: 109
-                                                                                                }, this),
-                                                                                                " Logistics"
-                                                                                            ]
-                                                                                        }, void 0, true, {
+                                                                                            children: "Transportation & Logistics"
+                                                                                        }, void 0, false, {
                                                                                             fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
                                                                                             lineNumber: 118,
                                                                                             columnNumber: 96
@@ -2106,7 +2066,7 @@ function Portfolio() {
                                                                                         children: "Optimizing cross-border movement with real-time route intelligence and fuel governance. "
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                        lineNumber: 121,
+                                                                                        lineNumber: 120,
                                                                                         columnNumber: 57
                                                                                     }, this)
                                                                                 ]
@@ -2141,11 +2101,11 @@ function Portfolio() {
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                         className: "single-portfolio-two__bg",
                                                                         style: {
-                                                                            backgroundImage: "url(assets/images/project/portfolio-2-2.jpg)"
+                                                                            backgroundImage: "url(/assets/images/project/portfolio-2-2.jpg)"
                                                                         }
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                        lineNumber: 128,
+                                                                        lineNumber: 127,
                                                                         columnNumber: 49
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2153,28 +2113,20 @@ function Portfolio() {
                                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                                                 href: "/portfolio-detailsl",
-                                                                                children: [
-                                                                                    "Health and ",
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                                                                        fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                        lineNumber: 132,
-                                                                                        columnNumber: 101
-                                                                                    }, this),
-                                                                                    " care"
-                                                                                ]
-                                                                            }, void 0, true, {
+                                                                                children: "Health Care"
+                                                                            }, void 0, false, {
                                                                                 fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                lineNumber: 132,
+                                                                                lineNumber: 131,
                                                                                 columnNumber: 57
                                                                             }, this)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                            lineNumber: 132,
+                                                                            lineNumber: 131,
                                                                             columnNumber: 53
                                                                         }, this)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                        lineNumber: 131,
+                                                                        lineNumber: 130,
                                                                         columnNumber: 49
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2193,17 +2145,17 @@ function Portfolio() {
                                                                                         className: "icon-right-arrow-1"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                        lineNumber: 137,
+                                                                                        lineNumber: 136,
                                                                                         columnNumber: 83
                                                                                     }, this)
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                    lineNumber: 136,
+                                                                                    lineNumber: 135,
                                                                                     columnNumber: 57
                                                                                 }, this)
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                lineNumber: 135,
+                                                                                lineNumber: 134,
                                                                                 columnNumber: 53
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2216,12 +2168,12 @@ function Portfolio() {
                                                                                             children: "Health Care"
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                            lineNumber: 140,
+                                                                                            lineNumber: 139,
                                                                                             columnNumber: 96
                                                                                         }, this)
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                        lineNumber: 140,
+                                                                                        lineNumber: 139,
                                                                                         columnNumber: 57
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2229,30 +2181,30 @@ function Portfolio() {
                                                                                         children: "Ensuring life-saving cargo stays within SFDA-mandated temperature thresholds. "
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                        lineNumber: 143,
+                                                                                        lineNumber: 142,
                                                                                         columnNumber: 57
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                lineNumber: 139,
+                                                                                lineNumber: 138,
                                                                                 columnNumber: 53
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                        lineNumber: 134,
+                                                                        lineNumber: 133,
                                                                         columnNumber: 49
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                lineNumber: 127,
+                                                                lineNumber: 126,
                                                                 columnNumber: 45
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                            lineNumber: 126,
+                                                            lineNumber: 125,
                                                             columnNumber: 41
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -2264,11 +2216,11 @@ function Portfolio() {
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                         className: "single-portfolio-two__bg",
                                                                         style: {
-                                                                            backgroundImage: "url(assets/images/project/portfolio-2-3.jpg)"
+                                                                            backgroundImage: "url(/assets/images/project/portfolio-2-3.jpg)"
                                                                         }
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                        lineNumber: 150,
+                                                                        lineNumber: 149,
                                                                         columnNumber: 49
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2276,27 +2228,20 @@ function Portfolio() {
                                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                                                 href: "/portfolio-detailsl",
-                                                                                children: [
-                                                                                    "Oil and Gas",
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                                                                        fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                        lineNumber: 154,
-                                                                                        columnNumber: 101
-                                                                                    }, this)
-                                                                                ]
-                                                                            }, void 0, true, {
+                                                                                children: "Oil & Gas"
+                                                                            }, void 0, false, {
                                                                                 fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                lineNumber: 154,
+                                                                                lineNumber: 153,
                                                                                 columnNumber: 57
                                                                             }, this)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                            lineNumber: 154,
+                                                                            lineNumber: 153,
                                                                             columnNumber: 53
                                                                         }, this)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                        lineNumber: 153,
+                                                                        lineNumber: 152,
                                                                         columnNumber: 49
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2315,17 +2260,17 @@ function Portfolio() {
                                                                                         className: "icon-right-arrow-1"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                        lineNumber: 160,
+                                                                                        lineNumber: 158,
                                                                                         columnNumber: 83
                                                                                     }, this)
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                    lineNumber: 159,
+                                                                                    lineNumber: 157,
                                                                                     columnNumber: 57
                                                                                 }, this)
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                lineNumber: 158,
+                                                                                lineNumber: 156,
                                                                                 columnNumber: 53
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2338,12 +2283,12 @@ function Portfolio() {
                                                                                             children: "Oil and Gas"
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                            lineNumber: 163,
+                                                                                            lineNumber: 161,
                                                                                             columnNumber: 96
                                                                                         }, this)
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                        lineNumber: 163,
+                                                                                        lineNumber: 161,
                                                                                         columnNumber: 57
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2351,30 +2296,30 @@ function Portfolio() {
                                                                                         children: "Monitoring remote high-value assets and ensuring fleet safety in high-stakes environments. "
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                        lineNumber: 165,
+                                                                                        lineNumber: 163,
                                                                                         columnNumber: 57
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                lineNumber: 162,
+                                                                                lineNumber: 160,
                                                                                 columnNumber: 53
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                        lineNumber: 157,
+                                                                        lineNumber: 155,
                                                                         columnNumber: 49
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                lineNumber: 149,
+                                                                lineNumber: 148,
                                                                 columnNumber: 45
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                            lineNumber: 148,
+                                                            lineNumber: 147,
                                                             columnNumber: 41
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -2386,11 +2331,11 @@ function Portfolio() {
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                         className: "single-portfolio-two__bg",
                                                                         style: {
-                                                                            backgroundImage: "url(assets/images/project/portfolio-2-4.jpg)"
+                                                                            backgroundImage: "url(/assets/images/project/portfolio-2-4.jpg)"
                                                                         }
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                        lineNumber: 172,
+                                                                        lineNumber: 170,
                                                                         columnNumber: 49
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2398,28 +2343,20 @@ function Portfolio() {
                                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                                                 href: "/portfolio-detailsl",
-                                                                                children: [
-                                                                                    "Supply Chain ",
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                                                                        fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                        lineNumber: 176,
-                                                                                        columnNumber: 103
-                                                                                    }, this),
-                                                                                    " with Management  "
-                                                                                ]
-                                                                            }, void 0, true, {
+                                                                                children: "Supply Chain Management"
+                                                                            }, void 0, false, {
                                                                                 fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                lineNumber: 176,
+                                                                                lineNumber: 174,
                                                                                 columnNumber: 57
                                                                             }, this)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                            lineNumber: 176,
+                                                                            lineNumber: 174,
                                                                             columnNumber: 53
                                                                         }, this)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                        lineNumber: 175,
+                                                                        lineNumber: 173,
                                                                         columnNumber: 49
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2438,17 +2375,17 @@ function Portfolio() {
                                                                                         className: "icon-right-arrow-1"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                        lineNumber: 182,
+                                                                                        lineNumber: 179,
                                                                                         columnNumber: 83
                                                                                     }, this)
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                    lineNumber: 181,
+                                                                                    lineNumber: 178,
                                                                                     columnNumber: 57
                                                                                 }, this)
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                lineNumber: 180,
+                                                                                lineNumber: 177,
                                                                                 columnNumber: 53
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2458,15 +2395,15 @@ function Portfolio() {
                                                                                         className: "portfolio-two__title-2",
                                                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                                                             href: "/portfolio-detailsl",
-                                                                                            children: "Supply Chain Management  "
+                                                                                            children: "Supply Chain Management"
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                            lineNumber: 185,
+                                                                                            lineNumber: 182,
                                                                                             columnNumber: 96
                                                                                         }, this)
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                        lineNumber: 185,
+                                                                                        lineNumber: 182,
                                                                                         columnNumber: 57
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2474,30 +2411,30 @@ function Portfolio() {
                                                                                         children: "End-to-end visibility from warehouse to last-mile delivery. "
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                        lineNumber: 188,
+                                                                                        lineNumber: 184,
                                                                                         columnNumber: 57
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                lineNumber: 184,
+                                                                                lineNumber: 181,
                                                                                 columnNumber: 53
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                        lineNumber: 179,
+                                                                        lineNumber: 176,
                                                                         columnNumber: 49
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                lineNumber: 171,
+                                                                lineNumber: 169,
                                                                 columnNumber: 45
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                            lineNumber: 170,
+                                                            lineNumber: 168,
                                                             columnNumber: 41
                                                         }, this)
                                                     ]
@@ -2538,11 +2475,11 @@ function Portfolio() {
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                         className: "single-portfolio-two__bg",
                                                                         style: {
-                                                                            backgroundImage: "url(assets/images/project/portfolio-2-1.jpg)"
+                                                                            backgroundImage: "url(/assets/images/project/portfolio-2-1.jpg)"
                                                                         }
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                        lineNumber: 203,
+                                                                        lineNumber: 199,
                                                                         columnNumber: 49
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2550,28 +2487,20 @@ function Portfolio() {
                                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                                                 href: "/portfolio-detailsl",
-                                                                                children: [
-                                                                                    "Ready-mix  ",
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                                                                        fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                        lineNumber: 207,
-                                                                                        columnNumber: 101
-                                                                                    }, this),
-                                                                                    " Concrete"
-                                                                                ]
-                                                                            }, void 0, true, {
+                                                                                children: "Ready-mix Concrete"
+                                                                            }, void 0, false, {
                                                                                 fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                lineNumber: 207,
+                                                                                lineNumber: 203,
                                                                                 columnNumber: 57
                                                                             }, this)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                            lineNumber: 207,
+                                                                            lineNumber: 203,
                                                                             columnNumber: 53
                                                                         }, this)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                        lineNumber: 206,
+                                                                        lineNumber: 202,
                                                                         columnNumber: 49
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2579,7 +2508,7 @@ function Portfolio() {
                                                                         children: [
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                                 onClick: ()=>{
-                                                                                    setIndex(4);
+                                                                                    setIndex(0);
                                                                                     setOpen(true);
                                                                                 },
                                                                                 className: "portfolio-two__icon",
@@ -2590,17 +2519,17 @@ function Portfolio() {
                                                                                         className: "icon-right-arrow-1"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                        lineNumber: 212,
+                                                                                        lineNumber: 208,
                                                                                         columnNumber: 83
                                                                                     }, this)
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                    lineNumber: 211,
+                                                                                    lineNumber: 207,
                                                                                     columnNumber: 57
                                                                                 }, this)
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                lineNumber: 210,
+                                                                                lineNumber: 206,
                                                                                 columnNumber: 53
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2610,23 +2539,15 @@ function Portfolio() {
                                                                                         className: "portfolio-two__title-2",
                                                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                                                             href: "/portfolio-detailsl",
-                                                                                            children: [
-                                                                                                "Ready-mix  ",
-                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                                                                                    fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                                    lineNumber: 216,
-                                                                                                    columnNumber: 103
-                                                                                                }, this),
-                                                                                                "Concrete"
-                                                                                            ]
-                                                                                        }, void 0, true, {
+                                                                                            children: "Ready-mix Concrete"
+                                                                                        }, void 0, false, {
                                                                                             fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                            lineNumber: 215,
+                                                                                            lineNumber: 211,
                                                                                             columnNumber: 96
                                                                                         }, this)
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                        lineNumber: 215,
+                                                                                        lineNumber: 211,
                                                                                         columnNumber: 57
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2634,30 +2555,30 @@ function Portfolio() {
                                                                                         children: "Preserving structural integrity through real-time transit and mixing monitoring. "
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                        lineNumber: 218,
+                                                                                        lineNumber: 213,
                                                                                         columnNumber: 57
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                lineNumber: 214,
+                                                                                lineNumber: 210,
                                                                                 columnNumber: 53
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                        lineNumber: 209,
+                                                                        lineNumber: 205,
                                                                         columnNumber: 49
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                lineNumber: 202,
+                                                                lineNumber: 198,
                                                                 columnNumber: 45
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                            lineNumber: 201,
+                                                            lineNumber: 197,
                                                             columnNumber: 41
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -2669,11 +2590,11 @@ function Portfolio() {
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                         className: "single-portfolio-two__bg",
                                                                         style: {
-                                                                            backgroundImage: "url(assets/images/project/portfolio-2-2.jpg)"
+                                                                            backgroundImage: "url(/assets/images/project/portfolio-2-2.jpg)"
                                                                         }
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                        lineNumber: 225,
+                                                                        lineNumber: 220,
                                                                         columnNumber: 49
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2681,28 +2602,20 @@ function Portfolio() {
                                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                                                 href: "/portfolio-detailsl",
-                                                                                children: [
-                                                                                    "Construction Machinery  ",
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                                                                        fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                        lineNumber: 229,
-                                                                                        columnNumber: 114
-                                                                                    }, this),
-                                                                                    " & Heavy Equipment "
-                                                                                ]
-                                                                            }, void 0, true, {
+                                                                                children: "Construction & Heavy Equipment"
+                                                                            }, void 0, false, {
                                                                                 fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                lineNumber: 229,
+                                                                                lineNumber: 224,
                                                                                 columnNumber: 57
                                                                             }, this)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                            lineNumber: 229,
+                                                                            lineNumber: 224,
                                                                             columnNumber: 53
                                                                         }, this)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                        lineNumber: 228,
+                                                                        lineNumber: 223,
                                                                         columnNumber: 49
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2710,7 +2623,7 @@ function Portfolio() {
                                                                         children: [
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                                 onClick: ()=>{
-                                                                                    setIndex(5);
+                                                                                    setIndex(1);
                                                                                     setOpen(true);
                                                                                 },
                                                                                 className: "portfolio-two__icon",
@@ -2721,17 +2634,17 @@ function Portfolio() {
                                                                                         className: "icon-right-arrow-1"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                        lineNumber: 234,
+                                                                                        lineNumber: 229,
                                                                                         columnNumber: 83
                                                                                     }, this)
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                    lineNumber: 233,
+                                                                                    lineNumber: 228,
                                                                                     columnNumber: 57
                                                                                 }, this)
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                lineNumber: 232,
+                                                                                lineNumber: 227,
                                                                                 columnNumber: 53
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2744,12 +2657,12 @@ function Portfolio() {
                                                                                             children: "Construction Machinery & Heavy Equipment   "
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                            lineNumber: 237,
+                                                                                            lineNumber: 232,
                                                                                             columnNumber: 96
                                                                                         }, this)
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                        lineNumber: 237,
+                                                                                        lineNumber: 232,
                                                                                         columnNumber: 57
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2757,30 +2670,30 @@ function Portfolio() {
                                                                                         children: "Managing engine hours, location, and maintenance for mission-critical machinery. "
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                        lineNumber: 239,
+                                                                                        lineNumber: 234,
                                                                                         columnNumber: 57
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                lineNumber: 236,
+                                                                                lineNumber: 231,
                                                                                 columnNumber: 53
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                        lineNumber: 231,
+                                                                        lineNumber: 226,
                                                                         columnNumber: 49
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                lineNumber: 224,
+                                                                lineNumber: 219,
                                                                 columnNumber: 45
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                            lineNumber: 223,
+                                                            lineNumber: 218,
                                                             columnNumber: 41
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -2792,11 +2705,11 @@ function Portfolio() {
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                         className: "single-portfolio-two__bg",
                                                                         style: {
-                                                                            backgroundImage: "url(assets/images/project/portfolio-2-3.jpg)"
+                                                                            backgroundImage: "url(/assets/images/project/portfolio-2-3.jpg)"
                                                                         }
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                        lineNumber: 246,
+                                                                        lineNumber: 241,
                                                                         columnNumber: 49
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2804,27 +2717,20 @@ function Portfolio() {
                                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                                                 href: "/portfolio-detailsl",
-                                                                                children: [
-                                                                                    "Car Rentals ",
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                                                                        fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                        lineNumber: 250,
-                                                                                        columnNumber: 102
-                                                                                    }, this)
-                                                                                ]
-                                                                            }, void 0, true, {
+                                                                                children: "Car Rentals"
+                                                                            }, void 0, false, {
                                                                                 fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                lineNumber: 250,
+                                                                                lineNumber: 245,
                                                                                 columnNumber: 57
                                                                             }, this)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                            lineNumber: 250,
+                                                                            lineNumber: 245,
                                                                             columnNumber: 53
                                                                         }, this)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                        lineNumber: 249,
+                                                                        lineNumber: 244,
                                                                         columnNumber: 49
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2832,7 +2738,7 @@ function Portfolio() {
                                                                         children: [
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                                 onClick: ()=>{
-                                                                                    setIndex(6);
+                                                                                    setIndex(2);
                                                                                     setOpen(true);
                                                                                 },
                                                                                 className: "portfolio-two__icon",
@@ -2843,17 +2749,17 @@ function Portfolio() {
                                                                                         className: "icon-right-arrow-1"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                        lineNumber: 256,
+                                                                                        lineNumber: 250,
                                                                                         columnNumber: 83
                                                                                     }, this)
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                    lineNumber: 255,
+                                                                                    lineNumber: 249,
                                                                                     columnNumber: 57
                                                                                 }, this)
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                lineNumber: 254,
+                                                                                lineNumber: 248,
                                                                                 columnNumber: 53
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2866,12 +2772,12 @@ function Portfolio() {
                                                                                             children: "Car Rentals "
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                            lineNumber: 259,
+                                                                                            lineNumber: 253,
                                                                                             columnNumber: 96
                                                                                         }, this)
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                        lineNumber: 259,
+                                                                                        lineNumber: 253,
                                                                                         columnNumber: 57
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2879,30 +2785,30 @@ function Portfolio() {
                                                                                         children: "Protecting vehicle assets and automating returns through smart telematics. "
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                        lineNumber: 261,
+                                                                                        lineNumber: 255,
                                                                                         columnNumber: 57
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                lineNumber: 258,
+                                                                                lineNumber: 252,
                                                                                 columnNumber: 53
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                        lineNumber: 253,
+                                                                        lineNumber: 247,
                                                                         columnNumber: 49
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                lineNumber: 245,
+                                                                lineNumber: 240,
                                                                 columnNumber: 45
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                            lineNumber: 244,
+                                                            lineNumber: 239,
                                                             columnNumber: 41
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -2914,11 +2820,11 @@ function Portfolio() {
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                         className: "single-portfolio-two__bg",
                                                                         style: {
-                                                                            backgroundImage: "url(assets/images/project/portfolio-2-4.jpg)"
+                                                                            backgroundImage: "url(/assets/images/project/portfolio-2-4.jpg)"
                                                                         }
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                        lineNumber: 268,
+                                                                        lineNumber: 262,
                                                                         columnNumber: 49
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2926,28 +2832,20 @@ function Portfolio() {
                                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                                                 href: "/portfolio-detailsl",
-                                                                                children: [
-                                                                                    "SFDA & TGA-Compliant",
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                                                                        fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                        lineNumber: 272,
-                                                                                        columnNumber: 110
-                                                                                    }, this),
-                                                                                    " with Cold Chain Monitoring "
-                                                                                ]
-                                                                            }, void 0, true, {
+                                                                                children: "SFDA & TGA cold chain"
+                                                                            }, void 0, false, {
                                                                                 fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                lineNumber: 272,
+                                                                                lineNumber: 266,
                                                                                 columnNumber: 57
                                                                             }, this)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                            lineNumber: 272,
+                                                                            lineNumber: 266,
                                                                             columnNumber: 53
                                                                         }, this)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                        lineNumber: 271,
+                                                                        lineNumber: 265,
                                                                         columnNumber: 49
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2955,7 +2853,7 @@ function Portfolio() {
                                                                         children: [
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                                 onClick: ()=>{
-                                                                                    setIndex(7);
+                                                                                    setIndex(3);
                                                                                     setOpen(true);
                                                                                 },
                                                                                 className: "portfolio-two__icon",
@@ -2966,17 +2864,17 @@ function Portfolio() {
                                                                                         className: "icon-right-arrow-1"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                        lineNumber: 278,
+                                                                                        lineNumber: 271,
                                                                                         columnNumber: 83
                                                                                     }, this)
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                    lineNumber: 277,
+                                                                                    lineNumber: 270,
                                                                                     columnNumber: 57
                                                                                 }, this)
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                lineNumber: 276,
+                                                                                lineNumber: 269,
                                                                                 columnNumber: 53
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2986,15 +2884,15 @@ function Portfolio() {
                                                                                         className: "portfolio-two__title-2",
                                                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                                                             href: "/portfolio-detailsl",
-                                                                                            children: "SFDA & TGA-Compliant Cold Chain Monitoring "
+                                                                                            children: "SFDA & TGA-compliant cold chain"
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                            lineNumber: 281,
+                                                                                            lineNumber: 274,
                                                                                             columnNumber: 96
                                                                                         }, this)
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                        lineNumber: 281,
+                                                                                        lineNumber: 274,
                                                                                         columnNumber: 57
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3002,58 +2900,58 @@ function Portfolio() {
                                                                                         children: "Certified precision for the Kingdom's most regulated logistics operations. "
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                        lineNumber: 283,
+                                                                                        lineNumber: 276,
                                                                                         columnNumber: 57
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                                lineNumber: 280,
+                                                                                lineNumber: 273,
                                                                                 columnNumber: 53
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                        lineNumber: 275,
+                                                                        lineNumber: 268,
                                                                         columnNumber: 49
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                                lineNumber: 267,
+                                                                lineNumber: 261,
                                                                 columnNumber: 45
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                            lineNumber: 266,
+                                                            lineNumber: 260,
                                                             columnNumber: 41
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                    lineNumber: 200,
+                                                    lineNumber: 196,
                                                     columnNumber: 37
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                lineNumber: 199,
+                                                lineNumber: 195,
                                                 columnNumber: 33
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                            lineNumber: 198,
+                                            lineNumber: 194,
                                             columnNumber: 29
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                        lineNumber: 197,
+                                        lineNumber: 193,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "swiper-pagination"
                                     }, void 0, false, {
                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                        lineNumber: 397,
+                                        lineNumber: 390,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3065,12 +2963,12 @@ function Portfolio() {
                                                     className: "icon-right-up"
                                                 }, void 0, false, {
                                                     fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                    lineNumber: 400,
+                                                    lineNumber: 393,
                                                     columnNumber: 58
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                lineNumber: 400,
+                                                lineNumber: 393,
                                                 columnNumber: 29
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3079,18 +2977,18 @@ function Portfolio() {
                                                     className: "icon-right-up"
                                                 }, void 0, false, {
                                                     fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                    lineNumber: 401,
+                                                    lineNumber: 394,
                                                     columnNumber: 58
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                                lineNumber: 401,
+                                                lineNumber: 394,
                                                 columnNumber: 29
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                                        lineNumber: 399,
+                                        lineNumber: 392,
                                         columnNumber: 25
                                     }, this)
                                 ]
@@ -3117,7 +3015,7 @@ function Portfolio() {
                     slides: slides
                 }, void 0, false, {
                     fileName: "[project]/power-orbit/components/sections/home1/Portfolio.tsx",
-                    lineNumber: 406,
+                    lineNumber: 399,
                     columnNumber: 13
                 }, this)
             ]

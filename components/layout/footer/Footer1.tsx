@@ -24,10 +24,9 @@ export default function Footer1() {
                                             <div className="site-footer-two__contact-content">
                                                 <h5 className="site-footer-two__contact-title">Contact Info</h5>
                                                 <p className="site-footer-two__contact-info">
-                                                    <Link href="mailto:info@domain.com"
-                                                        className="site-footer-two__contact-mail">info@domain.com</Link>
-                                                    <Link href="tel:9900567780" className="site-footer-two__contact-phone">+99 (00)
-                                                        567 780</Link>
+                                                    <Link href="mailto:info@eagle-iot.com"
+                                                        className="site-footer-two__contact-mail">info@eagle-iot.com</Link>
+                                                    <Link href="tel:+966533085658" className="site-footer-two__contact-phone">+966 53 308 5658</Link>
                                                 </p>
                                             </div>
                                         </li>
@@ -51,11 +50,11 @@ export default function Footer1() {
                                     <ul className="footer-widget-two__quick-links-list list-unstyled">
                                         <li><Link href="/"><span className="icon-right-arrow-2"></span>Home</Link></li>
                                         <li><Link href="/about"><span className="icon-right-arrow-2"></span>About Us</Link></li>
-                                        <li><Link href="/pricing"><span className="icon-right-arrow-2"></span>Pricing</Link></li>
-                                        <li><Link href="/portfolio"><span className="icon-right-arrow-2"></span>Portfolio</Link>
-                                        </li>
+                                        {/* <li><Link href="/pricing"><span className="icon-right-arrow-2"></span>Pricing</Link></li>
+                                        // <li><Link href="/portfolio"><span className="icon-right-arrow-2"></span>Portfolio</Link>
+                                        // </li> */}
                                         <li><Link href="/blog"><span className="icon-right-arrow-2"></span>Blogs</Link></li>
-                                        <li><Link href="/contact"><span className="icon-right-arrow-2"></span>Careers</Link></li>
+                                        {/* <li><Link href="/contact"><span className="icon-right-arrow-2"></span>Careers</Link></li> */}
                                     </ul>
                                 </div>
                             </div>
@@ -65,13 +64,13 @@ export default function Footer1() {
                                     <ul className="footer-widget-two__quick-links-list list-unstyled">
                                         <li><Link href="/about"><span className="icon-right-arrow-2"></span>Terms &
                                                 Condition</Link></li>
-                                        <li><Link href="/faq"><span className="icon-right-arrow-2"></span>FAQs</Link></li>
-                                        <li><Link href="/contact"><span className="icon-right-arrow-2"></span>Contact Us</Link>
+                                        <li><Link href=""><span className="icon-right-arrow-2"></span>FAQs</Link></li>
+                                        <li><Link href=""><span className="icon-right-arrow-2"></span>Contact Us</Link>
                                         </li>
                                         <li><Link href="/404"><span className="icon-right-arrow-2"></span>404 Page</Link></li>
-                                        <li><Link href="/contact"><span className="icon-right-arrow-2"></span>Live Chat</Link>
+                                        <li><Link href=""><span className="icon-right-arrow-2"></span>Live Chat</Link>
                                         </li>
-                                        <li><Link href="/services"><span className="icon-right-arrow-2"></span>Our Services</Link>
+                                        <li><Link href=""><span className="icon-right-arrow-2"></span>Our Services</Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -80,18 +79,18 @@ export default function Footer1() {
                                 <div className="footer-widget-two__services">
                                     <h4 className="footer-widget-two__title">Our Services</h4>
                                     <ul className="footer-widget-two__quick-links-list list-unstyled">
-                                        <li><Link href="/services"><span className="icon-right-arrow-2"></span>UI/UX Design</Link>
+                                        <li><Link href=""><span className="icon-right-arrow-2"></span>Fleet Managment</Link>
                                         </li>
-                                        <li><Link href="/about"><span className="icon-right-arrow-2"></span>Website Design</Link>
+                                        <li><Link href=""><span className="icon-right-arrow-2"></span>Asset Management
+                                            </Link>
                                         </li>
-                                        <li><Link href="/pricing"><span className="icon-right-arrow-2"></span>Web
-                                                Development</Link></li>
-                                        <li><Link href="/about"><span className="icon-right-arrow-2"></span>Product Design</Link>
+                                        <li><Link href=""><span className="icon-right-arrow-2"></span>Cold Chain Management</Link></li>
+                                        <li><Link href=""><span className="icon-right-arrow-2"></span>Smart City Solutions</Link>
                                         </li>
-                                        <li><Link href="/blog"><span className="icon-right-arrow-2"></span>Online Branding</Link>
+                                        <li><Link href=""><span className="icon-right-arrow-2"></span>Video Telematics</Link>
                                         </li>
-                                        <li><Link href="/contact"><span className="icon-right-arrow-2"></span>Personal
-                                                Branding</Link></li>
+                                        {/* <li><Link href=""><span className="icon-right-arrow-2"></span>Personal
+                                                Branding</Link></li> */}
                                     </ul>
                                 </div>
                             </div>

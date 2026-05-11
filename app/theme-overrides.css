@@ -215,3 +215,63 @@ body {
     margin-bottom: 2.5rem;
   }
 }
+
+/* Portfolio (home): idle labels inside the card, not clipped by overflow */
+.portfolio-two__box-content {
+  padding-left: 2.75rem !important;
+}
+
+@media (min-width: 768px) {
+  .portfolio-two__box-content {
+    padding-left: 3.25rem !important;
+  }
+}
+
+.portfolio-two__title {
+  left: 0.6rem !important;
+  right: auto !important;
+  bottom: auto !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  transform-origin: center center !important;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  max-height: min(70%, 18rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.portfolio-two__title h3 {
+  margin: 0 !important;
+  font-size: clamp(0.9rem, 0.35vw + 0.82rem, 1.125rem) !important;
+  line-height: 1.3 !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.03em;
+  text-wrap: balance;
+}
+
+.portfolio-two__box li.active .portfolio-two__title {
+  pointer-events: none;
+}
+
+.portfolio-two__content-box {
+  /* expanded row: keep description from crowding the arrow on narrow columns */
+  align-items: flex-start !important;
+  padding-top: 0.25rem;
+}
+
+.portfolio-two__title-box {
+  min-width: 0;
+}
+
+.portfolio-two__title-2 {
+  line-height: 1.2 !important;
+}
+
+.portfolio-two__text {
+  line-height: 1.5 !important;
+  opacity: 0.92;
+  margin-top: 0.35rem;
+}

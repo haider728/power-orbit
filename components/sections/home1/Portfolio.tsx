@@ -85,9 +85,9 @@ export default function Portfolio() {
             <div className="container">
                 <div className="section-title text-center sec-title-animation animation-style1">
                     <div className="section-title__tagline-box">
-                        <div className="section-title__tagline-shape-1"></div>
+                        {/* <div className="section-title__tagline-shape-1"></div>
                         <span className="section-title__tagline">Our Clients </span>
-                        <div className="section-title__tagline-shape-2"></div>
+                        <div className="section-title__tagline-shape-2"></div> */}
                     </div>
                     <AnimatedTitle>
                     <h2 className="section-title__title title-animation">Trusted by Enterprises  <span>Where</span><br />
@@ -104,10 +104,10 @@ export default function Portfolio() {
                                         <li className={`${activeIndex === 12 ? "active" : ""}`} onMouseEnter={() => setActiveIndex(12)}>
                                             <div className="portfolio-two__box-content">
                                                 <div className="single-portfolio-two__bg"
-                                                    style={{ backgroundImage: "url(assets/images/project/portfolio-2-1.jpg)" }}>
+                                                    style={{ backgroundImage: "url(/assets/images/project/portfolio-2-1.jpg)" }}>
                                                 </div>
                                                 <div className="portfolio-two__title">
-                                                    <h3><Link href="/portfolio-detailsl">Transportation &  <br /> Logistics </Link></h3>
+                                                    <h3><Link href="/portfolio-detailsl">Transportation &amp; Logistics</Link></h3>
                                                 </div>
                                                 <div className="portfolio-two__content-box">
                                                     <div onClick={() => { setIndex(0); setOpen(true); }} className="portfolio-two__icon">
@@ -116,8 +116,7 @@ export default function Portfolio() {
                                                     </div>
                                                     <div className="portfolio-two__title-box">
                                                         <h3 className="portfolio-two__title-2"><Link
-                                                                href="/portfolio-detailsl">Transportation & <br /> Logistics 
-                                                              </Link></h3>
+                                                                href="/portfolio-detailsl">Transportation &amp; Logistics</Link></h3>
                                                         <p className="portfolio-two__text">Optimizing cross-border movement with real-time route intelligence and fuel governance. </p>
                                                     </div>
                                                 </div>
@@ -126,10 +125,10 @@ export default function Portfolio() {
                                         <li className={`${activeIndex === 13 ? "active" : ""}`} onMouseEnter={() => setActiveIndex(13)}>
                                             <div className="portfolio-two__box-content">
                                                 <div className="single-portfolio-two__bg"
-                                                    style={{ backgroundImage: "url(assets/images/project/portfolio-2-2.jpg)" }}>
+                                                    style={{ backgroundImage: "url(/assets/images/project/portfolio-2-2.jpg)" }}>
                                                 </div>
                                                 <div className="portfolio-two__title">
-                                                    <h3><Link href="/portfolio-detailsl">Health and <br /> care</Link></h3>
+                                                    <h3><Link href="/portfolio-detailsl">Health Care</Link></h3>
                                                 </div>
                                                 <div className="portfolio-two__content-box">
                                                     <div onClick={() => { setIndex(1); setOpen(true); }} className="portfolio-two__icon">
@@ -148,11 +147,10 @@ export default function Portfolio() {
                                         <li className={`${activeIndex === 14 ? "active" : ""}`} onMouseEnter={() => setActiveIndex(14)}>
                                             <div className="portfolio-two__box-content">
                                                 <div className="single-portfolio-two__bg"
-                                                    style={{ backgroundImage: "url(assets/images/project/portfolio-2-3.jpg)" }}>
+                                                    style={{ backgroundImage: "url(/assets/images/project/portfolio-2-3.jpg)" }}>
                                                 </div>
                                                 <div className="portfolio-two__title">
-                                                    <h3><Link href="/portfolio-detailsl">Oil and Gas<br />
-                                                            </Link></h3>
+                                                    <h3><Link href="/portfolio-detailsl">Oil &amp; Gas</Link></h3>
                                                 </div>
                                                 <div className="portfolio-two__content-box">
                                                     <div onClick={() => { setIndex(2); setOpen(true); }} className="portfolio-two__icon">
@@ -170,11 +168,10 @@ export default function Portfolio() {
                                         <li className={`${activeIndex === 15 ? "active" : ""}`} onMouseEnter={() => setActiveIndex(15)}>
                                             <div className="portfolio-two__box-content">
                                                 <div className="single-portfolio-two__bg"
-                                                    style={{ backgroundImage: "url(assets/images/project/portfolio-2-4.jpg)" }}>
+                                                    style={{ backgroundImage: "url(/assets/images/project/portfolio-2-4.jpg)" }}>
                                                 </div>
                                                 <div className="portfolio-two__title">
-                                                    <h3><Link href="/portfolio-detailsl">Supply Chain <br /> with
-                                                    Management  </Link></h3>
+                                                    <h3><Link href="/portfolio-detailsl">Supply Chain Management</Link></h3>
                                                 </div>
                                                 <div className="portfolio-two__content-box">
                                                     <div onClick={() => { setIndex(3); setOpen(true); }} className="portfolio-two__icon">
@@ -183,8 +180,7 @@ export default function Portfolio() {
                                                     </div>
                                                     <div className="portfolio-two__title-box">
                                                         <h3 className="portfolio-two__title-2"><Link
-                                                                href="/portfolio-detailsl">Supply Chain
-                                                                Management  </Link></h3>
+                                                                href="/portfolio-detailsl">Supply Chain Management</Link></h3>
                                                         <p className="portfolio-two__text">End-to-end visibility from warehouse to last-mile delivery. </p>
                                                     </div>
                                                 </div>
@@ -201,20 +197,19 @@ export default function Portfolio() {
                                         <li className={`${activeIndex === 12 ? "active" : ""}`} onMouseEnter={() => setActiveIndex(12)}>
                                             <div className="portfolio-two__box-content">
                                                 <div className="single-portfolio-two__bg"
-                                                    style={{ backgroundImage: "url(assets/images/project/portfolio-2-1.jpg)" }}>
+                                                    style={{ backgroundImage: "url(/assets/images/project/portfolio-2-1.jpg)" }}>
                                                 </div>
                                                 <div className="portfolio-two__title">
-                                                    <h3><Link href="/portfolio-detailsl">Ready-mix  <br /> Concrete</Link></h3>
+                                                    <h3><Link href="/portfolio-detailsl">Ready-mix Concrete</Link></h3>
                                                 </div>
                                                 <div className="portfolio-two__content-box">
-                                                    <div onClick={() => { setIndex(4); setOpen(true); }} className="portfolio-two__icon">
+                                                    <div onClick={() => { setIndex(0); setOpen(true); }} className="portfolio-two__icon">
                                                         <Link href="#"
                                                             className="img-popup"><span className="icon-right-arrow-1"></span></Link>
                                                     </div>
                                                     <div className="portfolio-two__title-box">
                                                         <h3 className="portfolio-two__title-2"><Link
-                                                                href="/portfolio-detailsl">Ready-mix  <br />
-                                                                Concrete</Link></h3>
+                                                                href="/portfolio-detailsl">Ready-mix Concrete</Link></h3>
                                                         <p className="portfolio-two__text">Preserving structural integrity through real-time transit and mixing monitoring. </p>
                                                     </div>
                                                 </div>
@@ -223,13 +218,13 @@ export default function Portfolio() {
                                         <li className={`${activeIndex === 13 ? "active" : ""}`} onMouseEnter={() => setActiveIndex(13)}>
                                             <div className="portfolio-two__box-content">
                                                 <div className="single-portfolio-two__bg"
-                                                    style={{ backgroundImage: "url(assets/images/project/portfolio-2-2.jpg)" }}>
+                                                    style={{ backgroundImage: "url(/assets/images/project/portfolio-2-2.jpg)" }}>
                                                 </div>
                                                 <div className="portfolio-two__title">
-                                                    <h3><Link href="/portfolio-detailsl">Construction Machinery  <br /> & Heavy Equipment </Link></h3>
+                                                    <h3><Link href="/portfolio-detailsl">Construction &amp; Heavy Equipment</Link></h3>
                                                 </div>
                                                 <div className="portfolio-two__content-box">
-                                                    <div onClick={() => { setIndex(5); setOpen(true); }} className="portfolio-two__icon">
+                                                    <div onClick={() => { setIndex(1); setOpen(true); }} className="portfolio-two__icon">
                                                         <Link href="#"
                                                             className="img-popup"><span className="icon-right-arrow-1"></span></Link>
                                                     </div>
@@ -244,14 +239,13 @@ export default function Portfolio() {
                                         <li className={`${activeIndex === 14 ? "active" : ""}`} onMouseEnter={() => setActiveIndex(14)}>
                                             <div className="portfolio-two__box-content">
                                                 <div className="single-portfolio-two__bg"
-                                                    style={{ backgroundImage: "url(assets/images/project/portfolio-2-3.jpg)" }}>
+                                                    style={{ backgroundImage: "url(/assets/images/project/portfolio-2-3.jpg)" }}>
                                                 </div>
                                                 <div className="portfolio-two__title">
-                                                    <h3><Link href="/portfolio-detailsl">Car Rentals <br />
-                                                            </Link></h3>
+                                                    <h3><Link href="/portfolio-detailsl">Car Rentals</Link></h3>
                                                 </div>
                                                 <div className="portfolio-two__content-box">
-                                                    <div onClick={() => { setIndex(6); setOpen(true); }} className="portfolio-two__icon">
+                                                    <div onClick={() => { setIndex(2); setOpen(true); }} className="portfolio-two__icon">
                                                         <Link href="#"
                                                             className="img-popup"><span className="icon-right-arrow-1"></span></Link>
                                                     </div>
@@ -266,20 +260,19 @@ export default function Portfolio() {
                                         <li className={`${activeIndex === 15 ? "active" : ""}`} onMouseEnter={() => setActiveIndex(15)}>
                                             <div className="portfolio-two__box-content">
                                                 <div className="single-portfolio-two__bg"
-                                                    style={{ backgroundImage: "url(assets/images/project/portfolio-2-4.jpg)" }}>
+                                                    style={{ backgroundImage: "url(/assets/images/project/portfolio-2-4.jpg)" }}>
                                                 </div>
                                                 <div className="portfolio-two__title">
-                                                    <h3><Link href="/portfolio-detailsl">SFDA & TGA-Compliant<br /> with
-                                                    Cold Chain Monitoring </Link></h3>
+                                                    <h3><Link href="/portfolio-detailsl">SFDA &amp; TGA cold chain</Link></h3>
                                                 </div>
                                                 <div className="portfolio-two__content-box">
-                                                    <div onClick={() => { setIndex(7); setOpen(true); }} className="portfolio-two__icon">
+                                                    <div onClick={() => { setIndex(3); setOpen(true); }} className="portfolio-two__icon">
                                                         <Link href="#"
                                                             className="img-popup"><span className="icon-right-arrow-1"></span></Link>
                                                     </div>
                                                     <div className="portfolio-two__title-box">
                                                         <h3 className="portfolio-two__title-2"><Link
-                                                                href="/portfolio-detailsl">SFDA & TGA-Compliant Cold Chain Monitoring </Link></h3>
+                                                                href="/portfolio-detailsl">SFDA &amp; TGA-compliant cold chain</Link></h3>
                                                         <p className="portfolio-two__text">Certified precision for the Kingdom&apos;s most regulated logistics operations. </p>
                                                     </div>
                                                 </div>
@@ -296,7 +289,7 @@ export default function Portfolio() {
                                         <li className={`${activeIndex === 12 ? "active" : ""}`} onMouseEnter={() => setActiveIndex(12)}>
                                             <div className="portfolio-two__box-content">
                                                 <div className="single-portfolio-two__bg"
-                                                    style={{ backgroundImage: "url(assets/images/project/portfolio-2-1.jpg)" }}>
+                                                    style={{ backgroundImage: "url(/assets/images/project/portfolio-2-1.jpg)" }}>
                                                 </div>
                                                 <div className="portfolio-two__title">
                                                     <h3><Link href="/portfolio-detailsl">Innovative Solutions,<br /> Powerful
@@ -321,7 +314,7 @@ export default function Portfolio() {
                                         <li className={`${activeIndex === 13 ? "active" : ""}`} onMouseEnter={() => setActiveIndex(13)}>
                                             <div className="portfolio-two__box-content">
                                                 <div className="single-portfolio-two__bg"
-                                                    style={{ backgroundImage: "url(assets/images/project/portfolio-2-2.jpg)" }}>
+                                                    style={{ backgroundImage: "url(/assets/images/project/portfolio-2-2.jpg)" }}>
                                                 </div>
                                                 <div className="portfolio-two__title">
                                                     <h3><Link href="/portfolio-detailsl">Transforming Ideas Into<br /> Digital
@@ -345,7 +338,7 @@ export default function Portfolio() {
                                         <li className={`${activeIndex === 14 ? "active" : ""}`} onMouseEnter={() => setActiveIndex(14)}>
                                             <div className="portfolio-two__box-content">
                                                 <div className="single-portfolio-two__bg"
-                                                    style={{ backgroundImage: "url(assets/images/project/portfolio-2-3.jpg)" }}>
+                                                    style={{ backgroundImage: "url(/assets/images/project/portfolio-2-3.jpg)" }}>
                                                 </div>
                                                 <div className="portfolio-two__title">
                                                     <h3><Link href="/portfolio-detailsl">Driving Success Through<br />
@@ -369,7 +362,7 @@ export default function Portfolio() {
                                         <li className={`${activeIndex === 15 ? "active" : ""}`} onMouseEnter={() => setActiveIndex(15)}>
                                             <div className="portfolio-two__box-content">
                                                 <div className="single-portfolio-two__bg"
-                                                    style={{ backgroundImage: "url(assets/images/project/portfolio-2-4.jpg)" }}>
+                                                    style={{ backgroundImage: "url(/assets/images/project/portfolio-2-4.jpg)" }}>
                                                 </div>
                                                 <div className="portfolio-two__title">
                                                     <h3><Link href="/portfolio-detailsl">Empowering Businesses<br /> with
