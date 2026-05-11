@@ -123,12 +123,19 @@ export default function About() {
                                     </div>
                                     <div className="about-two__call-content">
                                         <span>call us for inquiry</span>
-                                        <p><Link href="tel:00123456767">+00 (123) 456767</Link></p>
+                                        <p><Link href="tel:00123456767">+966 53 308 5658</Link></p>
                                     </div>
                                 </div>
                                 <div className="about-two__btn-box">
-                                    <Link href="/about" className="thm-btn">Learn More<span
-                                            className="icon-right-arrow"></span></Link>
+                                    <Link
+                                        href="/Company-Profile-2026-Eng-Version.pdf"
+                                        className="thm-btn"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Company Profile
+                                        <span className="icon-right-arrow"></span>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
