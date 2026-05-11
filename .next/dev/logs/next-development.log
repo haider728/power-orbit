@@ -183,3 +183,4 @@
 {"timestamp":"21:29:03.761","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mImage with src \\\"/images/app.png\\\" has \\\"fill\\\" and parent element with invalid \\\"position\\\". Provided \\\"static\\\" should be one of absolute,fixed,relative.\\u001b[39m\""}
 {"timestamp":"21:29:03.761","source":"Browser","level":"WARN","message":"\u001b[33mImage with src \"/images/app.png\" has \"fill\" and parent element with invalid \"position\". Provided \"static\" should be one of absolute,fixed,relative.\u001b[39m"}
 {"timestamp":"21:38:30.934","source":"Server","level":"LOG","message":"✓ Compiled in 187ms"}
+{"timestamp":"21:41:30.137","source":"Server","level":"LOG","message":"✓ Compiled in 43ms"}

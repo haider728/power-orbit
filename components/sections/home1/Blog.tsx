@@ -39,7 +39,7 @@ export default function Blog() {
     const fetchBlogs = async () => {
       try {
         const res = await fetch(
-          "https://apnabike.arhomeservices.com/api/articles?populate=*"
+          "http://144.24.219.37:1337/api/articles?populate=*"
         );
         const data = await res.json();
 
