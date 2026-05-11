@@ -229,4 +229,29 @@ html, body {
   line-height: 1.5 !important;
 }
 
+.main-menu-two__top-inner {
+  padding-top: 11px !important;
+  padding-bottom: 11px !important;
+}
+
+.main-menu-two__top-text {
+  font-size: 15px !important;
+  line-height: 1.35 !important;
+}
+
+.main-menu-two__left {
+  padding-top: 18px !important;
+  padding-bottom: 18px !important;
+}
+
+.main-menu .main-menu__list > li, .sticky-header .main-menu__list > li {
+  padding-top: 28px !important;
+  padding-bottom: 28px !important;
+}
+
+.main-menu__logo {
+  padding-top: 18px !important;
+  padding-bottom: 18px !important;
+}
+
 /*# sourceMappingURL=power-orbit_app_theme-overrides_css_0w3-wzy._.single.css.map*/

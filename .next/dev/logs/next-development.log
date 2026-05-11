@@ -661,3 +661,5 @@
 {"timestamp":"27:47:45.648","source":"Browser","level":"WARN","message":"\u001b[33mImage with src \"/images/app.png\" has \"fill\" and parent element with invalid \"position\". Provided \"static\" should be one of absolute,fixed,relative.\u001b[39m"}
 {"timestamp":"27:47:45.648","source":"Browser","level":"WARN","message":"Image with src \"/images/app.png\" has \"fill\" and parent element with invalid \"position\". Provided \"static\" should be one of absolute,fixed,relative."}
 {"timestamp":"27:49:04.859","source":"Server","level":"LOG","message":"✓ Compiled in 55ms"}
+{"timestamp":"27:54:22.789","source":"Server","level":"LOG","message":"✓ Compiled in 171ms"}
+{"timestamp":"27:54:32.161","source":"Server","level":"LOG","message":"✓ Compiled in 133ms"}

@@ -275,3 +275,30 @@ body {
   opacity: 0.92;
   margin-top: 0.35rem;
 }
+
+/* Slimmer header / main menu (main-menu-two + global nav links) */
+.main-menu-two__top-inner {
+  padding-top: 11px !important;
+  padding-bottom: 11px !important;
+}
+
+.main-menu-two__top-text {
+  line-height: 1.35 !important;
+  font-size: 15px !important;
+}
+
+.main-menu-two__left {
+  padding-top: 18px !important;
+  padding-bottom: 18px !important;
+}
+
+.main-menu .main-menu__list > li,
+.sticky-header .main-menu__list > li {
+  padding-top: 28px !important;
+  padding-bottom: 28px !important;
+}
+
+.main-menu__logo {
+  padding-top: 18px !important;
+  padding-bottom: 18px !important;
+}
