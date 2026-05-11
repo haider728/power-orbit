@@ -13,10 +13,22 @@ const responsive = {
 };
 
 const brands = [
-  "/assets/images/brand/brand--1.png",
-  "/assets/images/brand/brand--2.png",
-  "/assets/images/brand/st.png",
-  "/assets/images/brand/brand-4.png",
+  {
+    src: "/assets/images/brand/brand--1.png",
+    alt: "Saudi Food and Drug Authority (SFDA) official logo",
+  },
+  {
+    src: "/assets/images/brand/brand--2.png",
+    alt: "Wasl Al Shomoukh (WASL)",
+  },
+  {
+    src: "/assets/images/brand/st.png",
+    alt: "Communications, Space and Technology Commission (CST) logo, Saudi Arabia",
+  },
+  {
+    src: "/assets/images/brand/brand-4.png",
+    alt: "Transport General Authority (TGA) Saudi Arabia ",
+  },
 ];
 
 export default function LogoCarouselSection() {
@@ -45,9 +57,15 @@ export default function LogoCarouselSection() {
             containerClass={styles.carouselContainer}
             itemClass={styles.carouselItem}
           >
-            {brands.map((src, i) => (
-              <div key={src + i} className={styles.logoCard}>
-                <Image src={src} alt={`Partner logo ${i + 1}`} width={120} height={40} className={styles.logo} />
+            {brands.map((brand, i) => (
+              <div key={brand.src + i} className={styles.logoCard}>
+                <Image
+                  src={brand.src}
+                  alt={brand.alt}
+                  width={120}
+                  height={40}
+                  className={styles.logo}
+                />
               </div>
             ))}
           </Carousel>

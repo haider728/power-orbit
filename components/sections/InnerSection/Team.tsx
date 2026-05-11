@@ -90,12 +90,12 @@ export default function Team() {
                                                 <div className="team-two__img">
                                                     <Image src="/assets/images/team/fleett.png" alt="Image" width={410} height={450} priority />
                                                 </div>
-                                                <div className="team-two__social">
+                                                {/* <div className="team-two__social">
                                                     <Link href="#"><span className="icon-facebook"></span></Link>
                                                     <Link href="#"><span className="icon-dribble"></span></Link>
 
                                                     <Link href="#"><span className="icon-linkedin"></span></Link>
-                                                </div>
+                                                </div> */}
                                                 <div className="team-two__title-box">
                                                     <h3><Link href="/team-details">Fleet Management</Link></h3>
                                                     <p>Complete command and control over vehicle location, driver behavior, and TGA-certified operational reporting.</p>
@@ -111,12 +111,12 @@ export default function Team() {
                                                 <div className="team-two__img">
                                                     <Image src="/assets/images/team/videoo.png" alt="Image" width={410} height={450} priority />
                                                 </div>
-                                                <div className="team-two__social">
+                                                {/* <div className="team-two__social">
                                                     <Link href="#"><span className="icon-facebook"></span></Link>
                                                     <Link href="#"><span className="icon-dribble"></span></Link>
 
                                                     <Link href="#"><span className="icon-linkedin"></span></Link>
-                                                </div>
+                                                </div> */}
                                                 <div className="team-two__title-box">
                                                     <h3><Link href="/team-details">Video Telematics (AI-Powered) </Link></h3>
                                                     <p>Advanced dash-cam systems utilizing AI to detect driver fatigue, distraction, and road-side incidents.</p>
@@ -132,12 +132,12 @@ export default function Team() {
                                                 <div className="team-two__img">
                                                     <Image src="/assets/images/team/assett.png" alt="Image" width={410} height={450} priority />
                                                 </div>
-                                                <div className="team-two__social">
+                                                {/* <div className="team-two__social">
                                                     <Link href="#"><span className="icon-facebook"></span></Link>
                                                     <Link href="#"><span className="icon-dribble"></span></Link>
 
                                                     <Link href="#"><span className="icon-linkedin"></span></Link>
-                                                </div>
+                                                </div> */}
                                                 <div className="team-two__title-box">
                                                     <h3><Link href="/team-details">Asset Management & RTLS</Link></h3>
                                                     <p>Real-time location services (RTLS) for high-value equipment, ensuring your capital assets are always accounted for.</p>
@@ -153,12 +153,12 @@ export default function Team() {
                                                 <div className="team-two__img">
                                                     <Image src="/assets/images/team/warehous.png" alt="Image" width={410} height={450} priority />
                                                 </div>
-                                                <div className="team-two__social">
+                                                {/* <div className="team-two__social">
                                                     <Link href="#"><span className="icon-facebook"></span></Link>
                                                     <Link href="#"><span className="icon-dribble"></span></Link>
 
                                                     <Link href="#"><span className="icon-linkedin"></span></Link>
-                                                </div>
+                                                </div> */}
                                                 <div className="team-two__title-box">
                                                     <h3><Link href="/team-details">Cold Chain & Warehouse Monitoring </Link></h3>
                                                     <p>Precision temperature and humidity sensors for fixed storage and mobile reefers, fully compliant with SFDA standards.</p>
@@ -174,12 +174,12 @@ export default function Team() {
                                                 <div className="team-two__img">
                                                     <Image src="/assets/images/team/oill.png" alt="Image" width={410} height={450} priority />
                                                 </div>
-                                                <div className="team-two__social">
+                                                {/* <div className="team-two__social">
                                                     <Link href="#"><span className="icon-facebook"></span></Link>
                                                     <Link href="#"><span className="icon-dribble"></span></Link>
 
                                                     <Link href="#"><span className="icon-linkedin"></span></Link>
-                                                </div>
+                                                </div> */}
                                                 <div className="team-two__title-box">
                                                     <h3><Link href="/team-details">Fuel Management Systems</Link></h3>
                                                     <p>Eliminate fuel theft and monitor consumption with high-accuracy digital sensors and real-time leakage alerts. </p>
@@ -195,12 +195,12 @@ export default function Team() {
                                                 <div className="team-two__img">
                                                     <Image src="/assets/images/team/concret.png" alt="Image" width={410} height={450} priority />
                                                 </div>
-                                                <div className="team-two__social">
+                                                {/* <div className="team-two__social">
                                                     <Link href="#"><span className="icon-facebook"></span></Link>
                                                     <Link href="#"><span className="icon-dribble"></span></Link>
 
                                                     <Link href="#"><span className="icon-linkedin"></span></Link>
-                                                </div>
+                                                </div> */}
                                                 <div className="team-two__title-box">
                                                     <h3><Link href="/team-details">Ready-Mix Solution </Link></h3>
                                                     <p>Specialized IoT integration for concrete mixing monitoring and structural integrity data.</p>
