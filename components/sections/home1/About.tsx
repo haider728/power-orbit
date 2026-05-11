@@ -109,7 +109,7 @@ export default function About() {
                       rel="noopener noreferrer"
                     >
                       Company Profile
-                      <span className="icon-right-arrow" />
+                      {/* <span className="icon-right-arrow" /> */}
                     </Link>
                   </div>
                 </div>

@@ -23,9 +23,9 @@ export default function Process() {
         {/* Section Title */}
         <div className="section-title text-center sec-title-animation animation-style1">
           <div className="section-title__tagline-box">
-            <div className="section-title__tagline-shape-1"></div>
+            {/* <div className="section-title__tagline-shape-1"></div>
             <span className="section-title__tagline">Why Power Orbit </span>
-            <div className="section-title__tagline-shape-2"></div>
+            <div className="section-title__tagline-shape-2"></div> */}
           </div>
           <AnimatedTitle>
           <h2 className="section-title__title title-animation">

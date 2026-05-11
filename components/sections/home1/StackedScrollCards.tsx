@@ -19,9 +19,9 @@ export default function StackedScrollCards() {
             <div className="container">
                 <div className={`section-title text-center sec-title-animation animation-style1 ${styles.sectionHeader}`}>
                     <div className="section-title__tagline-box">
-                        <div className="section-title__tagline-shape-1"></div>
+                        {/* <div className="section-title__tagline-shape-1"></div>
                         <span className="section-title__tagline">Featured Work</span>
-                        <div className="section-title__tagline-shape-2"></div>
+                        <div className="section-title__tagline-shape-2"></div> */}
                     </div>
                     <h2 className="section-title__title title-animation">
                     A Unified Portfolio  <span> for Specialized Control</span> Cards

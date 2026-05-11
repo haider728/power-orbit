@@ -25,7 +25,7 @@ export default function LogoCarouselSection() {
       <div className="container">
         <div className={styles.header}>
           <div className="section-title text-center">
-            <span className="section-title__tagline">Our Trusted Network</span>
+            {/* <span className="section-title__tagline">Our Trusted Network</span> */}
             <h2 className="section-title__title">
             Why <span>Choose Us.</span>
             </h2>

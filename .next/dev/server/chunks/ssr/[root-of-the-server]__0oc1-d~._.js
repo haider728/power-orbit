@@ -2462,32 +2462,8 @@ function Process() {
                         className: "section-title text-center sec-title-animation animation-style1",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "section-title__tagline-box",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "section-title__tagline-shape-1"
-                                    }, void 0, false, {
-                                        fileName: "[project]/power-orbit/components/sections/home1/Process.tsx",
-                                        lineNumber: 26,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "section-title__tagline",
-                                        children: "Why Power Orbit "
-                                    }, void 0, false, {
-                                        fileName: "[project]/power-orbit/components/sections/home1/Process.tsx",
-                                        lineNumber: 27,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "section-title__tagline-shape-2"
-                                    }, void 0, false, {
-                                        fileName: "[project]/power-orbit/components/sections/home1/Process.tsx",
-                                        lineNumber: 28,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
+                                className: "section-title__tagline-box"
+                            }, void 0, false, {
                                 fileName: "[project]/power-orbit/components/sections/home1/Process.tsx",
                                 lineNumber: 25,
                                 columnNumber: 11

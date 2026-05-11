@@ -74,7 +74,7 @@ export default function Blog() {
             <div className="blog-two__left">
 
               <div className="section-title text-left">
-                <span className="section-title__tagline">Our Blogs</span>
+                {/* <span className="section-title__tagline">Our Blogs</span> */}
 
                 <AnimatedTitle>
                   <h2 className="section-title__title">

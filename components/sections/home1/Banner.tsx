@@ -88,9 +88,9 @@ export default function Banner() {
                                 <div className="col-xl-12">
                                     <div className="main-slider-two__content">
                                         <div className="main-slider-two__sub-title-box">
-                                            <div className="main-slider-two__sub-title-icon">
+                                            {/* <div className="main-slider-two__sub-title-icon">
                                                 <Image src="/assets/images/icon/main-slider-sub-title-icon.png" alt="icon" width={16} height={16} priority />
-                                            </div>
+                                            </div> */}
                                             <p className="main-slider-two__sub-title">Engineering Intelligent Mobility for the Kingdom’s Leading Fleets 
                                             </p>
                                         </div>
@@ -101,12 +101,16 @@ export default function Banner() {
                                            mission-critical operations. <br /></p>
                                         <div className="main-slider-two__btns-box">
                                             <div className="main-slider-two__btn-box-1">
-                                                <Link href="/contact" className="thm-btn">Visit Eagle-IoT Platform<span
-                                                        className="icon-right-arrow"></span></Link>
+                                                <Link href="/contact" className="thm-btn">Visit Eagle-IoT Platform
+                                                {/* <span
+                                                        className="icon-right-arrow"></span> */}
+                                                        </Link>
                                             </div>
                                             <div className="main-slider-two__btn-box-2">
-                                                <Link href="/about" className="thm-btn">Explore the Ecosystem<span
-                                                        className="icon-right-arrow"></span></Link>
+                                                <Link href="/about" className="thm-btn">Explore the Ecosystem
+                                                {/* <span
+                                                        className="icon-right-arrow"></span> */}
+                                                        </Link>
                                             </div>
                                         </div>
                                         <div className="main-slider-two__shield-check-icon">
@@ -149,9 +153,9 @@ export default function Banner() {
                                 <div className="col-xl-12">
                                     <div className="main-slider-two__content">
                                         <div className="main-slider-two__sub-title-box">
-                                            <div className="main-slider-two__sub-title-icon">
+                                            {/* <div className="main-slider-two__sub-title-icon">
                                                 <Image src="/assets/images/icon/main-slider-sub-title-icon.png" alt="icon" width={16} height={16} priority />
-                                            </div>
+                                            </div> */}
                                             <p className="main-slider-two__sub-title">IT Solutions Designed for Your Success
                                             </p>
                                         </div>
@@ -162,12 +166,16 @@ export default function Banner() {
                                       tool.  We provide a modular ecosystem  <br />   of specialized brands.</p>
                                         <div className="main-slider-two__btns-box">
                                             <div className="main-slider-two__btn-box-1">
-                                                <Link href="/contact" className="thm-btn">Visit Eagle-IoT Platform<span
-                                                        className="icon-right-arrow"></span></Link>
+                                                <Link href="/contact" className="thm-btn">Visit Eagle-IoT Platform
+                                                {/* <span
+                                                        className="icon-right-arrow"></span> */}
+                                                        </Link>
                                             </div>
                                             <div className="main-slider-two__btn-box-2">
-                                                <Link href="/about" className="thm-btn">Explore the Ecosystem<span
-                                                        className="icon-right-arrow"></span></Link>
+                                                <Link href="/about" className="thm-btn">Explore the Ecosystem
+                                                {/* <span
+                                                        className="icon-right-arrow"></span> */}
+                                                        </Link>
                                             </div>
                                         </div>
                                         <div className="main-slider-two__shield-check-icon">
@@ -210,9 +218,9 @@ export default function Banner() {
                                 <div className="col-xl-12">
                                     <div className="main-slider-two__content">
                                         <div className="main-slider-two__sub-title-box">
-                                            <div className="main-slider-two__sub-title-icon">
+                                            {/* <div className="main-slider-two__sub-title-icon">
                                                 <Image src="/assets/images/icon/main-slider-sub-title-icon.png" alt="icon" width={16} height={16} priority />
-                                            </div>
+                                            </div> */}
                                             <p className="main-slider-two__sub-title">IT Solutions Designed for Your Success
                                             </p>
                                         </div>
@@ -223,12 +231,15 @@ export default function Banner() {
                                             telematics solutions for mission-critical <br /> operations.</p>
                                         <div className="main-slider-two__btns-box">
                                             <div className="main-slider-two__btn-box-1">
-                                                <Link href="/contact" className="thm-btn">Visit Eagle-IoT Platform<span
-                                                        className="icon-right-arrow"></span></Link>
+                                                <Link href="/contact" className="thm-btn">Visit Eagle-IoT Platform
+                                                {/* <span
+                                                        className="icon-right-arrow"></span> */}
+                                                        </Link>
                                             </div>
                                             <div className="main-slider-two__btn-box-2">
-                                                <Link href="/about" className="thm-btn">Explore the Ecosystem<span
-                                                        className="icon-right-arrow"></span></Link>
+                                                <Link href="/about" className="thm-btn">Explore the Ecosystem
+                                                {/* <span  className="icon-right-arrow"></span> */}
+                                                </Link>
                                             </div>
                                         </div>
                                         <div className="main-slider-two__shield-check-icon">
