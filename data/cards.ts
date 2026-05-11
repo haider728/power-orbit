@@ -22,15 +22,19 @@ export const cards: ProjectCard[] = [
     title: "SmartSense | Connected Asset Intelligence ",
     description:
       "This is a story on the border between reality and imaginary, about the contradictory feelings that the insularity of a rocky, arid, and wild territory provokes-so French photographer Clement Chapillon describes his latest highly captivating project Les rochers fauves (French for 'The tawny rocks').",
-    src: "smart.png",
+      fullDescription:
+      " When your operational success depends on the precise condition of your assets; not just their location, SmartSense provides the eyes on the ground. This is the intelligence layer for fixed warehouses, cold storage facilities, and high-value environmental assets.\n\nThe Challenge: Maintaining 100% cold chain stability, preventing costly pharmaceutical spoilage, and manually logging data to meet strict Saudi Food and Drug Authority standards\n\nThe Solution: An advanced sensor-driven ecosystem providing real-time monitoring of enviornment. SmartSense automates the data-logging process, providing the auditable digital trail required for SFDA compliance and pharmaceutical integrity. \n\nCore Capabilities: * Warehouse & Cold Storage: 24/7 monitoring of fixed storage environments. \n-SFDA-Ready Reporting: Automated temperature logs and historical data for regulatory audits. \nReal-Time Alerts: Immediate notification via SMS/Email the moment temperature or humidity deviates from the safety threshold.  ",
+      src: "smart.png",
     color: "#23214A",
     url: "https://www.ignant.com/2022/09/30/clement-chapillon-questions-geographical-and-mental-isolation-with-les-rochers-fauves/",
   },
   {
     title: "Integrated Mobility Apps | The Last Mile of Intelligence ",
     description:
-      "Though he views photography as a medium for storytelling, Zissou's images don't insist on a narrative. Both crisp and ethereal, they're encoded with an ambiguity-a certain tension-that lets the viewer find their own story within them.",
-    src: "app.png",
+      "Data is only valuable if it reaches the people who can act on it. Our suite of mobile applications ensures that the intelligence generated in the office is executed in the field. We bridge the gap between the dispatcher and the driver. ",
+      fullDescription:
+      "Data is only valuable if it reaches the people who can act on it. Our suite of mobile applications ensures that the intelligence generated in the office is executed in the field. We bridge the gap between the dispatcher and the driver. \n\nSpecialized mobile interfaces \n\nEagle-IoT Fleet Management App,  \n\nDriver Dispatch App,  \n\nBus Transit Apps \n\nSmart Sense App",
+      src: "app.png",
     color: "#2D2B5A",
     url: "https://www.ignant.com/2023/10/28/capturing-balis-many-faces-zissou-documents-the-sacred-and-the-mundane-of-a-fragile-island/",
   },

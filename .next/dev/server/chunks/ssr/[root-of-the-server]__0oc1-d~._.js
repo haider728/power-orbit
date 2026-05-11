@@ -2236,17 +2236,8 @@ function Choose() {
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                                         href: "/about",
                                                         className: "thm-btn",
-                                                        children: [
-                                                            "About Us",
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "icon-right-arrow"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/power-orbit/components/sections/home1/Choose.tsx",
-                                                                lineNumber: 57,
-                                                                columnNumber: 85
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
+                                                        children: "About Us"
+                                                    }, void 0, false, {
                                                         fileName: "[project]/power-orbit/components/sections/home1/Choose.tsx",
                                                         lineNumber: 57,
                                                         columnNumber: 37
@@ -2260,7 +2251,7 @@ function Choose() {
                                                     className: "why-choose-one__client-box"
                                                 }, void 0, false, {
                                                     fileName: "[project]/power-orbit/components/sections/home1/Choose.tsx",
-                                                    lineNumber: 60,
+                                                    lineNumber: 62,
                                                     columnNumber: 33
                                                 }, this)
                                             ]
@@ -2286,53 +2277,33 @@ function Choose() {
                                     className: "why-choose-one__right wow slideInRight",
                                     "data-wow-duration": "1.2s",
                                     "data-wow-delay": "0.4s",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "why-choose-one__img why-choose-one__img-card",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                                src: "/images/choose.jpg",
-                                                alt: "Fleet operations dashboard and compliance monitoring",
-                                                width: 670,
-                                                height: 470,
-                                                className: "why-choose-one__img-relatable",
-                                                priority: true
-                                            }, void 0, false, {
-                                                fileName: "[project]/power-orbit/components/sections/home1/Choose.tsx",
-                                                lineNumber: 75,
-                                                columnNumber: 33
-                                            }, this)
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "why-choose-one__img why-choose-one__img-card",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                            src: "/images/choose.jpg",
+                                            alt: "Fleet operations dashboard and compliance monitoring",
+                                            width: 670,
+                                            height: 470,
+                                            className: "why-choose-one__img-relatable",
+                                            priority: true
                                         }, void 0, false, {
                                             fileName: "[project]/power-orbit/components/sections/home1/Choose.tsx",
-                                            lineNumber: 74,
-                                            columnNumber: 29
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "why-choose-one__shape-2 float-bob-x",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                                src: "/assets/images/shapes/why-choose-one-shape-2.png",
-                                                alt: "Image",
-                                                width: 142,
-                                                height: 46,
-                                                priority: true
-                                            }, void 0, false, {
-                                                fileName: "[project]/power-orbit/components/sections/home1/Choose.tsx",
-                                                lineNumber: 88,
-                                                columnNumber: 33
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/power-orbit/components/sections/home1/Choose.tsx",
-                                            lineNumber: 87,
-                                            columnNumber: 29
+                                            lineNumber: 77,
+                                            columnNumber: 33
                                         }, this)
-                                    ]
-                                }, void 0, true, {
+                                    }, void 0, false, {
+                                        fileName: "[project]/power-orbit/components/sections/home1/Choose.tsx",
+                                        lineNumber: 76,
+                                        columnNumber: 29
+                                    }, this)
+                                }, void 0, false, {
                                     fileName: "[project]/power-orbit/components/sections/home1/Choose.tsx",
-                                    lineNumber: 73,
+                                    lineNumber: 75,
                                     columnNumber: 25
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/power-orbit/components/sections/home1/Choose.tsx",
-                                lineNumber: 72,
+                                lineNumber: 74,
                                 columnNumber: 21
                             }, this)
                         ]

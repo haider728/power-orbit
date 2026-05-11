@@ -54,8 +54,10 @@ Operational clarity is our standard.</h4> */}
                             </ul> */}
                             <div className="why-choose-one__btn-and-client-info">
                                 <div className="why-choose-one__btn-box">
-                                    <Link href="/about" className="thm-btn">About Us<span
-                                            className="icon-right-arrow"></span></Link>
+                                    <Link href="/about" className="thm-btn">About Us
+                                    {/* <span
+                                            className="icon-right-arrow"></span> */}
+                                            </Link>
                                 </div>
                                 <div className="why-choose-one__client-box">
                                     {/* <div className="why-choose-one__client-img">
@@ -84,9 +86,9 @@ Operational clarity is our standard.</h4> */}
                             {/* <div className="why-choose-one__shape-1 img-bounce">
                                 <Image src="/assets/images/shapes/why-choose-one-shape-1.png" alt="Image" width={80} height={80} priority />
                             </div> */}
-                            <div className="why-choose-one__shape-2 float-bob-x">
+                            {/* <div className="why-choose-one__shape-2 float-bob-x">
                                 <Image src="/assets/images/shapes/why-choose-one-shape-2.png" alt="Image" width={142} height={46} priority />
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
