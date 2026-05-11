@@ -18,7 +18,7 @@ const cards = [
     {
         title: "SmartSense | Connected Asset Intelligence ",
         description: "This is a story on the border between reality and imaginary, about the contradictory feelings that the insularity of a rocky, arid, and wild territory provokes-so French photographer Clement Chapillon describes his latest highly captivating project Les rochers fauves (French for 'The tawny rocks').",
-        src: "tree.jpg",
+        src: "eagle.jpg",
         color: "#23214A",
         url: "https://www.ignant.com/2022/09/30/clement-chapillon-questions-geographical-and-mental-isolation-with-les-rochers-fauves/"
     },
