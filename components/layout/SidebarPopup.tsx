@@ -21,7 +21,7 @@ const SidebarPopup: React.FC<SidebarPopupProps> = ({ isOpen, onClose }) => {
                         <div className="content-inner">
                             <div className="logo">
                                 <Link href="/">
-                                  <Image src="/assets/images/resources/logo-1.png" alt="Logo" width={150} height={32} />
+                                  <Image src="/assets/images/resources/logo-1.gif" alt="Power Orbit" width={150} height={32} unoptimized />
                                 </Link>
                             </div>
                             <div className="content-box">

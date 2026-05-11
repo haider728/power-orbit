@@ -17,6 +17,12 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$components
 ;
 ;
 ;
+const HIGHLIGHTS = [
+    "We engineered the systems that made large-scale fleet digitization possible.",
+    "Our evolution from DMS to Power Orbit reflects a shift from basic tracking to unified operational governance.",
+    "We did not adapt to the industry — we helped define it.",
+    "Today, we deliver the operational control required by the Kingdom's most demanding enterprises."
+];
 function About() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -25,7 +31,7 @@ function About() {
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "container",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "row",
+                    className: "row align-items-center",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "col-xl-6",
@@ -38,294 +44,164 @@ function About() {
                                             className: "about-two__img",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                 src: "/assets/images/resources/about-two-img-1.jpg",
-                                                alt: "Image",
+                                                alt: "Power Orbit operations",
                                                 width: 495,
                                                 height: 474,
                                                 priority: true
                                             }, void 0, false, {
                                                 fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                lineNumber: 23,
-                                                columnNumber: 37
+                                                lineNumber: 24,
+                                                columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                            lineNumber: 22,
-                                            columnNumber: 33
+                                            lineNumber: 23,
+                                            columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "about-two__img-2",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                 src: "/assets/images/resources/about-two-img-2.jpg",
-                                                alt: "Image",
+                                                alt: "Telematics innovation",
                                                 width: 336,
                                                 height: 344,
                                                 priority: true
                                             }, void 0, false, {
                                                 fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                lineNumber: 26,
-                                                columnNumber: 37
+                                                lineNumber: 33,
+                                                columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                            lineNumber: 25,
-                                            columnNumber: 33
+                                            lineNumber: 32,
+                                            columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "about-two__shape-1"
+                                            className: "about-two__shape-1",
+                                            "aria-hidden": true
                                         }, void 0, false, {
                                             fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                            lineNumber: 28,
-                                            columnNumber: 33
+                                            lineNumber: 41,
+                                            columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                    lineNumber: 21,
-                                    columnNumber: 29
+                                    lineNumber: 22,
+                                    columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                lineNumber: 20,
-                                columnNumber: 25
+                                lineNumber: 21,
+                                columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                            lineNumber: 19,
-                            columnNumber: 21
+                            lineNumber: 20,
+                            columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "col-xl-6",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "about-two__right",
+                                className: "about-two__right about-two-copy",
                                 children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "section-title text-left sec-title-animation animation-style2",
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
+                                        className: "section-title text-left sec-title-animation animation-style2 about-two-copy__header",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "section-title__tagline-box",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "section-title__tagline-shape-1"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                        lineNumber: 59,
-                                                        columnNumber: 37
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "section-title__tagline",
-                                                        children: "About Us"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                        lineNumber: 60,
-                                                        columnNumber: 37
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "section-title__tagline-shape-2"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                        lineNumber: 61,
-                                                        columnNumber: 37
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
+                                                className: "section-title__tagline-box"
+                                            }, void 0, false, {
                                                 fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                lineNumber: 58,
-                                                columnNumber: 33
+                                                lineNumber: 48,
+                                                columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$components$2f$elements$2f$AnimatedTitle$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                    className: "section-title__title title-animation",
+                                                    className: "section-title__title title-animation about-two-copy__title",
                                                     children: [
-                                                        "Two Decades",
+                                                        "Two decades of ",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            children: " of"
+                                                            children: "telematics innovation"
                                                         }, void 0, false, {
                                                             fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                            lineNumber: 72,
-                                                            columnNumber: 37
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                                            fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                            lineNumber: 72,
-                                                            columnNumber: 53
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            children: "Telematics Innovation"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                            lineNumber: 72,
-                                                            columnNumber: 59
+                                                            lineNumber: 55,
+                                                            columnNumber: 38
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                    lineNumber: 71,
-                                                    columnNumber: 33
+                                                    lineNumber: 54,
+                                                    columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                lineNumber: 70,
-                                                columnNumber: 28
+                                                lineNumber: 53,
+                                                columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                        lineNumber: 57,
-                                        columnNumber: 29
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "about-two__text",
-                                        children: "Founded in 2006, Power Orbit has spent two decades navigating the complexity of Saudi operations. We did not just witness the Kingdom's digital transformation - we helped build the systems behind it."
-                                    }, void 0, false, {
-                                        fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                        lineNumber: 76,
-                                        columnNumber: 29
+                                        lineNumber: 47,
+                                        columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "about-two__points-box",
+                                        className: "about-two-copy__body",
                                         children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                                className: "about-two__points-list list-unstyled",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "icon",
-                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                    className: "icon-tick-inside-circle"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                                    lineNumber: 83,
-                                                                    columnNumber: 45
-                                                                }, this)
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                                lineNumber: 82,
-                                                                columnNumber: 41
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                children: "We engineered the systems that made large-scale fleet digitization possible."
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                                lineNumber: 85,
-                                                                columnNumber: 41
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                        lineNumber: 81,
-                                                        columnNumber: 37
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "icon",
-                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                    className: "icon-tick-inside-circle"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                                    lineNumber: 89,
-                                                                    columnNumber: 45
-                                                                }, this)
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                                lineNumber: 88,
-                                                                columnNumber: 41
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                children: "Our evolution from DMS to Power Orbit reflects a shift from basic tracking to unified operational governance."
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                                lineNumber: 91,
-                                                                columnNumber: 41
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                        lineNumber: 87,
-                                                        columnNumber: 37
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "about-two-copy__lead",
+                                                children: "Founded in 2006, Power Orbit has spent two decades navigating the complexity of Saudi operations. We did not just witness the Kingdom's digital transformation — we helped build the systems behind it."
+                                            }, void 0, false, {
                                                 fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                lineNumber: 80,
-                                                columnNumber: 33
+                                                lineNumber: 61,
+                                                columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                                className: "about-two__points-list list-unstyled",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                className: "about-two-copy__grid list-unstyled",
+                                                role: "list",
+                                                children: HIGHLIGHTS.map((text)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                        className: "about-two-copy__card",
                                                         children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "icon",
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "about-two-copy__tick",
+                                                                "aria-hidden": true,
                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                     className: "icon-tick-inside-circle"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                                    lineNumber: 97,
-                                                                    columnNumber: 45
+                                                                    lineNumber: 72,
+                                                                    columnNumber: 27
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                                lineNumber: 96,
-                                                                columnNumber: 41
+                                                                lineNumber: 71,
+                                                                columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                children: "We did not adapt to the industry - we helped define it."
+                                                                children: text
                                                             }, void 0, false, {
                                                                 fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                                lineNumber: 99,
-                                                                columnNumber: 41
+                                                                lineNumber: 74,
+                                                                columnNumber: 25
                                                             }, this)
                                                         ]
-                                                    }, void 0, true, {
+                                                    }, text, true, {
                                                         fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                        lineNumber: 95,
-                                                        columnNumber: 37
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "icon",
-                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                    className: "icon-tick-inside-circle"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                                    lineNumber: 103,
-                                                                    columnNumber: 45
-                                                                }, this)
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                                lineNumber: 102,
-                                                                columnNumber: 41
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                children: "Today, we deliver the operational control required by the Kingdom's most demanding enterprises."
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                                lineNumber: 105,
-                                                                columnNumber: 41
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                        lineNumber: 101,
-                                                        columnNumber: 37
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
+                                                        lineNumber: 70,
+                                                        columnNumber: 23
+                                                    }, this))
+                                            }, void 0, false, {
                                                 fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                lineNumber: 94,
-                                                columnNumber: 33
+                                                lineNumber: 68,
+                                                columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                        lineNumber: 79,
-                                        columnNumber: 29
+                                        lineNumber: 60,
+                                        columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "about-two__experience-contact-and-btn",
+                                        className: "about-two__experience-contact-and-btn about-two-copy__footer",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "about-two__experience-box",
@@ -340,26 +216,26 @@ function About() {
                                                                     duration: 2
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                                    lineNumber: 113,
-                                                                    columnNumber: 45
+                                                                    lineNumber: 84,
+                                                                    columnNumber: 25
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                                lineNumber: 112,
-                                                                columnNumber: 41
+                                                                lineNumber: 83,
+                                                                columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                 children: "+"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                                lineNumber: 115,
-                                                                columnNumber: 41
+                                                                lineNumber: 86,
+                                                                columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                        lineNumber: 111,
-                                                        columnNumber: 37
+                                                        lineNumber: 82,
+                                                        columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                         className: "about-two__experience-text",
@@ -367,21 +243,21 @@ function About() {
                                                             "Years of",
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                                 fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                                lineNumber: 118,
-                                                                columnNumber: 41
+                                                                lineNumber: 90,
+                                                                columnNumber: 23
                                                             }, this),
                                                             " Experience"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                        lineNumber: 117,
-                                                        columnNumber: 37
+                                                        lineNumber: 88,
+                                                        columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                lineNumber: 110,
-                                                columnNumber: 33
+                                                lineNumber: 81,
+                                                columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "about-two__call-box",
@@ -392,49 +268,49 @@ function About() {
                                                             className: "icon-customer-service-headset"
                                                         }, void 0, false, {
                                                             fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                            lineNumber: 122,
-                                                            columnNumber: 41
+                                                            lineNumber: 95,
+                                                            columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                        lineNumber: 121,
-                                                        columnNumber: 37
+                                                        lineNumber: 94,
+                                                        columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "about-two__call-content",
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                children: "call us for inquiry"
+                                                                children: "Call us for inquiry"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                                lineNumber: 125,
-                                                                columnNumber: 41
+                                                                lineNumber: 98,
+                                                                columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                                                    href: "tel:00123456767",
+                                                                    href: "tel:+966533085658",
                                                                     children: "+966 53 308 5658"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                                    lineNumber: 126,
-                                                                    columnNumber: 44
+                                                                    lineNumber: 100,
+                                                                    columnNumber: 25
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                                lineNumber: 126,
-                                                                columnNumber: 41
+                                                                lineNumber: 99,
+                                                                columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                        lineNumber: 124,
-                                                        columnNumber: 37
+                                                        lineNumber: 97,
+                                                        columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                lineNumber: 120,
-                                                columnNumber: 33
+                                                lineNumber: 93,
+                                                columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$power$2d$orbit$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "about-two__btn-box",
@@ -449,52 +325,52 @@ function About() {
                                                             className: "icon-right-arrow"
                                                         }, void 0, false, {
                                                             fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                            lineNumber: 137,
-                                                            columnNumber: 41
+                                                            lineNumber: 112,
+                                                            columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                    lineNumber: 130,
-                                                    columnNumber: 37
+                                                    lineNumber: 105,
+                                                    columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                                lineNumber: 129,
-                                                columnNumber: 33
+                                                lineNumber: 104,
+                                                columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                        lineNumber: 109,
-                                        columnNumber: 29
+                                        lineNumber: 80,
+                                        columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                                lineNumber: 56,
-                                columnNumber: 25
+                                lineNumber: 46,
+                                columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                            lineNumber: 55,
-                            columnNumber: 21
+                            lineNumber: 45,
+                            columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                    lineNumber: 18,
-                    columnNumber: 17
+                    lineNumber: 19,
+                    columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-                lineNumber: 17,
-                columnNumber: 13
+                lineNumber: 18,
+                columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/power-orbit/components/sections/home1/About.tsx",
-            lineNumber: 10,
-            columnNumber: 9
+            lineNumber: 17,
+            columnNumber: 7
         }, this)
     }, void 0, false);
 }

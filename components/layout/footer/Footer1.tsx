@@ -14,7 +14,7 @@ export default function Footer1() {
                             <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                                 <div className="site-footer-two__about">
                                     <div className="site-footer-two__logo">
-                                        <Link href="/"><Image src="/assets/images/resources/footer-logo.png" alt="Footer logo" width={169} height={36} priority /></Link>
+                                        <Link href="/"><Image src="/assets/images/resources/footer-logo.gif" alt="Power Orbit" width={169} height={36} priority unoptimized /></Link>
                                     </div>
                                     <ul className="list-unstyled site-footer-two__contact-list">
                                         <li>

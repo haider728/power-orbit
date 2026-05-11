@@ -52,7 +52,7 @@ export default function Header1({ scroll, handleMobileMenu, handleSidebar }: Hea
                 <div className="main-menu-two__wrapper-inner">
                     <div className="main-menu-two__left">
                         <div className="main-menu-two__logo">
-                            <Link href="/"><Image src="/assets/images/resources/logo-1.png" alt="Image" width={186} height={36} priority /></Link>
+                            <Link href="/"><Image src="/assets/images/resources/logo-1.gif" alt="Power Orbit" width={186} height={36} priority unoptimized /></Link>
                         </div>
                     </div>
                     <div className="main-menu-two__main-menu-box">
@@ -79,7 +79,7 @@ export default function Header1({ scroll, handleMobileMenu, handleSidebar }: Hea
                 <div className="main-menu-two__wrapper-inner">
                     <div className="main-menu-two__left">
                         <div className="main-menu-two__logo">
-                            <Link href="/"><Image src="/assets/images/resources/logo-1.png" alt="Image" width={186} height={36} priority /></Link>
+                            <Link href="/"><Image src="/assets/images/resources/logo-1.gif" alt="Power Orbit" width={186} height={36} priority unoptimized /></Link>
                         </div>
                     </div>
                     <div className="main-menu-two__main-menu-box">

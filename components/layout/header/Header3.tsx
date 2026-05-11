@@ -64,7 +64,7 @@ export default function Header3({ scroll, handleMobileMenu }: Header3Props) {
                     <div className="main-menu__wrapper-inner">
                         <div className="main-menu__left">
                             <div className="main-menu__logo">
-                                <Link href="/index2"><Image src="/assets/images/resources/logo-1.png" alt="Image" width={186} height={36} priority /></Link>
+                                <Link href="/index2"><Image src="/assets/images/resources/logo-1.gif" alt="Power Orbit" width={186} height={36} priority unoptimized /></Link>
                             </div>
                         </div>
                         <div className="main-menu__main-menu-box">
@@ -90,7 +90,7 @@ export default function Header3({ scroll, handleMobileMenu }: Header3Props) {
                         <div className="main-menu__wrapper-inner">
                             <div className="main-menu__left">
                                 <div className="main-menu__logo">
-                                    <Link href="/index2"><Image src="/assets/images/resources/logo-1.png" alt="Image" width={186} height={36} priority /></Link>
+                                    <Link href="/index2"><Image src="/assets/images/resources/logo-1.gif" alt="Power Orbit" width={186} height={36} priority unoptimized /></Link>
                                 </div>
                             </div>
                             <div className="main-menu__main-menu-box">

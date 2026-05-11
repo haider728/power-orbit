@@ -20,7 +20,7 @@ export default function Footer1() {
                     <div className="container">
                         <div className="site-footer__top-inner">
                             <div className="site-footer__logo">
-                                <Link href="/index2"><Image src="/assets/images/resources/footer-logo.png" alt="Image" width={169} height={36} priority /></Link>
+                                <Link href="/index2"><Image src="/assets/images/resources/footer-logo.gif" alt="Power Orbit" width={169} height={36} priority unoptimized /></Link>
                             </div>
                             <div className="site-footer__top-text-box">
                                 <p className="site-footer__top-text">We are the best creative agency <br />

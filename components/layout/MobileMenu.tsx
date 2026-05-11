@@ -43,11 +43,12 @@ export default function MobileMenu({ isSidebar, handleMobileMenu }: MobileMenuPr
           <div className="logo-box">
             <Link href="/" aria-label="logo image" onClick={handleMobileMenu}>
               <Image
-                src="/assets/images/resources/logo-2.png"
-                alt="Logo"
+                src="/assets/images/resources/logo-1.gif"
+                alt="Power Orbit"
                 width={150}
                 height={32}
                 priority
+                unoptimized
               />
             </Link>
           </div>

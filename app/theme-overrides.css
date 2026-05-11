@@ -104,3 +104,114 @@ body {
 [class*="__icon"] i {
   color: var(--techguru-base) !important;
 }
+
+/* About section — readable typography and highlight cards */
+.about-two-copy__header {
+  margin-bottom: 0;
+}
+
+.about-two-copy__header.section-title {
+  margin-bottom: clamp(1.25rem, 3vw, 1.75rem);
+}
+
+.about-two-copy__title {
+  margin-right: 0 !important;
+  max-width: 20ch;
+  line-height: 1.18 !important;
+  letter-spacing: -0.02em;
+}
+
+.about-two-copy__title span {
+  display: inline;
+}
+
+.about-two-copy__body {
+  max-width: 40rem;
+}
+
+.about-two-copy__lead {
+  margin: 0 0 clamp(1.5rem, 3vw, 2rem);
+  font-size: clamp(1.0625rem, 0.3vw + 1rem, 1.1875rem);
+  line-height: 1.72;
+  color: rgba(255, 255, 255, 0.86);
+  letter-spacing: 0.01em;
+}
+
+.about-two-copy__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.875rem 1.25rem;
+  margin: 0;
+  padding: clamp(1.25rem, 2.5vw, 1.75rem) 0 clamp(1.5rem, 3vw, 2rem);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width: 576px) {
+  .about-two-copy__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem 1.5rem;
+  }
+}
+
+.about-two-copy__card {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.875rem;
+  margin: 0;
+  padding: 0.95rem 1rem;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: border-color 0.25s ease, background 0.25s ease;
+}
+
+.about-two-copy__card:hover {
+  background: rgba(255, 255, 255, 0.048);
+  border-color: rgba(79, 149, 241, 0.35);
+}
+
+.about-two-copy__tick {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  margin-top: 0.1rem;
+  border-radius: 999px;
+  background: rgba(79, 149, 241, 0.12);
+  color: #4f95f1;
+}
+
+.about-two-copy__tick .icon-tick-inside-circle {
+  font-size: 0.7rem;
+  color: inherit !important;
+}
+
+.about-two-copy__card p {
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.about-two-copy__footer {
+  flex-wrap: wrap;
+  gap: clamp(1.25rem, 3vw, 2rem) !important;
+}
+
+.about-two__experience-text {
+  text-transform: none;
+}
+
+@media (max-width: 1199px) {
+  .about-two-copy__title {
+    max-width: none;
+  }
+
+  .about-two__left {
+    margin-right: 0;
+    margin-bottom: 2.5rem;
+  }
+}

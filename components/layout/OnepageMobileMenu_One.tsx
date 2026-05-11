@@ -61,11 +61,12 @@ export default function OnepageMobileMenu_One({ isSidebar, handleMobileMenu }: O
         <div className="logo-box">
           <Link href="/" onClick={handleMobileMenu} aria-label="logo image">
             <Image
-              src="/assets/images/resources/logo-2.png"
-              alt="Logo"
+              src="/assets/images/resources/logo-1.gif"
+              alt="Power Orbit"
               width={150}
               height={32}
               priority
+              unoptimized
             />
           </Link>
         </div>

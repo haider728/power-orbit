@@ -46357,6 +46357,116 @@ html, body {
   color: var(--techguru-base) !important;
 }
 
+.about-two-copy__header {
+  margin-bottom: 0;
+}
+
+.about-two-copy__header.section-title {
+  margin-bottom: clamp(1.25rem, 3vw, 1.75rem);
+}
+
+.about-two-copy__title {
+  letter-spacing: -.02em;
+  max-width: 20ch;
+  margin-right: 0 !important;
+  line-height: 1.18 !important;
+}
+
+.about-two-copy__title span {
+  display: inline;
+}
+
+.about-two-copy__body {
+  max-width: 40rem;
+}
+
+.about-two-copy__lead {
+  color: #ffffffdb;
+  letter-spacing: .01em;
+  margin: 0 0 clamp(1.5rem, 3vw, 2rem);
+  font-size: clamp(1.0625rem, .3vw + 1rem, 1.1875rem);
+  line-height: 1.72;
+}
+
+.about-two-copy__grid {
+  border-top: 1px solid #ffffff1a;
+  border-bottom: 1px solid #ffffff1a;
+  grid-template-columns: 1fr;
+  gap: .875rem 1.25rem;
+  margin: 0;
+  padding: clamp(1.25rem, 2.5vw, 1.75rem) 0 clamp(1.5rem, 3vw, 2rem);
+  display: grid;
+}
+
+@media (min-width: 576px) {
+  .about-two-copy__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem 1.5rem;
+  }
+}
+
+.about-two-copy__card {
+  background: #ffffff09;
+  border: 1px solid #ffffff14;
+  border-radius: 14px;
+  align-items: flex-start;
+  gap: .875rem;
+  margin: 0;
+  padding: .95rem 1rem;
+  transition: border-color .25s, background .25s;
+  display: flex;
+}
+
+.about-two-copy__card:hover {
+  background: #ffffff0c;
+  border-color: #4f95f159;
+}
+
+.about-two-copy__tick {
+  color: #4f95f1;
+  background: #4f95f11f;
+  border-radius: 999px;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  margin-top: .1rem;
+  display: flex;
+}
+
+.about-two-copy__tick .icon-tick-inside-circle {
+  font-size: .7rem;
+  color: inherit !important;
+}
+
+.about-two-copy__card p {
+  color: #ffffffc7;
+  margin: 0;
+  font-size: .9375rem;
+  line-height: 1.65;
+}
+
+.about-two-copy__footer {
+  flex-wrap: wrap;
+  gap: clamp(1.25rem, 3vw, 2rem) !important;
+}
+
+.about-two__experience-text {
+  text-transform: none;
+}
+
+@media (max-width: 1199px) {
+  .about-two-copy__title {
+    max-width: none;
+  }
+
+  .about-two__left {
+    margin-bottom: 2.5rem;
+    margin-right: 0;
+  }
+}
+
 /* [project]/power-orbit/node_modules/swiper/swiper.css [app-client] (css) */
 :root {
   --swiper-theme-color: #007aff;
