@@ -54,7 +54,7 @@ Operational clarity is our standard.</h4> */}
                             </ul> */}
                             <div className="why-choose-one__btn-and-client-info">
                                 <div className="why-choose-one__btn-box">
-                                    <Link href="/about" className="thm-btn">About Us
+                                    <Link href="https://avl-ksa.com/en/about-us/" className="thm-btn">About Us
                                     {/* <span
                                             className="icon-right-arrow"></span> */}
                                             </Link>
