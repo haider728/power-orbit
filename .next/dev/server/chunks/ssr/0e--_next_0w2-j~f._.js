@@ -13898,7 +13898,14 @@ const configEnv = ("TURBOPACK compile-time value", {
     "dangerouslyAllowSVG": ("TURBOPACK compile-time value", false),
     "unoptimized": ("TURBOPACK compile-time value", false),
     "domains": ("TURBOPACK compile-time value", []),
-    "remotePatterns": ("TURBOPACK compile-time value", []),
+    "remotePatterns": ("TURBOPACK compile-time value", [
+        ("TURBOPACK compile-time value", {
+            "protocol": ("TURBOPACK compile-time value", "http"),
+            "hostname": ("TURBOPACK compile-time value", "144.24.219.37"),
+            "port": ("TURBOPACK compile-time value", "1337"),
+            "pathname": ("TURBOPACK compile-time value", "/uploads/**")
+        })
+    ]),
     "localPatterns": ("TURBOPACK compile-time value", [
         ("TURBOPACK compile-time value", {
             "pathname": ("TURBOPACK compile-time value", "**"),
@@ -14251,7 +14258,14 @@ function getImageProps(imgProps) {
             "dangerouslyAllowSVG": ("TURBOPACK compile-time value", false),
             "unoptimized": ("TURBOPACK compile-time value", false),
             "domains": ("TURBOPACK compile-time value", []),
-            "remotePatterns": ("TURBOPACK compile-time value", []),
+            "remotePatterns": ("TURBOPACK compile-time value", [
+                ("TURBOPACK compile-time value", {
+                    "protocol": ("TURBOPACK compile-time value", "http"),
+                    "hostname": ("TURBOPACK compile-time value", "144.24.219.37"),
+                    "port": ("TURBOPACK compile-time value", "1337"),
+                    "pathname": ("TURBOPACK compile-time value", "/uploads/**")
+                })
+            ]),
             "localPatterns": ("TURBOPACK compile-time value", [
                 ("TURBOPACK compile-time value", {
                     "pathname": ("TURBOPACK compile-time value", "**"),

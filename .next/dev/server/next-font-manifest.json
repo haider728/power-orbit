@@ -1,17 +1,5 @@
 {
   "app": {
-    "[project]/power-orbit/app/_not-found/page": [
-      "static/media/0c89a48fa5027cee-s.p.0rd3rjvnnhw7n.woff2",
-      "static/media/ec2f4458eb06f74e-s.p.09_wjtigl~olh.woff2"
-    ],
-    "[project]/power-orbit/app/about/page": [
-      "static/media/0c89a48fa5027cee-s.p.0rd3rjvnnhw7n.woff2",
-      "static/media/ec2f4458eb06f74e-s.p.09_wjtigl~olh.woff2"
-    ],
-    "[project]/power-orbit/app/contact/page": [
-      "static/media/0c89a48fa5027cee-s.p.0rd3rjvnnhw7n.woff2",
-      "static/media/ec2f4458eb06f74e-s.p.09_wjtigl~olh.woff2"
-    ],
     "[project]/power-orbit/app/page": [
       "static/media/0c89a48fa5027cee-s.p.0rd3rjvnnhw7n.woff2",
       "static/media/ec2f4458eb06f74e-s.p.09_wjtigl~olh.woff2"
