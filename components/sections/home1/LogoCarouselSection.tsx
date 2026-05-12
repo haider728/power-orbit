@@ -33,7 +33,7 @@ const brands = [
 
 export default function LogoCarouselSection() {
   return (
-    <section className={styles.section}>
+    <section id="ecosystem" className={styles.section}>
       <div className="container">
         <div className={styles.header}>
           <div className="section-title text-center">

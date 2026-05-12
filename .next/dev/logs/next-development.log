@@ -824,3 +824,4 @@
 {"timestamp":"28:19:01.365","source":"Browser","level":"WARN","message":"Image with src \"http://localhost:3000/assets/images/resources/footer-logo.gif\" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: \"auto\"' or 'height: \"auto\"' to maintain the aspect ratio."}
 {"timestamp":"44:39:59.564","source":"Server","level":"LOG","message":"✓ Compiled in 167ms"}
 {"timestamp":"44:41:08.206","source":"Server","level":"LOG","message":"✓ Compiled in 119ms"}
+{"timestamp":"44:48:11.615","source":"Server","level":"LOG","message":"✓ Compiled in 264ms"}

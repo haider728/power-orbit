@@ -107,7 +107,7 @@ export default function Banner() {
                                                         </Link>
                                             </div>
                                             <div className="main-slider-two__btn-box-2">
-                                                <Link href="/about" className="thm-btn">Explore the Ecosystem
+                                                <Link href="/#ecosystem" className="thm-btn">Explore the Ecosystem
                                                 {/* <span
                                                         className="icon-right-arrow"></span> */}
                                                         </Link>
@@ -172,7 +172,7 @@ export default function Banner() {
                                                         </Link>
                                             </div>
                                             <div className="main-slider-two__btn-box-2">
-                                                <Link href="/about" className="thm-btn">Explore the Ecosystem
+                                                <Link href="/#ecosystem" className="thm-btn">Explore the Ecosystem
                                                 {/* <span
                                                         className="icon-right-arrow"></span> */}
                                                         </Link>
@@ -237,7 +237,7 @@ export default function Banner() {
                                                         </Link>
                                             </div>
                                             <div className="main-slider-two__btn-box-2">
-                                                <Link href="/about" className="thm-btn">Explore the Ecosystem
+                                                <Link href="/#ecosystem" className="thm-btn">Explore the Ecosystem
                                                 {/* <span  className="icon-right-arrow"></span> */}
                                                 </Link>
                                             </div>
