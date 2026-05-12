@@ -103,7 +103,7 @@ export default function Blog() {
                   <div className="blog-two__single">
                     <div className="blog-two__img">
                       <Image
-                        src={primaryImageUrl ? `https://apnabike.arhomeservices.com${primaryImageUrl}` : "/assets/images/blog/blog-2-1.jpg"}
+                        src={primaryImageUrl ? `http://144.24.219.37:1337/api/articles?${primaryImageUrl}` : "/assets/images/blog/blog-2-1.jpg"}
                         alt="Image"
                         width={531}
                         height={257}
@@ -147,7 +147,7 @@ export default function Blog() {
                     <Image
                       src={
                         blogImageUrl
-                          ? `https://apnabike.arhomeservices.com${blogImageUrl}`
+                          ? `http://144.24.219.37:1337/api/articles?${blogImageUrl}`
                           : "/assets/images/blog/blog-2-2.jpg"
                       }
                       alt="Image"

@@ -61,18 +61,18 @@ export default function Header2({ scroll, handleMobileMenu, handleSidebar }: Hea
                     </div>
                     <div className="main-menu-two__right">
                         <div className="main-menu-two__btn-box">
-                            <Link href="/contact" className="thm-btn">Get in Touch
+                            <Link href="https://avl-ksa.com/en/contact-us/" className="thm-btn">Get in Touch
                             {/* <span
                                     className="icon-right-arrow"></span> */}
                                     </Link>
                         </div>
-                        <div className="main-menu-two__nav-sidebar-icon">
+                        {/* <div className="main-menu-two__nav-sidebar-icon">
                             <Link className="navSidebar-button" href="#" onClick={handleSidebar}>
                                 <span className="icon-dots-menu-one"></span>
                                 <span className="icon-dots-menu-two"></span>
                                 <span className="icon-dots-menu-three"></span>
                             </Link>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
@@ -94,7 +94,7 @@ export default function Header2({ scroll, handleMobileMenu, handleSidebar }: Hea
                     </div>
                     <div className="main-menu-two__right">
                         <div className="main-menu-two__btn-box">
-                            <Link href="/contact" className="thm-btn">Get in Touch
+                            <Link href="https://avl-ksa.com/en/contact-us/" className="thm-btn">Get in Touch
                             {/* <span
                                     className="icon-right-arrow"></span> */}
                                     </Link>

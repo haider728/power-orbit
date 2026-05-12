@@ -101,7 +101,7 @@ export default function Banner() {
                                            mission-critical operations. <br /></p>
                                         <div className="main-slider-two__btns-box">
                                             <div className="main-slider-two__btn-box-1">
-                                                <Link href="/contact" className="thm-btn">Visit Eagle-IoT Platform
+                                                <Link href="https://avl-ksa.com/en/" className="thm-btn">Visit Eagle-IoT Platform
                                                 {/* <span
                                                         className="icon-right-arrow"></span> */}
                                                         </Link>
@@ -166,7 +166,7 @@ export default function Banner() {
                                       tool.  We provide a modular ecosystem  <br />   of specialized brands.</p>
                                         <div className="main-slider-two__btns-box">
                                             <div className="main-slider-two__btn-box-1">
-                                                <Link href="/contact" className="thm-btn">Visit Eagle-IoT Platform
+                                                <Link href="https://avl-ksa.com/en/" className="thm-btn">Visit Eagle-IoT Platform
                                                 {/* <span
                                                         className="icon-right-arrow"></span> */}
                                                         </Link>
@@ -231,7 +231,7 @@ export default function Banner() {
                                             telematics solutions for mission-critical <br /> operations.</p>
                                         <div className="main-slider-two__btns-box">
                                             <div className="main-slider-two__btn-box-1">
-                                                <Link href="/contact" className="thm-btn">Visit Eagle-IoT Platform
+                                                <Link href="https://avl-ksa.com/en/" className="thm-btn">Visit Eagle-IoT Platform
                                                 {/* <span
                                                         className="icon-right-arrow"></span> */}
                                                         </Link>
