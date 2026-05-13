@@ -1,9 +1,9 @@
-
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { ONEPAGE_NAV_TWO_SECTIONS } from "@/data/onepageNav";
 
-const sections = ["#about", "#services", "#testimonial", "#contact", "#team", "#blog"];
+const sections = [...ONEPAGE_NAV_TWO_SECTIONS];
 
 type OnepageMobileMenu_TwoProps = {
   isSidebar: boolean;
@@ -11,12 +11,7 @@ type OnepageMobileMenu_TwoProps = {
 };
 
 export default function OnepageMobileMenu_Two({ isSidebar, handleMobileMenu }: OnepageMobileMenu_TwoProps) {
-  const [activeDropdown, setActiveDropdown] = useState<number | null>(null);
   const [currentSection, setCurrentSection] = useState<string>("");
-
-  const toggleDropdown = (key: number) => {
-    setActiveDropdown((prev) => (prev === key ? null : key));
-  };
 
   // Smooth scroll handler
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
@@ -64,38 +59,13 @@ export default function OnepageMobileMenu_Two({ isSidebar, handleMobileMenu }: O
         {/* Navigation */}
         <div className="mobile-nav__container">
           <ul className="main-menu__list">
-            {/* Home Dropdown */}
-            <li className="dropdown">
-              <Link href="#">Home</Link>
-              <ul style={{ display: activeDropdown === 0 ? "block" : "none" }}>
-                <li>
-                  <Link href="/" onClick={handleMobileMenu}>Home One Multi Page</Link>
-                </li>
-                <li>
-                  <Link href="/onepage" onClick={handleMobileMenu}>Home One OnePage</Link>
-                </li>
-                <li>
-                  <Link href="/index2" onClick={handleMobileMenu}>Home Two Multi Page</Link>
-                </li>
-                <li>
-                  <Link href="/index2-onepage" onClick={handleMobileMenu}>Home Two OnePage</Link>
-                </li>
-                <li>
-                  <Link href="/index3" onClick={handleMobileMenu}>Home Three Multi Page</Link>
-                </li>
-                <li>
-                  <Link href="/index3-onepage" onClick={handleMobileMenu}>Home Three OnePage</Link>
-                </li>
-              </ul>
-              <div
-                className={`dropdown-btn ${activeDropdown === 0 ? "open" : ""}`}
-                onClick={() => toggleDropdown(0)}
-              >
-                <span className="fa fa-angle-down" />
-              </div>
+            <li
+              className={`scrollToLink ${currentSection === "#home" ? "current" : ""}`}
+            >
+              <Link href="#home" onClick={(e) => handleClick(e, "#home")}>
+                Home
+              </Link>
             </li>
-
-            {/* One Page Sections */}
             {sections.map((section) => (
               <li
                 key={section}

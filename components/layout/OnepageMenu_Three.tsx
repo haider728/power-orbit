@@ -1,11 +1,11 @@
-
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { ONEPAGE_NAV_THREE_SECTIONS } from "@/data/onepageNav";
 
-const sections = ["#about", "#services", "#testimonial", "#portfolio", "#blog", "#contact"];
+const sections = [...ONEPAGE_NAV_THREE_SECTIONS];
 
-export default function OnepageMenu_Two() {
+export default function OnepageMenu_Three() {
   const [current, setCurrent] = useState<string>("");
 
   useEffect(() => {

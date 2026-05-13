@@ -96,6 +96,7 @@ export default function MobileMenu({ isSidebar, handleMobileMenu }: MobileMenuPr
                   <li><Link href="/portfolio" onClick={handleMobileMenu}>Portfolio</Link></li>
                   <li><Link href="/portfolio-details" onClick={handleMobileMenu}>Portfolio Details</Link></li>
                   <li><Link href="/testimonials" onClick={handleMobileMenu}>Testimonials</Link></li>
+                  <li><Link href="/testimonials-carousel" onClick={handleMobileMenu}>Testimonial Carousel</Link></li>
                   <li><Link href="/pricing" onClick={handleMobileMenu}>Pricing</Link></li>
                   <li><Link href="/gallery" onClick={handleMobileMenu}>Gallery</Link></li>
                   <li><Link href="/faq" onClick={handleMobileMenu}>FAQs</Link></li>

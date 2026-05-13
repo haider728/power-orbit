@@ -1,16 +1,7 @@
-
 import { useEffect, useState } from "react";
-const sections = [
-  { id: "#home", label: "Home" },
-  { id: "#about", label: "About" },
-  // { id: "#solutions", label: "Solutions" },
-  // { id: "#counter", label: "Counter" },
-  { id: "#choose", label: "Why Choose Us" },
-  // { id: "#sliding-text", label: "Highlights" },
-  // { id: "#process", label: "Process" },
-  // { id: "#portfolio", label: "Portfolio" },
-  { id: "#blog", label: "Blog" },
-];
+import { ONEPAGE_NAV_ONE } from "@/data/onepageNav";
+
+const sections = ONEPAGE_NAV_ONE;
 
 export default function OnepageMenu_One() {
   const [current, setCurrent] = useState<string>("");

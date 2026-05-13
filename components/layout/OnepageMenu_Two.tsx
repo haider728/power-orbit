@@ -1,9 +1,9 @@
-
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { ONEPAGE_NAV_TWO_SECTIONS } from "@/data/onepageNav";
 
-const sections = ["#services", "#about", "#portfolio", "#contact", "#team", "#blog"];
+const sections = [...ONEPAGE_NAV_TWO_SECTIONS];
 
 export default function OnepageMenu_Two() {
   const [current, setCurrent] = useState<string>("");
