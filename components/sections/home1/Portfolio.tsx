@@ -107,7 +107,7 @@ export default function Portfolio() {
                                                     style={{ backgroundImage: "url(/assets/images/project/portfolio-2-1.jpg)" }}>
                                                 </div>
                                                 <div className="portfolio-two__title">
-                                                    <h3><Link href="/portfolio-detailsl">Transportation &amp; Logistics</Link></h3>
+                                                    <h3><Link href="https://avl-ksa.com/en/transportation-and-logistics/">Transportation &amp; Logistics</Link></h3>
                                                 </div>
                                                 <div className="portfolio-two__content-box">
                                                     <div onClick={() => { setIndex(0); setOpen(true); }} className="portfolio-two__icon">
@@ -116,7 +116,7 @@ export default function Portfolio() {
                                                     </div>
                                                     <div className="portfolio-two__title-box">
                                                         <h3 className="portfolio-two__title-2"><Link
-                                                                href="/portfolio-detailsl">Transportation &amp; Logistics</Link></h3>
+                                                                href="https://avl-ksa.com/en/transportation-and-logistics/">Transportation &amp; Logistics</Link></h3>
                                                         <p className="portfolio-two__text">Optimizing cross-border movement with real-time route intelligence and fuel governance. </p>
                                                     </div>
                                                 </div>
@@ -128,7 +128,7 @@ export default function Portfolio() {
                                                     style={{ backgroundImage: "url(/assets/images/project/portfolio-2-2.jpg)" }}>
                                                 </div>
                                                 <div className="portfolio-two__title">
-                                                    <h3><Link href="/portfolio-detailsl">Health Care</Link></h3>
+                                                    <h3><Link href="https://avl-ksa.com/en/smart-ambulance-fleet-monitoring-solution/">Health Care</Link></h3>
                                                 </div>
                                                 <div className="portfolio-two__content-box">
                                                     <div onClick={() => { setIndex(1); setOpen(true); }} className="portfolio-two__icon">
@@ -137,7 +137,7 @@ export default function Portfolio() {
                                                     </div>
                                                     <div className="portfolio-two__title-box">
                                                         <h3 className="portfolio-two__title-2"><Link
-                                                                href="/portfolio-detailsl">Health Care 
+                                                                href="https://avl-ksa.com/en/smart-ambulance-fleet-monitoring-solution/">Health Care 
                                                            </Link></h3>
                                                         <p className="portfolio-two__text">Ensuring life-saving cargo stays within SFDA-mandated temperature thresholds. </p>
                                                     </div>
@@ -150,7 +150,7 @@ export default function Portfolio() {
                                                     style={{ backgroundImage: "url(/assets/images/project/portfolio-2-3.jpg)" }}>
                                                 </div>
                                                 <div className="portfolio-two__title">
-                                                    <h3><Link href="/portfolio-detailsl">Oil &amp; Gas</Link></h3>
+                                                    <h3><Link href="https://avl-ksa.com/en/oil-and-gas/">Oil &amp; Gas</Link></h3>
                                                 </div>
                                                 <div className="portfolio-two__content-box">
                                                     <div onClick={() => { setIndex(2); setOpen(true); }} className="portfolio-two__icon">
@@ -159,7 +159,7 @@ export default function Portfolio() {
                                                     </div>
                                                     <div className="portfolio-two__title-box">
                                                         <h3 className="portfolio-two__title-2"><Link
-                                                                href="/portfolio-detailsl">Oil and Gas</Link></h3>
+                                                                href="https://avl-ksa.com/en/oil-and-gas/">Oil and Gas</Link></h3>
                                                         <p className="portfolio-two__text">Monitoring remote high-value assets and ensuring fleet safety in high-stakes environments. </p>
                                                     </div>
                                                 </div>
@@ -171,7 +171,7 @@ export default function Portfolio() {
                                                     style={{ backgroundImage: "url(/assets/images/project/portfolio-2-4.jpg)" }}>
                                                 </div>
                                                 <div className="portfolio-two__title">
-                                                    <h3><Link href="/portfolio-detailsl">Supply Chain Management</Link></h3>
+                                                    <h3><Link href="https://avl-ksa.com/en/supply-chain-management/">Supply Chain Management</Link></h3>
                                                 </div>
                                                 <div className="portfolio-two__content-box">
                                                     <div onClick={() => { setIndex(3); setOpen(true); }} className="portfolio-two__icon">
@@ -180,7 +180,7 @@ export default function Portfolio() {
                                                     </div>
                                                     <div className="portfolio-two__title-box">
                                                         <h3 className="portfolio-two__title-2"><Link
-                                                                href="/portfolio-detailsl">Supply Chain Management</Link></h3>
+                                                                href="https://avl-ksa.com/en/supply-chain-management/">Supply Chain Management</Link></h3>
                                                         <p className="portfolio-two__text">End-to-end visibility from warehouse to last-mile delivery. </p>
                                                     </div>
                                                 </div>
@@ -200,7 +200,7 @@ export default function Portfolio() {
                                                     style={{ backgroundImage: "url(/assets/images/project/portfolio-2-1.jpg)" }}>
                                                 </div>
                                                 <div className="portfolio-two__title">
-                                                    <h3><Link href="/portfolio-detailsl">Ready-mix Concrete</Link></h3>
+                                                    <h3><Link href="https://avl-ksa.com/en/ready-mix-concrete/">Ready-mix Concrete</Link></h3>
                                                 </div>
                                                 <div className="portfolio-two__content-box">
                                                     <div onClick={() => { setIndex(0); setOpen(true); }} className="portfolio-two__icon">
@@ -209,7 +209,7 @@ export default function Portfolio() {
                                                     </div>
                                                     <div className="portfolio-two__title-box">
                                                         <h3 className="portfolio-two__title-2"><Link
-                                                                href="/portfolio-detailsl">Ready-mix Concrete</Link></h3>
+                                                                href="https://avl-ksa.com/en/ready-mix-concrete/">Ready-mix Concrete</Link></h3>
                                                         <p className="portfolio-two__text">Preserving structural integrity through real-time transit and mixing monitoring. </p>
                                                     </div>
                                                 </div>
@@ -221,7 +221,7 @@ export default function Portfolio() {
                                                     style={{ backgroundImage: "url(/assets/images/project/portfolio-2-2.jpg)" }}>
                                                 </div>
                                                 <div className="portfolio-two__title">
-                                                    <h3><Link href="/portfolio-detailsl">Construction &amp; Heavy Equipment</Link></h3>
+                                                    <h3><Link href="https://avl-ksa.com/en/construction-machinery-and-heavy-equipment/">Construction &amp; Heavy Equipment</Link></h3>
                                                 </div>
                                                 <div className="portfolio-two__content-box">
                                                     <div onClick={() => { setIndex(1); setOpen(true); }} className="portfolio-two__icon">
@@ -230,7 +230,7 @@ export default function Portfolio() {
                                                     </div>
                                                     <div className="portfolio-two__title-box">
                                                         <h3 className="portfolio-two__title-2"><Link
-                                                                href="/portfolio-detailsl">Construction Machinery & Heavy Equipment   </Link></h3>
+                                                                href="https://avl-ksa.com/en/construction-machinery-and-heavy-equipment/">Construction Machinery & Heavy Equipment   </Link></h3>
                                                         <p className="portfolio-two__text">Managing engine hours, location, and maintenance for mission-critical machinery. </p>
                                                     </div>
                                                 </div>
@@ -242,7 +242,7 @@ export default function Portfolio() {
                                                     style={{ backgroundImage: "url(/assets/images/project/portfolio-2-3.jpg)" }}>
                                                 </div>
                                                 <div className="portfolio-two__title">
-                                                    <h3><Link href="/portfolio-detailsl">Car Rentals</Link></h3>
+                                                    <h3><Link href="https://avl-ksa.com/en/car-rentals/">Car Rentals</Link></h3>
                                                 </div>
                                                 <div className="portfolio-two__content-box">
                                                     <div onClick={() => { setIndex(2); setOpen(true); }} className="portfolio-two__icon">
@@ -251,7 +251,7 @@ export default function Portfolio() {
                                                     </div>
                                                     <div className="portfolio-two__title-box">
                                                         <h3 className="portfolio-two__title-2"><Link
-                                                                href="/portfolio-detailsl">Car Rentals </Link></h3>
+                                                                href="https://avl-ksa.com/en/car-rentals/">Car Rentals </Link></h3>
                                                         <p className="portfolio-two__text">Protecting vehicle assets and automating returns through smart telematics. </p>
                                                     </div>
                                                 </div>
@@ -263,7 +263,7 @@ export default function Portfolio() {
                                                     style={{ backgroundImage: "url(/assets/images/project/portfolio-2-4.jpg)" }}>
                                                 </div>
                                                 <div className="portfolio-two__title">
-                                                    <h3><Link href="/portfolio-detailsl">SFDA &amp; TGA cold chain</Link></h3>
+                                                    <h3><Link href="https://avl-ksa.com/en/sfda-tga-compliant-cold-chain-monitoring/">SFDA &amp; TGA cold chain</Link></h3>
                                                 </div>
                                                 <div className="portfolio-two__content-box">
                                                     <div onClick={() => { setIndex(3); setOpen(true); }} className="portfolio-two__icon">
@@ -272,7 +272,7 @@ export default function Portfolio() {
                                                     </div>
                                                     <div className="portfolio-two__title-box">
                                                         <h3 className="portfolio-two__title-2"><Link
-                                                                href="/portfolio-detailsl">SFDA &amp; TGA-compliant cold chain</Link></h3>
+                                                                href="https://avl-ksa.com/en/sfda-tga-compliant-cold-chain-monitoring/">SFDA &amp; TGA-compliant cold chain</Link></h3>
                                                         <p className="portfolio-two__text">Certified precision for the Kingdom&apos;s most regulated logistics operations. </p>
                                                     </div>
                                                 </div>

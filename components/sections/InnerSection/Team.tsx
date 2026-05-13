@@ -97,7 +97,7 @@ export default function Team() {
                                                     <Link href="#"><span className="icon-linkedin"></span></Link>
                                                 </div> */}
                                                 <div className="team-two__title-box">
-                                                    <h3><Link href="/team-details">Fleet Management</Link></h3>
+                                                    <h3><Link href="https://avl-ksa.com/en/fleet-management-solutions/">Fleet Management</Link></h3>
                                                     <p>Complete command and control over vehicle location, driver behavior, and TGA-certified operational reporting.</p>
                                                 </div>
                                             </div>
@@ -118,7 +118,7 @@ export default function Team() {
                                                     <Link href="#"><span className="icon-linkedin"></span></Link>
                                                 </div> */}
                                                 <div className="team-two__title-box">
-                                                    <h3><Link href="/team-details">Video Telematics (AI-Powered) </Link></h3>
+                                                    <h3><Link href="https://avl-ksa.com/en/video-telematics/">Video Telematics (AI-Powered) </Link></h3>
                                                     <p>Advanced dash-cam systems utilizing AI to detect driver fatigue, distraction, and road-side incidents.</p>
                                                 </div>
                                             </div>
@@ -139,7 +139,7 @@ export default function Team() {
                                                     <Link href="#"><span className="icon-linkedin"></span></Link>
                                                 </div> */}
                                                 <div className="team-two__title-box">
-                                                    <h3><Link href="/team-details">Asset Management & RTLS</Link></h3>
+                                                    <h3><Link href="https://avl-ksa.com/en/asset-management-platform/">Asset Management & RTLS</Link></h3>
                                                     <p>Real-time location services (RTLS) for high-value equipment, ensuring your capital assets are always accounted for.</p>
                                                 </div>
                                             </div>
@@ -160,7 +160,7 @@ export default function Team() {
                                                     <Link href="#"><span className="icon-linkedin"></span></Link>
                                                 </div> */}
                                                 <div className="team-two__title-box">
-                                                    <h3><Link href="/team-details">Cold Chain & Warehouse Monitoring </Link></h3>
+                                                    <h3><Link href="https://avl-ksa.com/en/warehouse-monitoring-solution/">Cold Chain & Warehouse Monitoring </Link></h3>
                                                     <p>Precision temperature and humidity sensors for fixed storage and mobile reefers, fully compliant with SFDA standards.</p>
                                                 </div>
                                             </div>
@@ -181,7 +181,7 @@ export default function Team() {
                                                     <Link href="#"><span className="icon-linkedin"></span></Link>
                                                 </div> */}
                                                 <div className="team-two__title-box">
-                                                    <h3><Link href="/team-details">Fuel Management Systems</Link></h3>
+                                                    <h3><Link href="https://avl-ksa.com/en/oil-and-gas/">Fuel Management Systems</Link></h3>
                                                     <p>Eliminate fuel theft and monitor consumption with high-accuracy digital sensors and real-time leakage alerts. </p>
                                                 </div>
                                             </div>
@@ -202,7 +202,7 @@ export default function Team() {
                                                     <Link href="#"><span className="icon-linkedin"></span></Link>
                                                 </div> */}
                                                 <div className="team-two__title-box">
-                                                    <h3><Link href="/team-details">Ready-Mix Solution </Link></h3>
+                                                    <h3><Link href="https://avl-ksa.com/en/ready-mix-concrete/">Ready-Mix Solution </Link></h3>
                                                     <p>Specialized IoT integration for concrete mixing monitoring and structural integrity data.</p>
                                                 </div>
                                             </div>

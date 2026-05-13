@@ -46547,6 +46547,156 @@ html, body {
   padding-bottom: 18px !important;
 }
 
+.blog-two__single--clickable, .blog-two__single-two.blog-two__single--clickable {
+  position: relative;
+}
+
+.blog-two__card-hitbox {
+  z-index: 3;
+  opacity: 0;
+  cursor: pointer;
+  border-radius: inherit;
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  inset: 0;
+}
+
+.blog-inline-detail {
+  z-index: 10000;
+  justify-content: center;
+  align-items: stretch;
+  padding: 0;
+  display: flex;
+  position: fixed;
+  inset: 0;
+}
+
+.blog-inline-detail__backdrop {
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+  background: #050812d1;
+  border: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  inset: 0;
+}
+
+.blog-inline-detail__panel {
+  z-index: 1;
+  background: linear-gradient(165deg, #121628fa 0%, #080a16fc 100%);
+  border: 1px solid #ffffff1a;
+  border-radius: 20px;
+  flex-direction: column;
+  width: 100%;
+  max-width: 900px;
+  max-height: 94vh;
+  margin: 3vh auto;
+  display: flex;
+  position: relative;
+  box-shadow: 0 24px 80px #0000008c;
+}
+
+.blog-inline-detail__close {
+  z-index: 5;
+  color: #fff;
+  cursor: pointer;
+  background: #ffffff14;
+  border: none;
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  font-size: 26px;
+  line-height: 1;
+  transition: background .2s;
+  display: flex;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.blog-inline-detail__close:hover {
+  background: #ffffff29;
+}
+
+.blog-inline-detail__scroll {
+  -webkit-overflow-scrolling: touch;
+  padding: 1.75rem 1.75rem 2.25rem;
+  overflow-y: auto;
+}
+
+.blog-inline-detail__img-wrap {
+  aspect-ratio: 900 / 420;
+  border-radius: 14px;
+  width: 100%;
+  max-height: 38vh;
+  margin-bottom: 1.25rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-inline-detail__img {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.blog-inline-detail__heading {
+  color: #fff;
+  margin: 0 0 1rem;
+  padding-right: 2.5rem;
+  font-size: clamp(1.35rem, 2.5vw, 1.85rem);
+  line-height: 1.25;
+}
+
+.blog-inline-detail__body--text {
+  color: #ffffffd1;
+  font-size: 1rem;
+  line-height: 1.72;
+}
+
+.blog-inline-detail__body--text p {
+  margin: 0 0 1rem;
+}
+
+.blog-inline-detail__body--html {
+  color: #ffffffdb;
+  font-size: 1rem;
+  line-height: 1.72;
+}
+
+.blog-inline-detail__body--html p {
+  margin: 0 0 1rem;
+}
+
+.blog-inline-detail__body--html a {
+  color: #7eb6ff;
+  text-decoration: underline;
+}
+
+.blog-inline-detail__body--html img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 575px) {
+  .blog-inline-detail__panel {
+    border-radius: 0;
+    max-height: 100vh;
+    margin: 0;
+  }
+
+  .blog-inline-detail__scroll {
+    padding: 1.25rem 1.1rem 2rem;
+  }
+}
+
 /* [project]/power-orbit/node_modules/swiper/swiper.css [app-client] (css) */
 :root {
   --swiper-theme-color: #007aff;

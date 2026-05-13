@@ -1,6 +1,30 @@
 {
   "pages": {
-    "/_app": []
+    "/_app": [
+      "static/chunks/0e--_next_dist_compiled_0vsy18-._.js",
+      "static/chunks/0e--_next_dist_shared_lib_0xfmdhu._.js",
+      "static/chunks/0e--_next_dist_client_0~wukh-._.js",
+      "static/chunks/0e--_next_dist_08.ufvy._.js",
+      "static/chunks/0e--_next_app_0dlsucz.js",
+      "static/chunks/[next]_entry_page-loader_ts_0mt0vl0._.js",
+      "static/chunks/0e--_react-dom_0kkz1~6._.js",
+      "static/chunks/0e--_0xs37ct._.js",
+      "static/chunks/[root-of-the-server]__13a.qvi._.js",
+      "static/chunks/power-orbit_pages__app_07xvfw~._.js",
+      "static/chunks/turbopack-power-orbit_pages__app_0w8mpmi._.js"
+    ],
+    "/_error": [
+      "static/chunks/0e--_next_dist_compiled_0vsy18-._.js",
+      "static/chunks/0e--_next_dist_shared_lib_0z9hp7r._.js",
+      "static/chunks/0e--_next_dist_client_0~wukh-._.js",
+      "static/chunks/0e--_next_dist_0q8ms-6._.js",
+      "static/chunks/[next]_entry_page-loader_ts_0eau_hh._.js",
+      "static/chunks/0e--_react-dom_0kkz1~6._.js",
+      "static/chunks/0e--_0xs37ct._.js",
+      "static/chunks/[root-of-the-server]__0dc7l85._.js",
+      "static/chunks/power-orbit_pages__error_07xvfw~._.js",
+      "static/chunks/turbopack-power-orbit_pages__error_03y2p74._.js"
+    ]
   },
   "devFiles": [],
   "polyfillFiles": [
