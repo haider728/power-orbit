@@ -44,7 +44,7 @@ export default function Footer1() {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                            <div className="col-xl-2 col-lg-6 col-md-6 wow fadeInUp d-none d-md-block" data-wow-delay="200ms">
                                 <div className="footer-widget-two__quick-links">
                                     <h4 className="footer-widget-two__title">Pages</h4>
                                     <ul className="footer-widget-two__quick-links-list list-unstyled">
@@ -58,7 +58,7 @@ export default function Footer1() {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                            <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp d-none d-md-block" data-wow-delay="300ms">
                                 <div className="footer-widget-two__support">
                                     <h4 className="footer-widget-two__title">Support</h4>
                                     <ul className="footer-widget-two__quick-links-list list-unstyled">
@@ -75,7 +75,7 @@ export default function Footer1() {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                            <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp d-none d-md-block" data-wow-delay="400ms">
                                 <div className="footer-widget-two__services">
                                     <h4 className="footer-widget-two__title">Our Services</h4>
                                     <ul className="footer-widget-two__quick-links-list list-unstyled">

@@ -14,13 +14,16 @@ export default function Home_OnePage() {
     return (
         <Layout headerStyle={2} footerStyle={1}>
             <Banner/>
+            <SlideingText/>
+            
             <About/>
+            
             <StackedScrollCards/>
             <LogoCarouselSection/>
 
             <Choose/>
 
-            <SlideingText/>
+          
             <Team/>
 
             <Process/>
