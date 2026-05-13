@@ -21,7 +21,7 @@ export const cards: ProjectCard[] = [
   {
     title: "SmartSense | Connected Asset Intelligence ",
     description:
-      "This is a story on the border between reality and imaginary, about the contradictory feelings that the insularity of a rocky, arid, and wild territory provokes-so French photographer Clement Chapillon describes his latest highly captivating project Les rochers fauves (French for 'The tawny rocks').",
+      "When your operational success depends on the precise condition of your assets; not just their location, SmartSense provides the eyes on the ground. This is the intelligence layer for fixed warehouses, cold storage facilities, and high-value environmental assets.",
       fullDescription:
       " When your operational success depends on the precise condition of your assets; not just their location, SmartSense provides the eyes on the ground. This is the intelligence layer for fixed warehouses, cold storage facilities, and high-value environmental assets.\n\nThe Challenge: Maintaining 100% cold chain stability, preventing costly pharmaceutical spoilage, and manually logging data to meet strict Saudi Food and Drug Authority standards\n\nThe Solution: An advanced sensor-driven ecosystem providing real-time monitoring of enviornment. SmartSense automates the data-logging process, providing the auditable digital trail required for SFDA compliance and pharmaceutical integrity. \n\nCore Capabilities: * Warehouse & Cold Storage: 24/7 monitoring of fixed storage environments. \n-SFDA-Ready Reporting: Automated temperature logs and historical data for regulatory audits. \nReal-Time Alerts: Immediate notification via SMS/Email the moment temperature or humidity deviates from the safety threshold.  ",
       src: "smart.png",
