@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import type { MotionValue } from "framer-motion";
 import { useRef } from "react";
 import type { ProjectCard } from "@/data/cards";
+import MobileAppTiles from "@/components/sections/home1/MobileAppTiles";
 import styles from "@/components/sections/home1/stacked-cards.module.css";
 
 type CardProps = ProjectCard & {
@@ -22,6 +23,7 @@ export default function Card({
     src,
     color,
     fullDescription,
+    mobileApps,
     progress,
     range,
     targetScale,
@@ -52,6 +54,10 @@ export default function Card({
                 <div className={styles.contentRow}>
                     <div className={styles.descriptionContainer}>
                         <p className={styles.description}>{description}</p>
+
+                        {mobileApps && mobileApps.length > 0 ? (
+                            <MobileAppTiles apps={mobileApps} />
+                        ) : null}
 
                         <span className={styles.linkWrap}>
                             <button

@@ -1,4 +1,4 @@
-const SLIDING_MESSAGE = "Power Orbit — formerly Digital Myth Solution";
+const SLIDING_MESSAGE = "Power Orbit — formerly known as Digital Myth Solution";
 
 /** Enough repeats for a smooth infinite marquee loop */
 const SLIDING_REPEAT = 10;
