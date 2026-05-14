@@ -14,24 +14,24 @@ export const mobilitySuiteApps: MobileApp[] = [
     id: "fleet",
     name: "Eagle-IoT Fleet Management",
     tagline: "Regulated fleet control",
-    href: "#",
+    href: "https://play.google.com/store/apps/details?id=com.eagleiot_mobile&pli=1",
   },
   {
     id: "dispatch",
     name: "Driver Dispatch",
     tagline: "Tasks, routes & proof",
-    href: "#",
+    href: "https://play.google.com/store/apps/details?id=com.rmsdriverapp",
   },
   {
     id: "bus",
     name: "Bus Transit",
     tagline: "Passenger operations",
-    href: "#",
+    href: "https://play.google.com/store/apps/details?id=com.bustransitapp",
   },
   {
     id: "smartsense",
     name: "Smart Sense",
     tagline: "Asset & environment sense",
-    href: "#",
+    href: "https://play.google.com/store/apps/details?id=com.smartsenseapp",
   },
 ];
