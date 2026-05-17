@@ -3,6 +3,7 @@ import Link from "next/link";
 import Layout from "@/components/layout/Layout";
 import Newsletter from "@/components/sections/home1/Newsletter";
 import AnimatedTitle from "@/components/elements/AnimatedTitle";
+import { getStrapiServerUrl } from "@/lib/strapi";
 
 type Article = {
     id: number | string;
@@ -20,10 +21,8 @@ type Article = {
 };
 
 async function getArticles() {
-    const res = await fetch(
-        "http://144.24.219.37:1337/api/articles?populate=*",
-        { cache: "no-store" }
-    );
+    const base = getStrapiServerUrl();
+    const res = await fetch(`${base}/api/articles?populate=*`, { cache: "no-store" });
 
     const json = await res.json();
 
@@ -52,11 +51,12 @@ export default async function BlogPage() {
                         {articles?.map((data: Article) => {
 
                             // ✅ STRAPI V5 SAFE IMAGE HANDLING
+                            const strapiBase = getStrapiServerUrl();
                             const imageUrl =
                                 data?.image?.url
-                                    ? `http://144.24.219.37:1337${data.image.url}`
+                                    ? `${strapiBase}${data.image.url}`
                                     : data?.image?.data?.attributes?.url
-                                    ? `http://144.24.219.37:1337${data.image.data.attributes.url}`
+                                    ? `${strapiBase}${data.image.data.attributes.url}`
                                     : null;
 
                             return (

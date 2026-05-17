@@ -4,9 +4,10 @@ import { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
 import AnimatedTitle from "@/components/elements/AnimatedTitle";
 
-const STRAPI_URL = "http://144.24.219.37:1337";
-
-// const STRAPI_URL = process.env.NEXT_PUBLIC_STRAPI_URL;
+/** Built at build time for next/image and absolute media URLs (same host as Strapi). */
+const STRAPI_PUBLIC_BASE =
+  (typeof process !== "undefined" && process.env.NEXT_PUBLIC_STRAPI_URL?.replace(/\/$/, "")) ||
+  "http://144.24.219.37:1337";
 
 type BlogItem = {
   id: number;
@@ -49,7 +50,8 @@ export default function Blog() {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const res = await fetch(`${STRAPI_URL}/api/articles?populate=*`);
+        // Same-origin on Vercel (HTTPS) — avoids blocked mixed content from browser → http://Strapi
+        const res = await fetch("/api/strapi/articles");
         const json = await res.json();
         setBlogs(json.data || []);
       } catch (error) {
@@ -89,7 +91,7 @@ export default function Blog() {
 
   const coverUrl = (blog: BlogItem) =>
     blog.image?.url
-      ? `${STRAPI_URL}${blog.image.url}`
+      ? `${STRAPI_PUBLIC_BASE}${blog.image.url}`
       : "/assets/images/blog/blog-2-1.jpg";
 
   return (
