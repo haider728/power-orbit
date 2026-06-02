@@ -578,4 +578,20 @@ html, body {
   display: flex;
 }
 
+.main-menu-two__main-menu-box {
+  display: block;
+}
+
+@media (min-width: 1200px) {
+  html[dir="rtl"] .main-menu-two__wrapper-inner {
+    align-items: center;
+    gap: 1rem;
+    display: flex;
+  }
+
+  html[dir="rtl"] .main-menu-two__left, html[dir="rtl"] .main-menu-two__right {
+    flex-shrink: 0;
+  }
+}
+
 /*# sourceMappingURL=power-orbit_app_theme-overrides_css_0w3-wzy._.single.css.map*/

@@ -640,3 +640,23 @@ body {
   flex-wrap: wrap;
   gap: 0.5rem;
 }
+
+.main-menu-two__main-menu-box {
+  display: block;
+}
+
+@media (min-width: 1200px) {
+  html[dir="rtl"] .main-menu-two__wrapper-inner {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  html[dir="rtl"] .main-menu-two__left {
+    flex-shrink: 0;
+  }
+
+  html[dir="rtl"] .main-menu-two__right {
+    flex-shrink: 0;
+  }
+}

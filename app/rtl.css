@@ -12,19 +12,128 @@ html[dir="rtl"] h4 {
   letter-spacing: 0;
 }
 
-html[dir="rtl"] .main-menu-two__right,
-html[dir="rtl"] .main-menu-two__left {
-  flex-direction: row-reverse;
-}
-
+/* ── Header / desktop menu ── */
+html[dir="rtl"] .main-menu-two__top-inner,
 html[dir="rtl"] .main-menu-two__wrapper-inner {
   direction: rtl;
 }
 
-html[dir="rtl"] .main-menu__list > li {
+html[dir="rtl"] .main-menu-two__main-menu-box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  min-width: 0;
+}
+
+html[dir="rtl"] .main-menu-two__main-menu-box .main-menu__list {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+html[dir="rtl"] .main-menu .main-menu__list > li + li,
+html[dir="rtl"] .sticky-header .main-menu__list > li + li {
+  margin-left: 0;
+  margin-inline-start: clamp(18px, 2vw, 35px);
+}
+
+html[dir="rtl"] .main-menu .main-menu__list > li > a,
+html[dir="rtl"] .sticky-header .main-menu__list > li > a {
+  text-transform: none;
+  text-align: center;
+  white-space: nowrap;
+}
+
+html[dir="rtl"] .main-menu .main-menu__list > li > a::before,
+html[dir="rtl"] .sticky-header .main-menu__list > li > a::before {
+  transform-origin: right center;
+}
+
+html[dir="rtl"] .main-menu .main-menu__list > li.current > a::before,
+html[dir="rtl"] .main-menu .main-menu__list > li:hover > a::before,
+html[dir="rtl"] .sticky-header .main-menu__list > li.current > a::before,
+html[dir="rtl"] .sticky-header .main-menu__list > li:hover > a::before {
+  transform-origin: left center;
+}
+
+html[dir="rtl"] .main-menu-two__right {
+  flex-direction: row;
+  flex-shrink: 0;
+}
+
+html[dir="rtl"] .lang-toggle--header {
+  margin-inline-end: 0;
+  margin-inline-start: 14px;
+}
+
+/* Top bar contact row */
+html[dir="rtl"] .main-menu-two__contact-list li + li {
+  margin-left: 0;
+  margin-inline-start: 30px;
+}
+
+html[dir="rtl"] .main-menu-two__contact-list li::before {
+  left: auto;
+  right: -15px;
+}
+
+html[dir="rtl"] .main-menu-two__contact-list li .text {
+  margin-left: 0;
+  margin-inline-start: 10px;
+}
+
+html[dir="rtl"] .main-menu-two__top-text {
   text-align: right;
 }
 
+/* ── Mobile menu drawer ── */
+html[dir="rtl"] .mobile-nav__wrapper {
+  left: auto;
+  right: 0;
+  transform: translateX(100%);
+  transform-origin: right center;
+}
+
+html[dir="rtl"] .mobile-menu-visible .mobile-nav__wrapper {
+  transform: translateX(0);
+}
+
+html[dir="rtl"] .mobile-nav__content {
+  direction: rtl;
+  text-align: right;
+  transform: translateX(100%);
+}
+
+html[dir="rtl"] .mobile-menu-visible .mobile-nav__wrapper .mobile-nav__content {
+  transform: translateX(0);
+}
+
+html[dir="rtl"] .mobile-nav__close {
+  right: auto;
+  left: 15px;
+}
+
+html[dir="rtl"] .mobile-nav__content .main-menu__list > li > a,
+html[dir="rtl"] .mobile-nav__content .main-menu__list > li > ul > li > a {
+  justify-content: flex-start;
+  text-align: right;
+}
+
+html[dir="rtl"] .mobile-nav__contact li {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+html[dir="rtl"] .mobile-nav__contact li > i {
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+html[dir="rtl"] .mobile-nav__lang {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* ── Page content RTL ── */
 html[dir="rtl"] .about-two-copy__card,
 html[dir="rtl"] .why-choose-one__points-simple li {
   text-align: right;
@@ -43,4 +152,16 @@ html[dir="rtl"] .main-slider-two__btns-box {
 html[dir="rtl"] .lang-toggle--menu {
   margin-inline-start: 0;
   margin-inline-end: auto;
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  html[dir="rtl"] .main-menu .main-menu__list > li + li,
+  html[dir="rtl"] .sticky-header .main-menu__list > li + li {
+    margin-inline-start: 16px;
+  }
+
+  html[dir="rtl"] .main-menu .main-menu__list > li > a,
+  html[dir="rtl"] .sticky-header .main-menu__list > li > a {
+    font-size: 14px;
+  }
 }

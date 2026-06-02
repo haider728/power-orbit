@@ -495,3 +495,9 @@
 {"timestamp":"01:01:59.911","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mImage with src \\\"/images/smart.png\\\" has \\\"fill\\\" and parent element with invalid \\\"position\\\". Provided \\\"static\\\" should be one of absolute,fixed,relative.\\u001b[39m\""}
 {"timestamp":"01:01:59.912","source":"Browser","level":"WARN","message":"\u001b[33mImage with src \"/images/smart.png\" has \"fill\" and parent element with invalid \"position\". Provided \"static\" should be one of absolute,fixed,relative.\u001b[39m"}
 {"timestamp":"01:01:59.912","source":"Browser","level":"WARN","message":"Image with src \"/images/smart.png\" has \"fill\" and parent element with invalid \"position\". Provided \"static\" should be one of absolute,fixed,relative."}
+{"timestamp":"01:10:59.248","source":"Server","level":"LOG","message":"✓ Compiled in 72ms"}
+{"timestamp":"01:10:59.914","source":"Server","level":"LOG","message":"✓ Compiled in 73ms"}
+{"timestamp":"01:11:05.691","source":"Server","level":"LOG","message":"✓ Compiled in 72ms"}
+{"timestamp":"01:15:58.139","source":"Browser","level":"WARN","message":"Image with src \"/images/app.png\" has \"fill\" and parent element with invalid \"position\". Provided \"static\" should be one of absolute,fixed,relative."}
+{"timestamp":"01:15:58.139","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mImage with src \\\"/images/app.png\\\" has \\\"fill\\\" and parent element with invalid \\\"position\\\". Provided \\\"static\\\" should be one of absolute,fixed,relative.\\u001b[39m\""}
+{"timestamp":"01:15:58.139","source":"Browser","level":"WARN","message":"\u001b[33mImage with src \"/images/app.png\" has \"fill\" and parent element with invalid \"position\". Provided \"static\" should be one of absolute,fixed,relative.\u001b[39m"}
