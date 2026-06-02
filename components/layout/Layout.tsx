@@ -4,6 +4,7 @@
 import Header from "./Header"; // Client component
 import Footer from "./Footer"; // Server component
 import Breadcrumb from "./Breadcrumb";
+import LocaleBoundary from "@/components/providers/LocaleBoundary";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -27,7 +28,9 @@ export default function Layout({
       {breadcrumbTitle && <Breadcrumb breadcrumbTitle={breadcrumbTitle} />}
 
       {/* Main page content */}
-      <main>{children}</main>
+      <main>
+        <LocaleBoundary>{children}</LocaleBoundary>
+      </main>
 
       {/* Footer (server component) */}
       <Footer style={footerStyle} />

@@ -54,12 +54,12 @@ const swiperOptions = {
 }
 
 export default function Banner() {
-  const { t } = useLanguage();
+  const { locale, t } = useLanguage();
 
   return (
     <>
         <section className="main-slider-two" id="home">
-            <Swiper {...swiperOptions} className="swiper-container thm-swiper__slider">
+            <Swiper key={locale} {...swiperOptions} className="swiper-container thm-swiper__slider">
                 <SwiperSlide>
                     <div className="swiper-slide">
                         <div className="main-slider-two__bg"

@@ -51,6 +51,11 @@ function applyDocumentLocale(locale: Locale) {
   document.documentElement.lang = locale;
   document.documentElement.dir = dir;
   document.body.classList.toggle("locale-ar", locale === "ar");
+
+  // Carousels (Swiper, react-multi-carousel) need a resize pass after dir change.
+  requestAnimationFrame(() => {
+    window.dispatchEvent(new Event("resize"));
+  });
 }
 
 type LanguageProviderProps = {
