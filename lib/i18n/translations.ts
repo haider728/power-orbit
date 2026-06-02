@@ -129,9 +129,16 @@ const ar = {
   },
 } as const;
 
-export const translations: Record<Locale, typeof en> = { en, ar };
+/** Widen literal strings so EN and AR share the same shape. */
+type DeepStringMap<T> = T extends readonly string[]
+  ? readonly string[]
+  : T extends object
+    ? { readonly [K in keyof T]: DeepStringMap<T[K]> }
+    : string;
 
-export type Messages = typeof en;
+export type Messages = DeepStringMap<typeof en>;
+
+export const translations: Record<Locale, Messages> = { en, ar };
 
 /** Dot-path lookup, e.g. `nav.home` */
 export function getMessage(
