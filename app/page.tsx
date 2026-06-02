@@ -9,6 +9,7 @@ import Process from "@/components/sections/home1/Process";
 import SlideingText from "@/components/sections/home1/SlideingText";
 import StackedScrollCards from "@/components/sections/home1/StackedScrollCards";
 import Team from "@/components/sections/InnerSection/Team";
+import Newsletter from "@/components/sections/home1/Newsletter";
 
 export default function Home_OnePage() {
     return (
@@ -30,6 +31,7 @@ export default function Home_OnePage() {
 
             <Portfolio/>
             <Blog/>
+            {/* <Newsletter/> */}
 
         </Layout>
     );
