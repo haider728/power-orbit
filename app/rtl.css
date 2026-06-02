@@ -1,0 +1,46 @@
+html[dir="rtl"] body {
+  font-family: var(--font-space-grotesk, "Space Grotesk"), "Segoe UI", Tahoma,
+    "Noto Sans Arabic", "Arial", sans-serif;
+}
+
+html[dir="rtl"] .section-title__title,
+html[dir="rtl"] .main-slider-two__title,
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] h4 {
+  letter-spacing: 0;
+}
+
+html[dir="rtl"] .main-menu-two__right,
+html[dir="rtl"] .main-menu-two__left {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .main-menu-two__wrapper-inner {
+  direction: rtl;
+}
+
+html[dir="rtl"] .main-menu__list > li {
+  text-align: right;
+}
+
+html[dir="rtl"] .about-two-copy__card,
+html[dir="rtl"] .why-choose-one__points-simple li {
+  text-align: right;
+}
+
+html[dir="rtl"] .about-two-copy__tick {
+  margin-left: 12px;
+  margin-right: 0;
+}
+
+html[dir="rtl"] .main-slider-two__btns-box {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+html[dir="rtl"] .lang-toggle--menu {
+  margin-inline-start: 0;
+  margin-inline-end: auto;
+}

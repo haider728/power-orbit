@@ -7,6 +7,8 @@ import "@/public/assets/css/responsive.css";
 import "@/app/tailwind.css";
 import "@/app/scroll-fix.css";
 import "@/app/theme-overrides.css";
+import "@/app/rtl.css";
+import LanguageProvider from "@/components/providers/LanguageProvider";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -57,12 +59,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`custom-cursor ${spaceGrotesk.className}`}>
-        <SmoothScroll />
-        <CustomCursor />
-        <div className={marcellus.className}></div>
-        {children}
+    <html lang="en" suppressHydrationWarning>
+      <body
+        className={`custom-cursor ${spaceGrotesk.className}`}
+        style={{ ["--font-space-grotesk" as string]: "Space Grotesk" }}
+      >
+        <LanguageProvider>
+          <SmoothScroll />
+          <CustomCursor />
+          <div className={marcellus.className}></div>
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   );

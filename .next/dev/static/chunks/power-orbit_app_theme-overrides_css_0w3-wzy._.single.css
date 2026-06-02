@@ -520,4 +520,62 @@ html, body {
   box-shadow: inset 0 0 0 1px #318be21f, 0 4px 24px #00000038;
 }
 
+.lang-toggle {
+  background: #060610a6;
+  border: 1px solid #8f82ff59;
+  border-radius: 999px;
+  align-items: center;
+  gap: 0;
+  padding: 3px;
+  display: inline-flex;
+}
+
+.lang-toggle--header {
+  margin-inline-end: 14px;
+}
+
+.lang-toggle--menu {
+  margin-top: 0;
+}
+
+.lang-toggle__btn {
+  color: #f4f6ffb8;
+  cursor: pointer;
+  background: none;
+  border: 0;
+  border-radius: 999px;
+  padding: .45rem .7rem;
+  font-size: .78rem;
+  font-weight: 600;
+  line-height: 1;
+  transition: color .2s, background .2s;
+}
+
+.lang-toggle__btn.is-active {
+  color: #fff;
+  background: var(--techguru-brand-gradient);
+}
+
+.lang-toggle__btn:hover:not(.is-active) {
+  color: #fff;
+}
+
+.main-menu__list > li.lang-toggle-menu-item {
+  align-items: center;
+  display: flex;
+}
+
+.mobile-nav__lang {
+  border-top: 1px solid #ffffff14;
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+}
+
+.main-menu-two__right {
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .5rem;
+  display: flex;
+}
+
 /*# sourceMappingURL=power-orbit_app_theme-overrides_css_0w3-wzy._.single.css.map*/

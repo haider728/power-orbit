@@ -1,6 +1,10 @@
+"use client";
+
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useLanguage } from "@/components/providers/LanguageProvider";
+import LanguageToggle from "@/components/layout/LanguageToggle";
 import { ONEPAGE_NAV_ONE } from "@/data/onepageNav";
 
 const sections = ONEPAGE_NAV_ONE;
@@ -11,6 +15,7 @@ type OnepageMobileMenu_OneProps = {
 };
 
 export default function OnepageMobileMenu_One({ isSidebar, handleMobileMenu }: OnepageMobileMenu_OneProps) {
+  const { t } = useLanguage();
   const [currentSection, setCurrentSection] = useState<string>("");
 
   // Smooth scroll handler
@@ -65,11 +70,14 @@ export default function OnepageMobileMenu_One({ isSidebar, handleMobileMenu }: O
                 className={`scrollToLink ${currentSection === section.id ? "current" : ""}`}
               >
                 <Link href={section.id} onClick={(e) => handleClick(e, section.id)}>
-                  {section.label}
+                  {t(section.labelKey)}
                 </Link>
               </li>
             ))}
           </ul>
+          <div className="mobile-nav__lang">
+            <LanguageToggle variant="menu" />
+          </div>
         </div>
 
         {/* Contact Info */}

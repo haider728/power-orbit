@@ -1,10 +1,14 @@
+"use client";
 
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { useLanguage } from "@/components/providers/LanguageProvider";
+import LanguageToggle from "@/components/layout/LanguageToggle";
 
 export default function MainMenu() {
   const pathname = usePathname();
+  const { t } = useLanguage();
 
   // Helper: Exact match or starts with path
   const isActive = (path: string, exact = true) =>
@@ -14,7 +18,7 @@ export default function MainMenu() {
     <ul className="main-menu__list">
       {/* Home Mega Menu */}
       <li className={`dropdown megamenu ${isActive("/", true) || isActive("/index2", true) || isActive("/index3", true) ? "current" : ""}`}>
-        <Link href="/">Home</Link>
+        <Link href="/">{t("nav.home")}</Link>
         <ul>
           <li>
             <section className="home-showcase">
@@ -117,12 +121,12 @@ export default function MainMenu() {
 
       {/* About */}
       <li className={isActive("/about") ? "current" : ""}>
-        <Link href="/about">About</Link>
+        <Link href="/about">{t("nav.about")}</Link>
       </li>
 
       {/* Pages Dropdown */}
       <li className={`dropdown ${isActive("/team", false) || isActive("/team-carousel", false) || isActive("/team-details", false) || isActive("/portfolio", false) || isActive("/portfolio-details", false) || isActive("/testimonials", false) || isActive("/testimonials-carousel", false) || isActive("/pricing", false) || isActive("/gallery", false) || isActive("/faq", false) || isActive("/404", false) || isActive("/coming-soon", false) ? "current" : ""}`}>
-        <Link href="#">Pages</Link>
+        <Link href="#">{t("nav.pages")}</Link>
         <ul className="shadow-box">
           <li><Link href="/team">Team</Link></li>
           <li><Link href="/team-carousel">Team Carousel</Link></li>
@@ -141,7 +145,7 @@ export default function MainMenu() {
 
       {/* Services Dropdown */}
       <li className={`dropdown ${isActive("/services", false) || isActive("/services-carousel", false) || isActive("/threat-detection-prevention", false) || isActive("/endpoint-device-security", false) || isActive("/data-protection-privacy", false) || isActive("/backup-recovery", false) || isActive("/advanced-technology", false) || isActive("/cloud-managed-services", false) ? "current" : ""}`}>
-        <Link href="#">Services</Link>
+        <Link href="#">{t("nav.services")}</Link>
         <ul className="shadow-box">
           <li><Link href="/services">Services</Link></li>
           <li><Link href="/services-carousel">Services Carousel</Link></li>
@@ -156,7 +160,7 @@ export default function MainMenu() {
 
       {/* Shop Dropdown */}
       <li className={`dropdown ${isActive("/products", false) || isActive("/product-details", false) || isActive("/cart", false) || isActive("/checkout", false) || isActive("/wishlist", false) || isActive("/sign-up", false) || isActive("/login", false) ? "current" : ""}`}>
-        <Link href="#">Shop</Link>
+        <Link href="#">{t("nav.shop")}</Link>
         <ul className="shadow-box">
           <li><Link href="/products">Products</Link></li>
           <li><Link href="/product-details">Product Details</Link></li>
@@ -170,7 +174,7 @@ export default function MainMenu() {
 
       {/* Blog Dropdown */}
       <li className={`dropdown ${isActive("/blog", false) || isActive("/blog-carousel", false) || isActive("/blog-list", false) || isActive("/blog-list-2", false) || isActive("/blog-details", false) ? "current" : ""}`}>
-        <Link href="#">Blog</Link>
+        <Link href="#">{t("nav.blog")}</Link>
         <ul className="shadow-box">
           <li><Link href="/blog">Blog</Link></li>
           <li><Link href="/blog-carousel">Blog Carousel</Link></li>
@@ -182,7 +186,11 @@ export default function MainMenu() {
 
       {/* Contact */}
       <li className={isActive("/contact") ? "current" : ""}>
-        <Link href="/contact">Contact</Link>
+        <Link href="/contact">{t("nav.contact")}</Link>
+      </li>
+
+      <li className="lang-toggle-menu-item">
+        <LanguageToggle variant="menu" />
       </li>
     </ul>
   );

@@ -3,15 +3,15 @@ import CountUp from "react-countup";
 import Link from "next/link";
 import Image from "next/image";
 import AnimatedTitle from "@/components/elements/AnimatedTitle";
-
-const HIGHLIGHTS = [
-  "We engineered the systems that made large-scale fleet digitization possible.",
-  "Our evolution from DMS to Power Orbit reflects a shift from basic tracking to unified operational governance.",
-  "We did not adapt to the industry — we helped define it.",
-  "Today, we deliver the operational control required by the Kingdom's most demanding enterprises.",
-] as const;
+import { useLanguage } from "@/components/providers/LanguageProvider";
+import { getMessage } from "@/lib/i18n/translations";
 
 export default function About() {
+  const { locale, t } = useLanguage();
+  const highlights =
+    (getMessage(locale, "home.about.highlights") as readonly string[] | undefined) ??
+    [];
+
   return (
     <>
       <section className="about-two" id="about">
@@ -52,21 +52,18 @@ export default function About() {
                   </div>
                   <AnimatedTitle>
                     <h2 className="section-title__title title-animation about-two-copy__title">
-                      Two decades of <span>telematics innovation</span>
+                      {t("home.about.title")} <span>{t("home.about.titleHighlight")}</span>
                     </h2>
                   </AnimatedTitle>
                 </header>
 
                 <div className="about-two-copy__body">
                   <p className="about-two-copy__lead">
-                    Founded in 2006, Power Orbit has spent two decades navigating the
-                    complexity of Saudi operations. We did not just witness the
-                    Kingdom&apos;s digital transformation — we helped build the systems
-                    behind it.
+                    {t("home.about.lead")}
                   </p>
 
                   <ul className="about-two-copy__grid list-unstyled" role="list">
-                    {HIGHLIGHTS.map((text) => (
+                    {highlights.map((text) => (
                       <li key={text} className="about-two-copy__card">
                         <span className="about-two-copy__tick" aria-hidden>
                           <span className="icon-tick-inside-circle" />

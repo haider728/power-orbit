@@ -3,6 +3,7 @@ import { Autoplay, Navigation, Pagination, EffectFade } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
 import Link from "next/link";
 import Image from "next/image";
+import { useLanguage } from "@/components/providers/LanguageProvider";
 // import "swiper/css/effect-fade";
 const swiperOptions = {
     modules: [Autoplay, Pagination, Navigation, EffectFade],
@@ -53,6 +54,8 @@ const swiperOptions = {
 }
 
 export default function Banner() {
+  const { t } = useLanguage();
+
   return (
     <>
         <section className="main-slider-two" id="home">
@@ -91,23 +94,22 @@ export default function Banner() {
                                             {/* <div className="main-slider-two__sub-title-icon">
                                                 <Image src="/assets/images/icon/main-slider-sub-title-icon.png" alt="icon" width={16} height={16} priority />
                                             </div> */}
-                                            <p className="main-slider-two__sub-title">Engineering Intelligent Mobility for the Kingdom’s Leading Fleets 
+                                            <p className="main-slider-two__sub-title">{t("home.banner.slide1.subtitle")}
                                             </p>
                                         </div>
                                         <h2 className="main-slider-two__title">
-                                            Power Orbit (formerly DMS) <br /> delivers the high-fidelity<br /><span> IoT infrastructure </span>
+                                            {t("home.banner.slide1.title")} <br /> {t("home.banner.slide1.titleMid")}<br /><span> {t("home.banner.slide1.titleHighlight")} </span>
                                         </h2>
-                                        <p className="main-slider-two__text"> and AI-driven intelligence required for <br />
-                                           mission-critical operations. <br /></p>
+                                        <p className="main-slider-two__text"> {t("home.banner.slide1.text")} <br /></p>
                                         <div className="main-slider-two__btns-box">
                                             <div className="main-slider-two__btn-box-1">
-                                                <Link href="https://avl-ksa.com/en/" className="thm-btn">Visit Eagle-IoT Platform
+                                                <Link href="https://avl-ksa.com/en/" className="thm-btn">{t("home.banner.slide1.cta1")}
                                                 {/* <span
                                                         className="icon-right-arrow"></span> */}
                                                         </Link>
                                             </div>
                                             <div className="main-slider-two__btn-box-2">
-                                                <Link href="/#ecosystem" className="thm-btn">Explore the Ecosystem
+                                                <Link href="/#ecosystem" className="thm-btn">{t("home.banner.slide1.cta2")}
                                                 {/* <span
                                                         className="icon-right-arrow"></span> */}
                                                         </Link>
@@ -156,23 +158,22 @@ export default function Banner() {
                                             {/* <div className="main-slider-two__sub-title-icon">
                                                 <Image src="/assets/images/icon/main-slider-sub-title-icon.png" alt="icon" width={16} height={16} priority />
                                             </div> */}
-                                            <p className="main-slider-two__sub-title">IT Solutions Designed for Your Success
+                                            <p className="main-slider-two__sub-title">{t("home.banner.slide2.subtitle")}
                                             </p>
                                         </div>
                                         <h2 className="main-slider-two__title">
-                                            <span>we bridge  </span>  the gap between<br />  raw data and executive <br /> control.
+                                            <span>{t("home.banner.slide2.titlePrefix")}  </span>  {t("home.banner.slide2.title")}
                                         </h2>
-                                        <p className="main-slider-two__text">Power Orbit does not offer a  &quot;one-size-fits-all&quot; <br />
-                                      tool.  We provide a modular ecosystem  <br />   of specialized brands.</p>
+                                        <p className="main-slider-two__text">{t("home.banner.slide2.text")}</p>
                                         <div className="main-slider-two__btns-box">
                                             <div className="main-slider-two__btn-box-1">
-                                                <Link href="https://avl-ksa.com/en/" className="thm-btn">Visit Eagle-IoT Platform
+                                                <Link href="https://avl-ksa.com/en/" className="thm-btn">{t("home.banner.slide2.cta1")}
                                                 {/* <span
                                                         className="icon-right-arrow"></span> */}
                                                         </Link>
                                             </div>
                                             <div className="main-slider-two__btn-box-2">
-                                                <Link href="/#ecosystem" className="thm-btn">Explore the Ecosystem
+                                                <Link href="/#ecosystem" className="thm-btn">{t("home.banner.slide2.cta2")}
                                                 {/* <span
                                                         className="icon-right-arrow"></span> */}
                                                         </Link>

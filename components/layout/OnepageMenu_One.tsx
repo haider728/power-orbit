@@ -1,9 +1,13 @@
+"use client";
+
 import { useEffect, useState } from "react";
+import { useLanguage } from "@/components/providers/LanguageProvider";
 import { ONEPAGE_NAV_ONE } from "@/data/onepageNav";
 
 const sections = ONEPAGE_NAV_ONE;
 
 export default function OnepageMenu_One() {
+  const { t } = useLanguage();
   const [current, setCurrent] = useState<string>("");
 
   useEffect(() => {
@@ -52,7 +56,7 @@ export default function OnepageMenu_One() {
           className={`scrollToLink ${current === section.id ? "current" : ""}`}
         >
           <a href={section.id} onClick={(e) => handleClick(e, section.id)}>
-            {section.label}
+            {t(section.labelKey)}
           </a>
         </li>
       ))}

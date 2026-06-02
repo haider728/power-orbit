@@ -1,7 +1,11 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import LanguageToggle from "../LanguageToggle";
 import OnepageMobileMenu_One from "../OnepageMobileMenu_One";
 import OnepageMenu_One from "../OnepageMenu_One";
+import { useLanguage } from "@/components/providers/LanguageProvider";
 
 // ✅ Define props type
 type Header2Props = {
@@ -11,6 +15,8 @@ type Header2Props = {
 };
 
 export default function Header2({ scroll, handleMobileMenu, handleSidebar }: Header2Props) {
+  const { t } = useLanguage();
+
   return (
     <>
       {/* main header */}
@@ -60,8 +66,9 @@ export default function Header2({ scroll, handleMobileMenu, handleSidebar }: Hea
                         <OnepageMenu_One/>
                     </div>
                     <div className="main-menu-two__right">
+                        <LanguageToggle variant="header" />
                         <div className="main-menu-two__btn-box">
-                            <Link href="https://avl-ksa.com/en/contact-us/" className="thm-btn">Get in Touch
+                            <Link href="https://avl-ksa.com/en/contact-us/" className="thm-btn">{t("nav.getInTouch")}
                             {/* <span
                                     className="icon-right-arrow"></span> */}
                                     </Link>
@@ -93,8 +100,9 @@ export default function Header2({ scroll, handleMobileMenu, handleSidebar }: Hea
                         <OnepageMenu_One/>
                     </div>
                     <div className="main-menu-two__right">
+                        <LanguageToggle variant="header" />
                         <div className="main-menu-two__btn-box">
-                            <Link href="https://avl-ksa.com/en/contact-us/" className="thm-btn">Get in Touch
+                            <Link href="https://avl-ksa.com/en/contact-us/" className="thm-btn">{t("nav.getInTouch")}
                             {/* <span
                                     className="icon-right-arrow"></span> */}
                                     </Link>

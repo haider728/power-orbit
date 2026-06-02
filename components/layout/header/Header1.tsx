@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import LanguageToggle from "../LanguageToggle";
 import MobileMenu from "../MobileMenu";
 import Menu from "../Menu";
 
@@ -60,6 +63,7 @@ export default function Header1({ scroll, handleMobileMenu, handleSidebar }: Hea
                         <Menu/>
                     </div>
                     <div className="main-menu-two__right">
+                        <LanguageToggle variant="header" />
                         <div className="main-menu-two__nav-sidebar-icon">
                             <Link className="navSidebar-button" href="#" onClick={handleSidebar}>
                                 <span className="icon-dots-menu-one"></span>
@@ -87,6 +91,7 @@ export default function Header1({ scroll, handleMobileMenu, handleSidebar }: Hea
                         <Menu/>
                     </div>
                     <div className="main-menu-two__right">
+                        <LanguageToggle variant="header" />
                         <div className="main-menu-two__nav-sidebar-icon">
                             <Link className="navSidebar-button" href="#" onClick={handleSidebar}>
                                 <span className="icon-dots-menu-one"></span>
