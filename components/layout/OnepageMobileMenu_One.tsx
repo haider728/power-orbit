@@ -61,6 +61,10 @@ export default function OnepageMobileMenu_One({ isSidebar, handleMobileMenu }: O
           </Link>
         </div>
 
+        <div className="mobile-nav__lang">
+          <LanguageToggle variant="mobile" />
+        </div>
+
         {/* Navigation */}
         <div className="mobile-nav__container">
           <ul className="main-menu__list">
@@ -75,9 +79,6 @@ export default function OnepageMobileMenu_One({ isSidebar, handleMobileMenu }: O
               </li>
             ))}
           </ul>
-          <div className="mobile-nav__lang">
-            <LanguageToggle variant="menu" />
-          </div>
         </div>
 
         {/* Contact Info */}
@@ -88,7 +89,7 @@ export default function OnepageMobileMenu_One({ isSidebar, handleMobileMenu }: O
           </li>
           <li>
             <i className="fas fa-phone"></i>
-            <Link href="tel:6668880000">666 888 0000</Link>
+            <Link href="tel:6668880000">+966 53 308 5658</Link>
           </li>
         </ul>
 

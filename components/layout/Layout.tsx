@@ -5,6 +5,7 @@ import Header from "./Header"; // Client component
 import Footer from "./Footer"; // Server component
 import Breadcrumb from "./Breadcrumb";
 import LocaleBoundary from "@/components/providers/LocaleBoundary";
+import HashScrollHandler from "@/components/layout/HashScrollHandler";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -21,6 +22,7 @@ export default function Layout({
 }: LayoutProps) {
   return (
     <div className="page-wrapper" id="top">
+      <HashScrollHandler />
       {/* Header (client component) */}
       <Header style={headerStyle} />
 

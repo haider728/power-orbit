@@ -1,5 +1,7 @@
 import Link from "next/link"
 import Image from "next/image";
+import SectionScrollLink from "@/components/layout/SectionScrollLink";
+
 export default function Footer1() {
     return (
         <>
@@ -14,7 +16,7 @@ export default function Footer1() {
                             <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                                 <div className="site-footer-two__about">
                                     <div className="site-footer-two__logo">
-                                        <Link href="/"><Image src="/assets/images/resources/footer-logo.gif" alt="Power Orbit" width={169} height={36} priority unoptimized /></Link>
+                                        <SectionScrollLink sectionId="#home"><Image src="/assets/images/resources/footer-logo.gif" alt="Power Orbit" width={169} height={36} priority unoptimized /></SectionScrollLink>
                                     </div>
                                     <ul className="list-unstyled site-footer-two__contact-list">
                                         <li>
@@ -48,12 +50,12 @@ export default function Footer1() {
                                 <div className="footer-widget-two__quick-links">
                                     <h4 className="footer-widget-two__title">Pages</h4>
                                     <ul className="footer-widget-two__quick-links-list list-unstyled">
-                                        <li><Link href="/"><span className="icon-right-arrow-2"></span>Home</Link></li>
-                                        <li><Link href="/about"><span className="icon-right-arrow-2"></span>About Us</Link></li>
+                                        <li><SectionScrollLink sectionId="#home"><span className="icon-right-arrow-2"></span>Home</SectionScrollLink></li>
+                                        <li><SectionScrollLink sectionId="#about"><span className="icon-right-arrow-2"></span>About Us</SectionScrollLink></li>
                                         {/* <li><Link href="/pricing"><span className="icon-right-arrow-2"></span>Pricing</Link></li>
                                         // <li><Link href="/portfolio"><span className="icon-right-arrow-2"></span>Portfolio</Link>
                                         // </li> */}
-                                        <li><Link href="/blog"><span className="icon-right-arrow-2"></span>Blogs</Link></li>
+                                        <li><SectionScrollLink sectionId="#blog"><span className="icon-right-arrow-2"></span>Blogs</SectionScrollLink></li>
                                         {/* <li><Link href="/contact"><span className="icon-right-arrow-2"></span>Careers</Link></li> */}
                                     </ul>
                                 </div>
@@ -103,7 +105,7 @@ export default function Footer1() {
                                 <div className="site-footer-two__bottom-inner">
                                     <div className="site-footer-two__copyright">
                                         <p className="site-footer-two__copyright-text">
-                                            ⓒ Copyright {new Date().getFullYear()} <Link href="/">Power Orbit</Link> All rights reserved
+                                            ⓒ Copyright {new Date().getFullYear()} <SectionScrollLink sectionId="#home">Power Orbit</SectionScrollLink> All rights reserved
                                         </p>
                                     </div>
                                     <div className="site-footer-two__social-box">

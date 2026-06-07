@@ -98,7 +98,8 @@ export default function Banner() {
                                             </p>
                                         </div>
                                         <h2 className="main-slider-two__title">
-                                            {t("home.banner.slide1.title")} <br /> {t("home.banner.slide1.titleMid")}<br /><span> {t("home.banner.slide1.titleHighlight")} </span>
+                                            {t("home.banner.slide1.title")} <br /> {t("home.banner.slide1.titleMid")}<br />
+                                            <span> {t("home.banner.slide1.titleHighlight")} </span>
                                         </h2>
                                         <p className="main-slider-two__text"> {t("home.banner.slide1.text")} <br /></p>
                                         <div className="main-slider-two__btns-box">
@@ -115,9 +116,9 @@ export default function Banner() {
                                                         </Link>
                                             </div>
                                         </div>
-                                        <div className="main-slider-two__shield-check-icon">
+                                        {/* <div className="main-slider-two__shield-check-icon">
                                             <Image src="/assets/images/icon/main-slider-shield-check-icon.png" alt="shape" width={28} height={32} priority />
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                             </div>
@@ -162,7 +163,11 @@ export default function Banner() {
                                             </p>
                                         </div>
                                         <h2 className="main-slider-two__title">
-                                            <span>{t("home.banner.slide2.titlePrefix")}  </span>  {t("home.banner.slide2.title")}
+                                            <span>{t("home.banner.slide2.titleLine1")}</span>
+                                            <br />
+                                            {t("home.banner.slide2.titleLine2")}
+                                            <br />
+                                            <span>{t("home.banner.slide2.titleLine3")}</span>
                                         </h2>
                                         <p className="main-slider-two__text">{t("home.banner.slide2.text")}</p>
                                         <div className="main-slider-two__btns-box">
@@ -179,9 +184,9 @@ export default function Banner() {
                                                         </Link>
                                             </div>
                                         </div>
-                                        <div className="main-slider-two__shield-check-icon">
+                                        {/* <div className="main-slider-two__shield-check-icon">
                                             <Image src="/assets/images/icon/main-slider-shield-check-icon.png" alt="shape" width={28} height={32} priority />
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                             </div>
@@ -243,9 +248,9 @@ export default function Banner() {
                                                 </Link>
                                             </div>
                                         </div>
-                                        <div className="main-slider-two__shield-check-icon">
+                                        {/* <div className="main-slider-two__shield-check-icon">
                                             <Image src="/assets/images/icon/main-slider-shield-check-icon.png" alt="shape" width={28} height={32} priority />
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                             </div>

@@ -634,27 +634,47 @@
   font-size: 28px;
 }
 
-.stacked-cards-module__UrFTvG__linkWrap {
+.stacked-cards-module__UrFTvG__seeMoreWrap {
+  margin-top: 18px;
+}
+
+.stacked-cards-module__UrFTvG__seeMoreBtn {
+  cursor: pointer;
+  border: 0;
+  justify-content: center;
   align-items: center;
-  gap: 5px;
+  display: inline-flex;
+  padding: 12px 22px !important;
+  font-size: 14px !important;
+  line-height: 1.2 !important;
+  text-decoration: none !important;
+}
+
+.stacked-cards-module__UrFTvG__storeBadges {
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
   display: flex;
 }
 
-.stacked-cards-module__UrFTvG__link {
-  color: #a9b4ff;
-  cursor: pointer;
-  font-size: 12px;
-  text-decoration: underline;
+.stacked-cards-module__UrFTvG__storeBadge {
+  opacity: .92;
+  line-height: 0;
+  transition: opacity .2s, transform .2s;
+  display: inline-flex;
 }
 
-.stacked-cards-module__UrFTvG__linkButton {
-  color: #a9b4ff;
-  cursor: pointer;
-  background: none;
-  border: 0;
-  padding: 0;
-  font-size: 12px;
-  text-decoration: underline;
+.stacked-cards-module__UrFTvG__storeBadge:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.stacked-cards-module__UrFTvG__storeBadgeImg {
+  -o-object-fit: contain;
+  object-fit: contain;
+  width: auto;
+  height: 42px;
 }
 
 .stacked-cards-module__UrFTvG__imageContainer {
@@ -780,6 +800,10 @@
 
   .stacked-cards-module__UrFTvG__appTileName {
     font-size: 12px;
+  }
+
+  .stacked-cards-module__UrFTvG__storeBadgeImg {
+    height: 38px;
   }
 }
 

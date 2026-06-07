@@ -1,4 +1,4 @@
-import { mobilitySuiteApps, type MobileApp } from "./mobileApps";
+import { type MobileApp } from "./mobileApps";
 
 export type ProjectCard = {
   title: string;
@@ -9,6 +9,11 @@ export type ProjectCard = {
   url: string;
   /** Optional mobile app shortcuts (icons + links) for this card */
   mobileApps?: MobileApp[];
+  /** App store badge links (shown below See more when set) */
+  storeLinks?: {
+    googlePlay: string;
+    appStore: string;
+  };
 };
 
 export const cards: ProjectCard[] = [
@@ -21,6 +26,11 @@ export const cards: ProjectCard[] = [
     src: "eagle.png",
     color: "#1A1D38",
     url: "https://www.ignant.com/2023/03/25/ad2186-matthias-leidingers-photographic-exploration-of-awe-and-wonder/",
+    storeLinks: {
+      googlePlay:
+        "https://play.google.com/store/apps/details?id=com.eagleiot_mobile&pli=1",
+      appStore: "https://apps.apple.com/",
+    },
   },
   {
     title: "SmartSense | Connected Asset Intelligence ",
@@ -31,6 +41,11 @@ export const cards: ProjectCard[] = [
       src: "smart.png",
     color: "#23214A",
     url: "https://www.ignant.com/2022/09/30/clement-chapillon-questions-geographical-and-mental-isolation-with-les-rochers-fauves/",
+    storeLinks: {
+      googlePlay:
+        "https://play.google.com/store/apps/details?id=com.smartsenseapp",
+      appStore: "https://apps.apple.com/",
+    },
   },
   {
     title: "Integrated Mobility Apps | The Last Mile of Intelligence ",
@@ -41,6 +56,10 @@ export const cards: ProjectCard[] = [
     src: "app.png",
     color: "#2D2B5A",
     url: "https://www.ignant.com/2023/10/28/capturing-balis-many-faces-zissou-documents-the-sacred-and-the-mundane-of-a-fragile-island/",
-    mobileApps: mobilitySuiteApps,
+    storeLinks: {
+      googlePlay:
+        "https://play.google.com/store/apps/details?id=com.eagleiot_mobile&pli=1",
+      appStore: "https://apps.apple.com/",
+    },
   },
 ];

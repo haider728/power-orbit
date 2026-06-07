@@ -171,27 +171,46 @@
   font-family: "Title";
 }
 
-.linkWrap {
-  display: flex;
+.seeMoreWrap {
+  margin-top: 18px;
+}
+
+.seeMoreBtn {
+  display: inline-flex;
   align-items: center;
-  gap: 5px;
-}
-
-.link {
-  font-size: 12px;
-  text-decoration: underline;
-  color: #a9b4ff;
+  justify-content: center;
+  padding: 12px 22px !important;
+  font-size: 14px !important;
+  line-height: 1.2 !important;
+  text-decoration: none !important;
   cursor: pointer;
-}
-
-.linkButton {
-  font-size: 12px;
-  text-decoration: underline;
-  color: #a9b4ff;
-  cursor: pointer;
-  background: none;
   border: 0;
-  padding: 0;
+}
+
+.storeBadges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.storeBadge {
+  display: inline-flex;
+  line-height: 0;
+  opacity: 0.92;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.storeBadge:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.storeBadgeImg {
+  width: auto;
+  height: 42px;
+  object-fit: contain;
 }
 
 .imageContainer {
@@ -316,5 +335,9 @@
 
   .appTileName {
     font-size: 12px;
+  }
+
+  .storeBadgeImg {
+    height: 38px;
   }
 }

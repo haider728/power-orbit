@@ -1,120 +1,85 @@
 "use client";
+
 import CountUp from "react-countup";
 import Link from "next/link";
-import Image from "next/image";
 import AnimatedTitle from "@/components/elements/AnimatedTitle";
 import { useLanguage } from "@/components/providers/LanguageProvider";
-import { getMessage } from "@/lib/i18n/translations";
+import { getMessage, translations } from "@/lib/i18n/translations";
+import styles from "@/components/sections/home1/about.module.css";
 
 export default function About() {
   const { locale, t } = useLanguage();
   const highlights =
     (getMessage(locale, "home.about.highlights") as readonly string[] | undefined) ??
     [];
+  const stats = translations[locale].home.about.stats;
 
   return (
-    <>
-      <section className="about-two" id="about">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-xl-6">
-              <div className="about-two__left">
-                <div className="about-two__img-box">
-                  <div className="about-two__img">
-                    <Image
-                      src="/assets/images/resources/about-two-img-1.jpg"
-                      alt="Power Orbit operations"
-                      width={495}
-                      height={474}
-                      priority
-                    />
-                  </div>
-                  {/* <div className="about-two__img-2">
-                    <Image
-                      src="/assets/images/resources/about-two-img-2.jpg"
-                      alt="Telematics innovation"
-                      width={336}
-                      height={344}
-                      priority
-                    />
-                  </div> */}
-                  <div className="about-two__shape-1" aria-hidden />
-                </div>
+    <section className={`about-two ${styles.section}`} id="about">
+      <div className="container">
+        <div className={styles.inner}>
+          <div className={styles.statsRow}>
+            {stats.map((stat, index) => (
+              <div key={stat.label} className={styles.stat}>
+                <span className={styles.statValue}>
+                  {index === 0 ? (
+                    <>
+                      <CountUp end={20} duration={2.5} enableScrollSpy scrollSpyOnce />
+                      +
+                    </>
+                  ) : (
+                    stat.value
+                  )}
+                </span>
+                <span className={styles.statLabel}>{stat.label}</span>
+              </div>
+            ))}
+          </div>
+
+          <header
+            className={`section-title text-left sec-title-animation animation-style2 ${styles.header}`}
+          >
+            <AnimatedTitle>
+              <h2 className={`section-title__title title-animation ${styles.title}`}>
+                {t("home.about.title")}{" "}
+                <span>{t("home.about.titleHighlight")}</span>
+              </h2>
+            </AnimatedTitle>
+          </header>
+
+          <p className={styles.lead}>{t("home.about.lead")}</p>
+
+          <ul className={styles.statements} role="list">
+            {highlights.map((text) => (
+              <li key={text}>{text}</li>
+            ))}
+          </ul>
+
+          <div className={`about-two__experience-contact-and-btn ${styles.footer}`}>
+            <div className={styles.callBox}>
+              <div className={styles.callIcon}>
+                <span className="icon-customer-service-headset" />
+              </div>
+              <div>
+                <span className={styles.callLabel}>{t("home.about.callLabel")}</span>
+                <p className={styles.callLink}>
+                  <Link href="tel:+966533085658">+966 53 308 5658</Link>
+                </p>
               </div>
             </div>
-            <div className="col-xl-6">
-              <div className="about-two__right about-two-copy">
-                <header className="section-title text-left sec-title-animation animation-style2 about-two-copy__header">
-                  <div className="section-title__tagline-box">
-                    {/* <div className="section-title__tagline-shape-1" />
-                    <span className="section-title__tagline">About Us</span>
-                    <div className="section-title__tagline-shape-2" /> */}
-                  </div>
-                  <AnimatedTitle>
-                    <h2 className="section-title__title title-animation about-two-copy__title">
-                      {t("home.about.title")} <span>{t("home.about.titleHighlight")}</span>
-                    </h2>
-                  </AnimatedTitle>
-                </header>
-
-                <div className="about-two-copy__body">
-                  <p className="about-two-copy__lead">
-                    {t("home.about.lead")}
-                  </p>
-
-                  <ul className="about-two-copy__grid list-unstyled" role="list">
-                    {highlights.map((text) => (
-                      <li key={text} className="about-two-copy__card">
-                        <span className="about-two-copy__tick" aria-hidden>
-                          <span className="icon-tick-inside-circle" />
-                        </span>
-                        <p>{text}</p>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div className="about-two__experience-contact-and-btn about-two-copy__footer">
-                  <div className="about-two__experience-box">
-                    <div className="about-two__experience-count-box">
-                      <h3 className="odometer">
-                        <CountUp end={20} duration={2} />
-                      </h3>
-                      <span>+</span>
-                    </div>
-                    <p className="about-two__experience-text">
-                      Years of
-                      <br /> Experience
-                    </p>
-                  </div>
-                  <div className="about-two__call-box">
-                    <div className="about-two__call-icon">
-                      <span className="icon-customer-service-headset" />
-                    </div>
-                    <div className="about-two__call-content">
-                      <span>Call us for inquiry</span>
-                      <p>
-                        <Link href="tel:+966533085658">+966 53 308 5658</Link>
-                      </p>
-                    </div>
-                  </div>
-                  <div className="about-two__btn-box">
-                    <Link
-                      href="/Company-Profile-2026-Eng-Version.pdf"
-                      className="thm-btn"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Company Profile
-                      {/* <span className="icon-right-arrow" /> */}
-                    </Link>
-                  </div>
-                </div>
-              </div>
+            <div className="about-two__btn-box">
+              <Link
+                href="/Company-Profile-2026-Eng-Version.pdf"
+                className="thm-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t("home.about.companyProfile")}
+              </Link>
             </div>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }

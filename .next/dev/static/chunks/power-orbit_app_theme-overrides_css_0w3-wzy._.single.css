@@ -22,7 +22,7 @@ html, body {
   overflow: visible !important;
 }
 
-.about-two, .banner-one, .counter-one, .why-choose-one, .sliding-text, .process-one, .portfolio-one, .blog-one, .services-one, .team-one, .team-two, .team-page, .team-carousel-page, .testimonial-one, .feature-one, .pricing-one, .faq-one, .contact-one, .cta-one, .footer-one, .footer-two {
+.about-two, .banner-one, .counter-one, .why-choose-one, .sliding-text, .process-one, #process, .portfolio-one, .blog-one, .services-one, .team-one, .team-two, .team-page, .team-carousel-page, .testimonial-one, .feature-one, .pricing-one, .faq-one, .contact-one, .cta-one, .footer-one, .footer-two {
   background-color: #0000 !important;
   background-image: none !important;
 }
@@ -538,6 +538,12 @@ html, body {
   margin-top: 0;
 }
 
+.lang-toggle--mobile {
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+}
+
 .lang-toggle__btn {
   color: #f4f6ffb8;
   cursor: pointer;
@@ -566,9 +572,12 @@ html, body {
 }
 
 .mobile-nav__lang {
-  border-top: 1px solid #ffffff14;
-  margin-top: 1.25rem;
-  padding-top: 1rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 0 1.25rem;
+  padding: 0;
+  display: flex;
 }
 
 .main-menu-two__right {
@@ -580,6 +589,66 @@ html, body {
 
 .main-menu-two__main-menu-box {
   display: block;
+}
+
+@media (max-width: 1199px) {
+  .main-menu-two__wrapper-inner {
+    flex-wrap: nowrap;
+    gap: .75rem;
+  }
+
+  .main-menu-two__left {
+    flex: none;
+    order: 1;
+  }
+
+  .main-menu-two__right {
+    order: 2;
+    gap: .65rem;
+    margin-inline: auto 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .main-menu-two__main-menu-box {
+    flex: none;
+    order: 3;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .main-menu-two__main-menu-box .mobile-nav__toggler {
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    line-height: 1;
+    display: flex;
+  }
+
+  .main-menu-two__btn-box .thm-btn {
+    white-space: nowrap;
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+
+  .lang-toggle--header {
+    margin-inline-end: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-menu-two__right {
+    display: none;
+  }
+
+  .main-menu-two__main-menu-box {
+    margin-inline-start: auto;
+  }
 }
 
 @media (min-width: 1200px) {

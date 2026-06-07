@@ -4,7 +4,7 @@ import { useLanguage } from "@/components/providers/LanguageProvider";
 
 type LanguageToggleProps = {
   className?: string;
-  variant?: "menu" | "header";
+  variant?: "menu" | "header" | "mobile";
 };
 
 export default function LanguageToggle({
