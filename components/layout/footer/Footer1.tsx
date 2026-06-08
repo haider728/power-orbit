@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from "next/image";
 import SectionScrollLink from "@/components/layout/SectionScrollLink";
+import { BLOG_EXTERNAL_URL } from "@/data/onepageNav";
 
 export default function Footer1() {
     return (
@@ -55,7 +56,7 @@ export default function Footer1() {
                                         {/* <li><Link href="/pricing"><span className="icon-right-arrow-2"></span>Pricing</Link></li>
                                         // <li><Link href="/portfolio"><span className="icon-right-arrow-2"></span>Portfolio</Link>
                                         // </li> */}
-                                        <li><SectionScrollLink sectionId="#blog"><span className="icon-right-arrow-2"></span>Blogs</SectionScrollLink></li>
+                                        <li><Link href={BLOG_EXTERNAL_URL} target="_blank" rel="noopener noreferrer"><span className="icon-right-arrow-2"></span>Blogs</Link></li>
                                         {/* <li><Link href="/contact"><span className="icon-right-arrow-2"></span>Careers</Link></li> */}
                                     </ul>
                                 </div>

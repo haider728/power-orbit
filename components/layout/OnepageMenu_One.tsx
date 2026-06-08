@@ -11,13 +11,13 @@ export default function OnepageMenu_One() {
   const [current, setCurrent] = useState<string>("");
 
   useEffect(() => {
-    // Enable smooth scroll globally
     document.documentElement.style.scrollBehavior = "smooth";
 
     const handleScroll = () => {
-      const scrollPos = window.scrollY + 100; // offset for early activation
+      const scrollPos = window.scrollY + 100;
 
       for (const section of sections) {
+        if (!section.id) continue;
         const el = document.querySelector(section.id);
         if (el) {
           const offsetTop = el.getBoundingClientRect().top + window.scrollY;
@@ -32,11 +32,11 @@ export default function OnepageMenu_One() {
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Run once on mount
+    handleScroll();
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
-      document.documentElement.style.scrollBehavior = ""; // cleanup
+      document.documentElement.style.scrollBehavior = "";
     };
   }, []);
 
@@ -50,16 +50,35 @@ export default function OnepageMenu_One() {
 
   return (
     <ul className="main-menu__list one-page-scroll-menu">
-      {sections.map((section) => (
-        <li
-          key={section.id}
-          className={`scrollToLink ${current === section.id ? "current" : ""}`}
-        >
-          <a href={section.id} onClick={(e) => handleClick(e, section.id)}>
-            {t(section.labelKey)}
-          </a>
-        </li>
-      ))}
+      {sections.map((section) => {
+        const key = section.id ?? section.href ?? section.labelKey;
+
+        if (section.href) {
+          return (
+            <li key={key}>
+              <a
+                href={section.href}
+                {...(section.external
+                  ? { target: "_blank", rel: "noopener noreferrer" }
+                  : {})}
+              >
+                {t(section.labelKey)}
+              </a>
+            </li>
+          );
+        }
+
+        return (
+          <li
+            key={key}
+            className={`scrollToLink ${current === section.id ? "current" : ""}`}
+          >
+            <a href={section.id} onClick={(e) => handleClick(e, section.id!)}>
+              {t(section.labelKey)}
+            </a>
+          </li>
+        );
+      })}
     </ul>
   );
 }

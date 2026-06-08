@@ -69,16 +69,36 @@ export default function OnepageMobileMenu_One({ isSidebar, handleMobileMenu }: O
         {/* Navigation */}
         <div className="mobile-nav__container">
           <ul className="main-menu__list">
-            {sections.map((section) => (
-              <li
-                key={section.id}
-                className={`scrollToLink ${currentSection === section.id ? "current" : ""}`}
-              >
-                <Link href={section.id} onClick={(e) => handleClick(e, section.id)}>
-                  {t(section.labelKey)}
-                </Link>
-              </li>
-            ))}
+            {sections.map((section) => {
+              const key = section.id ?? section.href ?? section.labelKey;
+
+              if (section.href) {
+                return (
+                  <li key={key}>
+                    <Link
+                      href={section.href}
+                      onClick={handleMobileMenu}
+                      {...(section.external
+                        ? { target: "_blank", rel: "noopener noreferrer" }
+                        : {})}
+                    >
+                      {t(section.labelKey)}
+                    </Link>
+                  </li>
+                );
+              }
+
+              return (
+                <li
+                  key={key}
+                  className={`scrollToLink ${currentSection === section.id ? "current" : ""}`}
+                >
+                  <Link href={section.id!} onClick={(e) => handleClick(e, section.id!)}>
+                    {t(section.labelKey)}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </div>
 
