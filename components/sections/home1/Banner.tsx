@@ -68,7 +68,7 @@ export default function Banner() {
                 </div>
                 <div className={styles.visualCol}>
                   <HeroVisual
-                    imageSrc="/images/eagle.png"
+                    imageSrc="/images/eagl.png"
                     imageAlt="Eagle-IoT fleet intelligence platform"
                     badges={banner.badges}
                     stats={banner.stats}
@@ -114,7 +114,7 @@ export default function Banner() {
                 </div>
                 <div className={styles.visualCol}>
                   <HeroVisual
-                    imageSrc="/images/smart.png"
+                    imageSrc="/images/smart sense app.png"
                     imageAlt="SmartSense connected asset intelligence"
                     highlights={banner.highlights}
                   />
@@ -158,7 +158,7 @@ export default function Banner() {
                 </div>
                 <div className={styles.visualCol}>
                   <HeroVisual
-                    imageSrc="/images/app.png"
+                    imageSrc="/images/apps.png"
                     imageAlt="Power Orbit integrated mobility applications"
                     badges={banner.badges}
                     stats={banner.stats}

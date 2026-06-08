@@ -727,3 +727,8 @@
 {"timestamp":"24:08:55.374","source":"Browser","level":"WARN","message":"Image with src \"/images/apps.png\" has \"fill\" and parent element with invalid \"position\". Provided \"static\" should be one of absolute,fixed,relative."}
 {"timestamp":"24:11:12.029","source":"Server","level":"LOG","message":"✓ Compiled in 489ms"}
 {"timestamp":"24:11:13.496","source":"Server","level":"LOG","message":"✓ Compiled in 177ms"}
+{"timestamp":"24:26:44.102","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mImage with src \\\"/images/appp.png\\\" has \\\"fill\\\" and parent element with invalid \\\"position\\\". Provided \\\"static\\\" should be one of absolute,fixed,relative.\\u001b[39m\""}
+{"timestamp":"24:26:44.103","source":"Browser","level":"WARN","message":"\u001b[33mImage with src \"/images/appp.png\" has \"fill\" and parent element with invalid \"position\". Provided \"static\" should be one of absolute,fixed,relative.\u001b[39m"}
+{"timestamp":"24:26:44.104","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mImage with src \\\"/images/apps.png\\\" has \\\"fill\\\" and parent element with invalid \\\"position\\\". Provided \\\"static\\\" should be one of absolute,fixed,relative.\\u001b[39m\""}
+{"timestamp":"24:26:44.104","source":"Browser","level":"WARN","message":"\u001b[33mImage with src \"/images/apps.png\" has \"fill\" and parent element with invalid \"position\". Provided \"static\" should be one of absolute,fixed,relative.\u001b[39m"}
+{"timestamp":"24:35:22.254","source":"Server","level":"LOG","message":"✓ Compiled in 66ms"}
