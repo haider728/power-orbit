@@ -19,7 +19,7 @@ export default function HeroVisual({
   highlights,
 }: HeroVisualProps) {
   return (
-    <div className={styles.visual} aria-hidden={false}>
+    <div className={styles.visual}>
       <div className={styles.visualGlow} aria-hidden="true" />
       <div className={styles.visualFrame}>
         <Image
@@ -29,6 +29,7 @@ export default function HeroVisual({
           height={480}
           className={styles.visualImg}
           priority
+          unoptimized
         />
       </div>
 

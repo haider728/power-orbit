@@ -7,6 +7,7 @@ import { useLanguage } from "@/components/providers/LanguageProvider";
 import { translations } from "@/lib/i18n/translations";
 import HeroVisual from "@/components/sections/home1/HeroVisual";
 import styles from "@/components/sections/home1/banner.module.css";
+import { HERO_SLIDE_IMAGES } from "@/data/heroSlides";
 
 const swiperOptions = {
   modules: [Autoplay, Navigation, EffectFade],
@@ -68,8 +69,8 @@ export default function Banner() {
                 </div>
                 <div className={styles.visualCol}>
                   <HeroVisual
-                    imageSrc="/images/eagl.png"
-                    imageAlt="Eagle-IoT fleet intelligence platform"
+                    imageSrc={HERO_SLIDE_IMAGES[0].src}
+                    imageAlt={HERO_SLIDE_IMAGES[0].alt}
                     badges={banner.badges}
                     stats={banner.stats}
                   />
@@ -114,8 +115,8 @@ export default function Banner() {
                 </div>
                 <div className={styles.visualCol}>
                   <HeroVisual
-                    imageSrc="/images/smart sense app.png"
-                    imageAlt="SmartSense connected asset intelligence"
+                    imageSrc={HERO_SLIDE_IMAGES[1].src}
+                    imageAlt={HERO_SLIDE_IMAGES[1].alt}
                     highlights={banner.highlights}
                   />
                 </div>
@@ -158,8 +159,8 @@ export default function Banner() {
                 </div>
                 <div className={styles.visualCol}>
                   <HeroVisual
-                    imageSrc="/images/apps.png"
-                    imageAlt="Power Orbit integrated mobility applications"
+                    imageSrc={HERO_SLIDE_IMAGES[2].src}
+                    imageAlt={HERO_SLIDE_IMAGES[2].alt}
                     badges={banner.badges}
                     stats={banner.stats}
                   />

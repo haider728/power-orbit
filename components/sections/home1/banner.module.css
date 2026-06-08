@@ -85,6 +85,17 @@
   height: 100%;
   object-fit: contain;
   border-radius: 14px;
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block;
+}
+
+/* Swiper fade must not hide hero product images */
+.main-slider-two .swiper-slide-active .visual,
+.main-slider-two .swiper-slide-active .visualFrame,
+.main-slider-two .swiper-slide-active .visualImg {
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 .badgeRow {

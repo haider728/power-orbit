@@ -6,6 +6,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import type { MotionValue } from "framer-motion";
 import { useRef } from "react";
 import type { ProjectCard } from "@/data/cards";
+import { publicImagePath } from "@/lib/publicImage";
 import MobileAppTiles from "@/components/sections/home1/MobileAppTiles";
 import styles from "@/components/sections/home1/stacked-cards.module.css";
 
@@ -110,11 +111,12 @@ export default function Card({
                     <div className={styles.imageContainer}>
                         <motion.div className={styles.inner} style={{ scale: imageScale }}>
                             <Image
-                                src={`/images/${src}`}
+                                src={publicImagePath(src)}
                                 alt="image"
                                 fill
                                 sizes="(max-width: 991px) 100vw, 60vw"
                                 className={styles.image}
+                                unoptimized
                             />
                         </motion.div>
                     </div>
