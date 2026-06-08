@@ -3,12 +3,12 @@
   "short_name": "Power Orbit",
   "icons": [
     {
-      "src": "/assets/images/favicons/favicon%202.png",
+      "src": "/power-orbit-favicon.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/assets/images/favicons/favicon%202.png",
+      "src": "/power-orbit-favicon.png",
       "sizes": "512x512",
       "type": "image/png"
     }

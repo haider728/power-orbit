@@ -39,16 +39,10 @@ export const metadata: Metadata = {
     "Power Orbit delivers IoT infrastructure and telematics intelligence for mission-critical fleet and enterprise operations in Saudi Arabia and beyond.",
   icons: {
     icon: [
-      {
-        url: "/assets/images/favicons/favicon%202.png",
-        type: "image/png",
-      },
+      { url: "/power-orbit-favicon.png", type: "image/png" },
     ],
-    apple: {
-      url: "/assets/images/favicons/favicon%202.png",
-      type: "image/png",
-    },
-    shortcut: "/assets/images/favicons/favicon%202.png",
+    apple: "/power-orbit-favicon.png",
+    shortcut: "/power-orbit-favicon.png",
   },
   manifest: "/assets/images/favicons/site.webmanifest",
 };
