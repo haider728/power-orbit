@@ -53,7 +53,7 @@ export const cards: ProjectCard[] = [
       "Data is only valuable if it reaches the people who can act on it. Our suite of mobile applications brings office intelligence to the field—bridging dispatchers and drivers with specialized mobile interfaces built for regulated operations.",
     fullDescription:
       "Data is only valuable if it reaches the people who can act on it. Our suite of mobile applications ensures that the intelligence generated in the office is executed in the field. We bridge the gap between the dispatcher and the driver.\n\nSpecialized mobile interfaces include the Eagle-IoT Fleet Management app, Driver Dispatch app, Bus Transit apps, and the Smart Sense app—each tuned for its role in your operations.",
-    src: "app.png",
+    src: "apps.png",
     color: "#2D2B5A",
     url: "https://www.ignant.com/2023/10/28/capturing-balis-many-faces-zissou-documents-the-sacred-and-the-mundane-of-a-fragile-island/",
     storeLinks: {

@@ -155,7 +155,7 @@ body {
   color: #ffffff !important;
 }
 
-/* Hero — no photo backgrounds; use site gradient */
+/* Hero — no photo backgrounds; balanced two-column layout */
 .main-slider-two,
 .main-slider-two .swiper-slide {
   background-color: transparent !important;
@@ -163,6 +163,24 @@ body {
 
 .main-slider-two__bg {
   display: none !important;
+}
+
+.main-slider-two .container {
+  padding-top: clamp(150px, 16vw, 220px) !important;
+  padding-bottom: clamp(70px, 9vw, 120px) !important;
+}
+
+.main-slider-two__shape-2,
+.main-slider-two__shape-3 {
+  display: none !important;
+}
+
+.main-slider-two__content {
+  max-width: 100%;
+}
+
+.main-slider-two__title {
+  font-size: clamp(1.75rem, 4vw, 2.75rem) !important;
 }
 
 .section-title__title {
