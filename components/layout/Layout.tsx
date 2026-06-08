@@ -6,6 +6,7 @@ import Footer from "./Footer"; // Server component
 import Breadcrumb from "./Breadcrumb";
 import LocaleBoundary from "@/components/providers/LocaleBoundary";
 import HashScrollHandler from "@/components/layout/HashScrollHandler";
+import WhatsAppFloat from "@/components/layout/WhatsAppFloat";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -36,6 +37,7 @@ export default function Layout({
 
       {/* Footer (server component) */}
       <Footer style={footerStyle} />
+      <WhatsAppFloat />
     </div>
   );
 }

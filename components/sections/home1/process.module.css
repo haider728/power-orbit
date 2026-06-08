@@ -19,7 +19,11 @@
 
 .title span {
   display: inline;
-  color: #4f95f1 !important;
+  background: var(--heading-accent-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent !important;
 }
 
 .subtitle {

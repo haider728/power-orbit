@@ -18,6 +18,9 @@ const en = {
     en: "EN",
     ar: "عربي",
   },
+  whatsapp: {
+    label: "Chat on WhatsApp",
+  },
   home: {
     banner: {
       slide1: {
@@ -132,6 +135,9 @@ const ar = {
     switchToEnglish: "التبديل إلى الإنجليزية",
     en: "EN",
     ar: "عربي",
+  },
+  whatsapp: {
+    label: "تواصل عبر واتساب",
   },
   home: {
     banner: {

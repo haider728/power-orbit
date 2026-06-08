@@ -23,7 +23,7 @@ export const cards: ProjectCard[] = [
       "Eagle-IoT is a TGA-approved command center for regulated fleet operations in Saudi Arabia. It combines real-time visibility, driver behavior intelligence, and automated compliance reporting in one unified platform to reduce risk and improve control.",
     fullDescription:
       "In an environment where fuel costs, driver safety, and strict regulatory standards define your bottom line, Eagle-IoT provides the answer. As a TGA-Approved Service Provider, we move beyond basic GPS to offer a comprehensive, fully compliant command center for mobile assets.\n\nThe Challenge: Eliminating fuel leakage, preventing unauthorized vehicle use, and managing the high-stakes complexity of Wasl and TGA regulatory compliance.\n\nThe Solution: A unified platform delivering real-time visibility, advanced driver behavior analytics, and automated reporting. Our status as an approved provider ensures that your data is transmitted accurately and securely to the relevant Saudi authorities.\n\nCore Capabilities:\n- TGA & Wasl Integration: Seamless, automated data sharing with the Transport General Authority.\n- Fuel & Cost Governance: Real-time monitoring designed to eliminate waste and theft.\n- Safety Intelligence: Driver behavior scoring to reduce accidents and insurance liabilities.\n\nBest for: Logistics providers, government transport authorities, and large-scale commercial fleets requiring certified solutions.",
-    src: "eagle.png",
+    src: "eagl.png",
     color: "#1A1D38",
     url: "https://www.ignant.com/2023/03/25/ad2186-matthias-leidingers-photographic-exploration-of-awe-and-wonder/",
     storeLinks: {
@@ -38,13 +38,13 @@ export const cards: ProjectCard[] = [
       "When your operational success depends on the precise condition of your assets; not just their location, SmartSense provides the eyes on the ground. This is the intelligence layer for fixed warehouses, cold storage facilities, and high-value environmental assets.",
       fullDescription:
       " When your operational success depends on the precise condition of your assets; not just their location, SmartSense provides the eyes on the ground. This is the intelligence layer for fixed warehouses, cold storage facilities, and high-value environmental assets.\n\nThe Challenge: Maintaining 100% cold chain stability, preventing costly pharmaceutical spoilage, and manually logging data to meet strict Saudi Food and Drug Authority standards\n\nThe Solution: An advanced sensor-driven ecosystem providing real-time monitoring of enviornment. SmartSense automates the data-logging process, providing the auditable digital trail required for SFDA compliance and pharmaceutical integrity. \n\nCore Capabilities: * Warehouse & Cold Storage: 24/7 monitoring of fixed storage environments. \n-SFDA-Ready Reporting: Automated temperature logs and historical data for regulatory audits. \nReal-Time Alerts: Immediate notification via SMS/Email the moment temperature or humidity deviates from the safety threshold.  ",
-      src: "smart.png",
+      src: "smart sense app.png",
     color: "#23214A",
     url: "https://www.ignant.com/2022/09/30/clement-chapillon-questions-geographical-and-mental-isolation-with-les-rochers-fauves/",
     storeLinks: {
       googlePlay:
         "https://play.google.com/store/apps/details?id=com.smartsenseapp",
-      appStore: "https://apps.apple.com/",
+      appStore: "https://apps.apple.com/sa/app/eagleiot/id6502992364",
     },
   },
   {
@@ -59,7 +59,7 @@ export const cards: ProjectCard[] = [
     storeLinks: {
       googlePlay:
         "https://play.google.com/store/apps/details?id=com.eagleiot_mobile&pli=1",
-      appStore: "https://apps.apple.com/",
+      appStore: "https://apps.apple.com/us/app/smart-sense-eagle-iot/id6749008595",
     },
   },
 ];

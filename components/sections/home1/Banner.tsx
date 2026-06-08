@@ -62,8 +62,6 @@ export default function Banner() {
             <Swiper key={locale} {...swiperOptions} className="swiper-container thm-swiper__slider">
                 <SwiperSlide>
                     <div className="swiper-slide">
-                        <div className="main-slider-two__bg"
-                            style={{ backgroundImage: "url(/assets/images/backgrounds/slider-2-1.jpg)" }}></div>
                         {/* <ul className="list-unstyled main-slider-two__menu">
                             <li><Link href="/about">Help</Link></li>
                             <li><Link href="/contact">Support</Link></li>
@@ -127,8 +125,6 @@ export default function Banner() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="swiper-slide">
-                        <div className="main-slider-two__bg"
-                            style={{ backgroundImage: "url(/assets/images/backgrounds/slider-2-2.jpg)" }}></div>
                         {/* <ul className="list-unstyled main-slider-two__menu">
                             <li><Link href="/about">Help</Link></li>
                             <li><Link href="/contact">Support</Link></li>
@@ -195,8 +191,6 @@ export default function Banner() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="swiper-slide">
-                        <div className="main-slider-two__bg"
-                            style={{ backgroundImage: "url(/assets/images/backgrounds/slider-2-3.jpg)" }}></div>
                         {/* <ul className="list-unstyled main-slider-two__menu">
                             <li><Link href="/about">Help</Link></li>
                             <li><Link href="/contact">Support</Link></li>

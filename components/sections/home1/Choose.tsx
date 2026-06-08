@@ -47,7 +47,7 @@ export default function Choose() {
                         <div className="why-choose-one__right wow slideInRight" data-wow-duration="1.2s" data-wow-delay="0.4s">
                             <div className="why-choose-one__img why-choose-one__img-card">
                                 <Image
-                                    src="/images/choose.jpg"
+                                    src="/images/choose.png"
                                     alt="Fleet operations dashboard and compliance monitoring"
                                     width={670}
                                     height={470}

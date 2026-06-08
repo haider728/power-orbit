@@ -53,10 +53,11 @@ export default function OnepageMobileMenu_One({ isSidebar, handleMobileMenu }: O
             <Image
               src="/assets/images/resources/logo-1.gif"
               alt="Power Orbit"
-              width={150}
-              height={32}
+              width={260}
+              height={50}
               priority
               unoptimized
+              className="site-logo"
             />
           </Link>
         </div>

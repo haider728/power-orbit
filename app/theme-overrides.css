@@ -3,6 +3,9 @@
   --techguru-base-rgb: 76, 54, 213;
   --techguru-accent-two: #318be2;
   --techguru-brand-gradient: linear-gradient(270deg, var(--techguru-base) 0%, var(--techguru-accent-two) 100%);
+  --heading-color: #ffffff;
+  --heading-accent-gradient: linear-gradient(135deg, #8f82ff 0%, #4f95f1 52%, #66c5ff 100%);
+  --heading-card-gradient: linear-gradient(135deg, #e4e0ff 0%, #a89bff 40%, #4f95f1 100%);
 }
 
 html,
@@ -51,6 +54,71 @@ body {
   background-color: transparent !important;
 }
 
+/* Solutions We Provide — crisp readable text over carousel images */
+.team-two__img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  background: linear-gradient(
+    180deg,
+    transparent 50%,
+    rgba(0, 0, 0, 0.35) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+.team-two__title-box {
+  inset-inline-start: 0 !important;
+  inset-inline-end: 0 !important;
+  left: auto !important;
+  right: auto !important;
+  bottom: 0 !important;
+  z-index: 2 !important;
+  padding: 1rem 1.1rem 1.05rem;
+  border-radius: 0 0 20px 20px;
+  background: rgba(8, 9, 20, 0.94) !important;
+  border-top: 1px solid rgba(143, 130, 255, 0.22);
+  box-shadow: none !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.team-two__title-box h3 {
+  font-weight: 700 !important;
+  margin-bottom: 0.4rem !important;
+  font-size: 20px !important;
+  line-height: 1.35 !important;
+}
+
+.team-two__title-box h3,
+.team-two__title-box h3 a {
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  -webkit-text-fill-color: #8f82ff !important;
+  color: #8f82ff !important;
+  filter: none !important;
+  text-shadow: none !important;
+}
+
+.team-two__title-box h3 a:hover {
+  background: none !important;
+  -webkit-text-fill-color: #b8aeff !important;
+  color: #b8aeff !important;
+}
+
+.team-two__title-box p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.92) !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+}
+
 .about-one {
   background-color: transparent !important;
   background-image: none !important;
@@ -87,16 +155,30 @@ body {
   color: #ffffff !important;
 }
 
+/* Hero — no photo backgrounds; use site gradient */
+.main-slider-two,
+.main-slider-two .swiper-slide {
+  background-color: transparent !important;
+}
+
+.main-slider-two__bg {
+  display: none !important;
+}
+
+.section-title__title {
+  color: var(--heading-color) !important;
+}
+
 .section-title__title span,
 .main-slider__title span,
 .main-slider-two__title span,
 .product-details__title span,
 .footer-widget__title-box h3 span {
-  background: none !important;
-  -webkit-background-clip: initial;
-  background-clip: initial;
-  -webkit-text-fill-color: initial;
-  color: #4F95F1 !important;
+  background: var(--heading-accent-gradient) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
 }
 
 .close-btn:hover,
@@ -301,6 +383,48 @@ body {
 .main-menu__logo {
   padding-top: 18px !important;
   padding-bottom: 18px !important;
+}
+
+/* Power Orbit logo — larger, bolder presence */
+.main-menu-two__logo a,
+.sticky-header .main-menu-two__logo a,
+.mobile-nav__content .logo-box a,
+.site-footer-two__logo a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.main-menu-two__logo img {
+  width: auto !important;
+  height: clamp(48px, 5.5vw, 60px) !important;
+  max-width: min(340px, 44vw) !important;
+  object-fit: contain;
+  filter: brightness(1.06) contrast(1.1) drop-shadow(0 2px 12px rgba(79, 149, 241, 0.25));
+}
+
+.sticky-header .main-menu-two__logo img {
+  height: clamp(44px, 5vw, 54px) !important;
+  max-width: min(300px, 40vw) !important;
+}
+
+.mobile-nav__content .logo-box img {
+  width: auto !important;
+  height: 56px !important;
+  max-width: 300px !important;
+  object-fit: contain;
+  filter: brightness(1.06) contrast(1.1);
+}
+
+.site-footer-two__logo {
+  margin-bottom: clamp(2.5rem, 5vw, 4rem) !important;
+}
+
+.site-footer-two__logo img {
+  width: auto !important;
+  height: clamp(52px, 6vw, 68px) !important;
+  max-width: min(360px, 90vw) !important;
+  object-fit: contain;
+  filter: brightness(1.06) contrast(1.1) drop-shadow(0 2px 14px rgba(79, 149, 241, 0.2));
 }
 
 /* Blog section: open full article in-page (overlay) */
