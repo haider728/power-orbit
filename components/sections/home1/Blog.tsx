@@ -1,13 +1,17 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useId, useState } from "react";
 import Image from "next/image";
+import { Navigation } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 import AnimatedTitle from "@/components/elements/AnimatedTitle";
+import styles from "@/components/sections/home1/blog-carousel.module.css";
 
-/** Built at build time for next/image and absolute media URLs (same host as Strapi). */
 const STRAPI_PUBLIC_BASE =
   (typeof process !== "undefined" && process.env.NEXT_PUBLIC_STRAPI_URL?.replace(/\/$/, "")) ||
   "http://144.24.219.37:1337";
+
+const EXCERPT_LENGTH = 160;
 
 type BlogItem = {
   id: number;
@@ -18,6 +22,16 @@ type BlogItem = {
     url?: string;
   };
 };
+
+function stripHtml(html: string): string {
+  return html.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
+}
+
+function excerpt(text: string, max = EXCERPT_LENGTH): string {
+  const plain = stripHtml(text);
+  if (plain.length <= max) return plain;
+  return `${plain.slice(0, max).trim()}…`;
+}
 
 function BlogArticleBody({ content }: { content: string }) {
   const raw = typeof content === "string" ? content : String(content ?? "");
@@ -40,7 +54,46 @@ function BlogArticleBody({ content }: { content: string }) {
   );
 }
 
+function BlogCard({
+  blog,
+  coverUrl,
+  onSelect,
+}: {
+  blog: BlogItem;
+  coverUrl: (blog: BlogItem) => string;
+  onSelect: (blog: BlogItem) => void;
+}) {
+  return (
+    <article className={styles.card}>
+      <button
+        type="button"
+        className={styles.cardHitbox}
+        onClick={() => onSelect(blog)}
+        aria-label={`Read full article: ${blog.Title}`}
+      />
+      <div className={styles.imageWrap}>
+        <Image
+          src={coverUrl(blog)}
+          alt={blog.Title}
+          width={420}
+          height={262}
+          className={styles.image}
+          unoptimized
+        />
+      </div>
+      <div className={styles.body}>
+        <h3 className={styles.title}>{blog.Title}</h3>
+        <p className={styles.excerpt}>{excerpt(blog.content || "")}</p>
+      </div>
+    </article>
+  );
+}
+
 export default function Blog() {
+  const navId = useId().replace(/:/g, "");
+  const prevClass = `blog-carousel-prev-${navId}`;
+  const nextClass = `blog-carousel-next-${navId}`;
+
   const [blogs, setBlogs] = useState<BlogItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedBlog, setSelectedBlog] = useState<BlogItem | null>(null);
@@ -50,7 +103,6 @@ export default function Blog() {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        // Same-origin on Vercel (HTTPS) — avoids blocked mixed content from browser → http://Strapi
         const res = await fetch("/api/strapi/articles");
         const json = await res.json();
         setBlogs(json.data || []);
@@ -77,106 +129,81 @@ export default function Blog() {
     };
   }, [selectedBlog, closeDetail]);
 
-  if (loading) {
-    return (
-      <section className="blog-two">
-        <div className="container">
-          <p>Loading blogs...</p>
-        </div>
-      </section>
-    );
-  }
-
-  const primaryBlog = blogs[0];
-
   const coverUrl = (blog: BlogItem) =>
     blog.image?.url
       ? `${STRAPI_PUBLIC_BASE}${blog.image.url}`
       : "/assets/images/blog/blog-2-1.jpg";
 
-  return (
-    <section className="blog-two" id="blog">
-      <div className="container">
-        <div className="row">
-          <div className="col-xl-6">
-            <div className="blog-two__left">
-              <div className="section-title text-left">
-                <AnimatedTitle>
-                  <h2 className="section-title__title">
-                    Explore Our Latest <span>Blogs</span>
-                  </h2>
-                </AnimatedTitle>
-              </div>
+  const useCarousel = blogs.length > 3;
 
-              <p className="blog-two-text">
-                Latest insights and updates from our articles.
-              </p>
-
-              {primaryBlog && (
-                <div className="blog-two__single blog-two__single--clickable">
-                  <button
-                    type="button"
-                    className="blog-two__card-hitbox"
-                    onClick={() => setSelectedBlog(primaryBlog)}
-                    aria-label={`Read full article: ${primaryBlog.Title}`}
-                  />
-
-                  <div className="blog-two__img">
-                    <Image
-                      src={coverUrl(primaryBlog)}
-                      alt={primaryBlog.Title}
-                      width={531}
-                      height={257}
-                    />
-                  </div>
-
-                  <div className="blog-two__content">
-                    <h3 className="blog-two__title">{primaryBlog.Title}</h3>
-
-                    <p className="blog-two__text">
-                      {primaryBlog.content
-                        ? `${primaryBlog.content.slice(0, 150)}`
-                        : ""}
-                      ...
-                    </p>
-                  </div>
-                </div>
-              )}
-            </div>
-          </div>
-
-          <div className="col-xl-6">
-            <div className="blog-two__right">
-              {blogs.slice(1, 4).map((blog) => (
-                <div key={blog.id} className="blog-two__single-two blog-two__single--clickable">
-                  <button
-                    type="button"
-                    className="blog-two__card-hitbox"
-                    onClick={() => setSelectedBlog(blog)}
-                    aria-label={`Read full article: ${blog.Title}`}
-                  />
-
-                  <div className="blog-two__img-two">
-                    <Image
-                      src={coverUrl(blog)}
-                      alt={blog.Title}
-                      width={250}
-                      height={250}
-                    />
-                  </div>
-
-                  <div className="blog-two__content-two">
-                    <h3 className="blog-two__title-two">{blog.Title}</h3>
-
-                    <p className="blog-two__text">
-                      {blog.content ? `${blog.content.slice(0, 80)}` : ""}...
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+  if (loading) {
+    return (
+      <section className={`blog-two ${styles.section}`} id="blog">
+        <div className="container">
+          <p className={styles.loading}>Loading blogs…</p>
         </div>
+      </section>
+    );
+  }
+
+  return (
+    <section className={`blog-two ${styles.section}`} id="blog">
+      <div className="container">
+        <header className={styles.header}>
+          <div className="section-title text-left">
+            <AnimatedTitle>
+              <h2 className="section-title__title">
+                Explore Our Latest <span>Blogs</span>
+              </h2>
+            </AnimatedTitle>
+          </div>
+          <p className={styles.intro}>Latest insights and updates from our articles.</p>
+        </header>
+
+        {blogs.length === 0 ? (
+          <p className={styles.empty}>No blog posts published yet.</p>
+        ) : useCarousel ? (
+          <div className={styles.carouselWrap}>
+            <Swiper
+              modules={[Navigation]}
+              slidesPerView={1}
+              spaceBetween={24}
+              loop={blogs.length > 3}
+              navigation={{
+                prevEl: `.${prevClass}`,
+                nextEl: `.${nextClass}`,
+              }}
+              breakpoints={{
+                576: { slidesPerView: 1, spaceBetween: 20 },
+                768: { slidesPerView: 2, spaceBetween: 24 },
+                1200: { slidesPerView: 3, spaceBetween: 28 },
+              }}
+              className="blog-carousel-swiper"
+            >
+              {blogs.map((blog) => (
+                <SwiperSlide key={blog.id}>
+                  <BlogCard blog={blog} coverUrl={coverUrl} onSelect={setSelectedBlog} />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+            <div className={styles.nav}>
+              <button type="button" className={`${styles.navBtn} ${prevClass}`} aria-label="Previous blog">
+                ←
+              </button>
+              <button type="button" className={`${styles.navBtn} ${nextClass}`} aria-label="Next blog">
+                →
+              </button>
+            </div>
+          </div>
+        ) : (
+          <div className="row g-4">
+            {blogs.map((blog) => (
+              <div key={blog.id} className="col-md-6 col-lg-4">
+                <BlogCard blog={blog} coverUrl={coverUrl} onSelect={setSelectedBlog} />
+              </div>
+            ))}
+          </div>
+        )}
       </div>
 
       {selectedBlog && (
@@ -211,6 +238,7 @@ export default function Blog() {
                   sizes="(max-width: 900px) 100vw, 900px"
                   className="blog-inline-detail__img"
                   priority
+                  unoptimized
                 />
               </div>
 
