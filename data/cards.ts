@@ -29,7 +29,7 @@ export const cards: ProjectCard[] = [
     storeLinks: {
       googlePlay:
         "https://play.google.com/store/apps/details?id=com.eagleiot_mobile&pli=1",
-      appStore: "https://apps.apple.com/",
+      appStore: "https://apps.apple.com/sa/app/eagleiot/id6502992364",
     },
   },
   {
@@ -44,7 +44,7 @@ export const cards: ProjectCard[] = [
     storeLinks: {
       googlePlay:
         "https://play.google.com/store/apps/details?id=com.smartsenseapp",
-      appStore: "https://apps.apple.com/sa/app/eagleiot/id6502992364",
+      appStore: "https://apps.apple.com/sa/app/smart-sense-eagle-iot/id6749008595",
     },
   },
   {
@@ -58,8 +58,8 @@ export const cards: ProjectCard[] = [
     url: "https://www.ignant.com/2023/10/28/capturing-balis-many-faces-zissou-documents-the-sacred-and-the-mundane-of-a-fragile-island/",
     storeLinks: {
       googlePlay:
-        "https://play.google.com/store/apps/details?id=com.eagleiot_mobile&pli=1",
-      appStore: "https://apps.apple.com/us/app/smart-sense-eagle-iot/id6749008595",
+        "https://play.google.com/store/apps/details?id=com.rmsdriverapp",
+      appStore: "https://apps.apple.com/sa/app/driver-eagle-iot/id6752689802",
     },
   },
 ];
