@@ -17,10 +17,10 @@ const brands = [
     src: "/assets/images/brand/brand--1.png",
     alt: "Saudi Food and Drug Authority (SFDA) official logo",
   },
-  {
-    src: "/assets/images/brand/brand--2.png",
-    alt: "Wasl Al Shomoukh (WASL)",
-  },
+  // {
+  //   src: "/assets/images/brand/brand--2.png",
+  //   alt: "Wasl Al Shomoukh (WASL)",
+  // },
   {
     src: "/assets/images/brand/st.png",
     alt: "Communications, Space and Technology Commission (CST) logo, Saudi Arabia",
