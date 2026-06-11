@@ -1066,6 +1066,12 @@
     transform: scaleX(1.0);
 }
 
+.site-footer-two__social-icon-x {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
 
 
 

@@ -1,14 +1,15 @@
 "use client";
 
-import { useScroll } from "framer-motion";
+import { useScroll, AnimatePresence } from "framer-motion";
 import { useState, useRef } from "react";
 import Card from "@/components/sections/home1/Card";
-import { cards } from "@/data/cards";
+import CardDetailModal from "@/components/sections/home1/CardDetailModal";
+import { cards, type ProjectCard } from "@/data/cards";
 import styles from "@/components/sections/home1/stacked-cards.module.css";
 
 export default function StackedScrollCards() {
     const containerRef = useRef<HTMLElement | null>(null);
-    const [activePopup, setActivePopup] = useState<{ title: string; content: string } | null>(null);
+    const [activeCard, setActiveCard] = useState<ProjectCard | null>(null);
     const { scrollYProgress } = useScroll({
         target: containerRef,
         offset: ["start start", "end end"],
@@ -40,24 +41,18 @@ export default function StackedScrollCards() {
                     progress={scrollYProgress}
                     range={[index * 0.25, 1]}
                     targetScale={1 - (cards.length - index) * 0.05}
-                    onSeeMore={(title, content) => setActivePopup({ title, content })}
+                    onSeeMore={() => setActiveCard(card)}
                 />
             ))}
-            {activePopup && (
-                <div className={styles.modalOverlay} onClick={() => setActivePopup(null)}>
-                    <div className={styles.modalCard} onClick={(e) => e.stopPropagation()}>
-                        <div className={styles.modalHeader}>
-                            <h3 className={styles.modalTitle}>{activePopup.title}</h3>
-                            <button type="button" className={styles.modalClose} onClick={() => setActivePopup(null)}>
-                                x
-                            </button>
-                        </div>
-                        <div className={styles.modalBody}>
-                            <p>{activePopup.content}</p>
-                        </div>
-                    </div>
-                </div>
-            )}
+            <AnimatePresence>
+                {activeCard ? (
+                    <CardDetailModal
+                        key={activeCard.title}
+                        card={activeCard}
+                        onClose={() => setActiveCard(null)}
+                    />
+                ) : null}
+            </AnimatePresence>
         </main>
     );
 }

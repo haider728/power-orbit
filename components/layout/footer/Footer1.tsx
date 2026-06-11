@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from "next/image";
 import SectionScrollLink from "@/components/layout/SectionScrollLink";
+import XIcon from "@/components/elements/XIcon";
 import { BLOG_EXTERNAL_URL } from "@/data/onepageNav";
 
 export default function Footer1() {
@@ -112,10 +113,10 @@ export default function Footer1() {
                                     <div className="site-footer-two__social-box">
                                         <h4 className="site-footer-two__social-title">Follow Us:</h4>
                                         <div className="site-footer-two__social-box-inner">
-                                            <Link href="https://www.facebook.com/EagleIoT/"><span className="icon-facebook"></span></Link>
-                                            {/* <Link href="/#"><span className="icon-instagram"></span></Link> */}
-
-                                            <Link href="https://www.linkedin.com/company/eagle-iot"><span className="icon-linkedin"></span></Link>
+                                            <Link href="https://www.facebook.com/EagleIoT/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><span className="icon-facebook"></span></Link>
+                                            <Link href="https://www.instagram.com/powerorbit/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><span className="fab fa-instagram"></span></Link>
+                                            <Link href="https://x.com/power_orbit_" target="_blank" rel="noopener noreferrer" aria-label="X"><XIcon className="site-footer-two__social-icon-x" /></Link>
+                                            <Link href="https://www.linkedin.com/company/eagle-iot" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><span className="icon-linkedin"></span></Link>
                                         </div>
                                     </div>
                                 </div>

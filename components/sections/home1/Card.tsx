@@ -15,7 +15,7 @@ type CardProps = ProjectCard & {
     progress: MotionValue<number>;
     range: [number, number];
     targetScale: number;
-    onSeeMore: (title: string, content: string) => void;
+    onSeeMore: () => void;
 };
 
 export default function Card({
@@ -24,7 +24,6 @@ export default function Card({
     description,
     src,
     color,
-    fullDescription,
     mobileApps,
     storeLinks,
     progress,
@@ -66,7 +65,7 @@ export default function Card({
                             <button
                                 type="button"
                                 className={`thm-btn ${styles.seeMoreBtn}`}
-                                onClick={() => onSeeMore(title, fullDescription ?? description)}
+                                onClick={onSeeMore}
                             >
                                 See more
                             </button>
