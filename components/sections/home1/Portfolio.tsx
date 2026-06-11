@@ -101,31 +101,33 @@ export default function Portfolio() {
                             <div className="item">
                                 <div className="portfolio-two__single-box">
                                     <ul className="portfolio-two__box list-unstyled">
-                                        <li className={`${activeIndex === 12 ? "active" : ""}`} onMouseEnter={() => setActiveIndex(12)}>
+                                    <li className={`${activeIndex === 13 ? "active" : ""}`} onMouseEnter={() => setActiveIndex(13)}>
                                             <div className="portfolio-two__box-content">
                                                 <div className="single-portfolio-two__bg"
-                                                    style={{ backgroundImage: "url(/assets/images/project/portfolio-2-1.jpg)" }}>
+                                                    style={{ backgroundImage: "url(/assets/images/project/1.1.png)" }}>
                                                 </div>
                                                 <div className="portfolio-two__title">
-                                                    <h3><Link href="https://avl-ksa.com/en/transportation-and-logistics/">Transportation &amp; Logistics</Link></h3>
+                                                    <h3><Link href="https://avl-ksa.com/en/smart-ambulance-fleet-monitoring-solution/">Transportation &amp; Logistics </Link></h3>
                                                 </div>
                                                 <div className="portfolio-two__content-box">
-                                                    <div onClick={() => { setIndex(0); setOpen(true); }} className="portfolio-two__icon">
+                                                    <div onClick={() => { setIndex(1); setOpen(true); }} className="portfolio-two__icon">
                                                         <Link href="#"
                                                             className="img-popup"><span className="icon-right-arrow-1"></span></Link>
                                                     </div>
                                                     <div className="portfolio-two__title-box">
                                                         <h3 className="portfolio-two__title-2"><Link
-                                                                href="https://avl-ksa.com/en/transportation-and-logistics/">Transportation &amp; Logistics</Link></h3>
-                                                        <p className="portfolio-two__text">Optimizing cross-border movement with real-time route intelligence and fuel governance. </p>
+                                                                href="https://avl-ksa.com/en/smart-ambulance-fleet-monitoring-solution/">Transportation &amp; Logistics
+                                                           </Link></h3>
+                                                        <p className="portfolio-two__text">Ensuring life-saving cargo stays within SFDA-mandated temperature thresholds. </p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </li>
+                                   
                                         <li className={`${activeIndex === 13 ? "active" : ""}`} onMouseEnter={() => setActiveIndex(13)}>
                                             <div className="portfolio-two__box-content">
                                                 <div className="single-portfolio-two__bg"
-                                                    style={{ backgroundImage: "url(/assets/images/project/portfolio-2-2.jpg)" }}>
+                                                    style={{ backgroundImage: "url(/assets/images/project/1.2.png)" }}>
                                                 </div>
                                                 <div className="portfolio-two__title">
                                                     <h3><Link href="https://avl-ksa.com/en/smart-ambulance-fleet-monitoring-solution/">Health Care</Link></h3>
@@ -147,7 +149,7 @@ export default function Portfolio() {
                                         <li className={`${activeIndex === 14 ? "active" : ""}`} onMouseEnter={() => setActiveIndex(14)}>
                                             <div className="portfolio-two__box-content">
                                                 <div className="single-portfolio-two__bg"
-                                                    style={{ backgroundImage: "url(/assets/images/project/portfolio-2-3.jpg)" }}>
+                                                    style={{ backgroundImage: "url(/assets/images/project/1.3.png)" }}>
                                                 </div>
                                                 <div className="portfolio-two__title">
                                                     <h3><Link href="https://avl-ksa.com/en/oil-and-gas/">Oil &amp; Gas</Link></h3>
@@ -168,7 +170,7 @@ export default function Portfolio() {
                                         <li className={`${activeIndex === 15 ? "active" : ""}`} onMouseEnter={() => setActiveIndex(15)}>
                                             <div className="portfolio-two__box-content">
                                                 <div className="single-portfolio-two__bg"
-                                                    style={{ backgroundImage: "url(/assets/images/project/portfolio-2-4.jpg)" }}>
+                                                    style={{ backgroundImage: "url(/assets/images/project/1.4.png)" }}>
                                                 </div>
                                                 <div className="portfolio-two__title">
                                                     <h3><Link href="https://avl-ksa.com/en/supply-chain-management/">Supply Chain Management</Link></h3>

@@ -2957,6 +2957,11 @@ const configEnv = ("TURBOPACK compile-time value", {
             "hostname": ("TURBOPACK compile-time value", "144.24.219.37"),
             "port": ("TURBOPACK compile-time value", "1337"),
             "pathname": ("TURBOPACK compile-time value", "/uploads/**")
+        }),
+        ("TURBOPACK compile-time value", {
+            "protocol": ("TURBOPACK compile-time value", "https"),
+            "hostname": ("TURBOPACK compile-time value", "avl-ksa.com"),
+            "pathname": ("TURBOPACK compile-time value", "/wp-content/**")
         })
     ]),
     "localPatterns": ("TURBOPACK compile-time value", [

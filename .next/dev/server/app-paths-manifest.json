@@ -1,4 +1,4 @@
 {
-  "/api/strapi/articles/route": "app/api/strapi/articles/route.js",
+  "/api/avl-blogs/route": "app/api/avl-blogs/route.js",
   "/page": "app/page.js"
 }

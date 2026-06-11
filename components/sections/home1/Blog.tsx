@@ -2,33 +2,19 @@
 
 import { useCallback, useEffect, useId, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import AnimatedTitle from "@/components/elements/AnimatedTitle";
+import { useLanguage } from "@/components/providers/LanguageProvider";
+import type { AvlBlogListItem } from "@/lib/avlBlogs";
 import styles from "@/components/sections/home1/blog-carousel.module.css";
 
-const STRAPI_PUBLIC_BASE =
-  (typeof process !== "undefined" && process.env.NEXT_PUBLIC_STRAPI_URL?.replace(/\/$/, "")) ||
-  "http://144.24.219.37:1337";
-
 const EXCERPT_LENGTH = 160;
-
-type BlogItem = {
-  id: number;
-  Title: string;
-  Slug: string;
-  content: string;
-  image?: {
-    url?: string;
-  };
-};
-
-function stripHtml(html: string): string {
-  return html.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
-}
+const FALLBACK_IMAGE = "/assets/images/blog/blog-2-1.jpg";
 
 function excerpt(text: string, max = EXCERPT_LENGTH): string {
-  const plain = stripHtml(text);
+  const plain = text.trim();
   if (plain.length <= max) return plain;
   return `${plain.slice(0, max).trim()}…`;
 }
@@ -59,9 +45,9 @@ function BlogCard({
   coverUrl,
   onSelect,
 }: {
-  blog: BlogItem;
-  coverUrl: (blog: BlogItem) => string;
-  onSelect: (blog: BlogItem) => void;
+  blog: AvlBlogListItem;
+  coverUrl: (blog: AvlBlogListItem) => string;
+  onSelect: (blog: AvlBlogListItem) => void;
 }) {
   return (
     <article className={styles.card}>
@@ -90,49 +76,99 @@ function BlogCard({
 }
 
 export default function Blog() {
+  const { locale } = useLanguage();
   const navId = useId().replace(/:/g, "");
   const prevClass = `blog-carousel-prev-${navId}`;
   const nextClass = `blog-carousel-next-${navId}`;
 
-  const [blogs, setBlogs] = useState<BlogItem[]>([]);
+  const [blogs, setBlogs] = useState<AvlBlogListItem[]>([]);
   const [loading, setLoading] = useState(true);
-  const [selectedBlog, setSelectedBlog] = useState<BlogItem | null>(null);
+  const [selectedBlog, setSelectedBlog] = useState<AvlBlogListItem | null>(null);
+  const [detailContent, setDetailContent] = useState<string>("");
+  const [detailLoading, setDetailLoading] = useState(false);
 
-  const closeDetail = useCallback(() => setSelectedBlog(null), []);
+  const closeDetail = useCallback(() => {
+    setSelectedBlog(null);
+    setDetailContent("");
+  }, []);
 
   useEffect(() => {
     const fetchBlogs = async () => {
+      setLoading(true);
       try {
-        const res = await fetch("/api/strapi/articles");
+        let items: AvlBlogListItem[] = [];
+
+        const res = await fetch(`/api/avl-blogs?locale=${locale}`);
         const json = await res.json();
-        setBlogs(json.data || []);
+        items = json.data || [];
+
+        if (items.length === 0) {
+          const { fetchAvlBlogListClient } = await import("@/lib/avlBlogsClient");
+          items = await fetchAvlBlogListClient(locale);
+        }
+
+        setBlogs(items);
       } catch (error) {
         console.error("Error fetching blogs:", error);
+        try {
+          const { fetchAvlBlogListClient } = await import("@/lib/avlBlogsClient");
+          const items = await fetchAvlBlogListClient(locale);
+          setBlogs(items);
+        } catch {
+          setBlogs([]);
+        }
       } finally {
         setLoading(false);
       }
     };
     fetchBlogs();
-  }, []);
+  }, [locale]);
 
   useEffect(() => {
     if (!selectedBlog) return;
+
     const prev = document.body.style.overflow;
     document.body.style.overflow = "hidden";
+
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") closeDetail();
     };
     window.addEventListener("keydown", onKey);
+
+    const loadDetail = async () => {
+      setDetailLoading(true);
+      setDetailContent("");
+      try {
+        const res = await fetch(`/api/avl-blogs/${selectedBlog.id}`);
+        if (res.ok) {
+          const json = await res.json();
+          setDetailContent(json.data?.fullContent || selectedBlog.content);
+          return;
+        }
+        const { fetchAvlBlogDetailClient } = await import("@/lib/avlBlogsClient");
+        const detail = await fetchAvlBlogDetailClient(selectedBlog.id);
+        setDetailContent(detail?.fullContent || selectedBlog.content);
+      } catch {
+        try {
+          const { fetchAvlBlogDetailClient } = await import("@/lib/avlBlogsClient");
+          const detail = await fetchAvlBlogDetailClient(selectedBlog.id);
+          setDetailContent(detail?.fullContent || selectedBlog.content);
+        } catch {
+          setDetailContent(selectedBlog.content);
+        }
+      } finally {
+        setDetailLoading(false);
+      }
+    };
+    loadDetail();
+
     return () => {
       document.body.style.overflow = prev;
       window.removeEventListener("keydown", onKey);
     };
   }, [selectedBlog, closeDetail]);
 
-  const coverUrl = (blog: BlogItem) =>
-    blog.image?.url
-      ? `${STRAPI_PUBLIC_BASE}${blog.image.url}`
-      : "/assets/images/blog/blog-2-1.jpg";
+  const coverUrl = (blog: AvlBlogListItem) => blog.image?.url || FALLBACK_IMAGE;
 
   const useCarousel = blogs.length > 3;
 
@@ -157,11 +193,17 @@ export default function Blog() {
               </h2>
             </AnimatedTitle>
           </div>
-          <p className={styles.intro}>Latest insights and updates from our articles.</p>
+          <p className={styles.intro}>
+            Latest insights from{" "}
+            <Link href="https://avl-ksa.com/en/blogs/" target="_blank" rel="noopener noreferrer">
+              AVL-KSA
+            </Link>
+            .
+          </p>
         </header>
 
         {blogs.length === 0 ? (
-          <p className={styles.empty}>No blog posts published yet.</p>
+          <p className={styles.empty}>No blog posts available right now.</p>
         ) : useCarousel ? (
           <div className={styles.carouselWrap}>
             <Swiper
@@ -246,7 +288,22 @@ export default function Blog() {
                 {selectedBlog.Title}
               </h2>
 
-              <BlogArticleBody content={selectedBlog.content || ""} />
+              {detailLoading ? (
+                <p className="blog-inline-detail__body--text">Loading article…</p>
+              ) : (
+                <BlogArticleBody content={detailContent} />
+              )}
+
+              <p style={{ marginTop: "1.5rem" }}>
+                <Link
+                  href={selectedBlog.link}
+                  className="thm-btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Read on AVL-KSA
+                </Link>
+              </p>
             </div>
           </div>
         </div>
