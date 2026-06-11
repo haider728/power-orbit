@@ -83,7 +83,7 @@ export default function Team() {
                     <div className="col-xl-7">
                         <div className="team-two__right team-two__carousel">
                             <Swiper {...swiperOptions} className="team-two__carousel">
-                                <SwiperSlide>
+                            <SwiperSlide>
                                     <div className="item">
                                         <div className="team-two__single">
                                             <div className="team-two__img-box">
@@ -109,7 +109,50 @@ export default function Team() {
                                         <div className="team-two__single">
                                             <div className="team-two__img-box">
                                                 <div className="team-two__img">
-                                                    <Image src="/assets/images/team/videoo.png" alt="Image" width={410} height={450} priority />
+                                                    <Image src="/assets/images/team/generator.png" alt="Image" width={410} height={450} priority />
+                                                </div>
+                                                {/* <div className="team-two__social">
+                                                    <Link href="#"><span className="icon-facebook"></span></Link>
+                                                    <Link href="#"><span className="icon-dribble"></span></Link>
+
+                                                    <Link href="#"><span className="icon-linkedin"></span></Link>
+                                                </div> */}
+                                                <div className="team-two__title-box">
+                                                    <h3><Link href="https://avl-ksa.com/en/fleet-management-solutions/">Diesel Generator Monitoring</Link></h3>
+                                                    <p> Our system proactively
+                                                    analyzes key performance metrics and alerts you to issues before they cause costly downtime.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="item">
+                                        <div className="team-two__single">
+                                            <div className="team-two__img-box">
+                                                <div className="team-two__img">
+                                                    <Image src="/assets/images/team/pwas.png" alt="Image" width={410} height={450} priority />
+                                                </div>
+                                                {/* <div className="team-two__social">
+                                                    <Link href="#"><span className="icon-facebook"></span></Link>
+                                                    <Link href="#"><span className="icon-dribble"></span></Link>
+
+                                                    <Link href="#"><span className="icon-linkedin"></span></Link>
+                                                </div> */}
+                                                <div className="team-two__title-box">
+                                                    <h3><Link href="https://avl-ksa.com/en/fleet-management-solutions/">Pwas Monitoring</Link></h3>
+                                                    <p>Make your fleet smarter, safer, and legally protected—without adding more manual workload.  </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="item">
+                                        <div className="team-two__single">
+                                            <div className="team-two__img-box">
+                                                <div className="team-two__img">
+                                                    <Image src="/assets/images/team/video-1.png" alt="Image" width={410} height={450} priority />
                                                 </div>
                                                 {/* <div className="team-two__social">
                                                     <Link href="#"><span className="icon-facebook"></span></Link>
@@ -130,7 +173,7 @@ export default function Team() {
                                         <div className="team-two__single">
                                             <div className="team-two__img-box">
                                                 <div className="team-two__img">
-                                                    <Image src="/assets/images/team/assett.png" alt="Image" width={410} height={450} priority />
+                                                    <Image src="/assets/images/team/asset-1.png" alt="Image" width={410} height={450} priority />
                                                 </div>
                                                 {/* <div className="team-two__social">
                                                     <Link href="#"><span className="icon-facebook"></span></Link>
@@ -151,7 +194,7 @@ export default function Team() {
                                         <div className="team-two__single">
                                             <div className="team-two__img-box">
                                                 <div className="team-two__img">
-                                                    <Image src="/assets/images/team/warehous.png" alt="Image" width={410} height={450} priority />
+                                                    <Image src="/assets/images/team/warehouse1.png" alt="Image" width={410} height={450} priority />
                                                 </div>
                                                 {/* <div className="team-two__social">
                                                     <Link href="#"><span className="icon-facebook"></span></Link>
@@ -172,7 +215,7 @@ export default function Team() {
                                         <div className="team-two__single">
                                             <div className="team-two__img-box">
                                                 <div className="team-two__img">
-                                                    <Image src="/assets/images/team/oill.png" alt="Image" width={410} height={450} priority />
+                                                    <Image src="/assets/images/team/oil-1.png" alt="Image" width={410} height={450} priority />
                                                 </div>
                                                 {/* <div className="team-two__social">
                                                     <Link href="#"><span className="icon-facebook"></span></Link>
