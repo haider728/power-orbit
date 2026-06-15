@@ -6,6 +6,11 @@ import { motion } from "framer-motion";
 import { useEffect, useMemo } from "react";
 import { createPortal } from "react-dom";
 import type { ProjectCard } from "@/data/cards";
+import { useLanguage } from "@/components/providers/LanguageProvider";
+import {
+  CARD_SECTION_HEADINGS,
+  translateCardSectionHeading,
+} from "@/lib/i18n/translations";
 import { publicImagePath } from "@/lib/publicImage";
 import styles from "@/components/sections/home1/stacked-cards.module.css";
 
@@ -15,8 +20,7 @@ type ParsedSection = {
   bullets: string[];
 };
 
-const SECTION_HEADING_PATTERN =
-  /^(The Challenge|The Solution|Core Capabilities|Best for):\s*([\s\S]*)/;
+const SECTION_HEADING_PATTERN = CARD_SECTION_HEADINGS;
 
 function parseFullDescription(content: string): ParsedSection[] {
   const sections: ParsedSection[] = [];
@@ -85,6 +89,7 @@ type CardDetailModalProps = {
 };
 
 export default function CardDetailModal({ card, onClose }: CardDetailModalProps) {
+  const { locale, t } = useLanguage();
   const content = card.fullDescription ?? card.description;
   const sections = useMemo(() => parseFullDescription(content), [content]);
 
@@ -135,7 +140,7 @@ export default function CardDetailModal({ card, onClose }: CardDetailModalProps)
               />
             </div>
             <div className={styles.modalHeroContent}>
-              <p className={styles.modalEyebrow}>Product overview</p>
+              <p className={styles.modalEyebrow}>{t("home.cardModal.eyebrow")}</p>
               <h3 id="card-detail-title" className={styles.modalTitle}>
                 {card.title}
               </h3>
@@ -145,7 +150,7 @@ export default function CardDetailModal({ card, onClose }: CardDetailModalProps)
               type="button"
               className={styles.modalClose}
               onClick={onClose}
-              aria-label="Close details"
+              aria-label={t("home.cardModal.closeLabel")}
             >
               <span aria-hidden="true">&times;</span>
             </button>
@@ -160,7 +165,9 @@ export default function CardDetailModal({ card, onClose }: CardDetailModalProps)
                 }
               >
                 {section.heading ? (
-                  <h4 className={styles.modalSectionTitle}>{section.heading}</h4>
+                  <h4 className={styles.modalSectionTitle}>
+                    {translateCardSectionHeading(locale, section.heading)}
+                  </h4>
                 ) : null}
 
                 {section.paragraphs.map((paragraph, paragraphIndex) => (
@@ -184,7 +191,7 @@ export default function CardDetailModal({ card, onClose }: CardDetailModalProps)
 
           {card.storeLinks ? (
             <div className={styles.modalFooter}>
-              <p className={styles.modalFooterLabel}>Available on</p>
+              <p className={styles.modalFooterLabel}>{t("home.cardModal.availableOn")}</p>
               <div className={styles.modalStoreBadges}>
                 <Link
                   href={card.storeLinks.googlePlay}

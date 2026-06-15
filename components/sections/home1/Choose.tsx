@@ -6,7 +6,7 @@ import AnimatedTitle from "@/components/elements/AnimatedTitle";
 import { useLanguage } from "@/components/providers/LanguageProvider";
 
 export default function Choose() {
-  const { t } = useLanguage();
+  const { t, isArabic } = useLanguage();
 
   return (
     <>
@@ -18,15 +18,35 @@ export default function Choose() {
                 <div className="row">
                     <div className="col-xl-5">
                         <div className="why-choose-one__left">
-                            <div className="section-title text-left sec-title-animation animation-style2">
+                            <div className={`section-title sec-title-animation animation-style2 ${isArabic ? "text-end" : "text-left"}`}>
                                 <div className="section-title__tagline-box">
                                 </div>
                                 <AnimatedTitle>
-                                    <h2 className="section-title__title title-animation">{t("home.choose.title")}   <span>{t("home.choose.titleSpan1")} </span><br /><span> {t("home.choose.titleSpan2")}</span>
+                                    <h2
+                                      className="section-title__title title-animation"
+                                      dir={isArabic ? "rtl" : "ltr"}
+                                    >
+                                      {isArabic ? (
+                                        <>
+                                          {t("home.choose.titleLine1")}
+                                          <br />
+                                          <span>{t("home.choose.titleLine2")}</span>
+                                        </>
+                                      ) : (
+                                        <>
+                                          {t("home.choose.title")}
+                                          <span>{t("home.choose.titleSpan1")}</span>
+                                          <br />
+                                          <span>{t("home.choose.titleSpan2")}</span>
+                                        </>
+                                      )}
                                     </h2>
                                 </AnimatedTitle>
                             </div>
-                            <p className="why-choose-one__text why-choose-one__text-intro">
+                            <p
+                              className="why-choose-one__text why-choose-one__text-intro"
+                              dir={isArabic ? "rtl" : "ltr"}
+                            >
                             {t("home.choose.intro")}
                             </p>
                             <ul className="why-choose-one__text why-choose-one__points-simple">

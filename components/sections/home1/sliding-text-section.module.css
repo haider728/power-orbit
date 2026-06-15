@@ -1,0 +1,37 @@
+/* Marquee must stay LTR so translateX animation works on Arabic pages too */
+.section {
+  direction: ltr;
+}
+
+.wrap {
+  direction: ltr;
+  display: flex;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.list {
+  display: flex;
+  flex-shrink: 0;
+  flex-wrap: nowrap;
+  align-items: center;
+  min-width: max-content;
+  animation: slidingTextMarquee 24s linear infinite !important;
+}
+
+.listArabic {
+  animation-duration: 32s !important;
+}
+
+.label {
+  unicode-bidi: plaintext;
+}
+
+@keyframes slidingTextMarquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}

@@ -696,6 +696,8 @@ body {
 .sliding-text-three__list {
   align-items: center;
   gap: 0.85rem 1.15rem;
+  flex-wrap: nowrap !important;
+  float: none !important;
 }
 
 .sliding-text-three__list li {
@@ -723,6 +725,14 @@ body {
     0 4px 24px rgba(0, 0, 0, 0.22);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+}
+
+html[dir="rtl"] .sliding-text-three__ticker {
+  letter-spacing: 0;
+}
+
+html[dir="rtl"] .sliding-text-three .animate-marquee {
+  animation: none;
 }
 
 /* Language toggle (EN / عربي) */

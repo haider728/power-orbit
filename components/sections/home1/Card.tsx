@@ -15,6 +15,7 @@ type CardProps = ProjectCard & {
     progress: MotionValue<number>;
     range: [number, number];
     targetScale: number;
+    seeMoreLabel: string;
     onSeeMore: () => void;
 };
 
@@ -29,6 +30,7 @@ export default function Card({
     progress,
     range,
     targetScale,
+    seeMoreLabel,
     onSeeMore,
 }: CardProps) {
     const container = useRef<HTMLDivElement | null>(null);
@@ -67,7 +69,7 @@ export default function Card({
                                 className={`thm-btn ${styles.seeMoreBtn}`}
                                 onClick={onSeeMore}
                             >
-                                See more
+                                {seeMoreLabel}
                             </button>
                         </div>
 

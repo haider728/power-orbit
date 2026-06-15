@@ -1,15 +1,20 @@
 "use client";
 
 import { useScroll, AnimatePresence } from "framer-motion";
-import { useState, useRef } from "react";
+import { useMemo, useState, useRef } from "react";
 import Card from "@/components/sections/home1/Card";
 import CardDetailModal from "@/components/sections/home1/CardDetailModal";
-import { cards, type ProjectCard } from "@/data/cards";
+import { useLanguage } from "@/components/providers/LanguageProvider";
+import { getCards } from "@/data/cardsByLocale";
 import styles from "@/components/sections/home1/stacked-cards.module.css";
 
 export default function StackedScrollCards() {
     const containerRef = useRef<HTMLElement | null>(null);
-    const [activeCard, setActiveCard] = useState<ProjectCard | null>(null);
+    const [activeCardIndex, setActiveCardIndex] = useState<number | null>(null);
+    const { locale, t } = useLanguage();
+    const cards = useMemo(() => getCards(locale), [locale]);
+    const activeCard = activeCardIndex != null ? cards[activeCardIndex] : null;
+
     const { scrollYProgress } = useScroll({
         target: containerRef,
         offset: ["start start", "end end"],
@@ -19,17 +24,13 @@ export default function StackedScrollCards() {
         <main ref={containerRef} className={styles.main}>
             <div className="container">
                 <div className={`section-title text-center sec-title-animation animation-style1 ${styles.sectionHeader}`}>
-                    <div className="section-title__tagline-box">
-                        {/* <div className="section-title__tagline-shape-1"></div>
-                        <span className="section-title__tagline">Featured Work</span>
-                        <div className="section-title__tagline-shape-2"></div> */}
-                    </div>
+                    <div className="section-title__tagline-box" />
                     <h2 className="section-title__title title-animation">
-                    A Unified Portfolio  <span> for Specialized Control</span> Cards
+                        {t("home.stackedCards.title")}{" "}
+                        <span>{t("home.stackedCards.titleHighlight")}</span>
                     </h2>
                     <p className={styles.sectionDescription}>
-                    Power Orbit does not offer a "one-size-fits-all" tool. We provide a modular ecosystem of specialized brands, each engineered to solve a specific set of operational challenges. Whether you are moving assets across the Kingdom or protecting sensitive cargo at rest, we provide the dedicated intelligence you need.
-
+                        {t("home.stackedCards.description")}
                     </p>
                 </div>
             </div>
@@ -41,15 +42,16 @@ export default function StackedScrollCards() {
                     progress={scrollYProgress}
                     range={[index * 0.25, 1]}
                     targetScale={1 - (cards.length - index) * 0.05}
-                    onSeeMore={() => setActiveCard(card)}
+                    seeMoreLabel={t("home.cardActions.seeMore")}
+                    onSeeMore={() => setActiveCardIndex(index)}
                 />
             ))}
             <AnimatePresence>
                 {activeCard ? (
                     <CardDetailModal
-                        key={activeCard.title}
+                        key={`${activeCard.title}-${locale}`}
                         card={activeCard}
-                        onClose={() => setActiveCard(null)}
+                        onClose={() => setActiveCardIndex(null)}
                     />
                 ) : null}
             </AnimatePresence>

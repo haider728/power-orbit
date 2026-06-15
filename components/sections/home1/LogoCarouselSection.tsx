@@ -3,6 +3,8 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Image from "next/image";
+import { useLanguage } from "@/components/providers/LanguageProvider";
+import { translations } from "@/lib/i18n/translations";
 import styles from "@/components/sections/home1/logo-carousel-section.module.css";
 
 const responsive = {
@@ -17,34 +19,32 @@ const brands = [
     src: "/assets/images/brand/brand--1.png",
     alt: "Saudi Food and Drug Authority (SFDA) official logo",
   },
-  // {
-  //   src: "/assets/images/brand/brand--2.png",
-  //   alt: "Wasl Al Shomoukh (WASL)",
-  // },
   {
     src: "/assets/images/brand/st.png",
     alt: "Communications, Space and Technology Commission (CST) logo, Saudi Arabia",
   },
   {
     src: "/assets/images/brand/brand-4.png",
-    alt: "Transport General Authority (TGA) Saudi Arabia ",
+    alt: "Transport General Authority (TGA) Saudi Arabia",
   },
 ];
 
 export default function LogoCarouselSection() {
+  const { locale, t } = useLanguage();
+  const compliance = translations[locale].home.compliance;
+
   return (
     <section id="ecosystem" className={styles.section}>
       <div className="container">
         <div className={styles.header}>
           <div className="section-title text-center">
-            {/* <span className="section-title__tagline">Our Trusted Network</span> */}
             <h2 className="section-title__title">
-            Why <span>Choose Us.</span>
+              {t("home.compliance.title")}{" "}
+              <span>{t("home.compliance.titleHighlight")}</span>
             </h2>
           </div>
-          <p className={styles.description}>
-          Power Orbit is built for regulated fleet operations in Saudi Arabia, combining compliance controls with real-time operational intelligence. </p>
-                 </div>
+          <p className={styles.description}>{compliance.description}</p>
+        </div>
 
         <div className={styles.carouselWrap}>
           <Carousel
@@ -72,10 +72,10 @@ export default function LogoCarouselSection() {
         </div>
       </div>
       <div className={styles.header}>
-          
-          <p className={styles.description}><b>
-          We remove compliance complexity so your team can scale faster with confidence, visibility, and full operational control.</b></p>
-  </div>
+        <p className={styles.description}>
+          <b>{compliance.footer}</b>
+        </p>
+      </div>
     </section>
   );
 }

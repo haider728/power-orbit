@@ -13,9 +13,11 @@ const swiperOptions = {
   modules: [Autoplay, Navigation, EffectFade],
   slidesPerView: 1,
   spaceBetween: 30,
+  speed: 800,
   autoplay: {
-    delay: 5000,
+    delay: 9000,
     disableOnInteraction: false,
+    waitForTransition: true,
   },
   loop: true,
   effect: "fade",

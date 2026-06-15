@@ -7,6 +7,7 @@ import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import AnimatedTitle from "@/components/elements/AnimatedTitle";
 import { useLanguage } from "@/components/providers/LanguageProvider";
+import { translations } from "@/lib/i18n/translations";
 import type { AvlBlogListItem } from "@/lib/avlBlogs";
 import styles from "@/components/sections/home1/blog-carousel.module.css";
 
@@ -76,7 +77,8 @@ function BlogCard({
 }
 
 export default function Blog() {
-  const { locale } = useLanguage();
+  const { locale, t } = useLanguage();
+  const blogCopy = translations[locale].home.blog;
   const navId = useId().replace(/:/g, "");
   const prevClass = `blog-carousel-prev-${navId}`;
   const nextClass = `blog-carousel-next-${navId}`;
@@ -176,7 +178,7 @@ export default function Blog() {
     return (
       <section className={`blog-two ${styles.section}`} id="blog">
         <div className="container">
-          <p className={styles.loading}>Loading blogs…</p>
+          <p className={styles.loading}>{blogCopy.loading}</p>
         </div>
       </section>
     );
@@ -189,21 +191,21 @@ export default function Blog() {
           <div className="section-title text-left">
             <AnimatedTitle>
               <h2 className="section-title__title">
-                Explore Our Latest <span>Blogs</span>
+                {t("home.blog.title")} <span>{t("home.blog.titleHighlight")}</span>
               </h2>
             </AnimatedTitle>
           </div>
           <p className={styles.intro}>
-            Latest insights from{" "}
+            {blogCopy.intro}{" "}
             <Link href="https://avl-ksa.com/en/blogs/" target="_blank" rel="noopener noreferrer">
-              AVL-KSA
+              {blogCopy.introLink}
             </Link>
             .
           </p>
         </header>
 
         {blogs.length === 0 ? (
-          <p className={styles.empty}>No blog posts available right now.</p>
+          <p className={styles.empty}>{blogCopy.empty}</p>
         ) : useCarousel ? (
           <div className={styles.carouselWrap}>
             <Swiper
@@ -289,7 +291,7 @@ export default function Blog() {
               </h2>
 
               {detailLoading ? (
-                <p className="blog-inline-detail__body--text">Loading article…</p>
+                <p className="blog-inline-detail__body--text">{blogCopy.loadingArticle}</p>
               ) : (
                 <BlogArticleBody content={detailContent} />
               )}
@@ -301,7 +303,7 @@ export default function Blog() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Read on AVL-KSA
+                  {blogCopy.readMore}
                 </Link>
               </p>
             </div>

@@ -1,18 +1,31 @@
-const SLIDING_MESSAGE = "Power Orbit — formerly known as Digital Myth Solution";
+"use client";
 
-/** Enough repeats for a smooth infinite marquee loop */
-const SLIDING_REPEAT = 10;
+import { useLanguage } from "@/components/providers/LanguageProvider";
+import { translations } from "@/lib/i18n/translations";
+import styles from "@/components/sections/home1/sliding-text-section.module.css";
 
-function TickerMarqueeRow({ duplicate }: { duplicate?: boolean }) {
+function TickerMarqueeRow({
+  message,
+  repeat,
+  isArabic,
+  duplicate,
+}: {
+  message: string;
+  repeat: number;
+  isArabic: boolean;
+  duplicate?: boolean;
+}) {
   return (
     <ul
-      className="sliding-text-three__list list-unstyled flex animate-marquee"
+      className={`sliding-text-three__list list-unstyled ${styles.list} ${isArabic ? styles.listArabic : ""}`}
       aria-hidden={duplicate}
     >
-      {Array.from({ length: SLIDING_REPEAT }, (_, i) => (
+      {Array.from({ length: repeat }, (_, i) => (
         <li key={`${duplicate ? "b" : "a"}-${i}`}>
           <span className="sliding-text-three__ticker">
-            <span className="sliding-text-three__ticker-label">{SLIDING_MESSAGE}</span>
+            <span className={`sliding-text-three__ticker-label ${styles.label}`}>
+              {message}
+            </span>
           </span>
         </li>
       ))}
@@ -21,11 +34,24 @@ function TickerMarqueeRow({ duplicate }: { duplicate?: boolean }) {
 }
 
 export default function SlideingText() {
+  const { locale, isArabic } = useLanguage();
+  const message = translations[locale].home.slidingText;
+  const repeat = isArabic ? 16 : 10;
+
   return (
-    <section className="sliding-text-three overflow-hidden" id="sliding-text">
-      <div className="sliding-text-three__wrap flex whitespace-nowrap">
-        <TickerMarqueeRow />
-        <TickerMarqueeRow duplicate />
+    <section
+      className={`sliding-text-three overflow-hidden ${styles.section}`}
+      id="sliding-text"
+      dir="ltr"
+    >
+      <div className={`sliding-text-three__wrap ${styles.wrap}`}>
+        <TickerMarqueeRow message={message} repeat={repeat} isArabic={isArabic} />
+        <TickerMarqueeRow
+          message={message}
+          repeat={repeat}
+          isArabic={isArabic}
+          duplicate
+        />
       </div>
     </section>
   );

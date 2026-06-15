@@ -63,6 +63,8 @@ export default function Process() {
             </article>
           ))}
         </div>
+
+        <p className={styles.closing}>{process.closing}</p>
       </div>
     </section>
   );
