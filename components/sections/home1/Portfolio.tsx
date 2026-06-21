@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useId, useMemo, useState } from "react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
@@ -8,8 +8,10 @@ import Link from "next/link";
 import AnimatedTitle from "@/components/elements/AnimatedTitle";
 import { useLanguage } from "@/components/providers/LanguageProvider";
 import { translations } from "@/lib/i18n/translations";
+import blogStyles from "@/components/sections/home1/blog-carousel.module.css";
+import styles from "@/components/sections/home1/portfolio-industries.module.css";
 
-const swiperOptions = {
+const desktopSwiperOptions = {
   modules: [Autoplay, Pagination, Navigation],
   slidesPerView: 1,
   spaceBetween: 30,
@@ -60,6 +62,8 @@ function IndustryTile({
     <li
       className={activeIndex === tileIndex ? "active" : ""}
       onMouseEnter={() => setActiveIndex(tileIndex)}
+      onFocus={() => setActiveIndex(tileIndex)}
+      onClick={() => setActiveIndex(tileIndex)}
     >
       <div className="portfolio-two__box-content">
         <div
@@ -89,6 +93,33 @@ function IndustryTile({
   );
 }
 
+function IndustryMobileCard({ item }: { item: IndustryItem }) {
+  return (
+    <article className={blogStyles.card}>
+      <Link
+        href={item.href}
+        className={blogStyles.cardLink}
+        aria-label={item.title}
+        target="_blank"
+        rel="noopener noreferrer"
+      />
+      <div className={blogStyles.imageWrap}>
+        <Image
+          src={item.bg}
+          alt={item.title}
+          width={420}
+          height={262}
+          className={blogStyles.image}
+        />
+      </div>
+      <div className={blogStyles.body}>
+        <h3 className={blogStyles.title}>{item.title}</h3>
+        <p className={blogStyles.excerpt}>{item.description}</p>
+      </div>
+    </article>
+  );
+}
+
 export default function Portfolio() {
   const { locale, t } = useLanguage();
   const industries = translations[locale].home.industries;
@@ -96,7 +127,10 @@ export default function Portfolio() {
     () => chunkItems(industries.items, 4),
     [industries.items]
   );
-  const [activeIndex, setActiveIndex] = useState(12);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const navId = useId().replace(/:/g, "");
+  const prevClass = `industries-carousel-prev-${navId}`;
+  const nextClass = `industries-carousel-next-${navId}`;
 
   return (
     <section className="portfolio-two" id="portfolio">
@@ -123,8 +157,47 @@ export default function Portfolio() {
           </AnimatedTitle>
           <p className="portfolio-two__top-text">{industries.subtitle}</p>
         </div>
-        <div className="portfolio-two__carousel-container">
-          <Swiper key={locale} {...swiperOptions} className="portfolio-two__carousel">
+
+        <div className={styles.mobileCarousel}>
+          <div className={blogStyles.carouselWrap}>
+            <Swiper
+              modules={[Navigation]}
+              slidesPerView={1}
+              spaceBetween={24}
+              loop={industries.items.length > 1}
+              navigation={{
+                prevEl: `.${prevClass}`,
+                nextEl: `.${nextClass}`,
+              }}
+              className="blog-carousel-swiper"
+            >
+              {industries.items.map((item) => (
+                <SwiperSlide key={item.title}>
+                  <IndustryMobileCard item={item} />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+            <div className={blogStyles.nav}>
+              <button
+                type="button"
+                className={`${blogStyles.navBtn} ${prevClass}`}
+                aria-label="Previous industry"
+              >
+                ←
+              </button>
+              <button
+                type="button"
+                className={`${blogStyles.navBtn} ${nextClass}`}
+                aria-label="Next industry"
+              >
+                →
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div className={`portfolio-two__carousel-container ${styles.desktopCarousel}`}>
+          <Swiper key={locale} {...desktopSwiperOptions} className="portfolio-two__carousel">
             {slides.map((group, slideIndex) => (
               <SwiperSlide key={slideIndex}>
                 <div className="item">
@@ -134,7 +207,7 @@ export default function Portfolio() {
                         <IndustryTile
                           key={item.title}
                           item={item}
-                          indexOffset={slideIndex * 4 + itemIndex + 12}
+                          indexOffset={slideIndex * 4 + itemIndex}
                           activeIndex={activeIndex}
                           setActiveIndex={setActiveIndex}
                         />

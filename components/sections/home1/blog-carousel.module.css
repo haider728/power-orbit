@@ -48,6 +48,15 @@
   border-radius: inherit;
 }
 
+.cardLink {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  display: block;
+  text-decoration: none;
+  border-radius: inherit;
+}
+
 .imageWrap {
   position: relative;
   width: 100%;

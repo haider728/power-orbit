@@ -199,6 +199,27 @@ body {
   color: transparent !important;
 }
 
+/* responsive.css hides <br> in headings on tablet/mobile, which collapses
+   adjacent words (e.g. "AreExpensive", "bridge" + "the gap"). Render breaks as spaces. */
+@media only screen and (max-width: 991px) {
+  .section-title__title br,
+  .main-slider__title br,
+  .main-slider-two__title br {
+    display: inline !important;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+  }
+
+  .section-title__title br::after,
+  .main-slider__title br::after,
+  .main-slider-two__title br::after {
+    content: "\0020";
+    font-size: 1em;
+    line-height: inherit;
+  }
+}
+
 .close-btn:hover,
 .icon i,
 [class*="__icon"] i {
@@ -376,7 +397,19 @@ body {
   margin-top: 0.35rem;
 }
 
-/* Slimmer header / main menu (main-menu-two + global nav links) */
+@media (max-width: 767px) {
+  .portfolio-two {
+    padding-top: clamp(3.5rem, 10vw, 5rem) !important;
+    padding-bottom: clamp(3rem, 8vw, 4rem) !important;
+  }
+
+  .portfolio-two__top-text {
+    margin-bottom: 0 !important;
+    padding: 0 0.25rem;
+    font-size: 0.98rem;
+    line-height: 1.65;
+  }
+}
 .main-menu-two__top-inner {
   padding-top: 11px !important;
   padding-bottom: 11px !important;

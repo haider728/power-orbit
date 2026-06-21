@@ -150,6 +150,21 @@ html, body {
   background-clip: text !important;
 }
 
+@media only screen and (max-width: 991px) {
+  .section-title__title br, .main-slider__title br, .main-slider-two__title br {
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    display: inline !important;
+  }
+
+  .section-title__title br:after, .main-slider__title br:after, .main-slider-two__title br:after {
+    content: " ";
+    font-size: 1em;
+    line-height: inherit;
+  }
+}
+
 .close-btn:hover, .icon i, [class*="__icon"] i {
   color: var(--techguru-base) !important;
 }
@@ -317,6 +332,20 @@ html, body {
   opacity: .92;
   margin-top: .35rem;
   line-height: 1.5 !important;
+}
+
+@media (max-width: 767px) {
+  .portfolio-two {
+    padding-top: clamp(3.5rem, 10vw, 5rem) !important;
+    padding-bottom: clamp(3rem, 8vw, 4rem) !important;
+  }
+
+  .portfolio-two__top-text {
+    padding: 0 .25rem;
+    font-size: .98rem;
+    line-height: 1.65;
+    margin-bottom: 0 !important;
+  }
 }
 
 .main-menu-two__top-inner {

@@ -1,5 +1,6 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
+  "/api/avl-blogs/[id]/route": "app/api/avl-blogs/[id]/route.js",
   "/api/avl-blogs/route": "app/api/avl-blogs/route.js",
   "/page": "app/page.js"
 }
