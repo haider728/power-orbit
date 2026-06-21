@@ -169,14 +169,14 @@ const en = {
           title: "Diesel Generator Monitoring",
           description:
             "Our system proactively analyzes key performance metrics and alerts you to issues before they cause costly downtime.",
-          href: "https://avl-ksa.com/en/fleet-management-solutions/",
+          href: "https://https://avl-ksa.com/en/diesel-generator-monitoring/",
           image: "/assets/images/team/generator.png",
         },
         {
           title: "PWAS Monitoring",
           description:
             "Make your fleet smarter, safer, and legally protected—without adding manual workload.",
-          href: "https://avl-ksa.com/en/fleet-management-solutions/",
+          href: "https://avl-ksa.com/en/pwas-monitoring-solution/",
           image: "/assets/images/team/pwas.png",
         },
         {

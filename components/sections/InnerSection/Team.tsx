@@ -69,13 +69,15 @@ export default function Team() {
                       <div className="team-two__single">
                         <div className="team-two__img-box">
                           <div className="team-two__img">
-                            <Image
-                              src={item.image}
-                              alt={item.title}
-                              width={410}
-                              height={450}
-                              priority
-                            />
+                            <Link href={item.href} aria-label={item.title}>
+                              <Image
+                                src={item.image}
+                                alt={item.title}
+                                width={410}
+                                height={450}
+                                priority
+                              />
+                            </Link>
                           </div>
                           <div
                             className="team-two__title-box"

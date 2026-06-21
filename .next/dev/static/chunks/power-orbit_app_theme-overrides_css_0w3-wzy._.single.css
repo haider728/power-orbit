@@ -44,6 +44,18 @@ html, body {
   inset: 0;
 }
 
+.team-two__img a {
+  z-index: 0;
+  line-height: 0;
+  text-decoration: none;
+  display: block;
+  position: relative;
+}
+
+.team-two__img:before {
+  pointer-events: none;
+}
+
 .team-two__title-box {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
