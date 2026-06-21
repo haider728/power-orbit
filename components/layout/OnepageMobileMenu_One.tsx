@@ -109,7 +109,7 @@ export default function OnepageMobileMenu_One({ isSidebar, handleMobileMenu }: O
           </li>
           <li>
             <i className="fas fa-phone"></i>
-            <Link href="tel:6668880000">+966 53 308 5658</Link>
+            <Link href="tel:+966533085658" dir="ltr">+966 53 308 5658</Link>
           </li>
         </ul>
 

@@ -85,6 +85,15 @@ html[dir="rtl"] .main-menu-two__top-text {
   text-align: right;
 }
 
+html[dir="rtl"] .main-menu-two__contact-list a[href^="tel:"],
+html[dir="rtl"] .main-menu-two__contact-list p[dir="ltr"],
+html[dir="rtl"] .site-footer-two__contact-phone,
+html[dir="rtl"] .mobile-nav__contact a[href^="tel:"] {
+  direction: ltr;
+  unicode-bidi: bidi-override;
+  display: inline-block;
+}
+
 /* ── Mobile menu drawer ── */
 html[dir="rtl"] .mobile-nav__wrapper {
   left: auto;

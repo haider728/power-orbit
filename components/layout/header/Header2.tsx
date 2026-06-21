@@ -47,7 +47,9 @@ export default function Header2({ scroll, handleMobileMenu, handleSidebar }: Hea
                             <i className="icon-phone-call"></i>
                         </div>
                         <div className="text">
-                            <p><Link href="tel:1212345678900">+966 53 308 5658</Link></p>
+                            <p dir="ltr">
+                              <Link href="tel:+966533085658">+966 53 308 5658</Link>
+                            </p>
                         </div>
                     </li>
                 </ul>
