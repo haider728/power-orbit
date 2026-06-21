@@ -365,8 +365,10 @@ const ar = {
   },
   externalLinks: {
     eagleIot: "https://avl-ksa.com/ar/",
-    blogs: "https://avl-ksa.com/ar/blogs/",
-    contact: "https://avl-ksa.com/ar/contact-us/",
+    blogs:
+      "https://avl-ksa.com/المدونة-الخاصه-ايغل-آي-او-تي/",
+    contact:
+      "https://avl-ksa.com/اتصل-بفريق-ايغل-آي-او-تي-لإدارة-أسطولك-و/",
   },
   home: {
     slidingText: "باور أوربت — المعروفة سابقاً باسم الأسطورة الرقمية (DMS)",
@@ -381,7 +383,8 @@ const ar = {
         cta1: "تفضل بزيارة Eagle-IoT",
         cta1Href: "https://avl-ksa.com/",
         cta2: "تعرّف على المنظومة الكاملة",
-        cta2Href: "/#ecosystem",
+        cta2Href:
+          "https://avl-ksa.com/ايغل-آي-او-تي-لإدارة-أسطول-نظام-تحديد-ال/",
       },
       slide2: {
         subtitle: "حلول تقنية مصممة لنجاحك",
@@ -392,18 +395,20 @@ const ar = {
         cta1: "تفضل بزيارة Eagle-IoT",
         cta1Href: "https://avl-ksa.com/",
         cta2: "تعرّف على المنظومة الكاملة",
-        cta2Href: "/#ecosystem",
+        cta2Href:
+          "https://avl-ksa.com/ايغل-آي-او-تي-لإدارة-أسطول-نظام-تحديد-ال/",
       },
       slide3: {
-        subtitle: "موثوقون في القطاعات الخاضعة للرقابة",
-        title: "باور أوربت",
+        subtitle: "أنظمة معتمدة من الهيئات الرقابية والتنظيمية",
+        title: "باور أوربيت",
         titleHighlight: "(Power Orbit)",
         titleEnd: "شركة تقنية سعودية",
-        text: "تقدم أنظمة تتبع واتصال عن بُعد معتمدة من الهيئة العامة للغذاء والدواء (SFDA) والهيئة العامة للنقل (TGA)، لدعم العمليات اللوجستية والنقل من خلال مزايا التتبع والمراقبة والاتصال عن بُعد.",
+        text: "تقدم أنظمة تتبع واتصال عن بُعد معتمدة من الهيئة العامة للغذاء (SFDA) والهيئة العامة للنقل (TGA)، لدعم العمليات اللوجستية و مزايا التتبع والمراقبة والاتصال عن بُعد.",
         cta1: "تفضل بزيارة Eagle-IoT",
         cta1Href: "https://avl-ksa.com/",
         cta2: "تعرّف على المنظومة الكاملة",
-        cta2Href: "/#ecosystem",
+        cta2Href:
+          "https://avl-ksa.com/ايغل-آي-او-تي-لإدارة-أسطول-نظام-تحديد-ال/",
       },
       badges: ["معتمد SFDA", "متوافق TGA", "هندسة سعودية"],
       stats: [

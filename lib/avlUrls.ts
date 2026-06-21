@@ -1,4 +1,5 @@
 import type { Locale } from "@/lib/i18n/config";
+import { translations } from "@/lib/i18n/translations";
 
 const AVL_BASE = "https://avl-ksa.com";
 
@@ -17,9 +18,9 @@ export function avlHomeUrl(locale: Locale): string {
 }
 
 export function avlBlogUrl(locale: Locale): string {
-  return avlUrl(locale, "/blogs/");
+  return translations[locale].externalLinks.blogs;
 }
 
 export function avlContactUrl(locale: Locale): string {
-  return avlUrl(locale, "/contact-us/");
+  return translations[locale].externalLinks.contact;
 }
