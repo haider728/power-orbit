@@ -1,12 +1,14 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useLanguage } from "@/components/providers/LanguageProvider";
 
 type BackToTopProps = {
   scroll: boolean;
 };
 
 export default function BackToTop({ scroll }: BackToTopProps) {
+  const { t } = useLanguage();
   const [scrollProgress, setScrollProgress] = useState(0);
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -45,7 +47,7 @@ export default function BackToTop({ scroll }: BackToTopProps) {
               style={{ width: `${scrollProgress}%` }}
             ></span>
           </span>
-          <span className="scroll-to-top__text">Go Back Top</span>
+          <span className="scroll-to-top__text">{t("common.backToTop")}</span>
         </a>
       )}
     </>

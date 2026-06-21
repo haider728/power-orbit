@@ -49,13 +49,22 @@ export default function Choose() {
                             >
                             {t("home.choose.intro")}
                             </p>
-                            <ul className="why-choose-one__text why-choose-one__points-simple">
+                            {isArabic ? (
+                              <p
+                                className="why-choose-one__text why-choose-one__points-simple"
+                                dir="rtl"
+                              >
+                                {t("home.choose.point1")}
+                              </p>
+                            ) : (
+                              <ul className="why-choose-one__text why-choose-one__points-simple">
                                 <li>{t("home.choose.point1")}</li>
                                 <li>{t("home.choose.point2")}</li>
-                            </ul>
+                              </ul>
+                            )}
                             <div className="why-choose-one__btn-and-client-info">
                                 <div className="why-choose-one__btn-box">
-                                    <Link href="https://avl-ksa.com/en/about-us/" className="thm-btn">{t("home.choose.aboutUs")}
+                                    <Link href={t("home.choose.aboutUsHref")} className="thm-btn">{t("home.choose.aboutUs")}
                                             </Link>
                                 </div>
                                 <div className="why-choose-one__client-box">

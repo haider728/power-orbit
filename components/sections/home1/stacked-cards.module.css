@@ -171,6 +171,21 @@
   font-family: "Title";
 }
 
+:global(html[dir="rtl"]) .description::first-letter {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+:global(html[dir="rtl"]) .title,
+:global(html[dir="rtl"]) .description,
+:global(html[dir="rtl"]) .sectionDescription {
+  text-transform: none;
+}
+
+:global(html[dir="rtl"]) .seeMoreBtn {
+  text-transform: none !important;
+}
+
 .seeMoreWrap {
   margin-top: 18px;
 }

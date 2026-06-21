@@ -63,13 +63,15 @@ export default function About() {
               <div>
                 <span className={styles.callLabel}>{t("home.about.callLabel")}</span>
                 <p className={styles.callLink}>
-                  <Link href="tel:+966533085658">+966 53 308 5658</Link>
+                  <Link href={`tel:${t("home.about.phoneTel")}`} className={styles.phoneNumber} dir="ltr">
+                    {t("home.about.phoneDisplay")}
+                  </Link>
                 </p>
               </div>
             </div>
             <div className="about-two__btn-box">
               <Link
-                href="/Company-Profile-2026-Eng-Version.pdf"
+                href={t("home.about.companyProfileHref")}
                 className="thm-btn"
                 target="_blank"
                 rel="noopener noreferrer"

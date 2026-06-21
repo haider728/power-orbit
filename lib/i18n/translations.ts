@@ -21,6 +21,24 @@ const en = {
   whatsapp: {
     label: "Chat on WhatsApp",
   },
+  common: {
+    backToTop: "Go Back Top",
+  },
+  siteFooter: {
+    contactInfo: "Contact Info",
+    location: "Location",
+    pages: "Pages",
+    home: "Home",
+    aboutUs: "About Us",
+    blogs: "Blogs",
+    ourServices: "Our Services",
+    fleetManagement: "Fleet Managment",
+    assetManagement: "Asset Management",
+    coldChainManagement: "Cold Chain Management",
+    videoTelematics: "Video Telematics",
+    followUs: "Follow Us:",
+    allRightsReserved: "All rights reserved",
+  },
   home: {
     slidingText: "Power Orbit — formerly known as Digital Myth Solution",
     banner: {
@@ -81,7 +99,10 @@ const en = {
         "We did not adapt to the industry. We helped build it.",
       ],
       callLabel: "Call us for inquiry",
+      phoneDisplay: "+966 53 308 5658",
+      phoneTel: "+966533085658",
       companyProfile: "Company Profile",
+      companyProfileHref: "/Company-Profile-2026-Eng-Version.pdf",
       aboutUs: "About Us",
     },
     stackedCards: {
@@ -118,6 +139,7 @@ const en = {
       point1: "The issue is not lack of data.",
       point2: "It is lack of actionable intelligence.",
       aboutUs: "About Us",
+      aboutUsHref: "https://avl-ksa.com/en/about-us/",
     },
     solutions: {
       title: "Solutions",
@@ -140,9 +162,9 @@ const en = {
           image: "/assets/images/team/generator.png",
         },
         {
-          title: "Pwas Monitoring",
+          title: "PWAS Monitoring",
           description:
-            "Make your fleet smarter, safer, and legally protected—without adding more manual workload.",
+            "Make your fleet smarter, safer, and legally protected—without adding manual workload.",
           href: "https://avl-ksa.com/en/fleet-management-solutions/",
           image: "/assets/images/team/pwas.png",
         },
@@ -312,6 +334,24 @@ const ar = {
   whatsapp: {
     label: "تواصل عبر واتساب",
   },
+  common: {
+    backToTop: "اذهب لأعلى الصفحة",
+  },
+  siteFooter: {
+    contactInfo: "اتصل بنا",
+    location: "العنوان",
+    pages: "الصفحات",
+    home: "الصفحة الرئيسية",
+    aboutUs: "من نحن؟",
+    blogs: "المدونة",
+    ourServices: "خدماتنا",
+    fleetManagement: "إدارة النقل والمركبات",
+    assetManagement: "إدارة الأصول",
+    coldChainManagement: "إدارة سلاسل التبريد",
+    videoTelematics: "المراقبة بكاميرات الفيديو",
+    followUs: "تابعنا:",
+    allRightsReserved: "جميع الحقوق محفوظة",
+  },
   home: {
     slidingText: "باور أوربت — المعروفة سابقاً باسم الأسطورة الرقمية (DMS)",
     banner: {
@@ -362,17 +402,20 @@ const ar = {
         "تأسست شركة باور أوربت عام 2006، وعلى مدار 20 عاماً من الخبرة تعاملنا مع طبيعة وتحديات السوق السعودي. لم نكن مجرد شاهدين على التطور الرقمي في المملكة، بل نحن من صممنا وبنينا الأنظمة التي ساعدت في تحقيقه.",
       stats: [
         { value: "20+", label: "عاماً من الخبرة" },
-        { value: "SFDA", label: "امتثال معتمد" },
-        { value: "TGA", label: "مزود معتمد" },
-        { value: "24/7", label: "رؤية تشغيلية" },
+        { value: "SFDA", label: "معتمد من الهيئة العامة للغذاء والدواء" },
+        { value: "TGA", label: "معتمد من الهيئة العامة للنقل" },
+        { value: "24/7", label: "مراقبة مستمرة على مدار الساعة" },
       ],
       highlights: [
-        "من الأسطورة الرقمية إلى باور أوربت: يستمر تطورنا من مجرد تقديم خدمات تتبع بسيطة، إلى تقديم نظام إدارة وتحكم كامل وشامل.",
-        "لا نتكيف مع الرقمنة بل نشارك في تأسيس نظامها.",
-        "نقدم التحكم التشغيلي الذي تطلبه أكبر الشركات في المملكة لضمان إدارة عمليات النقل واللوجستيات بكل دقة وكفاءة.",
+        "معتمد من الهيئة العامة للغذاء والدواء",
+        "معتمد من الهيئة العامة للنقل",
+        "مراقبة مستمرة على مدار الساعة",
       ],
       callLabel: "اتصل بنا للاستفسار",
+      phoneDisplay: "+966 53 308 5658",
+      phoneTel: "+966533085658",
       companyProfile: "الملف التعريفي للشركة",
+      companyProfileHref: "/Company-Profile-2026-Ar-Version.pdf",
       aboutUs: "من نحن",
     },
     stackedCards: {
@@ -405,20 +448,22 @@ const ar = {
     },
     choose: {
       title: "النقاط العمياء",
-      titleSpan1: "التشغيلية",
+      titleSpan1: "والتفاصيل الخفية",
       titleSpan2: "تكلفك الكثير!",
-      titleLine1: "النقاط العمياء التشغيلية",
+      titleLine1: "النقاط العمياء والتفاصيل الخفية",
       titleLine2: "تكلفك الكثير!",
       intro:
         "التكلفة الحقيقية لنظام التتبع «العادي والبدائي» ليست رسوم الاشتراك الشهري، بل هي سرقة الوقود التي لم ترَها، ومخالفات هيئة الغذاء والدواء التي لم تتجنبها، ومخاطر السلامة التي لم تتوقعها. إن النقاط العمياء التي لا تراها هي البند الأكثر تكلفة في ميزانيتك.",
-      point1: "المشكلة ليست في نقص البيانات والمعلومات،",
-      point2: "المشكلة هي غياب الرؤية الذكية التي تخبرك بكيفية التصرف بناءً عليها.",
+      point1:
+        "المشكلة ليست في نقص البيانات، بل في صعوبة استخلاص المعلومات المفيدة التي تدعم الرؤية الذكية والقرارات السليمة.",
+      point2: "",
       aboutUs: "من نحن",
+      aboutUsHref: "https://avl-ksa.com/ar/about-us/",
     },
     solutions: {
       title: "الحلول",
       titleHighlight: "والخدمات",
-      intro: "أنظمة تقدمها باور أوربت:",
+      intro: "أنظمة تقدمها باور أوربت (POWER ORBIT):",
       items: [
         {
           title: "إدارة أساطيل النقل والمركبات",
@@ -435,9 +480,9 @@ const ar = {
           image: "/assets/images/team/generator.png",
         },
         {
-          title: "مراقبة PWAS",
+          title: "نظام الإنذار لمنع الاصطدام PWAS",
           description:
-            "اجعل أسطولك أذكى وأكثر أماناً ومحمياً قانونياً — دون إضافة عبء عمل يدوي.",
+            "اضمن بيئة عمل آمنة مع أسطول من المعدات والآلات الذكية بدون تعقيدات ",
           href: "https://avl-ksa.com/en/fleet-management-solutions/",
           image: "/assets/images/team/pwas.png",
         },

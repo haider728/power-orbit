@@ -168,6 +168,19 @@
   font-size: 28px;
 }
 
+html[dir="rtl"] .stacked-cards-module__UrFTvG__description:first-letter {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+:is(html[dir="rtl"] .stacked-cards-module__UrFTvG__title, html[dir="rtl"] .stacked-cards-module__UrFTvG__description, html[dir="rtl"] .stacked-cards-module__UrFTvG__sectionDescription) {
+  text-transform: none;
+}
+
+html[dir="rtl"] .stacked-cards-module__UrFTvG__seeMoreBtn {
+  text-transform: none !important;
+}
+
 .stacked-cards-module__UrFTvG__seeMoreWrap {
   margin-top: 18px;
 }

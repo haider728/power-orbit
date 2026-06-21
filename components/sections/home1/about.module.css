@@ -50,6 +50,12 @@
   line-height: 1.35;
 }
 
+:global([dir="rtl"]) .statLabel {
+  text-transform: none;
+  letter-spacing: 0;
+  line-height: 1.5;
+}
+
 .header {
   margin-bottom: clamp(1.25rem, 3vw, 1.75rem);
 }
@@ -152,6 +158,12 @@
   text-decoration: none;
 }
 
-.callLink:hover {
+.phoneNumber {
+  direction: ltr;
+  unicode-bidi: isolate;
+  display: inline-block;
+}
+
+.phoneNumber:hover {
   color: #4f95f1;
 }
