@@ -189,7 +189,7 @@ export default function Blog() {
           </div>
           <p className={styles.intro}>
             {blogCopy.intro}{" "}
-            <Link href="https://avl-ksa.com/en/blogs/" target="_blank" rel="noopener noreferrer">
+            <Link href={t("externalLinks.blogs")} target="_blank" rel="noopener noreferrer">
               {blogCopy.introLink}
             </Link>
             .

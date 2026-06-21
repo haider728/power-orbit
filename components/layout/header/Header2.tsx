@@ -68,7 +68,7 @@ export default function Header2({ scroll, handleMobileMenu, handleSidebar }: Hea
                     <div className="main-menu-two__right">
                         <LanguageToggle variant="header" />
                         <div className="main-menu-two__btn-box">
-                            <Link href="https://avl-ksa.com/en/contact-us/" className="thm-btn">{t("nav.getInTouch")}
+                            <Link href={t("externalLinks.contact")} className="thm-btn">{t("nav.getInTouch")}
                             {/* <span
                                     className="icon-right-arrow"></span> */}
                                     </Link>
@@ -102,7 +102,7 @@ export default function Header2({ scroll, handleMobileMenu, handleSidebar }: Hea
                     <div className="main-menu-two__right">
                         <LanguageToggle variant="header" />
                         <div className="main-menu-two__btn-box">
-                            <Link href="https://avl-ksa.com/en/contact-us/" className="thm-btn">{t("nav.getInTouch")}
+                            <Link href={t("externalLinks.contact")} className="thm-btn">{t("nav.getInTouch")}
                             {/* <span
                                     className="icon-right-arrow"></span> */}
                                     </Link>

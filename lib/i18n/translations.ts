@@ -39,6 +39,11 @@ const en = {
     followUs: "Follow Us:",
     allRightsReserved: "All rights reserved",
   },
+  externalLinks: {
+    eagleIot: "https://avl-ksa.com/en/",
+    blogs: "https://avl-ksa.com/en/blogs/",
+    contact: "https://avl-ksa.com/en/contact-us/",
+  },
   home: {
     slidingText: "Power Orbit — formerly known as Digital Myth Solution",
     banner: {
@@ -50,7 +55,9 @@ const en = {
         titleHighlight: "IoT infrastructure",
         text: "and AI-driven intelligence required for mission-critical operations. We bridge the gap between raw data and executive control.",
         cta1: "Visit Eagle-IoT Platform",
+        cta1Href: "https://avl-ksa.com/en/",
         cta2: "Explore the Ecosystem",
+        cta2Href: "/#ecosystem",
       },
       slide2: {
         subtitle: "IT Solutions Designed for Your Success",
@@ -59,7 +66,9 @@ const en = {
         titleLine3: "raw data and executive control.",
         text: 'Power Orbit does not offer a "one-size-fits-all" tool. We provide a modular ecosystem of specialized brands.',
         cta1: "Visit Eagle-IoT Platform",
+        cta1Href: "https://avl-ksa.com/en/",
         cta2: "Explore the Ecosystem",
+        cta2Href: "/#ecosystem",
       },
       slide3: {
         subtitle: "Trusted Across Regulated Industries",
@@ -68,7 +77,9 @@ const en = {
         titleEnd: "is a Saudi technology company",
         text: "Delivering SFDA- and TGA-approved IoT and telematics solutions for mission-critical operations.",
         cta1: "Visit Eagle-IoT Platform",
+        cta1Href: "https://avl-ksa.com/en/",
         cta2: "Explore the Ecosystem",
+        cta2Href: "/#ecosystem",
       },
       badges: ["SFDA Approved", "TGA Approved", "Saudi Engineered"],
       stats: [
@@ -352,6 +363,11 @@ const ar = {
     followUs: "تابعنا:",
     allRightsReserved: "جميع الحقوق محفوظة",
   },
+  externalLinks: {
+    eagleIot: "https://avl-ksa.com/ar/",
+    blogs: "https://avl-ksa.com/ar/blogs/",
+    contact: "https://avl-ksa.com/ar/contact-us/",
+  },
   home: {
     slidingText: "باور أوربت — المعروفة سابقاً باسم الأسطورة الرقمية (DMS)",
     banner: {
@@ -363,7 +379,9 @@ const ar = {
         titleHighlight: "أنظمة ذكية متطورة",
         text: "معززة بتقنيات إنترنت الأشياء ومزايا الذكاء الاصطناعي لإدارة عمليات النقل واللوجستيات المعقدة. نعمل على تحويل البيانات والأرقام المعقدة إلى قرارات سليمة وتحكم كامل.",
         cta1: "تفضل بزيارة Eagle-IoT",
+        cta1Href: "https://avl-ksa.com/",
         cta2: "تعرّف على المنظومة الكاملة",
+        cta2Href: "/#ecosystem",
       },
       slide2: {
         subtitle: "حلول تقنية مصممة لنجاحك",
@@ -372,7 +390,9 @@ const ar = {
         titleLine3: "قرارات تشغيلية دقيقة.",
         text: "لا تقدم باور أوربت (Power Orbit) حلاً واحداً تقليدياً يناسب الجميع. بل نوفر مجموعة متكاملة من الأنظمة المصممة لحل تحديات تشغيلية محددة.",
         cta1: "تفضل بزيارة Eagle-IoT",
+        cta1Href: "https://avl-ksa.com/",
         cta2: "تعرّف على المنظومة الكاملة",
+        cta2Href: "/#ecosystem",
       },
       slide3: {
         subtitle: "موثوقون في القطاعات الخاضعة للرقابة",
@@ -381,7 +401,9 @@ const ar = {
         titleEnd: "شركة تقنية سعودية",
         text: "تقدم أنظمة تتبع واتصال عن بُعد معتمدة من الهيئة العامة للغذاء والدواء (SFDA) والهيئة العامة للنقل (TGA)، لدعم العمليات اللوجستية والنقل من خلال مزايا التتبع والمراقبة والاتصال عن بُعد.",
         cta1: "تفضل بزيارة Eagle-IoT",
+        cta1Href: "https://avl-ksa.com/",
         cta2: "تعرّف على المنظومة الكاملة",
+        cta2Href: "/#ecosystem",
       },
       badges: ["معتمد SFDA", "متوافق TGA", "هندسة سعودية"],
       stats: [
@@ -458,7 +480,8 @@ const ar = {
         "المشكلة ليست في نقص البيانات، بل في صعوبة استخلاص المعلومات المفيدة التي تدعم الرؤية الذكية والقرارات السليمة.",
       point2: "",
       aboutUs: "من نحن",
-      aboutUsHref: "https://avl-ksa.com/ar/about-us/",
+      aboutUsHref:
+        "https://avl-ksa.com/ايغل-آي-او-تي-لإدارة-أسطول-نظام-تحديد-ال/",
     },
     solutions: {
       title: "الحلول",
@@ -469,56 +492,56 @@ const ar = {
           title: "إدارة أساطيل النقل والمركبات",
           description:
             "تحكم وإشراف كامل على مواقع السيارات ومراقبة سلوك السائقين أثناء القيادة مع تقارير تشغيلية معتمدة من هيئة النقل.",
-          href: "https://avl-ksa.com/en/fleet-management-solutions/",
+          href: "https://avl-ksa.com/ar/fleet-management-solutions/",
           image: "/assets/images/team/fleett.png",
         },
         {
           title: "مراقبة مولدات الديزل",
           description:
             "يحلل نظامنا مؤشرات الأداء الرئيسية وينبهك إلى المشكلات قبل أن تسبب توقفاً مكلفاً.",
-          href: "https://avl-ksa.com/en/fleet-management-solutions/",
+          href: "https://avl-ksa.com/ar/fleet-management-solutions/",
           image: "/assets/images/team/generator.png",
         },
         {
           title: "نظام الإنذار لمنع الاصطدام PWAS",
           description:
             "اضمن بيئة عمل آمنة مع أسطول من المعدات والآلات الذكية بدون تعقيدات ",
-          href: "https://avl-ksa.com/en/fleet-management-solutions/",
+          href: "https://avl-ksa.com/ar/fleet-management-solutions/",
           image: "/assets/images/team/pwas.png",
         },
         {
           title: "كاميرات التتبع الذكية (المدعومة بالذكاء الاصطناعي)",
           description:
             "أنظمة كاميرات مراقبة متطورة للسيارات تستخدم الذكاء الاصطناعي لكشف علامات إرهاق السائق أو تشتته ورصد الحوادث على الطريق فوراً.",
-          href: "https://avl-ksa.com/en/video-telematics/",
+          href: "https://avl-ksa.com/ar/video-telematics/",
           image: "/assets/images/team/video-1.png",
         },
         {
           title: "إدارة الأصول والمراقبة الفورية",
           description:
             "خدمات تتبع مواقع المعدات والأجهزة بدقة وفي أي وقت، لضمان حمايتها.",
-          href: "https://avl-ksa.com/en/asset-management-platform/",
+          href: "https://avl-ksa.com/ar/asset-management-platform/",
           image: "/assets/images/team/asset-1.png",
         },
         {
           title: "مراقبة المستودعات وسلسلة التبريد",
           description:
             "أجهزة استشعار وحساسات دقيقة لقياس الحرارة والرطوبة في المخازن الثابتة وشاحنات التبريد، ومتوافقة تماماً مع معايير هيئة الغذاء والدواء.",
-          href: "https://avl-ksa.com/en/warehouse-monitoring-solution/",
+          href: "https://avl-ksa.com/ar/warehouse-monitoring-solution/",
           image: "/assets/images/team/warehouse1.png",
         },
         {
           title: "أنظمة إدارة الوقود",
           description:
             "منع سرقة الوقود ومراقبة الاستهلاك بدقة متناهية عبر حساسات رقمية متطورة وتنبيهات فورية عند حدوث أي تسريب.",
-          href: "https://avl-ksa.com/en/oil-and-gas/",
+          href: "https://avl-ksa.com/ar/oil-and-gas/",
           image: "/assets/images/team/oil-1.png",
         },
         {
           title: "حلول شاحنات الخرسانة الجاهزة",
           description:
             "نظام ربط ذكي (IoT) مخصص لمراقبة خلط الأسمنت وتوفير بيانات دقيقة تضمن سلامة وجودة البناء.",
-          href: "https://avl-ksa.com/en/ready-mix-concrete/",
+          href: "https://avl-ksa.com/ar/ready-mix-concrete/",
           image: "/assets/images/team/concret.png",
         },
       ],
@@ -566,56 +589,56 @@ const ar = {
           title: "النقل والخدمات اللوجستية",
           description:
             "تحسين مسارات النقل والشحن الدولي عبر الحدود من خلال معرفة الطرق فورياً وإدارة وتوفير الوقود.",
-          href: "https://avl-ksa.com/en/smart-ambulance-fleet-monitoring-solution/",
+          href: "https://avl-ksa.com/ar/smart-ambulance-fleet-monitoring-solution/",
           bg: "/assets/images/project/1.1.png",
         },
         {
           title: "الرعاية الصحية والطبية",
           description:
             "ضمان بقاء الشحنات والأدوية الحيوية المنقذة للحياة ضمن درجات الحرارة المحددة والمطلوبة من هيئة الغذاء والدواء.",
-          href: "https://avl-ksa.com/en/smart-ambulance-fleet-monitoring-solution/",
+          href: "https://avl-ksa.com/ar/smart-ambulance-fleet-monitoring-solution/",
           bg: "/assets/images/project/1.2.png",
         },
         {
           title: "النفط والغاز",
           description:
             "مراقبة المعدات الثمينة في المواقع البعيدة، وضمان سلامة السيارات والسائقين في البيئات عالية الخطورة.",
-          href: "https://avl-ksa.com/en/oil-and-gas/",
+          href: "https://avl-ksa.com/ar/oil-and-gas/",
           bg: "/assets/images/project/1.3.png",
         },
         {
           title: "إدارة سلاسل الإمداد",
           description:
             "رؤية ومتابعة كاملة للشحنات من أول دخولها المستودع وحتى وصولها ليد العميل النهائي.",
-          href: "https://avl-ksa.com/en/supply-chain-management/",
+          href: "https://avl-ksa.com/ar/supply-chain-management/",
           bg: "/assets/images/project/1.4.png",
         },
         {
           title: "الخرسانة الجاهزة",
           description:
             "الحفاظ على جودة وتماسك الخرسانة من خلال مراقبة عملية الخلط وحركة الشاحنات بدقة أثناء النقل.",
-          href: "https://avl-ksa.com/en/ready-mix-concrete/",
+          href: "https://avl-ksa.com/ar/ready-mix-concrete/",
           bg: "/assets/images/project/portfolio-2-1.jpg",
         },
         {
           title: "آلات ومعدات البناء الثقيلة",
           description:
             "متابعة ساعات عمل المحركات ومواقع المعدات وجداول الصيانة لآلات الأساسية في المشاريع.",
-          href: "https://avl-ksa.com/en/construction-machinery-and-heavy-equipment/",
+          href: "https://avl-ksa.com/ar/construction-machinery-and-heavy-equipment/",
           bg: "/assets/images/project/portfolio-2-2.jpg",
         },
         {
           title: "تأجير السيارات",
           description:
             "حماية السيارات والأصول، وتسهيل أتمتة عملية استلام وتسليم السيارات عبر أنظمة التتبع الذكية.",
-          href: "https://avl-ksa.com/en/car-rentals/",
+          href: "https://avl-ksa.com/ar/car-rentals/",
           bg: "/assets/images/project/portfolio-2-3.jpg",
         },
         {
           title: "مراقبة سلسلة التبريد (المطابقة لشروط الغذاء والدواء وهيئة النقل)",
           description:
             "دقة موثقة ومعتمدة لجميع عمليات النقل والتخزين في المملكة.",
-          href: "https://avl-ksa.com/en/sfda-tga-compliant-cold-chain-monitoring/",
+          href: "https://avl-ksa.com/ar/sfda-tga-compliant-cold-chain-monitoring/",
           bg: "/assets/images/project/portfolio-2-4.jpg",
         },
       ],

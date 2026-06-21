@@ -4,11 +4,11 @@ import Link from "next/link";
 import Image from "next/image";
 import SectionScrollLink from "@/components/layout/SectionScrollLink";
 import XIcon from "@/components/elements/XIcon";
-import { BLOG_EXTERNAL_URL } from "@/data/onepageNav";
+import { avlBlogUrl } from "@/lib/avlUrls";
 import { useLanguage } from "@/components/providers/LanguageProvider";
 
 export default function Footer1() {
-  const { t, isArabic } = useLanguage();
+  const { t, isArabic, locale } = useLanguage();
   const textDir = isArabic ? "rtl" : "ltr";
 
   return (
@@ -97,7 +97,7 @@ export default function Footer1() {
                     </SectionScrollLink>
                   </li>
                   <li>
-                    <Link href={BLOG_EXTERNAL_URL} target="_blank" rel="noopener noreferrer">
+                    <Link href={avlBlogUrl(locale)} target="_blank" rel="noopener noreferrer">
                       <span className="icon-right-arrow-2"></span>
                       {t("siteFooter.blogs")}
                     </Link>

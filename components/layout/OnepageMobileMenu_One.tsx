@@ -5,9 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useLanguage } from "@/components/providers/LanguageProvider";
 import LanguageToggle from "@/components/layout/LanguageToggle";
-import { ONEPAGE_NAV_ONE } from "@/data/onepageNav";
-
-const sections = ONEPAGE_NAV_ONE;
+import { getOnepageNavOne } from "@/data/onepageNav";
 
 type OnepageMobileMenu_OneProps = {
   isSidebar: boolean;
@@ -15,7 +13,8 @@ type OnepageMobileMenu_OneProps = {
 };
 
 export default function OnepageMobileMenu_One({ isSidebar, handleMobileMenu }: OnepageMobileMenu_OneProps) {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
+  const sections = getOnepageNavOne(locale);
   const [currentSection, setCurrentSection] = useState<string>("");
 
   // Smooth scroll handler

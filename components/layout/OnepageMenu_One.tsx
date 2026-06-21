@@ -2,12 +2,11 @@
 
 import { useEffect, useState } from "react";
 import { useLanguage } from "@/components/providers/LanguageProvider";
-import { ONEPAGE_NAV_ONE } from "@/data/onepageNav";
-
-const sections = ONEPAGE_NAV_ONE;
+import { getOnepageNavOne } from "@/data/onepageNav";
 
 export default function OnepageMenu_One() {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
+  const sections = getOnepageNavOne(locale);
   const [current, setCurrent] = useState<string>("");
 
   useEffect(() => {
@@ -38,7 +37,7 @@ export default function OnepageMenu_One() {
       window.removeEventListener("scroll", handleScroll);
       document.documentElement.style.scrollBehavior = "";
     };
-  }, []);
+  }, [sections]);
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault();

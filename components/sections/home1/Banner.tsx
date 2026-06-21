@@ -57,12 +57,12 @@ export default function Banner() {
                     <p className="main-slider-two__text">{t("home.banner.slide1.text")}</p>
                     <div className="main-slider-two__btns-box">
                       <div className="main-slider-two__btn-box-1">
-                        <Link href="https://avl-ksa.com/en/" className="thm-btn">
+                        <Link href={t("home.banner.slide1.cta1Href")} className="thm-btn">
                           {t("home.banner.slide1.cta1")}
                         </Link>
                       </div>
                       <div className="main-slider-two__btn-box-2">
-                        <Link href="/#ecosystem" className="thm-btn">
+                        <Link href={t("home.banner.slide1.cta2Href")} className="thm-btn">
                           {t("home.banner.slide1.cta2")}
                         </Link>
                       </div>
@@ -103,12 +103,12 @@ export default function Banner() {
                     <p className="main-slider-two__text">{t("home.banner.slide2.text")}</p>
                     <div className="main-slider-two__btns-box">
                       <div className="main-slider-two__btn-box-1">
-                        <Link href="https://avl-ksa.com/en/" className="thm-btn">
+                        <Link href={t("home.banner.slide2.cta1Href")} className="thm-btn">
                           {t("home.banner.slide2.cta1")}
                         </Link>
                       </div>
                       <div className="main-slider-two__btn-box-2">
-                        <Link href="/#ecosystem" className="thm-btn">
+                        <Link href={t("home.banner.slide2.cta2Href")} className="thm-btn">
                           {t("home.banner.slide2.cta2")}
                         </Link>
                       </div>
@@ -147,12 +147,12 @@ export default function Banner() {
                     <p className="main-slider-two__text">{t("home.banner.slide3.text")}</p>
                     <div className="main-slider-two__btns-box">
                       <div className="main-slider-two__btn-box-1">
-                        <Link href="https://avl-ksa.com/en/" className="thm-btn">
+                        <Link href={t("home.banner.slide3.cta1Href")} className="thm-btn">
                           {t("home.banner.slide3.cta1")}
                         </Link>
                       </div>
                       <div className="main-slider-two__btn-box-2">
-                        <Link href="/#ecosystem" className="thm-btn">
+                        <Link href={t("home.banner.slide3.cta2Href")} className="thm-btn">
                           {t("home.banner.slide3.cta2")}
                         </Link>
                       </div>
