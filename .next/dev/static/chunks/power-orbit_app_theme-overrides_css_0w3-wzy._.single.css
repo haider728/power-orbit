@@ -499,18 +499,19 @@ html, body {
 }
 
 .blog-inline-detail__img-wrap {
-  aspect-ratio: 900 / 420;
+  background: #ffffff0a;
   border-radius: 14px;
   width: 100%;
-  max-height: 38vh;
   margin-bottom: 1.25rem;
+  line-height: 0;
   position: relative;
   overflow: hidden;
 }
 
 .blog-inline-detail__img {
-  -o-object-fit: cover;
-  object-fit: cover;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .blog-inline-detail__heading {

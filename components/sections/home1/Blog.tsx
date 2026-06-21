@@ -9,6 +9,7 @@ import AnimatedTitle from "@/components/elements/AnimatedTitle";
 import { useLanguage } from "@/components/providers/LanguageProvider";
 import { translations } from "@/lib/i18n/translations";
 import type { AvlBlogListItem } from "@/lib/avlBlogs";
+import BlogCoverImage from "@/components/sections/home1/BlogCoverImage";
 import styles from "@/components/sections/home1/blog-carousel.module.css";
 
 const EXCERPT_LENGTH = 160;
@@ -58,16 +59,7 @@ function BlogCard({
         onClick={() => onSelect(blog)}
         aria-label={`Read full article: ${blog.Title}`}
       />
-      <div className={styles.imageWrap}>
-        <Image
-          src={coverUrl(blog)}
-          alt={blog.Title}
-          width={420}
-          height={262}
-          className={styles.image}
-          unoptimized
-        />
-      </div>
+      <BlogCoverImage src={coverUrl(blog)} alt={blog.Title} />
       <div className={styles.body}>
         <h3 className={styles.title}>{blog.Title}</h3>
         <p className={styles.excerpt}>{excerpt(blog.content || "")}</p>
@@ -278,11 +270,13 @@ export default function Blog() {
                 <Image
                   src={coverUrl(selectedBlog)}
                   alt={selectedBlog.Title}
-                  fill
+                  width={0}
+                  height={0}
                   sizes="(max-width: 900px) 100vw, 900px"
                   className="blog-inline-detail__img"
                   priority
                   unoptimized
+                  style={{ width: "100%", height: "auto" }}
                 />
               </div>
 

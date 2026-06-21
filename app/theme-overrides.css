@@ -569,12 +569,14 @@ body {
   border-radius: 14px;
   overflow: hidden;
   margin-bottom: 1.25rem;
-  aspect-ratio: 900 / 420;
-  max-height: 38vh;
+  background: rgba(255, 255, 255, 0.04);
+  line-height: 0;
 }
 
 .blog-inline-detail__img {
-  object-fit: cover;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .blog-inline-detail__heading {

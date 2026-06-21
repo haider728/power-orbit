@@ -9,6 +9,7 @@ import AnimatedTitle from "@/components/elements/AnimatedTitle";
 import { useLanguage } from "@/components/providers/LanguageProvider";
 import { translations } from "@/lib/i18n/translations";
 import blogStyles from "@/components/sections/home1/blog-carousel.module.css";
+import BlogCoverImage from "@/components/sections/home1/BlogCoverImage";
 import styles from "@/components/sections/home1/portfolio-industries.module.css";
 
 const desktopSwiperOptions = {
@@ -103,15 +104,7 @@ function IndustryMobileCard({ item }: { item: IndustryItem }) {
         target="_blank"
         rel="noopener noreferrer"
       />
-      <div className={blogStyles.imageWrap}>
-        <Image
-          src={item.bg}
-          alt={item.title}
-          width={420}
-          height={262}
-          className={blogStyles.image}
-        />
-      </div>
+      <BlogCoverImage src={item.bg} alt={item.title} />
       <div className={blogStyles.body}>
         <h3 className={blogStyles.title}>{item.title}</h3>
         <p className={blogStyles.excerpt}>{item.description}</p>
