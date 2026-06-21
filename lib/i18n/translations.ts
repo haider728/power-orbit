@@ -437,7 +437,8 @@ const ar = {
       phoneDisplay: "+966 53 308 5658",
       phoneTel: "+966533085658",
       companyProfile: "الملف التعريفي للشركة",
-      companyProfileHref: "/Company-Profile-2026-Ar-Version.pdf",
+      companyProfileHref:
+        "https://avl-ksa.com/wp-content/uploads/2026/04/Company-Profile-2026.pdf",
       aboutUs: "من نحن",
     },
     stackedCards: {

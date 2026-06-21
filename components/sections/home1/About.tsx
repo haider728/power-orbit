@@ -62,8 +62,8 @@ export default function About() {
               </div>
               <div>
                 <span className={styles.callLabel}>{t("home.about.callLabel")}</span>
-                <p className={styles.callLink}>
-                  <Link href={`tel:${t("home.about.phoneTel")}`} className={styles.phoneNumber} dir="ltr">
+                <p className={styles.callLink} dir="ltr">
+                  <Link href={`tel:${t("home.about.phoneTel")}`} className={styles.phoneNumber}>
                     {t("home.about.phoneDisplay")}
                   </Link>
                 </p>

@@ -160,8 +160,14 @@
 
 .phoneNumber {
   direction: ltr;
-  unicode-bidi: isolate;
+  unicode-bidi: bidi-override;
   display: inline-block;
+  text-align: left;
+}
+
+:global([dir="rtl"]) .phoneNumber {
+  direction: ltr !important;
+  unicode-bidi: bidi-override !important;
 }
 
 .phoneNumber:hover {
