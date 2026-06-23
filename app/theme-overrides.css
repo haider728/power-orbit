@@ -642,52 +642,87 @@ body {
   }
 }
 
-/* Footer bottom — one row: copyright | social icons (center) | spacer for WhatsApp */
+/* Footer bottom — mobile: stacked; desktop: one row with social centered */
 .site-footer-two__bottom-inner {
-  display: grid !important;
-  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  display: flex !important;
+  flex-direction: column !important;
   align-items: center !important;
-  gap: 1rem 1.25rem;
-  text-align: start;
+  justify-content: center !important;
+  text-align: center !important;
+  gap: 1rem;
 }
 
 .site-footer-two__copyright {
   margin-bottom: 0 !important;
-  justify-self: start;
+  width: 100%;
   min-width: 0;
 }
 
+.site-footer-two__copyright-text {
+  margin: 0;
+}
+
 .site-footer-two__social-box {
-  grid-column: 2;
-  flex-direction: row !important;
+  flex-direction: column !important;
   align-items: center !important;
   justify-content: center !important;
-  justify-self: center;
-  flex-wrap: nowrap;
+  gap: 0.75rem;
+  width: 100%;
 }
 
 .site-footer-two__social-box-inner {
   justify-content: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 .site-footer-two__bottom {
-  padding-bottom: 1.25rem;
+  padding-bottom: 5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .site-footer-two__bottom-inner {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center !important;
+    text-align: start;
+    gap: 1rem 1.25rem;
+  }
+
+  .site-footer-two__copyright {
+    justify-self: start;
+    width: auto;
+  }
+
+  .site-footer-two__social-box {
+    grid-column: 2;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-self: center;
+    flex-wrap: nowrap;
+    width: auto;
+  }
+
+  .site-footer-two__social-box-inner {
+    flex-wrap: nowrap;
+  }
+
+  .site-footer-two__bottom {
+    padding-bottom: 1.25rem;
+  }
 }
 
 @media only screen and (max-width: 767px) {
-  .site-footer-two__bottom-inner {
-    gap: 0.75rem 0.5rem;
-  }
-
   .site-footer-two__copyright-text {
     font-size: 0.82rem;
-    line-height: 1.45;
+    line-height: 1.5;
+    max-width: 22rem;
+    margin-inline: auto;
   }
 
   .site-footer-two__social-title {
     font-size: 1rem;
     line-height: 1.2;
+    margin: 0;
   }
 
   .site-footer-two__social-box-inner a {
