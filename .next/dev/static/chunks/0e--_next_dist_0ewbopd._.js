@@ -2930,11 +2930,10 @@ const configEnv = ("TURBOPACK compile-time value", {
         ("TURBOPACK compile-time value", 828),
         ("TURBOPACK compile-time value", 1080),
         ("TURBOPACK compile-time value", 1200),
-        ("TURBOPACK compile-time value", 1920),
-        ("TURBOPACK compile-time value", 2048),
-        ("TURBOPACK compile-time value", 3840)
+        ("TURBOPACK compile-time value", 1920)
     ]),
     "imageSizes": ("TURBOPACK compile-time value", [
+        ("TURBOPACK compile-time value", 16),
         ("TURBOPACK compile-time value", 32),
         ("TURBOPACK compile-time value", 48),
         ("TURBOPACK compile-time value", 64),

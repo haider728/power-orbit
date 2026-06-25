@@ -134,9 +134,9 @@ export default function CardDetailModal({ card, onClose }: CardDetailModalProps)
                 src={publicImagePath(card.src)}
                 alt=""
                 fill
-                sizes="320px"
+                sizes="(max-width: 900px) 100vw, 400px"
                 className={styles.modalHeroImg}
-                unoptimized
+                loading="lazy"
               />
             </div>
             <div className={styles.modalHeroContent}>

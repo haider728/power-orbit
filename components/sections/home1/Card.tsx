@@ -117,7 +117,7 @@ export default function Card({
                                 fill
                                 sizes="(max-width: 991px) 100vw, 60vw"
                                 className={styles.image}
-                                unoptimized
+                                loading={index === 0 ? "eager" : "lazy"}
                             />
                         </motion.div>
                     </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
+import SiteLogo from "@/components/elements/SiteLogo";
 import LanguageToggle from "../LanguageToggle";
 import MobileMenu from "../MobileMenu";
 import Menu from "../Menu";
@@ -55,7 +55,7 @@ export default function Header1({ scroll, handleMobileMenu, handleSidebar }: Hea
                 <div className="main-menu-two__wrapper-inner">
                     <div className="main-menu-two__left">
                         <div className="main-menu-two__logo">
-                            <Link href="/"><Image src="/assets/images/resources/logo-1.gif" alt="Power Orbit" width={186} height={36} priority unoptimized /></Link>
+                            <Link href="/"><SiteLogo width={186} height={36} priority /></Link>
                         </div>
                     </div>
                     <div className="main-menu-two__main-menu-box">
@@ -83,7 +83,7 @@ export default function Header1({ scroll, handleMobileMenu, handleSidebar }: Hea
                 <div className="main-menu-two__wrapper-inner">
                     <div className="main-menu-two__left">
                         <div className="main-menu-two__logo">
-                            <Link href="/"><Image src="/assets/images/resources/logo-1.gif" alt="Power Orbit" width={186} height={36} priority unoptimized /></Link>
+                            <Link href="/"><SiteLogo width={186} height={36} priority /></Link>
                         </div>
                     </div>
                     <div className="main-menu-two__main-menu-box">

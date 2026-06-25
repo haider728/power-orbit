@@ -12,7 +12,14 @@ export default function Choose() {
     <>
         <section className="why-choose-one" id="choose">
             <div className="why-choose-one__shape-3 float-bob-y">
-                <Image src="/assets/images/shapes/why-choose-one-shape-3.png" alt="Shape" width={1022} height={751} priority />
+                <Image
+                  src="/assets/images/shapes/why-choose-one-shape-3.png"
+                  alt=""
+                  width={1022}
+                  height={751}
+                  loading="lazy"
+                  aria-hidden
+                />
             </div>
             <div className="container">
                 <div className="row">
@@ -76,12 +83,13 @@ export default function Choose() {
                         <div className="why-choose-one__right wow slideInRight" data-wow-duration="1.2s" data-wow-delay="0.4s">
                             <div className="why-choose-one__img why-choose-one__img-card">
                                 <Image
-                                    src="/images/choose.png"
+                                    src="/images/choose.webp"
                                     alt="Fleet operations dashboard and compliance monitoring"
                                     width={670}
                                     height={470}
                                     className="why-choose-one__img-relatable"
-                                    priority
+                                    loading="lazy"
+                                    sizes="(max-width: 991px) 100vw, 670px"
                                 />
                             </div>
                         </div>

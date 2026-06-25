@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import SiteLogo from "@/components/elements/SiteLogo";
 
 type SidebarPopupProps = {
   isOpen: boolean;
@@ -21,7 +21,7 @@ const SidebarPopup: React.FC<SidebarPopupProps> = ({ isOpen, onClose }) => {
                         <div className="content-inner">
                             <div className="logo">
                                 <Link href="/">
-                                  <Image src="/assets/images/resources/logo-1.gif" alt="Power Orbit" width={150} height={32} unoptimized />
+                                  <SiteLogo width={150} height={32} />
                                 </Link>
                             </div>
                             <div className="content-box">

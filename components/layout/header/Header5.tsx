@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import SiteLogo from "@/components/elements/SiteLogo";
 import OnepageMobileMenu_Three from "../OnepageMobileMenu_Three";
 import OnepageMenu_Three from "../OnepageMenu_Three";
 
@@ -65,7 +65,7 @@ export default function Header5({ scroll, handleMobileMenu }: Header5Props) {
                     <div className="main-menu__wrapper-inner">
                         <div className="main-menu__left">
                             <div className="main-menu__logo">
-                                <Link href="/"><Image src="/assets/images/resources/logo-1.gif" alt="Power Orbit" width={186} height={36} priority unoptimized /></Link>
+                                <Link href="/"><SiteLogo width={186} height={36} priority /></Link>
                             </div>
                         </div>
                         <div className="main-menu__main-menu-box">
@@ -91,7 +91,7 @@ export default function Header5({ scroll, handleMobileMenu }: Header5Props) {
                     <div className="main-menu__wrapper-inner">
                         <div className="main-menu__left">
                             <div className="main-menu__logo">
-                                <Link href="/"><Image src="/assets/images/resources/logo-1.gif" alt="Power Orbit" width={186} height={36} priority unoptimized /></Link>
+                                <Link href="/"><SiteLogo width={186} height={36} priority /></Link>
                             </div>
                         </div>
                         <div className="main-menu__main-menu-box">

@@ -3,7 +3,7 @@ import type { ProjectCard } from "./cards";
 
 const shared = {
   eagle: {
-    src: "eagl.png",
+    src: "eagl.webp",
     color: "#1A1D38",
     url: "https://www.ignant.com/2023/03/25/ad2186-matthias-leidingers-photographic-exploration-of-awe-and-wonder/",
     storeLinks: {
@@ -13,7 +13,7 @@ const shared = {
     },
   },
   smartSense: {
-    src: "smart sense.png",
+    src: "smart-sense.webp",
     color: "#23214A",
     url: "https://www.ignant.com/2022/09/30/clement-chapillon-questions-geographical-and-mental-isolation-with-les-rochers-fauves/",
     storeLinks: {
@@ -24,7 +24,7 @@ const shared = {
     },
   },
   apps: {
-    src: "apps.png",
+    src: "apps.webp",
     color: "#2D2B5A",
     url: "https://www.ignant.com/2023/10/28/capturing-balis-many-faces-zissou-documents-the-sacred-and-the-mundane-of-a-fragile-island/",
     storeLinks: {

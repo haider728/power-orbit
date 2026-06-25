@@ -7,6 +7,7 @@ import Image from "next/image";
 import AnimatedTitle from "@/components/elements/AnimatedTitle";
 import { useLanguage } from "@/components/providers/LanguageProvider";
 import { translations } from "@/lib/i18n/translations";
+import "@/lib/swiper-styles";
 
 const swiperOptions = {
   modules: [Autoplay, Pagination, Navigation],
@@ -70,13 +71,13 @@ export default function Team() {
                         <div className="team-two__img-box">
                           <div className="team-two__img">
                             <Link href={item.href} aria-label={item.title}>
-                              <Image
-                                src={item.image}
-                                alt={item.title}
-                                width={410}
-                                height={450}
-                                priority
-                              />
+                            <Image
+                              src={item.image}
+                              alt={item.title}
+                              width={410}
+                              height={450}
+                              loading="lazy"
+                            />
                             </Link>
                           </div>
                           <div

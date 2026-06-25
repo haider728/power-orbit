@@ -17,9 +17,7 @@
 @import url('animate.min.css');
 @import url('custom-animate.css');
 @import url('flaticon.css');
-@import url('font-awesome-all.css');
-@import url('jarallax.css');
-@import url('twentytwenty.css');
+/* font-awesome-all.css loads after idle via DeferredFontAwesome */
 @import url('module-css/about.css');
 @import url('module-css/banner.css');
 @import url('module-css/blog.css');

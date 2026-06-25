@@ -914,4 +914,22 @@ html[dir="rtl"] .sliding-text-three .animate-marquee {
   }
 }
 
+#about, #choose, #blog, .team-two, .portfolio-two, .process-one, #ecosystem {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 720px;
+}
+
+.mobile-nav__toggler-icon, .mobile-nav__close-icon, .mobile-nav__contact-icon {
+  flex-shrink: 0;
+  width: 1.15em;
+  height: 1.15em;
+  display: block;
+}
+
+.site-footer-two__social-icon-instagram {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
 /*# sourceMappingURL=power-orbit_app_theme-overrides_css_0w3-wzy._.single.css.map*/

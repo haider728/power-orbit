@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
+import SiteLogo from "@/components/elements/SiteLogo";
 import { usePathname } from "next/navigation";
 
 type MobileMenuProps = {
@@ -42,14 +42,7 @@ export default function MobileMenu({ isSidebar, handleMobileMenu }: MobileMenuPr
           {/* Logo */}
           <div className="logo-box">
             <Link href="/" aria-label="logo image" onClick={handleMobileMenu}>
-              <Image
-                src="/assets/images/resources/logo-1.gif"
-                alt="Power Orbit"
-                width={150}
-                height={32}
-                priority
-                unoptimized
-              />
+              <SiteLogo width={150} height={32} priority />
             </Link>
           </div>
 

@@ -23,8 +23,8 @@ export default function BlogCoverImage({
         height={0}
         sizes={sizes}
         className={styles.image}
-        unoptimized
         priority={priority}
+        loading={priority ? undefined : "lazy"}
         style={{ width: "100%", height: "auto" }}
       />
     </div>

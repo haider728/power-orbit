@@ -11,6 +11,7 @@ import { translations } from "@/lib/i18n/translations";
 import blogStyles from "@/components/sections/home1/blog-carousel.module.css";
 import BlogCoverImage from "@/components/sections/home1/BlogCoverImage";
 import styles from "@/components/sections/home1/portfolio-industries.module.css";
+import "@/lib/swiper-styles";
 
 const desktopSwiperOptions = {
   modules: [Autoplay, Pagination, Navigation],

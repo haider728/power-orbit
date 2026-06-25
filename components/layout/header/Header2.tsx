@@ -1,11 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import LanguageToggle from "../LanguageToggle";
 import OnepageMobileMenu_One from "../OnepageMobileMenu_One";
 import OnepageMenu_One from "../OnepageMenu_One";
 import { useLanguage } from "@/components/providers/LanguageProvider";
+import SiteLogo from "@/components/elements/SiteLogo";
+import { BarsIcon } from "@/components/elements/icons";
 
 // ✅ Define props type
 type Header2Props = {
@@ -60,11 +61,11 @@ export default function Header2({ scroll, handleMobileMenu, handleSidebar }: Hea
                 <div className="main-menu-two__wrapper-inner">
                     <div className="main-menu-two__left">
                         <div className="main-menu-two__logo">
-                            <Link href="/"><Image src="/assets/images/resources/logo-1.gif" alt="Power Orbit" width={280} height={54} priority unoptimized className="site-logo" /></Link>
+                            <Link href="/"><SiteLogo priority /></Link>
                         </div>
                     </div>
                     <div className="main-menu-two__main-menu-box">
-                        <Link href="#" className="mobile-nav__toggler" onClick={handleMobileMenu}><i className="fa fa-bars"></i></Link>
+                        <Link href="#" className="mobile-nav__toggler" onClick={handleMobileMenu} aria-label="Open menu"><BarsIcon className="mobile-nav__toggler-icon" /></Link>
                         <OnepageMenu_One/>
                     </div>
                     <div className="main-menu-two__right">
@@ -94,11 +95,11 @@ export default function Header2({ scroll, handleMobileMenu, handleSidebar }: Hea
                 <div className="main-menu-two__wrapper-inner">
                     <div className="main-menu-two__left">
                         <div className="main-menu-two__logo">
-                            <Link href="/"><Image src="/assets/images/resources/logo-1.gif" alt="Power Orbit" width={280} height={54} priority unoptimized className="site-logo" /></Link>
+                            <Link href="/"><SiteLogo priority /></Link>
                         </div>
                     </div>
                     <div className="main-menu-two__main-menu-box">
-                        <Link href="#" className="mobile-nav__toggler" onClick={handleMobileMenu}><i className="fa fa-bars"></i></Link>
+                        <Link href="#" className="mobile-nav__toggler" onClick={handleMobileMenu} aria-label="Open menu"><BarsIcon className="mobile-nav__toggler-icon" /></Link>
                         <OnepageMenu_One/>
                     </div>
                     <div className="main-menu-two__right">

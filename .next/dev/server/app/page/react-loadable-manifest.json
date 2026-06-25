@@ -1,1 +1,24 @@
-{}
+{
+  "[project]/power-orbit/components/elements/SmoothScroll.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/power-orbit/components/elements/SmoothScroll.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/power-orbit_1369b74._.js",
+      "static/chunks/power-orbit_components_elements_SmoothScroll_tsx_0e10uwm._.js"
+    ]
+  },
+  "[project]/power-orbit/components/elements/CustomCursor.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/power-orbit/components/elements/CustomCursor.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/power-orbit_components_elements_CustomCursor_tsx_0g.yjir._.js",
+      "static/chunks/power-orbit_components_elements_CustomCursor_tsx_0e10uwm._.js"
+    ]
+  },
+  "[project]/power-orbit/components/sections/home1/StackedScrollCards.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/power-orbit/components/sections/home1/StackedScrollCards.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/0e--_0f99d74._.js",
+      "static/chunks/power-orbit_0pt4mba._.js",
+      "static/chunks/power-orbit_components_sections_home1_StackedScrollCards_tsx_0c5xye-._.js"
+    ]
+  }
+}

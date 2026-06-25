@@ -1,38 +1,48 @@
+import dynamic from "next/dynamic";
 import Layout from "@/components/layout/Layout";
-import About from "@/components/sections/home1/About";
 import Banner from "@/components/sections/home1/Banner";
-import Blog from "@/components/sections/home1/Blog";
-import Choose from "@/components/sections/home1/Choose";
-import LogoCarouselSection from "@/components/sections/home1/LogoCarouselSection";
-import Portfolio from "@/components/sections/home1/Portfolio";
-import Process from "@/components/sections/home1/Process";
-import SlideingText from "@/components/sections/home1/SlideingText";
-import StackedScrollCards from "@/components/sections/home1/StackedScrollCards";
-import Team from "@/components/sections/InnerSection/Team";
-import Newsletter from "@/components/sections/home1/Newsletter";
+import { fetchAvlBlogList } from "@/lib/avlBlogsServer";
+import type { AvlBlogListItem } from "@/lib/avlBlogs";
 
-export default function Home_OnePage() {
-    return (
-        <Layout headerStyle={2} footerStyle={1}>
-            <Banner/>
-            <SlideingText/>
-            
-            <About/>
-            
-            <StackedScrollCards/>
-            <LogoCarouselSection/>
+const SlideingText = dynamic(() => import("@/components/sections/home1/SlideingText"));
+const About = dynamic(() => import("@/components/sections/home1/About"));
+const StackedScrollCards = dynamic(
+  () => import("@/components/sections/home1/StackedScrollCardsLazy"),
+);
+const LogoCarouselSection = dynamic(
+  () => import("@/components/sections/home1/LogoCarouselSection"),
+);
+const Choose = dynamic(() => import("@/components/sections/home1/Choose"));
+const Team = dynamic(() => import("@/components/sections/InnerSection/Team"));
+const Process = dynamic(() => import("@/components/sections/home1/Process"));
+const Portfolio = dynamic(() => import("@/components/sections/home1/Portfolio"));
+const Blog = dynamic(() => import("@/components/sections/home1/Blog"));
 
-            <Choose/>
+export default async function Home_OnePage() {
+  let initialBlogsByLocale: Partial<Record<"en" | "ar", AvlBlogListItem[]>> = {};
 
-          
-            <Team/>
+  try {
+    const [en, ar] = await Promise.all([
+      fetchAvlBlogList("en", 12),
+      fetchAvlBlogList("ar", 12),
+    ]);
+    initialBlogsByLocale = { en, ar };
+  } catch {
+    /* Blog client will fetch via API */
+  }
 
-            <Process/>
-
-            <Portfolio/>
-            <Blog/>
-            {/* <Newsletter/> */}
-
-        </Layout>
-    );
+  return (
+    <Layout headerStyle={2} footerStyle={1}>
+      <Banner />
+      <SlideingText />
+      <About />
+      <StackedScrollCards />
+      <LogoCarouselSection />
+      <Choose />
+      <Team />
+      <Process />
+      <Portfolio />
+      <Blog initialBlogsByLocale={initialBlogsByLocale} />
+    </Layout>
+  );
 }

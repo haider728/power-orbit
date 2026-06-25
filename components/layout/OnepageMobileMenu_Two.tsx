@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
+import SiteLogo from "@/components/elements/SiteLogo";
 import { ONEPAGE_NAV_TWO_SECTIONS } from "@/data/onepageNav";
 
 const sections = [...ONEPAGE_NAV_TWO_SECTIONS];
@@ -45,14 +45,7 @@ export default function OnepageMobileMenu_Two({ isSidebar, handleMobileMenu }: O
         {/* Logo */}
         <div className="logo-box">
           <Link href="/" onClick={handleMobileMenu} aria-label="logo image">
-            <Image
-              src="/assets/images/resources/logo-1.gif"
-              alt="Power Orbit"
-              width={150}
-              height={32}
-              priority
-              unoptimized
-            />
+            <SiteLogo width={150} height={32} priority />
           </Link>
         </div>
 

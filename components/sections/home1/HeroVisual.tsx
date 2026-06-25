@@ -9,6 +9,7 @@ type HeroVisualProps = {
   badges?: readonly string[];
   stats?: readonly Stat[];
   highlights?: readonly string[];
+  priority?: boolean;
 };
 
 export default function HeroVisual({
@@ -17,6 +18,7 @@ export default function HeroVisual({
   badges,
   stats,
   highlights,
+  priority = false,
 }: HeroVisualProps) {
   return (
     <div className={styles.visual}>
@@ -28,8 +30,9 @@ export default function HeroVisual({
           width={480}
           height={480}
           className={styles.visualImg}
-          priority
-          unoptimized
+          priority={priority}
+          fetchPriority={priority ? "high" : "auto"}
+          sizes="(max-width: 991px) 85vw, 480px"
         />
       </div>
 

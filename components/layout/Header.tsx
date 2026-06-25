@@ -26,7 +26,7 @@ export default function Header({ style = 1 }: HeaderProps) {
   // Scroll detection
   useEffect(() => {
     const onScroll = () => setIsScrolled(window.scrollY > 100);
-    window.addEventListener("scroll", onScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 

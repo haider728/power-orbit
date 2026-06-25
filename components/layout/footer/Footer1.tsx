@@ -4,8 +4,10 @@ import Link from "next/link";
 import Image from "next/image";
 import SectionScrollLink from "@/components/layout/SectionScrollLink";
 import XIcon from "@/components/elements/XIcon";
+import { InstagramIcon } from "@/components/elements/icons";
 import { avlBlogUrl } from "@/lib/avlUrls";
 import { useLanguage } from "@/components/providers/LanguageProvider";
+import { SITE_FOOTER_LOGO_SRC } from "@/lib/site-assets";
 
 export default function Footer1() {
   const { t, isArabic, locale } = useLanguage();
@@ -24,12 +26,11 @@ export default function Footer1() {
                 <div className="site-footer-two__logo">
                   <SectionScrollLink sectionId="#home">
                     <Image
-                      src="/assets/images/resources/footer-logo.gif"
+                      src={SITE_FOOTER_LOGO_SRC}
                       alt="Power Orbit"
                       width={320}
                       height={62}
-                      priority
-                      unoptimized
+                      loading="lazy"
                       className="site-logo"
                     />
                   </SectionScrollLink>
@@ -171,7 +172,7 @@ export default function Footer1() {
                       rel="noopener noreferrer"
                       aria-label="Instagram"
                     >
-                      <span className="fab fa-instagram"></span>
+                      <InstagramIcon className="site-footer-two__social-icon-instagram" />
                     </Link>
                     <Link
                       href="https://x.com/power_orbit_"

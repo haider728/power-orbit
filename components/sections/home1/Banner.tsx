@@ -8,6 +8,7 @@ import { translations } from "@/lib/i18n/translations";
 import HeroVisual from "@/components/sections/home1/HeroVisual";
 import styles from "@/components/sections/home1/banner.module.css";
 import { HERO_SLIDE_IMAGES } from "@/data/heroSlides";
+import "@/lib/swiper-styles";
 
 const swiperOptions = {
   modules: [Autoplay, Navigation, EffectFade],
@@ -75,6 +76,7 @@ export default function Banner() {
                     imageAlt={HERO_SLIDE_IMAGES[0].alt}
                     badges={banner.badges}
                     stats={banner.stats}
+                    priority
                   />
                 </div>
               </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useLanguage } from "@/components/providers/LanguageProvider";
+import { WhatsAppIcon } from "@/components/elements/icons";
 import styles from "@/components/layout/whatsapp-float.module.css";
 
 const WHATSAPP_NUMBER = "966533085658";
@@ -18,7 +19,7 @@ export default function WhatsAppFloat() {
       aria-label={t("whatsapp.label")}
       title={t("whatsapp.label")}
     >
-      <i className="fab fa-whatsapp" aria-hidden="true" />
+      <WhatsAppIcon className={styles.whatsappIcon} aria-hidden="true" />
     </a>
   );
 }

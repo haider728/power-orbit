@@ -2,7 +2,12 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
+import SiteLogo from "@/components/elements/SiteLogo";
+import {
+  TimesIcon,
+  EnvelopeIcon,
+  PhoneIcon,
+} from "@/components/elements/icons";
 import { useLanguage } from "@/components/providers/LanguageProvider";
 import LanguageToggle from "@/components/layout/LanguageToggle";
 import { getOnepageNavOne } from "@/data/onepageNav";
@@ -43,21 +48,13 @@ export default function OnepageMobileMenu_One({ isSidebar, handleMobileMenu }: O
           className="mobile-nav__close mobile-nav__toggler"
           onClick={handleMobileMenu}
         >
-          <i className="fa fa-times"></i>
+          <TimesIcon className="mobile-nav__close-icon" />
         </span>
 
         {/* Logo */}
         <div className="logo-box">
           <Link href="/" onClick={handleMobileMenu} aria-label="logo image">
-            <Image
-              src="/assets/images/resources/logo-1.gif"
-              alt="Power Orbit"
-              width={260}
-              height={50}
-              priority
-              unoptimized
-              className="site-logo"
-            />
+            <SiteLogo priority width={260} height={50} />
           </Link>
         </div>
 
@@ -104,11 +101,11 @@ export default function OnepageMobileMenu_One({ isSidebar, handleMobileMenu }: O
         {/* Contact Info */}
         <ul className="mobile-nav__contact list-unstyled">
           <li>
-            <i className="fa fa-envelope"></i>
+            <EnvelopeIcon className="mobile-nav__contact-icon" />
             <Link href="mailto:info@eagle-iot.com">info@eagle-iot.com</Link>
           </li>
           <li>
-            <i className="fas fa-phone"></i>
+            <PhoneIcon className="mobile-nav__contact-icon" />
             <Link href="tel:+966533085658" dir="ltr">+966 53 308 5658</Link>
           </li>
         </ul>

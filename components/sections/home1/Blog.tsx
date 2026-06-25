@@ -11,6 +11,7 @@ import { translations } from "@/lib/i18n/translations";
 import type { AvlBlogListItem } from "@/lib/avlBlogs";
 import BlogCoverImage from "@/components/sections/home1/BlogCoverImage";
 import styles from "@/components/sections/home1/blog-carousel.module.css";
+import "@/lib/swiper-styles";
 
 const EXCERPT_LENGTH = 160;
 const FALLBACK_IMAGE = "/assets/images/blog/blog-2-1.jpg";
@@ -68,15 +69,20 @@ function BlogCard({
   );
 }
 
-export default function Blog() {
+export default function Blog({
+  initialBlogsByLocale,
+}: {
+  initialBlogsByLocale?: Partial<Record<"en" | "ar", AvlBlogListItem[]>>;
+}) {
   const { locale, t } = useLanguage();
   const blogCopy = translations[locale].home.blog;
   const navId = useId().replace(/:/g, "");
   const prevClass = `blog-carousel-prev-${navId}`;
   const nextClass = `blog-carousel-next-${navId}`;
 
-  const [blogs, setBlogs] = useState<AvlBlogListItem[]>([]);
-  const [loading, setLoading] = useState(true);
+  const seeded = initialBlogsByLocale?.[locale] ?? [];
+  const [blogs, setBlogs] = useState<AvlBlogListItem[]>(seeded);
+  const [loading, setLoading] = useState(seeded.length === 0);
   const [selectedBlog, setSelectedBlog] = useState<AvlBlogListItem | null>(null);
   const [detailContent, setDetailContent] = useState<string>("");
   const [detailLoading, setDetailLoading] = useState(false);
@@ -87,6 +93,13 @@ export default function Blog() {
   }, []);
 
   useEffect(() => {
+    const cached = initialBlogsByLocale?.[locale];
+    if (cached && cached.length > 0) {
+      setBlogs(cached);
+      setLoading(false);
+      return;
+    }
+
     const fetchBlogs = async () => {
       setLoading(true);
       try {
@@ -116,7 +129,7 @@ export default function Blog() {
       }
     };
     fetchBlogs();
-  }, [locale]);
+  }, [locale, initialBlogsByLocale]);
 
   useEffect(() => {
     if (!selectedBlog) return;
@@ -274,8 +287,6 @@ export default function Blog() {
                   height={0}
                   sizes="(max-width: 900px) 100vw, 900px"
                   className="blog-inline-detail__img"
-                  priority
-                  unoptimized
                   style={{ width: "100%", height: "auto" }}
                 />
               </div>
