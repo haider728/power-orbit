@@ -10,6 +10,7 @@ type HeroVisualProps = {
   stats?: readonly Stat[];
   highlights?: readonly string[];
   priority?: boolean;
+  lazy?: boolean;
 };
 
 export default function HeroVisual({
@@ -19,6 +20,7 @@ export default function HeroVisual({
   stats,
   highlights,
   priority = false,
+  lazy = false,
 }: HeroVisualProps) {
   return (
     <div className={styles.visual}>
@@ -32,7 +34,8 @@ export default function HeroVisual({
           className={styles.visualImg}
           priority={priority}
           fetchPriority={priority ? "high" : "auto"}
-          sizes="(max-width: 991px) 85vw, 480px"
+          loading={lazy ? "lazy" : priority ? "eager" : undefined}
+          sizes="(max-width: 767px) 300px, (max-width: 991px) 85vw, 480px"
         />
       </div>
 

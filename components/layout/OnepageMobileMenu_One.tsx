@@ -54,7 +54,7 @@ export default function OnepageMobileMenu_One({ isSidebar, handleMobileMenu }: O
         {/* Logo */}
         <div className="logo-box">
           <Link href="/" onClick={handleMobileMenu} aria-label="logo image">
-            <SiteLogo priority width={260} height={50} />
+            <SiteLogo width={260} height={50} />
           </Link>
         </div>
 

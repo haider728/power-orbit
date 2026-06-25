@@ -75,6 +75,7 @@ export default function About() {
                 className="thm-btn"
                 target="_blank"
                 rel="noopener noreferrer"
+                prefetch={false}
               >
                 {t("home.about.companyProfile")}
               </Link>

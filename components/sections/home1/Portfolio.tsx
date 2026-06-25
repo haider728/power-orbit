@@ -3,8 +3,8 @@
 import { useId, useMemo, useState } from "react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Image from "next/image";
 import Link from "next/link";
+import PortfolioDecorShape from "@/components/sections/home1/PortfolioDecorShape";
 import AnimatedTitle from "@/components/elements/AnimatedTitle";
 import { useLanguage } from "@/components/providers/LanguageProvider";
 import { translations } from "@/lib/i18n/translations";
@@ -129,13 +129,7 @@ export default function Portfolio() {
   return (
     <section className="portfolio-two" id="portfolio">
       <div className="portfolio-two__shape-1 float-bob-y">
-        <Image
-          src="/assets/images/shapes/portfolio-two-shape-1.png"
-          alt=""
-          width={783}
-          height={1104}
-          priority
-        />
+        <PortfolioDecorShape />
       </div>
       <div className="portfolio-two__shape-2"></div>
       <div className="portfolio-two__shape-3"></div>

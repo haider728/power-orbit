@@ -191,4 +191,8 @@
   .visualFrame {
     max-width: 300px;
   }
+
+  .visualCol {
+    min-height: 320px;
+  }
 }

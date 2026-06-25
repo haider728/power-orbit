@@ -1,8 +1,10 @@
 import dynamic from "next/dynamic";
+import { preload } from "react-dom";
 import Layout from "@/components/layout/Layout";
 import Banner from "@/components/sections/home1/Banner";
 import { fetchAvlBlogList } from "@/lib/avlBlogsServer";
 import type { AvlBlogListItem } from "@/lib/avlBlogs";
+import { HERO_SLIDE_IMAGES } from "@/data/heroSlides";
 
 const SlideingText = dynamic(() => import("@/components/sections/home1/SlideingText"));
 const About = dynamic(() => import("@/components/sections/home1/About"));
@@ -19,6 +21,8 @@ const Portfolio = dynamic(() => import("@/components/sections/home1/Portfolio"))
 const Blog = dynamic(() => import("@/components/sections/home1/Blog"));
 
 export default async function Home_OnePage() {
+  preload(HERO_SLIDE_IMAGES[0].src, { as: "image", fetchPriority: "high" });
+
   let initialBlogsByLocale: Partial<Record<"en" | "ar", AvlBlogListItem[]>> = {};
 
   try {

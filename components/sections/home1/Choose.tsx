@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import AnimatedTitle from "@/components/elements/AnimatedTitle";
+import ChooseDecorShape from "@/components/sections/home1/ChooseDecorShape";
 import { useLanguage } from "@/components/providers/LanguageProvider";
 
 export default function Choose() {
@@ -12,14 +13,7 @@ export default function Choose() {
     <>
         <section className="why-choose-one" id="choose">
             <div className="why-choose-one__shape-3 float-bob-y">
-                <Image
-                  src="/assets/images/shapes/why-choose-one-shape-3.png"
-                  alt=""
-                  width={1022}
-                  height={751}
-                  loading="lazy"
-                  aria-hidden
-                />
+                <ChooseDecorShape />
             </div>
             <div className="container">
                 <div className="row">

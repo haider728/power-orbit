@@ -31,6 +31,7 @@ export default function Footer1() {
                       width={320}
                       height={62}
                       loading="lazy"
+                      unoptimized
                       className="site-logo"
                     />
                   </SectionScrollLink>

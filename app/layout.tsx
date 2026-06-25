@@ -11,6 +11,8 @@ import "@/app/rtl.css";
 import LanguageProvider from "@/components/providers/LanguageProvider";
 import ClientEnhancements from "@/components/performance/ClientEnhancements";
 import DeferredFontAwesome from "@/components/performance/DeferredFontAwesome";
+import DeferredThemeModules from "@/components/performance/DeferredThemeModules";
+import { SITE_LOGO_POSTER_SRC } from "@/lib/site-assets";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -54,6 +56,13 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://avl-ksa.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://avl-ksa.com" />
+        <link
+          rel="preload"
+          as="image"
+          href={SITE_LOGO_POSTER_SRC}
+          type="image/webp"
+          fetchPriority="high"
+        />
       </head>
       <body
         className={`custom-cursor ${spaceGrotesk.className}`}
@@ -61,6 +70,7 @@ export default function RootLayout({
       >
         <LanguageProvider>
           <DeferredFontAwesome />
+          <DeferredThemeModules />
           <ClientEnhancements />
           <div className={marcellus.className} />
           {children}

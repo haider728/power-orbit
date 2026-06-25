@@ -14,8 +14,9 @@ const jobs = [
   {
     input: "assets/images/resources/logo-1.gif",
     outputs: [
-      { file: "assets/images/resources/logo-1.webp", width: 560 },
-      { file: "assets/images/resources/logo-1.png", width: 560 },
+      { file: "assets/images/resources/logo-1-poster.webp", width: 560, page: 10 },
+      { file: "assets/images/resources/logo-1.webp", width: 560, page: 10 },
+      { file: "assets/images/resources/logo-1.png", width: 560, page: 10 },
     ],
   },
   {
@@ -50,7 +51,10 @@ async function run() {
 
     for (const out of job.outputs) {
       const outputPath = path.join(root, out.file);
-      const pipeline = sharp(inputPath).resize({ width: out.width, withoutEnlargement: true });
+      const pipeline = sharp(inputPath, out.page != null ? { page: out.page } : undefined).resize({
+        width: out.width,
+        withoutEnlargement: true,
+      });
 
       if (out.file.endsWith(".webp")) {
         await pipeline.webp({ quality: 82 }).toFile(outputPath);
