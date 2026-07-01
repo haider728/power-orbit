@@ -12,7 +12,7 @@ import LanguageProvider from "@/components/providers/LanguageProvider";
 import ClientEnhancements from "@/components/performance/ClientEnhancements";
 import DeferredFontAwesome from "@/components/performance/DeferredFontAwesome";
 import DeferredThemeModules from "@/components/performance/DeferredThemeModules";
-import { SITE_LOGO_POSTER_SRC } from "@/lib/site-assets";
+import { SITE_LOGO_ANIMATED_SRC } from "@/lib/site-assets";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -59,8 +59,8 @@ export default function RootLayout({
         <link
           rel="preload"
           as="image"
-          href={SITE_LOGO_POSTER_SRC}
-          type="image/webp"
+          href={SITE_LOGO_ANIMATED_SRC}
+          type="image/gif"
           fetchPriority="high"
         />
       </head>

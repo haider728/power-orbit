@@ -20,10 +20,14 @@ export default function SiteLogo({
   priority = false,
   className = "site-logo",
 }: SiteLogoProps) {
-  const [src, setSrc] = useState(SITE_LOGO_POSTER_SRC);
-  const [isAnimated, setIsAnimated] = useState(false);
+  const [src, setSrc] = useState(
+    priority ? SITE_LOGO_ANIMATED_SRC : SITE_LOGO_POSTER_SRC,
+  );
+  const [isAnimated, setIsAnimated] = useState(priority);
 
   useEffect(() => {
+    if (priority) return;
+
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
     const loadAnimated = () => {
@@ -51,7 +55,7 @@ export default function SiteLogo({
 
     const timer = setTimeout(loadAnimated, 2000);
     return () => clearTimeout(timer);
-  }, []);
+  }, [priority]);
 
   return (
     <Image

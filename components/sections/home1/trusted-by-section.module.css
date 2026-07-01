@@ -1,0 +1,147 @@
+.section {
+  position: relative;
+  padding: clamp(4rem, 8vw, 6.5rem) 0;
+  background: transparent;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(2.5rem, 5vw, 4rem);
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .grid {
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+    gap: clamp(2rem, 4vw, 4rem);
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 560px;
+}
+
+:global([dir="rtl"]) .content {
+  margin-inline-start: auto;
+}
+
+.label {
+  display: inline-block;
+  margin: 0 0 1rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(143, 130, 255, 0.92);
+}
+
+:global([dir="rtl"]) .label {
+  letter-spacing: 0.04em;
+  text-transform: none;
+}
+
+.heading {
+  margin: 0 0 clamp(1rem, 2.5vw, 1.35rem);
+  font-size: clamp(2rem, 4.2vw, 2.85rem);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+  color: #fff;
+}
+
+.description {
+  margin: 0 0 clamp(1.5rem, 3vw, 2rem);
+  max-width: 52ch;
+  font-size: clamp(1rem, 1.8vw, 1.125rem);
+  line-height: 1.7;
+  color: rgba(244, 246, 255, 0.72);
+}
+
+.cta {
+  align-self: flex-start;
+}
+
+:global([dir="rtl"]) .cta {
+  align-self: flex-end;
+}
+
+.logoPanel {
+  width: 100%;
+  min-width: 0;
+}
+
+.logoRow {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(0.65rem, 1.8vw, 1.15rem);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.logoCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: clamp(96px, 14vw, 128px);
+  padding: clamp(1.25rem, 2.5vw, 2rem);
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(15, 23, 42, 0.06);
+  transition:
+    transform 300ms ease,
+    box-shadow 300ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .logoCard:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
+  }
+}
+
+.logo {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: clamp(44px, 6vw, 66px);
+  object-fit: contain;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 650ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 650ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.revealVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .logoCard {
+    padding: 1rem 0.85rem;
+    min-height: 88px;
+  }
+
+  .logo {
+    max-height: 44px;
+  }
+}

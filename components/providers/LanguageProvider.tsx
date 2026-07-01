@@ -15,7 +15,7 @@ import {
   isLocale,
   localeDirection,
 } from "@/lib/i18n/config";
-import { t as translate } from "@/lib/i18n/translations";
+import { translations, t as translate } from "@/lib/i18n/translations";
 
 type LanguageContextValue = {
   locale: Locale;
@@ -46,11 +46,25 @@ function persistLocale(locale: Locale) {
   localStorage.setItem(LOCALE_COOKIE, locale);
 }
 
+function applyDocumentSeo(locale: Locale) {
+  const { title, description } = translations[locale].seo;
+  document.title = title;
+
+  let meta = document.querySelector<HTMLMetaElement>('meta[name="description"]');
+  if (!meta) {
+    meta = document.createElement("meta");
+    meta.name = "description";
+    document.head.appendChild(meta);
+  }
+  meta.content = description;
+}
+
 function applyDocumentLocale(locale: Locale) {
   const dir = localeDirection(locale);
   document.documentElement.lang = locale;
   document.documentElement.dir = dir;
   document.body.classList.toggle("locale-ar", locale === "ar");
+  applyDocumentSeo(locale);
 
   // Carousels (Swiper, react-multi-carousel) need a resize pass after dir change.
   requestAnimationFrame(() => {

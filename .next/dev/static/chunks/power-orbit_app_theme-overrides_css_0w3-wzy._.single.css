@@ -25,9 +25,13 @@ html, body {
   overflow: visible !important;
 }
 
-.about-two, .banner-one, .counter-one, .why-choose-one, .sliding-text, .process-one, #process, .portfolio-one, .blog-one, .services-one, .team-one, .team-two, .team-page, .team-carousel-page, .testimonial-one, .feature-one, .pricing-one, .faq-one, .contact-one, .cta-one, .footer-one, .footer-two {
+.about-two, .banner-one, .counter-one, .why-choose-one, .sliding-text, .process-one, #process, .portfolio-one, .blog-one, .services-one, .team-one, .team-two, .team-page, .team-carousel-page, .testimonial-one, .feature-one, .pricing-one, .faq-one, .contact-one, .cta-one, .footer-one, .footer-two, .clients-partners, #trusted-by {
   background-color: #0000 !important;
   background-image: none !important;
+}
+
+#clients {
+  background: none !important;
 }
 
 .team-two:before, .team-page:before, .team-carousel-page:before {

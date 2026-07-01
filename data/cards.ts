@@ -18,12 +18,12 @@ export type ProjectCard = {
 
 export const cards: ProjectCard[] = [
   {
-    title: "Eagle-IoT | The Fleet Intelligence Hub",
+    title: "Eagle-IoT | Fleet Management & Vehicle Tracking Hub",
     description:
-      "Eagle-IoT is a TGA-approved command center for regulated fleet operations in Saudi Arabia. It combines real-time visibility, driver behavior intelligence, and automated compliance reporting in one unified platform to reduce risk and improve control.",
+      "Eagle-IoT is a TGA-approved fleet management and vehicle tracking platform for regulated operations in Saudi Arabia. It combines real-time GPS vehicle tracking, driver behavior intelligence, and automated compliance reporting...",
     fullDescription:
       "In an environment where fuel costs, driver safety, and strict regulatory standards define your bottom line, Eagle-IoT provides the answer. As a TGA-Approved Service Provider, we move beyond basic GPS to offer a comprehensive, fully compliant command center for mobile assets.\n\nThe Challenge: Eliminating fuel leakage, preventing unauthorized vehicle use, and managing the high-stakes complexity of Wasl and TGA regulatory compliance.\n\nThe Solution: A unified platform delivering real-time visibility, advanced driver behavior analytics, and automated reporting. Our status as an approved provider ensures that your data is transmitted accurately and securely to the relevant Saudi authorities.\n\nCore Capabilities:\n- TGA & Wasl Integration: Seamless, automated data sharing with the Transport General Authority.\n- Fuel & Cost Governance: Real-time monitoring designed to eliminate waste and theft.\n- Safety Intelligence: Driver behavior scoring to reduce accidents and insurance liabilities.\n\nBest for: Logistics providers, government transport authorities, and large-scale commercial fleets requiring certified solutions.",
-    src: "eagl.webp",
+    src: "Vehicle Tracking.png",
     color: "#1A1D38",
     url: "https://www.ignant.com/2023/03/25/ad2186-matthias-leidingers-photographic-exploration-of-awe-and-wonder/",
     storeLinks: {
@@ -33,11 +33,11 @@ export const cards: ProjectCard[] = [
     },
   },
   {
-    title: "SmartSense | Connected Asset Intelligence ",
+    title: "SmartSense | Cold Chain & Temperature Monitoring ",
     description:
-      "When your operational success depends on the precise condition of your assets; not just their location, SmartSense provides the eyes on the ground. This is the intelligence layer for fixed warehouses, cold storage facilities, and high-value environmental assets.",
+      "When your operational success depends on strict SFDA compliance and the precise condition of your cargo, SmartSense provides total visibility. This is the automated temperature and humidity monitoring layer engineered for fixed warehouses, cold chain logistics, and cold storage facilities across the Kingdom",
       fullDescription:
-      " When your operational success depends on the precise condition of your assets; not just their location, SmartSense provides the eyes on the ground. This is the intelligence layer for fixed warehouses, cold storage facilities, and high-value environmental assets.\n\nThe Challenge: Maintaining 100% cold chain stability, preventing costly pharmaceutical spoilage, and manually logging data to meet strict Saudi Food and Drug Authority standards\n\nThe Solution: An advanced sensor-driven ecosystem providing real-time monitoring of enviornment. SmartSense automates the data-logging process, providing the auditable digital trail required for SFDA compliance and pharmaceutical integrity. \n\nCore Capabilities: * Warehouse & Cold Storage: 24/7 monitoring of fixed storage environments. \n-SFDA-Ready Reporting: Automated temperature logs and historical data for regulatory audits. \nReal-Time Alerts: Immediate notification via SMS/Email the moment temperature or humidity deviates from the safety threshold.  ",
+      "When your operational success depends on strict SFDA compliance and the precise condition of your cargo, SmartSense provides total visibility. This is the automated temperature and humidity monitoring layer engineered for fixed warehouses, cold chain logistics, and cold storage facilities across the Kingdom  ",
       src: "smart-sense.webp",
     color: "#23214A",
     url: "https://www.ignant.com/2022/09/30/clement-chapillon-questions-geographical-and-mental-isolation-with-les-rochers-fauves/",

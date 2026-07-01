@@ -201,11 +201,16 @@ export default function Blog({
             </AnimatedTitle>
           </div>
           <p className={styles.intro}>
-            {blogCopy.intro}{" "}
-            <Link href={t("externalLinks.blogs")} target="_blank" rel="noopener noreferrer">
-              {blogCopy.introLink}
-            </Link>
-            .
+            {blogCopy.intro}
+            {blogCopy.introLink ? (
+              <>
+                {" "}
+                <Link href={t("externalLinks.blogs")} target="_blank" rel="noopener noreferrer">
+                  {blogCopy.introLink}
+                </Link>
+                .
+              </>
+            ) : null}
           </p>
         </header>
 

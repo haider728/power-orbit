@@ -44,16 +44,21 @@ const en = {
     blogs: "https://avl-ksa.com/en/blogs/",
     contact: "https://avl-ksa.com/en/contact-us/",
   },
+  seo: {
+    title: "Power Orbit",
+    description:
+      "Power Orbit delivers IoT infrastructure and telematics intelligence for mission-critical fleet and enterprise operations in Saudi Arabia and beyond.",
+  },
   home: {
     slidingText: "Power Orbit — formerly known as Digital Myth Solution",
     banner: {
       slide1: {
         subtitle:
-          "Engineering Intelligent Mobility for the Kingdom's Leading Fleets",
-        title: "Power Orbit (formerly DMS)",
-        titleMid: "delivers the high-fidelity",
-        titleHighlight: "IoT infrastructure",
-        text: "and AI-driven intelligence required for mission-critical operations. We bridge the gap between raw data and executive control.",
+          "Power Orbit (formerly DMS) delivers the high-fidelity Vehicle Tracking & IoT Infrastructure required for mission-critical fleet operations.",
+        title: "Power Orbit  | IoT Infrastructure,",
+        titleMid: " Fleet Management & Vehicle",
+        titleHighlight: " Tracking in KSA",
+        text: "and AI-driven intelligence required for mission-critical fleet management and vehicle tracking. We bridge the gap between raw data and executive control.",
         cta1: "Visit Eagle-IoT Platform",
         cta1Href: "https://avl-ksa.com/en/",
         cta2: "Explore the Ecosystem",
@@ -120,7 +125,7 @@ const en = {
       title: "A Unified Portfolio",
       titleHighlight: "for Specialized Control",
       description:
-        'Power Orbit does not offer a "one-size-fits-all" tool. We provide a modular ecosystem of specialized brands, each engineered to solve a specific set of operational challenges. Whether you are moving assets across the Kingdom or protecting sensitive cargo at rest, we provide the dedicated intelligence you need.',
+        'Whether you require enterprise-grade vehicle tracking across the Kingdom or specialized cold chain monitoring at rest, we provide the dedicated intelligence you need.',
     },
     cardActions: {
       seeMore: "See more",
@@ -314,12 +319,28 @@ const en = {
     blog: {
       title: "Explore Our Latest",
       titleHighlight: "Insights",
-      intro: "Stay ahead with articles, guides, and research from",
-      introLink: "AVL-KSA",
+      intro:
+        "Explore Our Latest Articles, Guides, and Research to Shape Your Strategy and Stay Ahead with Fleet Industry Developments",
+      introLink: "",
       loading: "Loading blogs…",
       empty: "No blog posts available right now.",
       readMore: "Read on AVL-KSA",
       loadingArticle: "Loading article…",
+    },
+    clients: {
+      title: "Our Clients & ",
+      titleHighlight: "Partners",
+      subtitle: "Trusted by businesses and organizations we work with.",
+    },
+    trustedBy: {
+      label: "Trusted by Leading Businesses",
+      headline: "Powering Businesses Across Multiple Industries",
+      description:
+        "Our technology helps organizations improve fleet visibility, operational efficiency, and asset management. Trusted by businesses that rely on secure, scalable, and intelligent IoT solutions.",
+      cta: "View Success Stories",
+      ctaHref: "/#portfolio",
+      ctaAriaLabel: "View client success stories",
+      logosLabel: "Trusted partner logos",
     },
   },
 } as const;
@@ -370,19 +391,24 @@ const ar = {
     contact:
       "https://avl-ksa.com/اتصل-بفريق-ايغل-آي-او-تي-لإدارة-أسطولك-و/",
   },
+  seo: {
+    title:
+      "باور أوربت Power Orbit | حلول إنترنت الأشياء لإدارة الأساطيل وتتبع المركبات في السعودية",
+    description:
+      'هل تبحث عن نظام تتبع مركبات معتمد من هيئة النقل؟ تقدم لك "باور أوربت" Power Orbit نظاماً ذكياً مدعوماً ببنية تحتية متقدمة لإنترنت الأشياء (IoT)، يوفر حلول إدارة الأساطيل وتتبع المركبات والمعدات، ومراقبة البيئة، والخدمات اللوجستية في جميع أنحاء المملكة العربية السعودية.',
+  },
   home: {
     slidingText: "باور أوربت — المعروفة سابقاً باسم الأسطورة الرقمية (DMS)",
     banner: {
       slide1: {
-        subtitle:
-          "تطوير عمليات النقل والتنقل الذكي لخدمة أكبر شركات إدارة النقل في المملكة العربية السعودية",
-        title: "تقدم شركة باور أوربت",
-        titleMid: "(Power Orbit) — المعروفة سابقاً باسم الأسطورة الرقمية (DMS) —",
-        titleHighlight: "أنظمة ذكية متطورة",
-        text: "معززة بتقنيات إنترنت الأشياء ومزايا الذكاء الاصطناعي لإدارة عمليات النقل واللوجستيات المعقدة. نعمل على تحويل البيانات والأرقام المعقدة إلى قرارات سليمة وتحكم كامل.",
-        cta1: "تفضل بزيارة Eagle-IoT",
+        subtitle: "باور أوربت Power Orbit",
+        title: "نصمم حلول التنقل الذكي",
+        titleMid: "وتتبع المركبات",
+        titleHighlight: "بما يلبي احتياجات أكبر أساطيل النقل في المملكة.",
+        text: "نوفر لك الذكاء الاصطناعي والبيانات الدقيقة التي تحتاجها لإدارة أسطولك وتتبع مركباتك في أصعب الظروف. نجمع البيانات المبعثرة ونقدمها في لوحة تحكم واحدة تمنحك السيطرة الكاملة.",
+        cta1: "اكتشف نظام سمارت سينس SmartSense لسلاسل التبريد ←",
         cta1Href: "https://avl-ksa.com/",
-        cta2: "تعرّف على المنظومة الكاملة",
+        cta2: "اكتشف نظام ايغل-آى او تي Eagle-IoT لإدارة الأساطيل والمركبات ←",
         cta2Href:
           "https://avl-ksa.com/ايغل-آي-او-تي-لإدارة-أسطول-نظام-تحديد-ال/",
       },
@@ -391,7 +417,7 @@ const ar = {
         titleLine1: "نحوّل",
         titleLine2: "البيانات المعقدة إلى",
         titleLine3: "قرارات تشغيلية دقيقة.",
-        text: "لا تقدم باور أوربت (Power Orbit) حلاً واحداً تقليدياً يناسب الجميع. بل نوفر مجموعة متكاملة من الأنظمة المصممة لحل تحديات تشغيلية محددة.",
+        text: "تأتي هذه الأنظمة كجزء من منظومة ايغل-آى او تي Eagle-IoT الذكية. يمكنكم التعرف على المزيد حول المزايا، ومواصفات الأجهزة، وأنظمة التكامل عبر موقعنا الإلكتروني.",
         cta1: "تفضل بزيارة Eagle-IoT",
         cta1Href: "https://avl-ksa.com/",
         cta2: "تعرّف على المنظومة الكاملة",
@@ -426,7 +452,7 @@ const ar = {
       title: "عشرون عاماً من",
       titleHighlight: "الابتكار في تتبع وإدارة النقل والمركبات",
       lead:
-        "تأسست شركة باور أوربت عام 2006، وعلى مدار 20 عاماً من الخبرة تعاملنا مع طبيعة وتحديات السوق السعودي. لم نكن مجرد شاهدين على التطور الرقمي في المملكة، بل نحن من صممنا وبنينا الأنظمة التي ساعدت في تحقيقه.",
+        "توفر شركة باور أوربت Power Orbit (DMS سابقاً) حلول تتبع المركبات مدعومة ببنية تحتية متقدمة لإنترنت الأشياء (IoT)، تمنحك الدقة والكفاءة العالية اللازمة لإدارة أسطولك في العمليات الحساسة والمعقدة.",
       stats: [
         { value: "20+", label: "عاماً من الخبرة" },
         { value: "SFDA", label: "معتمد من الهيئة العامة للغذاء والدواء" },
@@ -450,7 +476,7 @@ const ar = {
       title: "منظومة موحدة",
       titleHighlight: "ومتكاملة للتحكم الاستثنائي",
       description:
-        "لا تقدم باور أوربت (Power Orbit) حلاً واحداً تقليدياً يناسب الجميع. بل نوفر مجموعة متكاملة من الأنظمة التي صُمم كل منها لحل تحديات تشغيلية محددة. تقدم لك باور أوربت أنظمة ذكية ومتخصصة تدعم نجاحك سواء كانت شركتك تدير عمليات النقل عبر المملكة أو كنت تدير مرافق التبريد والمخازن.",
+        "سواء كنت بحاجة إلى نظام متقدم لتتبع المركبات في جميع أنحاء المملكة، أو حلول متخصصة لمراقبة سلاسل التبريد والتخزين، فنحن نقدم لك أنظمة ذكية مصممة لدعم نجاح أعمالك.",
     },
     cardActions: {
       seeMore: "اعرف المزيد",
@@ -658,6 +684,21 @@ const ar = {
       empty: "لا توجد مقالات متاحة حالياً.",
       readMore: "اقرأ على AVL-KSA",
       loadingArticle: "جاري تحميل المقال…",
+    },
+    clients: {
+      title: "عملاؤنا و",
+      titleHighlight: "شركاؤنا",
+      subtitle: "موثوق بنا من قبل الشركات والمؤسسات التي نعمل معها.",
+    },
+    trustedBy: {
+      label: "موثوق من قِبَل رواد الأعمال",
+      headline: "نُمكِّن الشركات في مختلف القطاعات",
+      description:
+        "تساعد تقنياتنا المؤسسات على تحسين رؤية الأسطول والكفاءة التشغيلية وإدارة الأصول. موثوق بنا من قبل الشركات التي تعتمد على حلول IoT آمنة وقابلة للتوسع وذكية.",
+      cta: "عرض قصص النجاح",
+      ctaHref: "/#portfolio",
+      ctaAriaLabel: "عرض قصص نجاح العملاء",
+      logosLabel: "شعارات الشركاء الموثوقين",
     },
   },
 } as const;

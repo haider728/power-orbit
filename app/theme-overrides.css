@@ -43,7 +43,15 @@ body {
 .contact-one,
 .cta-one,
 .footer-one,
-.footer-two {
+.footer-two,
+.clients-partners,
+#trusted-by {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+#clients {
+  background: transparent !important;
   background-color: transparent !important;
   background-image: none !important;
 }

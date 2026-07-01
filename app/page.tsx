@@ -11,6 +11,9 @@ const About = dynamic(() => import("@/components/sections/home1/About"));
 const StackedScrollCards = dynamic(
   () => import("@/components/sections/home1/StackedScrollCardsLazy"),
 );
+const TrustedBySection = dynamic(
+  () => import("@/components/sections/home1/TrustedBySection"),
+);
 const LogoCarouselSection = dynamic(
   () => import("@/components/sections/home1/LogoCarouselSection"),
 );
@@ -40,6 +43,7 @@ export default async function Home_OnePage() {
       <Banner />
       <SlideingText />
       <About />
+      <TrustedBySection />
       <StackedScrollCards />
       <LogoCarouselSection />
       <Choose />

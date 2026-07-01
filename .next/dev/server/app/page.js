@@ -1,5 +1,5 @@
 var R=require("../chunks/ssr/[turbopack]_runtime.js")("server/app/page.js")
-R.c("server/chunks/ssr/power-orbit_components_sections_10el-a2._.js")
+R.c("server/chunks/ssr/power-orbit_components_sections_0-zl~j4._.js")
 R.c("server/chunks/ssr/[root-of-the-server]__00x2c26._.js")
 R.c("server/chunks/ssr/0e--_next_dist_0tddu_c._.js")
 R.c("server/chunks/ssr/0e--_next_dist_esm_12uk9nk._.js")
