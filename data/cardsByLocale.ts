@@ -3,7 +3,7 @@ import type { ProjectCard } from "./cards";
 
 const shared = {
   eagle: {
-    src: "eagl.webp",
+    src: "Vehicle Tracking.png",
     color: "#1A1D38",
     url: "https://www.ignant.com/2023/03/25/ad2186-matthias-leidingers-photographic-exploration-of-awe-and-wonder/",
     storeLinks: {
