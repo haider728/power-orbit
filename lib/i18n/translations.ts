@@ -54,7 +54,7 @@ const en = {
     banner: {
       slide1: {
         subtitle:
-          "Power Orbit (formerly DMS) delivers the high-fidelity Vehicle Tracking & IoT Infrastructure required for mission-critical fleet operations.",
+          "Engineering Intelligent Mobility and Vehicle Tracking for the Kingdom's Leading Fleets",
         title: "Power Orbit  | IoT Infrastructure,",
         titleMid: " Fleet Management & Vehicle",
         titleHighlight: " Tracking in KSA",
