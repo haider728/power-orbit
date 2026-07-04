@@ -56,7 +56,7 @@ const en = {
         subtitle:
           "Engineering Intelligent Mobility and Vehicle Tracking for the Kingdom's Leading Fleets ",
         title: " Power Orbit (formerly DMS) delivers the high-fidelity Vehicle Tracking & IoT Infrastructure required for",
-        titleMid: "  ",
+        // titleMid: "  ",
         titleHighlight: "  mission-critical fleet operations. ",
         text: "and AI-driven intelligence required for mission-critical fleet management and vehicle tracking. We bridge the gap between raw data and executive control. ",
         cta1: "Visit Eagle-IoT Platform",
