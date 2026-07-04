@@ -125,7 +125,7 @@ const en = {
       title: "A Unified Portfolio",
       titleHighlight: "for Specialized Control",
       description:
-        'Whether you require enterprise-grade vehicle tracking across the Kingdom or specialized cold chain monitoring at rest, we provide the dedicated intelligence you need.',
+        'Power Orbit does not offer a one-size-fits-all tool. We provide a modular ecosystem of specialized brands, each engineered to solve a specific set of operational challenges. Whether you require enterprise-grade vehicle tracking across the Kingdom or specialized cold chain monitoring at rest, we provide the dedicated intelligence you need.   ',
     },
     cardActions: {
       seeMore: "See more",
