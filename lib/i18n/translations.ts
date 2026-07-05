@@ -56,7 +56,6 @@ const en = {
         subtitle:
           "Engineering Intelligent Mobility and Vehicle Tracking for the Kingdom's Leading Fleets ",
         title: " Power Orbit (formerly DMS) delivers the high-fidelity Vehicle Tracking & IoT Infrastructure required for",
-       
         titleHighlight: "  mission-critical fleet operations. ",
         text: "and AI-driven intelligence required for mission-critical fleet management and vehicle tracking. We bridge the gap between raw data and executive control. ",
         cta1: "Visit Eagle-IoT Platform",
@@ -69,7 +68,7 @@ const en = {
         titleLine1: "We bridge",
         titleLine2: "the gap between",
         titleLine3: "raw data and executive control.",
-        text: 'Power Orbit does not offer a<b>one-size-fits-all</b>  tool. We deliver dedicated, purpose-built platforms engineered for specific operational challenges ',
+        text: 'Power Orbit does not offer a one-size-fits-all tool. We deliver dedicated, purpose-built platforms engineered for specific operational challenges ',
         cta1: "Visit Eagle-IoT Platform",
         cta1Href: "https://avl-ksa.com/en/",
         cta2: "Explore the Ecosystem",
@@ -128,7 +127,8 @@ const en = {
         'Power Orbit does not offer a one-size-fits-all tool. We provide a modular ecosystem of specialized brands, each engineered to solve a specific set of operational challenges. Whether you require enterprise-grade vehicle tracking across the Kingdom or specialized cold chain monitoring at rest, we provide the dedicated intelligence you need.   ',
     },
     cardActions: {
-      seeMore: "See more",
+      seeMore: "See More",
+      visitParentCompany: "Visit Eagle-IoT",
     },
     cardModal: {
       eyebrow: "Product overview",
@@ -334,11 +334,11 @@ const en = {
     },
     trustedBy: {
       label: "Trusted by Leading Businesses",
-      headline: "Powering Businesses Across Multiple Industries",
+      headline: "Compliance is Our Baseline. Performance is Our Standard.",
       description:
-        "Our technology helps organizations improve fleet visibility, operational efficiency, and asset management. Trusted by businesses that rely on secure, scalable, and intelligent IoT solutions.",
+        "Power Orbit operates as an approved and compliant service provider across Saudi Arabia's regulatory ecosystem.We handle the complexity of Wasl and CITC integration so you can focus on scaling your business.",
       cta: "View Success Stories",
-      ctaHref: "/#portfolio",
+      ctaHref: "/#Aboutus",
       ctaAriaLabel: "View client success stories",
       logosLabel: "Trusted partner logos",
     },
@@ -404,7 +404,6 @@ const ar = {
         subtitle:
           "نصمم حلول التنقل الذكي وتتبع المركبات، بما يلبي احتياجات كبرى أساطيل النقل في المملكة.",
         title: "باور أوربت Power Orbit",
-        titleMid: "حلول إنترنت الأشياء لإدارة الأساطيل وتتبع المركبات في السعودية",
         titleHighlight: "أنظمة ذكية متطورة",
         text: "	نوفر لك الذكاء الاصطناعي والبيانات الدقيقة التي تحتاجها لإدارة أسطولك وتتبع مركباتك في أصعب الظروف. نحن نجمع لك كل البيانات المبعثرة ونعرضها في لوحة تحكم واحدة لنمنحك السيطرة الكاملة.",
         cta1: "تفضل بزيارة Eagle-IoT",
@@ -481,6 +480,7 @@ const ar = {
     },
     cardActions: {
       seeMore: "اعرف المزيد",
+      visitParentCompany: "زيارة الشركة الأم",
     },
     cardModal: {
       eyebrow: "نظرة عامة على المنتج",

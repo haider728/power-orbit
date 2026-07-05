@@ -177,17 +177,40 @@ html[dir="rtl"] .stacked-cards-module__UrFTvG__description:first-letter {
   text-transform: none;
 }
 
-html[dir="rtl"] .stacked-cards-module__UrFTvG__seeMoreBtn {
-  text-transform: none !important;
+html[dir="rtl"] .stacked-cards-module__UrFTvG__seeMoreLink {
+  text-transform: none;
 }
 
-.stacked-cards-module__UrFTvG__seeMoreWrap {
-  margin-top: 18px;
-}
-
-.stacked-cards-module__UrFTvG__seeMoreBtn {
+.stacked-cards-module__UrFTvG__seeMoreLink {
+  font: inherit;
+  font-size: inherit;
+  font-weight: 600;
+  line-height: inherit;
+  color: var(--techguru-accent-two, #318be2);
+  box-shadow: none;
   cursor: pointer;
-  border: 0;
+  vertical-align: baseline;
+  white-space: nowrap;
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  transition: color .28s, text-decoration-color .28s;
+  display: inline;
+}
+
+.stacked-cards-module__UrFTvG__seeMoreLink:hover {
+  color: #66c5ff;
+  text-underline-offset: 3px;
+  text-decoration: underline;
+}
+
+.stacked-cards-module__UrFTvG__parentCompanyWrap {
+  margin-top: 16px;
+}
+
+.stacked-cards-module__UrFTvG__parentCompanyBtn {
   justify-content: center;
   align-items: center;
   display: inline-flex;
@@ -195,6 +218,10 @@ html[dir="rtl"] .stacked-cards-module__UrFTvG__seeMoreBtn {
   font-size: 14px !important;
   line-height: 1.2 !important;
   text-decoration: none !important;
+}
+
+html[dir="rtl"] .stacked-cards-module__UrFTvG__parentCompanyBtn {
+  text-transform: none !important;
 }
 
 .stacked-cards-module__UrFTvG__storeBadges {

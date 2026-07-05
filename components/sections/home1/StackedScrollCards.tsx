@@ -42,7 +42,6 @@ export default function StackedScrollCards() {
                     progress={scrollYProgress}
                     range={[index * 0.25, 1]}
                     targetScale={1 - (cards.length - index) * 0.05}
-                    seeMoreLabel={card.seeMoreLabel ?? t("home.cardActions.seeMore")}
                     onSeeMore={() => setActiveCardIndex(index)}
                 />
             ))}

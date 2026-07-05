@@ -182,15 +182,42 @@
   text-transform: none;
 }
 
-:global(html[dir="rtl"]) .seeMoreBtn {
-  text-transform: none !important;
+:global(html[dir="rtl"]) .seeMoreLink {
+  text-transform: none;
 }
 
-.seeMoreWrap {
-  margin-top: 18px;
+.seeMoreLink {
+  display: inline;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  font-size: inherit;
+  font-weight: 600;
+  line-height: inherit;
+  color: var(--techguru-accent-two, #318be2);
+  text-decoration: none;
+  background: none;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  vertical-align: baseline;
+  white-space: nowrap;
+  transition:
+    color 0.28s ease,
+    text-decoration-color 0.28s ease;
 }
 
-.seeMoreBtn {
+.seeMoreLink:hover {
+  color: #66c5ff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.parentCompanyWrap {
+  margin-top: 16px;
+}
+
+.parentCompanyBtn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -198,8 +225,10 @@
   font-size: 14px !important;
   line-height: 1.2 !important;
   text-decoration: none !important;
-  cursor: pointer;
-  border: 0;
+}
+
+:global(html[dir="rtl"]) .parentCompanyBtn {
+  text-transform: none !important;
 }
 
 .storeBadges {

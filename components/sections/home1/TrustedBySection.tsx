@@ -74,7 +74,7 @@ export default function TrustedBySection() {
                     height={client.height}
                     loading="lazy"
                     decoding="async"
-                    sizes="(max-width: 575px) 28vw, (max-width: 991px) 22vw, 180px"
+                    sizes="(max-width: 575px) 32vw, (max-width: 991px) 26vw, 200px"
                     className={styles.logo}
                   />
                 </li>

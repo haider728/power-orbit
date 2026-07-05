@@ -14,8 +14,6 @@ export type ProjectCard = {
     googlePlay: string;
     appStore: string;
   };
-  /** Optional override for the See more button label */
-  seeMoreLabel?: string;
 };
 
 export const cards: ProjectCard[] = [

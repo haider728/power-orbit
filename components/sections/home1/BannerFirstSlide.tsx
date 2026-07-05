@@ -26,9 +26,7 @@ export default function BannerFirstSlide() {
                     </p>
                   </div>
                   <h2 className="main-slider-two__title">
-                    {t("home.banner.slide1.title")} <br />
-                    {t("home.banner.slide1.titleMid")}
-                    <br />
+                    {t("home.banner.slide1.title")}{" "}
                     <span>{t("home.banner.slide1.titleHighlight")}</span>
                   </h2>
                   <p className="main-slider-two__text">{t("home.banner.slide1.text")}</p>

@@ -88,20 +88,22 @@
   align-items: center;
   justify-content: center;
   min-height: clamp(96px, 14vw, 128px);
-  padding: clamp(1.25rem, 2.5vw, 2rem);
-  background: #fff;
-  border: 1px solid #e5e7eb;
+  padding: clamp(0.4rem, 0.85vw, 0.625rem);
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 18px;
-  box-shadow: 0 4px 24px rgba(15, 23, 42, 0.06);
+  box-shadow: none;
+  box-sizing: border-box;
+  container-type: size;
   transition:
     transform 300ms ease,
-    box-shadow 300ms ease;
+    border-color 300ms ease;
 }
 
 @media (hover: hover) and (pointer: fine) {
   .logoCard:hover {
     transform: translateY(-6px);
-    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
+    border-color: rgba(255, 255, 255, 0.38);
   }
 }
 
@@ -109,9 +111,10 @@
   display: block;
   width: auto;
   height: auto;
-  max-width: 100%;
-  max-height: clamp(44px, 6vw, 66px);
+  max-width: min(80cqw, 90%);
+  max-height: min(80cqh, clamp(58px, 10vw, 102px));
   object-fit: contain;
+  object-position: center;
 }
 
 .reveal {
@@ -137,11 +140,7 @@
 
 @media (max-width: 575px) {
   .logoCard {
-    padding: 1rem 0.85rem;
+    padding: 0.35rem 0.3rem;
     min-height: 88px;
-  }
-
-  .logo {
-    max-height: 44px;
   }
 }

@@ -7,15 +7,16 @@ import type { MotionValue } from "framer-motion";
 import { useRef } from "react";
 import type { ProjectCard } from "@/data/cards";
 import { publicImagePath } from "@/lib/publicImage";
-import MobileAppTiles from "@/components/sections/home1/MobileAppTiles";
+import { useLanguage } from "@/components/providers/LanguageProvider";
 import styles from "@/components/sections/home1/stacked-cards.module.css";
+
+const PARENT_COMPANY_URL = "https://www.avl-ksa.com";
 
 type CardProps = ProjectCard & {
     index: number;
     progress: MotionValue<number>;
     range: [number, number];
     targetScale: number;
-    seeMoreLabel: string;
     onSeeMore: () => void;
 };
 
@@ -25,14 +26,12 @@ export default function Card({
     description,
     src,
     color,
-    mobileApps,
-    storeLinks,
     progress,
     range,
     targetScale,
-    seeMoreLabel,
     onSeeMore,
 }: CardProps) {
+    const { t } = useLanguage();
     const container = useRef<HTMLDivElement | null>(null);
 
     const { scrollYProgress } = useScroll({
@@ -57,56 +56,27 @@ export default function Card({
 
                 <div className={styles.contentRow}>
                     <div className={styles.descriptionContainer}>
-                        <p className={styles.description}>{description}</p>
-
-                        {mobileApps && mobileApps.length > 0 ? (
-                            <MobileAppTiles apps={mobileApps} />
-                        ) : null}
-
-                        <div className={styles.seeMoreWrap}>
+                        <p className={styles.description}>
+                            {description}{" "}
                             <button
                                 type="button"
-                                className={`thm-btn ${styles.seeMoreBtn}`}
+                                className={styles.seeMoreLink}
                                 onClick={onSeeMore}
                             >
-                                {seeMoreLabel}
+                                {t("home.cardActions.seeMore")}
                             </button>
-                        </div>
+                        </p>
 
-                        {storeLinks ? (
-                            <div className={styles.storeBadges}>
-                                <Link
-                                    href={storeLinks.googlePlay}
-                                    className={styles.storeBadge}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    aria-label="Get it on Google Play"
-                                >
-                                    <Image
-                                        src="/images/gpaly.png"
-                                        alt="Get it on Google Play"
-                                        width={150}
-                                        height={45}
-                                        className={styles.storeBadgeImg}
-                                    />
-                                </Link>
-                                <Link
-                                    href={storeLinks.appStore}
-                                    className={styles.storeBadge}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    aria-label="Download on the App Store"
-                                >
-                                    <Image
-                                        src="/images/appstore.png"
-                                        alt="Download on the App Store"
-                                        width={150}
-                                        height={45}
-                                        className={styles.storeBadgeImg}
-                                    />
-                                </Link>
-                            </div>
-                        ) : null}
+                        <div className={styles.parentCompanyWrap}>
+                            <Link
+                                href={PARENT_COMPANY_URL}
+                                className={`thm-btn ${styles.parentCompanyBtn}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                {t("home.cardActions.visitParentCompany")}
+                            </Link>
+                        </div>
                     </div>
 
                     <div className={styles.imageContainer}>
