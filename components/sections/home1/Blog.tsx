@@ -10,11 +10,12 @@ import { useLanguage } from "@/components/providers/LanguageProvider";
 import { translations } from "@/lib/i18n/translations";
 import type { AvlBlogListItem } from "@/lib/avlBlogs";
 import BlogCoverImage from "@/components/sections/home1/BlogCoverImage";
+import { isExternalImageSrc } from "@/lib/publicImage";
 import styles from "@/components/sections/home1/blog-carousel.module.css";
 import "@/lib/swiper-styles";
 
 const EXCERPT_LENGTH = 160;
-const FALLBACK_IMAGE = "/assets/images/blog/blog-2-1.jpg";
+const FALLBACK_IMAGE = "/assets/images/resources/about-two-img-2.png";
 
 function excerpt(text: string, max = EXCERPT_LENGTH): string {
   const plain = text.trim();
@@ -292,6 +293,7 @@ export default function Blog({
                   height={0}
                   sizes="(max-width: 900px) 100vw, 900px"
                   className="blog-inline-detail__img"
+                  unoptimized={isExternalImageSrc(coverUrl(selectedBlog))}
                   style={{ width: "100%", height: "auto" }}
                 />
               </div>

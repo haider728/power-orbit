@@ -161,13 +161,13 @@ const en = {
       ],
     },
     compliance: {
-      title: "Compliance is Our Baseline.",
-      titleHighlight: "Performance is Our Standard.",
+      title: "Trusted by Enterprises  ",
+      titleHighlight: "Where Failure is Not an Option",
       description:
-        "Power Orbit operates as an approved and compliant service provider across Saudi Arabia's regulatory ecosystem.",
+        "Power Orbit solutions are deployed across organizations managing large-scale, high-risk, and time-sensitive operations. ",
       badges: ["SFDA Approved", "TGA Compliant", "Wasl Integrated", "CITC Licensed"],
       footer:
-        "We handle the complexity of Wasl and CITC integration so you can focus on scaling your business.",
+        "Thousands of vehicles. Millions of data points. Zero margin for error. ",
     },
     choose: {
       title: "Operational ",

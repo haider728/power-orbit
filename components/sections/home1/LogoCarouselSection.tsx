@@ -16,15 +16,42 @@ const responsive = {
 
 const brands = [
   {
-    src: "/assets/images/brand/brand--1.png",
+    src: "/assets/images/brand/logo (2).png",
     alt: "Saudi Food and Drug Authority (SFDA) official logo",
   },
   {
-    src: "/assets/images/brand/st.png",
+    src: "/assets/images/brand/logo (3).png",
     alt: "Communications, Space and Technology Commission (CST) logo, Saudi Arabia",
   },
   {
-    src: "/assets/images/brand/brand-4.png",
+    src: "/assets/images/brand/logo (4).png",
+    alt: "Transport General Authority (TGA) Saudi Arabia",
+  },
+  {
+    src: "/assets/images/brand/logo (6).png",
+    alt: "Transport General Authority (TGA) Saudi Arabia",
+  },
+  {
+    src: "/assets/images/brand/logo (7).png",
+    alt: "Transport General Authority (TGA) Saudi Arabia",
+  },
+  {
+    src: "/assets/images/brand/logo (8).png",
+    alt: "Transport General Authority (TGA) Saudi Arabia",
+  },
+  {
+    src: "/assets/images/brand/logo (9).png",
+    alt: "Transport General Authority (TGA) Saudi Arabia",
+  },
+  {
+    src: "/assets/images/brand/logo (10).png",
+    alt: "Transport General Authority (TGA) Saudi Arabia",
+  },
+  {
+    src: "/assets/images/brand/logo (11).png",
+    alt: "Transport General Authority (TGA) Saudi Arabia",
+  }, {
+    src: "/assets/images/brand/logo (12).png",
     alt: "Transport General Authority (TGA) Saudi Arabia",
   },
 ];
