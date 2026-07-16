@@ -160,7 +160,7 @@ export default function Footer1() {
                   <h4 className="site-footer-two__social-title">{t("siteFooter.followUs")}</h4>
                   <div className="site-footer-two__social-box-inner">
                     <Link
-                      href="https://www.facebook.com/EagleIoT/"
+                      href="https://www.facebook.com/profile.php?id=61573312211567"
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Facebook"
@@ -184,7 +184,7 @@ export default function Footer1() {
                       <XIcon className="site-footer-two__social-icon-x" />
                     </Link>
                     <Link
-                      href="https://www.linkedin.com/company/eagle-iot"
+                      href="https://www.linkedin.com/company/power-orbit/"
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="LinkedIn"

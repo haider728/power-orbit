@@ -3,9 +3,20 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import {
+  Bus,
+  Hospital,
+  Landmark,
+  Smartphone,
+  Snowflake,
+  Thermometer,
+  Truck,
+  UtensilsCrossed,
+  type LucideIcon,
+} from "lucide-react";
 import { useEffect, useMemo } from "react";
 import { createPortal } from "react-dom";
-import type { ProjectCard } from "@/data/cards";
+import type { BestForIcon, ProjectCard } from "@/data/cards";
 import { useLanguage } from "@/components/providers/LanguageProvider";
 import {
   CARD_SECTION_HEADINGS,
@@ -22,6 +33,17 @@ type ParsedSection = {
 
 const SECTION_HEADING_PATTERN = CARD_SECTION_HEADINGS;
 
+const BEST_FOR_ICONS: Record<BestForIcon, LucideIcon> = {
+  truck: Truck,
+  landmark: Landmark,
+  bus: Bus,
+  hospital: Hospital,
+  snowflake: Snowflake,
+  utensils: UtensilsCrossed,
+  thermometer: Thermometer,
+  smartphone: Smartphone,
+};
+
 function parseFullDescription(content: string): ParsedSection[] {
   const sections: ParsedSection[] = [];
   const blocks = content.trim().split(/\n\n+/);
@@ -31,6 +53,10 @@ function parseFullDescription(content: string): ParsedSection[] {
 
     if (sectionMatch) {
       const heading = sectionMatch[1];
+      // Structured bestFor items replace the plain-text Best for section.
+      if (heading === "Best for" || heading === "مثالي لخدمة") {
+        continue;
+      }
       const body = sectionMatch[2] ?? "";
       const section: ParsedSection = { heading, paragraphs: [], bullets: [] };
       splitBlockContent(body, section);
@@ -92,6 +118,7 @@ export default function CardDetailModal({ card, onClose }: CardDetailModalProps)
   const { locale, t } = useLanguage();
   const content = card.fullDescription ?? card.description;
   const sections = useMemo(() => parseFullDescription(content), [content]);
+  const bestFor = card.bestFor ?? [];
 
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
@@ -187,6 +214,27 @@ export default function CardDetailModal({ card, onClose }: CardDetailModalProps)
                 ) : null}
               </section>
             ))}
+
+            {bestFor.length > 0 ? (
+              <section className={styles.modalSection}>
+                <h4 className={styles.modalSectionTitle}>
+                  {translateCardSectionHeading(locale, "Best for")}
+                </h4>
+                <ul className={styles.bestForGrid}>
+                  {bestFor.map((item) => {
+                    const Icon = BEST_FOR_ICONS[item.icon] ?? Truck;
+                    return (
+                      <li key={`${item.icon}-${item.label}`} className={styles.bestForItem}>
+                        <span className={styles.bestForIcon} aria-hidden="true">
+                          <Icon size={20} strokeWidth={1.85} />
+                        </span>
+                        <span className={styles.bestForLabel}>{item.label}</span>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </section>
+            ) : null}
           </div>
 
           {card.storeLinks ? (

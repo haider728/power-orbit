@@ -1,9 +1,25 @@
 import { type MobileApp } from "./mobileApps";
 
+export type BestForIcon =
+  | "truck"
+  | "landmark"
+  | "bus"
+  | "hospital"
+  | "snowflake"
+  | "utensils"
+  | "thermometer"
+  | "smartphone";
+
+export type BestForItem = {
+  icon: BestForIcon;
+  label: string;
+};
+
 export type ProjectCard = {
   title: string;
   description: string;
   fullDescription?: string;
+  bestFor?: BestForItem[];
   src: string;
   color: string;
   url: string;

@@ -469,6 +469,55 @@
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--card-accent, #6366f1) 30%, transparent);
 }
 
+:global(html[dir="rtl"]) .modalListItem {
+  padding-left: 0;
+  padding-right: 22px;
+}
+
+:global(html[dir="rtl"]) .modalListItem::before {
+  left: auto;
+  right: 0;
+}
+
+.bestForGrid {
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.bestForItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.bestForIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  color: #f3f5ff;
+  background: color-mix(in srgb, var(--card-accent, #6366f1) 72%, #ffffff 12%);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08) inset;
+}
+
+.bestForLabel {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: rgba(243, 245, 255, 0.92);
+}
+
 .modalFooter {
   display: flex;
   flex-wrap: wrap;
@@ -583,6 +632,15 @@
 
   .modalSection {
     padding: 14px 16px;
+  }
+
+  .bestForGrid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .bestForItem {
+    padding: 11px 12px;
   }
 
   .modalFooter {

@@ -1,5 +1,5 @@
 ﻿import type { Locale } from "@/lib/i18n/config";
-import type { ProjectCard } from "./cards";
+import type { BestForItem, ProjectCard } from "./cards";
 import { translations } from "@/lib/i18n/translations";
 
 const cardAssets = [
@@ -47,6 +47,10 @@ export function getCards(locale: Locale): ProjectCard[] {
       title: content.title,
       description: content.description,
       fullDescription: content.fullDescription,
+      bestFor: content.bestFor.map((item) => ({
+        icon: item.icon as BestForItem["icon"],
+        label: item.label,
+      })),
     };
   });
 }

@@ -1,6 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Keep Turbopack scoped to this app (parent D:\website also has a lockfile).
+  turbopack: {
+    root: process.cwd(),
+  },
+
   compiler: {
     removeConsole: process.env.NODE_ENV === "production",
   },

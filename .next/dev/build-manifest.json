@@ -1,34 +1,10 @@
 {
   "pages": {
-    "/_app": [
-      "static/chunks/0e--_next_dist_compiled_0vsy18-._.js",
-      "static/chunks/0e--_next_dist_shared_lib_0xfmdhu._.js",
-      "static/chunks/0e--_next_dist_client_0~wukh-._.js",
-      "static/chunks/0e--_next_dist_08.ufvy._.js",
-      "static/chunks/0e--_next_app_0dlsucz.js",
-      "static/chunks/[next]_entry_page-loader_ts_0mt0vl0._.js",
-      "static/chunks/0e--_react-dom_0kkz1~6._.js",
-      "static/chunks/0e--_0xs37ct._.js",
-      "static/chunks/[root-of-the-server]__13a.qvi._.js",
-      "static/chunks/power-orbit_pages__app_07xvfw~._.js",
-      "static/chunks/turbopack-power-orbit_pages__app_0w8mpmi._.js"
-    ],
-    "/_error": [
-      "static/chunks/0e--_next_dist_compiled_0vsy18-._.js",
-      "static/chunks/0e--_next_dist_shared_lib_0z9hp7r._.js",
-      "static/chunks/0e--_next_dist_client_0~wukh-._.js",
-      "static/chunks/0e--_next_dist_0q8ms-6._.js",
-      "static/chunks/[next]_entry_page-loader_ts_0eau_hh._.js",
-      "static/chunks/0e--_react-dom_0kkz1~6._.js",
-      "static/chunks/0e--_0xs37ct._.js",
-      "static/chunks/[root-of-the-server]__0dc7l85._.js",
-      "static/chunks/power-orbit_pages__error_07xvfw~._.js",
-      "static/chunks/turbopack-power-orbit_pages__error_03y2p74._.js"
-    ]
+    "/_app": []
   },
   "devFiles": [],
   "polyfillFiles": [
-    "static/chunks/0e--_next_dist_build_polyfills_polyfill-nomodule.js"
+    "static/chunks/node_modules_next_dist_build_polyfills_polyfill-nomodule.js"
   ],
   "lowPriorityFiles": [
     "static/development/_buildManifest.js",
@@ -36,15 +12,15 @@
     "static/development/_clientMiddlewareManifest.js"
   ],
   "rootMainFiles": [
-    "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_0_ki460._.js",
-    "static/chunks/0e--_next_dist_compiled_next-devtools_index_0djwfp8.js",
-    "static/chunks/0e--_next_dist_compiled_react-dom_0h5z8i4._.js",
-    "static/chunks/0e--_next_dist_compiled_react-server-dom-turbopack_0.uks0j._.js",
-    "static/chunks/0e--_next_dist_compiled_0veda07._.js",
-    "static/chunks/0e--_next_dist_client_0_7_uk_._.js",
-    "static/chunks/0e--_next_dist_0521m0c._.js",
-    "static/chunks/0e--_@swc_helpers_cjs_09kbtmp._.js",
-    "static/chunks/power-orbit_0rqeker._.js",
-    "static/chunks/turbopack-power-orbit_117xt04._.js"
+    "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_10z625~._.js",
+    "static/chunks/node_modules_next_dist_compiled_next-devtools_index_0553esy.js",
+    "static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js",
+    "static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_0p3wegg._.js",
+    "static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js",
+    "static/chunks/node_modules_next_dist_client_0fhqo1d._.js",
+    "static/chunks/node_modules_next_dist_115brz8._.js",
+    "static/chunks/node_modules_@swc_helpers_cjs_0-4ujiy._.js",
+    "static/chunks/_0rqeker._.js",
+    "static/chunks/turbopack-_0p44nws._.js"
   ]
 }
