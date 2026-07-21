@@ -44,6 +44,9 @@ export const metadata: Metadata = {
     shortcut: "/power-orbit-favicon.png",
   },
   manifest: "/assets/images/favicons/site.webmanifest",
+  verification: {
+    google: "3qOqKvadp9f73Fq82D76W-3cSR_vwQa2ZleUNXsO_pw",
+  },
   other: {
     "dns-prefetch": "https://avl-ksa.com",
   },

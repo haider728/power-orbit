@@ -3,14 +3,14 @@
     "id": "[project]/components/elements/SmoothScroll.tsx [app-client] (ecmascript, next/dynamic entry)",
     "files": [
       "static/chunks/_0u7h0zk._.js",
-      "static/chunks/components_elements_SmoothScroll_tsx_0.la2nm._.js"
+      "static/chunks/components_elements_SmoothScroll_tsx_11rgbmv._.js"
     ]
   },
   "[project]/components/elements/CustomCursor.tsx [app-client] (ecmascript, next/dynamic entry)": {
     "id": "[project]/components/elements/CustomCursor.tsx [app-client] (ecmascript, next/dynamic entry)",
     "files": [
       "static/chunks/components_elements_CustomCursor_tsx_088aho7._.js",
-      "static/chunks/components_elements_CustomCursor_tsx_0.la2nm._.js"
+      "static/chunks/components_elements_CustomCursor_tsx_11rgbmv._.js"
     ]
   },
   "[project]/components/sections/home1/StackedScrollCards.tsx [app-client] (ecmascript, next/dynamic entry)": {
@@ -18,7 +18,7 @@
     "files": [
       "static/chunks/node_modules_01d-.jl._.js",
       "static/chunks/_0-75dh~._.js",
-      "static/chunks/components_sections_home1_StackedScrollCards_tsx_065_d3-._.js"
+      "static/chunks/components_sections_home1_StackedScrollCards_tsx_0c2pja.._.js"
     ]
   }
 }
