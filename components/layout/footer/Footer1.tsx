@@ -115,25 +115,25 @@ export default function Footer1() {
                 <h4 className="footer-widget-two__title">{t("siteFooter.ourServices")}</h4>
                 <ul className="footer-widget-two__quick-links-list list-unstyled">
                   <li>
-                    <Link href="">
+                    <Link href="https://avl-ksa.com/en/fleet-management-solutions/">
                       <span className="icon-right-arrow-2"></span>
                       {t("siteFooter.fleetManagement")}
                     </Link>
                   </li>
                   <li>
-                    <Link href="">
+                    <Link href="https://avl-ksa.com/en/asset-management-platform/">
                       <span className="icon-right-arrow-2"></span>
                       {t("siteFooter.assetManagement")}
                     </Link>
                   </li>
                   <li>
-                    <Link href="">
+                    <Link href="https://avl-ksa.com/en/cold-store-monitoring/">
                       <span className="icon-right-arrow-2"></span>
                       {t("siteFooter.coldChainManagement")}
                     </Link>
                   </li>
                   <li>
-                    <Link href="">
+                    <Link href="https://avl-ksa.com/en/video-telematics/">
                       <span className="icon-right-arrow-2"></span>
                       {t("siteFooter.videoTelematics")}
                     </Link>

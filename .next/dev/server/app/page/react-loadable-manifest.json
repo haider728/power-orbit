@@ -13,12 +13,19 @@
       "static/chunks/components_elements_CustomCursor_tsx_11rgbmv._.js"
     ]
   },
+  "[project]/components/sections/home1/BannerSwiper.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/components/sections/home1/BannerSwiper.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/_0ezufi3._.js",
+      "static/chunks/components_sections_home1_BannerSwiper_tsx_0y5cn-1._.js"
+    ]
+  },
   "[project]/components/sections/home1/StackedScrollCards.tsx [app-client] (ecmascript, next/dynamic entry)": {
     "id": "[project]/components/sections/home1/StackedScrollCards.tsx [app-client] (ecmascript, next/dynamic entry)",
     "files": [
       "static/chunks/node_modules_01d-.jl._.js",
       "static/chunks/_0-75dh~._.js",
-      "static/chunks/components_sections_home1_StackedScrollCards_tsx_0c2pja.._.js"
+      "static/chunks/components_sections_home1_StackedScrollCards_tsx_0y5cn-1._.js"
     ]
   }
 }

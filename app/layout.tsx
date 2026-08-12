@@ -60,8 +60,6 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="preconnect" href="https://avl-ksa.com" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="https://avl-ksa.com" />
         <link
           rel="preload"
           as="image"
@@ -87,7 +85,7 @@ export default function RootLayout({
         {/* End Google Tag Manager (noscript) */}
 
         {/* Google Tag Manager */}
-        <Script id="gtm" strategy="afterInteractive">{`
+        <Script id="gtm" strategy="lazyOnload">{`
           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
           j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
