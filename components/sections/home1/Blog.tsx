@@ -9,6 +9,7 @@ import AnimatedTitle from "@/components/elements/AnimatedTitle";
 import { useLanguage } from "@/components/providers/LanguageProvider";
 import { translations } from "@/lib/i18n/translations";
 import type { AvlBlogListItem } from "@/lib/avlBlogs";
+import { cleanWpRenderedContent } from "@/lib/avlBlogsShared";
 import BlogCoverImage from "@/components/sections/home1/BlogCoverImage";
 import { isExternalImageSrc } from "@/lib/publicImage";
 import styles from "@/components/sections/home1/blog-carousel.module.css";
@@ -24,7 +25,9 @@ function excerpt(text: string, max = EXCERPT_LENGTH): string {
 }
 
 function BlogArticleBody({ content }: { content: string }) {
-  const raw = typeof content === "string" ? content : String(content ?? "");
+  const raw = cleanWpRenderedContent(
+    typeof content === "string" ? content : String(content ?? ""),
+  );
   if (!raw.trim()) return null;
   const looksLikeHtml = /<[a-z][\s\S]*>/i.test(raw);
   if (looksLikeHtml) {

@@ -37,6 +37,30 @@ function stripHtml(html: string): string {
   return html.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
 }
 
+/** Divi stores layout as [et_pb_*] shortcodes. REST `content.rendered` often still includes them. */
+export function cleanWpRenderedContent(html: string): string {
+  if (!html) return "";
+
+  let out = html
+    .replace(/&#91;/g, "[")
+    .replace(/&#93;/g, "]")
+    .replace(/&lsqb;/gi, "[")
+    .replace(/&rsqb;/gi, "]");
+
+  out = out.replace(
+    /\[et_pb_image[^\]]*src=["']([^"']+)["'][^\]]*\]/gi,
+    '<img src="$1" alt="" />',
+  );
+
+  out = out.replace(/\[\/?(?:et_pb_|et_fb_)[^\]]*\]/gi, "");
+  out = out.replace(/\[\/?caption[^\]]*\]/gi, "");
+  out = out.replace(/<p>\s*<\/p>/gi, "");
+  out = out.replace(/(?:<br\s*\/?>\s*){3,}/gi, "<br /><br />");
+  out = out.replace(/\n{3,}/g, "\n\n");
+
+  return out.trim();
+}
+
 export function isEnglishPost(link: string): boolean {
   try {
     const path = new URL(link).pathname;
@@ -73,6 +97,6 @@ export function mapListItem(post: WpPost): AvlBlogListItem {
 export function mapDetail(post: WpPost): AvlBlogDetail {
   return {
     ...mapListItem(post),
-    fullContent: post.content?.rendered ?? "",
+    fullContent: cleanWpRenderedContent(post.content?.rendered ?? ""),
   };
 }
