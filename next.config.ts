@@ -41,6 +41,16 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
+        // CSS under /assets can change without a hash — do not immutable-cache it.
+        source: "/assets/css/:path*",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=3600, must-revalidate",
+          },
+        ],
+      },
+      {
         source: "/assets/:path*",
         headers: [
           {

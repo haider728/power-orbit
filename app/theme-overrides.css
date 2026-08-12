@@ -66,6 +66,41 @@ body {
   content: none !important;
 }
 
+/* Keep decor shapes out of document flow even if theme CSS order shifts */
+.portfolio-two__shape-1,
+.portfolio-two__shape-2,
+.portfolio-two__shape-3,
+.portfolio-two__shape-4,
+.why-choose-one__shape-1,
+.why-choose-one__shape-2,
+.why-choose-one__shape-3,
+.why-choose-one__shape-4,
+.why-choose-one__shape-5 {
+  position: absolute !important;
+  pointer-events: none !important;
+  z-index: -1 !important;
+}
+
+.portfolio-two__shape-1 {
+  top: 0 !important;
+  left: 0 !important;
+  opacity: 0.4;
+  mix-blend-mode: lighten;
+}
+
+.why-choose-one__shape-3 {
+  top: 0 !important;
+  right: 35px !important;
+  opacity: 0.1;
+}
+
+.portfolio-two__shape-1 img,
+.why-choose-one__shape-3 img {
+  max-width: min(420px, 45vw);
+  height: auto;
+  width: auto;
+}
+
 /* Solutions We Provide — crisp readable text over carousel images */
 .team-two__img::after {
   content: "";
@@ -1025,17 +1060,7 @@ html[dir="rtl"] .sliding-text-three .animate-marquee {
   }
 }
 
-/* Below-fold sections: skip rendering work until near viewport */
-#about,
-#choose,
-#blog,
-.team-two,
-.portfolio-two,
-.process-one,
-#ecosystem {
-  content-visibility: auto;
-  contain-intrinsic-size: auto 720px;
-}
+/* Below-fold render hints removed — content-visibility was blanking sections */
 
 .mobile-nav__toggler-icon,
 .mobile-nav__close-icon,
