@@ -11975,8 +11975,11 @@ fieldset:disabled .btn {
   --techguru-font-two: "Marcellus", serif;
   --techguru-gray: #C5C8CD;
   --techguru-gray-rgb: 197, 200, 205;
-  --techguru-base: #FFD25D;
-  --techguru-base-rgb: 255, 210, 93;
+  /* Brand purple/blue (not template yellow) — keep in sync with theme-overrides.css */
+  --techguru-base: #4c36d5;
+  --techguru-base-rgb: 76, 54, 213;
+  --techguru-accent-two: #318be2;
+  --techguru-brand-gradient: linear-gradient(270deg, var(--techguru-base) 0%, var(--techguru-accent-two) 100%);
   --techguru-black: #0B192C;
   --techguru-black-rgb: 11, 25, 44;
   --techguru-white: #ffffff;
@@ -22369,3 +22372,23 @@ border-radius: 5px;
 
 
 /* The End */
+
+/* ===== brand patch (must be last) ===== */
+:root {
+  --techguru-base: #4c36d5;
+  --techguru-base-rgb: 76, 54, 213;
+  --techguru-accent-two: #318be2;
+  --techguru-brand-gradient: linear-gradient(270deg, var(--techguru-base) 0%, var(--techguru-accent-two) 100%);
+}
+.thm-btn,
+.newsletter-one__contact-form .thm-btn,
+.newsletter-two__form .thm-btn {
+  background: var(--techguru-brand-gradient) !important;
+}
+.thm-btn::before,
+.thm-btn::after {
+  background: var(--techguru-brand-gradient) !important;
+}
+.thm-btn:hover {
+  color: #ffffff !important;
+}
