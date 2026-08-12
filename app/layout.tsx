@@ -28,7 +28,8 @@ const marcellus = Marcellus({
   subsets: ["latin"],
   weight: "400",
   display: "swap",
-  preload: false,
+  // Preload to avoid delaying FCP/LCP on slower mobile connections.
+  preload: true,
 });
 
 export const metadata: Metadata = {
