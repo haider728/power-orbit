@@ -14,6 +14,18 @@ export default function Banner() {
   const [showSwiper, setShowSwiper] = useState(false);
 
   useEffect(() => {
+    // Mobile/touch users are more sensitive to layout shifts.
+    // Keep the fast static hero on coarse pointers, and only enable Swiper for desktop.
+    const finePointer = window.matchMedia("(pointer: fine)").matches;
+    const reducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+
+    if (!finePointer || reducedMotion) {
+      setShowSwiper(false);
+      return;
+    }
+
     // Prefer idle; fallback to a short timeout.
     let idleId: number | undefined;
     let timeoutId: number | undefined;
