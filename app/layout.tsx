@@ -14,7 +14,7 @@ import "@/app/rtl.css";
 import LanguageProvider from "@/components/providers/LanguageProvider";
 import ClientEnhancements from "@/components/performance/ClientEnhancements";
 import DeferredFontAwesome from "@/components/performance/DeferredFontAwesome";
-import { SITE_LOGO_ANIMATED_SRC } from "@/lib/site-assets";
+import { SITE_LOGO_POSTER_SRC } from "@/lib/site-assets";
 
 const GTM_ID = "GTM-N33WTD2K";
 
@@ -65,8 +65,8 @@ export default function RootLayout({
         <link
           rel="preload"
           as="image"
-          href={SITE_LOGO_ANIMATED_SRC}
-          type="image/gif"
+          href={SITE_LOGO_POSTER_SRC}
+          type="image/webp"
           fetchPriority="high"
         />
       </head>
