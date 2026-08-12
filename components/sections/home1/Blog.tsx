@@ -1,7 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useId, useState } from "react";
-import Image from "next/image";
+import { useEffect, useId, useState } from "react";
 import Link from "next/link";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -9,65 +8,42 @@ import AnimatedTitle from "@/components/elements/AnimatedTitle";
 import { useLanguage } from "@/components/providers/LanguageProvider";
 import { translations } from "@/lib/i18n/translations";
 import type { AvlBlogListItem } from "@/lib/avlBlogs";
-import { cleanWpRenderedContent } from "@/lib/avlBlogsShared";
 import BlogCoverImage from "@/components/sections/home1/BlogCoverImage";
-import { isExternalImageSrc } from "@/lib/publicImage";
 import styles from "@/components/sections/home1/blog-carousel.module.css";
 import "@/lib/swiper-styles";
 
-const EXCERPT_LENGTH = 160;
 const FALLBACK_IMAGE = "/assets/images/resources/about-two-img-2.png";
-
-function excerpt(text: string, max = EXCERPT_LENGTH): string {
-  const plain = text.trim();
-  if (plain.length <= max) return plain;
-  return `${plain.slice(0, max).trim()}…`;
-}
-
-function BlogArticleBody({ content }: { content: string }) {
-  const raw = cleanWpRenderedContent(
-    typeof content === "string" ? content : String(content ?? ""),
-  );
-  if (!raw.trim()) return null;
-  const looksLikeHtml = /<[a-z][\s\S]*>/i.test(raw);
-  if (looksLikeHtml) {
-    return (
-      <div
-        className="blog-inline-detail__body blog-inline-detail__body--html"
-        dangerouslySetInnerHTML={{ __html: raw }}
-      />
-    );
-  }
-  return (
-    <div className="blog-inline-detail__body blog-inline-detail__body--text">
-      {raw.split(/\n\n+/).map((block, i) => (
-        <p key={i}>{block.trim()}</p>
-      ))}
-    </div>
-  );
-}
 
 function BlogCard({
   blog,
   coverUrl,
-  onSelect,
+  readMore,
 }: {
   blog: AvlBlogListItem;
   coverUrl: (blog: AvlBlogListItem) => string;
-  onSelect: (blog: AvlBlogListItem) => void;
+  readMore: string;
 }) {
   return (
     <article className={styles.card}>
-      <button
-        type="button"
-        className={styles.cardHitbox}
-        onClick={() => onSelect(blog)}
-        aria-label={`Read full article: ${blog.Title}`}
-      />
-      <BlogCoverImage src={coverUrl(blog)} alt={blog.Title} />
+      <Link
+        href={blog.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.imageLink}
+        aria-label={blog.Title}
+      >
+        <BlogCoverImage src={coverUrl(blog)} alt={blog.Title} />
+      </Link>
       <div className={styles.body}>
         <h3 className={styles.title}>{blog.Title}</h3>
-        <p className={styles.excerpt}>{excerpt(blog.content || "")}</p>
+        <Link
+          href={blog.link}
+          className={`thm-btn ${styles.cta}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {readMore}
+        </Link>
       </div>
     </article>
   );
@@ -87,14 +63,6 @@ export default function Blog({
   const seeded = initialBlogsByLocale?.[locale] ?? [];
   const [blogs, setBlogs] = useState<AvlBlogListItem[]>(seeded);
   const [loading, setLoading] = useState(seeded.length === 0);
-  const [selectedBlog, setSelectedBlog] = useState<AvlBlogListItem | null>(null);
-  const [detailContent, setDetailContent] = useState<string>("");
-  const [detailLoading, setDetailLoading] = useState(false);
-
-  const closeDetail = useCallback(() => {
-    setSelectedBlog(null);
-    setDetailContent("");
-  }, []);
 
   useEffect(() => {
     const cached = initialBlogsByLocale?.[locale];
@@ -135,52 +103,7 @@ export default function Blog({
     fetchBlogs();
   }, [locale, initialBlogsByLocale]);
 
-  useEffect(() => {
-    if (!selectedBlog) return;
-
-    const prev = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
-
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") closeDetail();
-    };
-    window.addEventListener("keydown", onKey);
-
-    const loadDetail = async () => {
-      setDetailLoading(true);
-      setDetailContent("");
-      try {
-        const res = await fetch(`/api/avl-blogs/${selectedBlog.id}`);
-        if (res.ok) {
-          const json = await res.json();
-          setDetailContent(json.data?.fullContent || selectedBlog.content);
-          return;
-        }
-        const { fetchAvlBlogDetailClient } = await import("@/lib/avlBlogsClient");
-        const detail = await fetchAvlBlogDetailClient(selectedBlog.id);
-        setDetailContent(detail?.fullContent || selectedBlog.content);
-      } catch {
-        try {
-          const { fetchAvlBlogDetailClient } = await import("@/lib/avlBlogsClient");
-          const detail = await fetchAvlBlogDetailClient(selectedBlog.id);
-          setDetailContent(detail?.fullContent || selectedBlog.content);
-        } catch {
-          setDetailContent(selectedBlog.content);
-        }
-      } finally {
-        setDetailLoading(false);
-      }
-    };
-    loadDetail();
-
-    return () => {
-      document.body.style.overflow = prev;
-      window.removeEventListener("keydown", onKey);
-    };
-  }, [selectedBlog, closeDetail]);
-
   const coverUrl = (blog: AvlBlogListItem) => blog.image?.url || FALLBACK_IMAGE;
-
   const useCarousel = blogs.length > 3;
 
   if (loading) {
@@ -240,7 +163,7 @@ export default function Blog({
             >
               {blogs.map((blog) => (
                 <SwiperSlide key={blog.id}>
-                  <BlogCard blog={blog} coverUrl={coverUrl} onSelect={setSelectedBlog} />
+                  <BlogCard blog={blog} coverUrl={coverUrl} readMore={blogCopy.readMore} />
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -257,74 +180,12 @@ export default function Blog({
           <div className="row g-4">
             {blogs.map((blog) => (
               <div key={blog.id} className="col-md-6 col-lg-4">
-                <BlogCard blog={blog} coverUrl={coverUrl} onSelect={setSelectedBlog} />
+                <BlogCard blog={blog} coverUrl={coverUrl} readMore={blogCopy.readMore} />
               </div>
             ))}
           </div>
         )}
       </div>
-
-      {selectedBlog && (
-        <div
-          className="blog-inline-detail"
-          role="dialog"
-          aria-modal="true"
-          aria-labelledby="blog-inline-detail-title"
-        >
-          <button
-            type="button"
-            className="blog-inline-detail__backdrop"
-            aria-label="Close article"
-            onClick={closeDetail}
-          />
-          <div className="blog-inline-detail__panel">
-            <button
-              type="button"
-              className="blog-inline-detail__close"
-              onClick={closeDetail}
-              aria-label="Close"
-            >
-              ×
-            </button>
-
-            <div className="blog-inline-detail__scroll">
-              <div className="blog-inline-detail__img-wrap">
-                <Image
-                  src={coverUrl(selectedBlog)}
-                  alt={selectedBlog.Title}
-                  width={0}
-                  height={0}
-                  sizes="(max-width: 900px) 100vw, 900px"
-                  className="blog-inline-detail__img"
-                  unoptimized={isExternalImageSrc(coverUrl(selectedBlog))}
-                  style={{ width: "100%", height: "auto" }}
-                />
-              </div>
-
-              <h2 id="blog-inline-detail-title" className="blog-inline-detail__heading">
-                {selectedBlog.Title}
-              </h2>
-
-              {detailLoading ? (
-                <p className="blog-inline-detail__body--text">{blogCopy.loadingArticle}</p>
-              ) : (
-                <BlogArticleBody content={detailContent} />
-              )}
-
-              <p style={{ marginTop: "1.5rem" }}>
-                <Link
-                  href={selectedBlog.link}
-                  className="thm-btn"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {blogCopy.readMore}
-                </Link>
-              </p>
-            </div>
-          </div>
-        </div>
-      )}
     </section>
   );
 }
