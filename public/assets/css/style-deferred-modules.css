@@ -1,4 +1,6 @@
-/* Non-home modules — loaded after idle to reduce mobile render-blocking CSS */
+/* Non-critical theme modules — loaded after idle (see DeferredThemeModules) */
+@import url('animate.min.css');
+@import url('custom-animate.css');
 @import url('module-css/brand.css');
 @import url('module-css/coming-soon.css');
 @import url('module-css/contact.css');
@@ -15,5 +17,11 @@
 @import url('module-css/services.css');
 @import url('module-css/shop.css');
 @import url('module-css/skill.css');
-@import url('module-css/slider.css');
 @import url('module-css/testimonial.css');
+@import url('module-css/page-header.css');
+@import url('module-css/blog.css');
+@import url('module-css/portfolio.css');
+@import url('module-css/process.css');
+@import url('module-css/team.css');
+@import url('module-css/why-choose.css');
+@import url('module-css/sliding-text.css');

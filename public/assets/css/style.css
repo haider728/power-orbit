@@ -14,20 +14,13 @@
 # Client Carousel
 --------------------------------------------------------------*/
 
-@import url('animate.min.css');
-@import url('custom-animate.css');
 @import url('flaticon.css');
 /* font-awesome-all.css loads after idle via DeferredFontAwesome */
+/* animate + below-fold modules load via DeferredThemeModules */
+@import url('module-css/slider.css');
 @import url('module-css/about.css');
 @import url('module-css/banner.css');
-@import url('module-css/blog.css');
 @import url('module-css/footer.css');
-@import url('module-css/page-header.css');
-@import url('module-css/portfolio.css');
-@import url('module-css/process.css');
-@import url('module-css/sliding-text.css');
-@import url('module-css/team.css');
-@import url('module-css/why-choose.css');
 
 
 /*--------------------------------------------------------------

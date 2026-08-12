@@ -6161,7 +6161,7 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Brands';
   font-style: normal;
   font-weight: normal;
-  font-display: auto;
+  font-display: swap;
   src: url("/assets/fonts/fa-brands-400.eot");
   src: url("/assets/fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"),
        url("/assets/fonts/fa-brands-400.woff2") format("woff2"),
@@ -6177,7 +6177,7 @@ readers do not read off random characters that represent icons */
   font-family: "Font Awesome 5 Pro";
   font-style: normal;
   font-weight: 300;
-  font-display: auto;
+  font-display: swap;
   src: url("/assets/fonts/fa-light-300.eot");
   src: url("/assets/fonts/fa-light-300.eot?#iefix") format("embedded-opentype"),
        url("/assets/fonts/fa-light-300.woff2") format("woff2"),
@@ -6194,7 +6194,7 @@ readers do not read off random characters that represent icons */
   font-family: "Font Awesome 5 Pro";
   font-style: normal;
   font-weight: 400;
-  font-display: auto;
+  font-display: swap;
   src: url("/assets/fonts/fa-regular-400.eot");
   src: url("/assets/fonts/fa-regular-400.eot?#iefix") format("embedded-opentype"),
        url("/assets/fonts/fa-regular-400.woff2") format("woff2"),
@@ -6211,7 +6211,7 @@ readers do not read off random characters that represent icons */
   font-family: "Font Awesome 5 Pro";
   font-style: normal;
   font-weight: 900;
-  font-display: auto;
+  font-display: swap;
   src: url("/assets/fonts/fa-solid-900.eot");
   src: url("/assets/fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"),
        url("/assets/fonts/fa-solid-900.woff2") format("woff2"),

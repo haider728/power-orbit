@@ -59,17 +59,19 @@ function applyDocumentSeo(locale: Locale) {
   meta.content = description;
 }
 
-function applyDocumentLocale(locale: Locale) {
+function applyDocumentLocale(locale: Locale, options?: { emitResize?: boolean }) {
   const dir = localeDirection(locale);
   document.documentElement.lang = locale;
   document.documentElement.dir = dir;
   document.body.classList.toggle("locale-ar", locale === "ar");
   applyDocumentSeo(locale);
 
-  // Carousels (Swiper, react-multi-carousel) need a resize pass after dir change.
-  requestAnimationFrame(() => {
-    window.dispatchEvent(new Event("resize"));
-  });
+  // Only on user locale toggle — resize on first paint causes forced reflow / TBT.
+  if (options?.emitResize) {
+    requestAnimationFrame(() => {
+      window.dispatchEvent(new Event("resize"));
+    });
+  }
 }
 
 type LanguageProviderProps = {
@@ -88,7 +90,7 @@ export default function LanguageProvider({ children }: LanguageProviderProps) {
   const setLocale = useCallback((next: Locale) => {
     setLocaleState(next);
     persistLocale(next);
-    applyDocumentLocale(next);
+    applyDocumentLocale(next, { emitResize: true });
   }, []);
 
   const toggleLocale = useCallback(() => {
