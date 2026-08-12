@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useId, useMemo, useState } from "react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -68,10 +69,16 @@ function IndustryTile({
       onClick={() => setActiveIndex(tileIndex)}
     >
       <div className="portfolio-two__box-content">
-        <div
-          className="single-portfolio-two__bg"
-          style={{ backgroundImage: `url(${item.bg})` }}
-        />
+        <div className="single-portfolio-two__bg">
+          <Image
+            src={item.bg}
+            alt=""
+            fill
+            sizes="(max-width: 991px) 100vw, 50vw"
+            loading="lazy"
+            className={styles.tileImage}
+          />
+        </div>
         <div className="portfolio-two__title">
           <h3>
             <Link href={item.href}>{item.title}</Link>

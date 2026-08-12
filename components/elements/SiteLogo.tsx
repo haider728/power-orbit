@@ -1,11 +1,5 @@
-"use client";
-
 import Image from "next/image";
-import { useEffect, useState } from "react";
-import {
-  SITE_LOGO_ANIMATED_SRC,
-  SITE_LOGO_POSTER_SRC,
-} from "@/lib/site-assets";
+import { SITE_LOGO_POSTER_SRC } from "@/lib/site-assets";
 
 type SiteLogoProps = {
   width?: number;
@@ -20,54 +14,15 @@ export default function SiteLogo({
   priority = false,
   className = "site-logo",
 }: SiteLogoProps) {
-  const [src, setSrc] = useState(SITE_LOGO_POSTER_SRC);
-  const [isAnimated, setIsAnimated] = useState(false);
-
-  useEffect(() => {
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    // Skip the 1.4MB GIF on mobile — it is the LCP killer.
-    if (!window.matchMedia("(pointer: fine)").matches) return;
-    const connection = (navigator as Navigator & { connection?: { saveData?: boolean } })
-      .connection;
-    if (connection?.saveData) return;
-
-    const loadAnimated = () => {
-      const animated = new window.Image();
-      animated.decoding = "async";
-      animated.src = SITE_LOGO_ANIMATED_SRC;
-      animated.onload = () => {
-        setSrc(SITE_LOGO_ANIMATED_SRC);
-        setIsAnimated(true);
-      };
-    };
-
-    const win = window as Window & {
-      requestIdleCallback?: (
-        callback: IdleRequestCallback,
-        options?: IdleRequestOptions,
-      ) => number;
-      cancelIdleCallback?: (handle: number) => void;
-    };
-
-    if (win.requestIdleCallback) {
-      const id = win.requestIdleCallback(loadAnimated, { timeout: 6000 });
-      return () => win.cancelIdleCallback?.(id);
-    }
-
-    const timer = setTimeout(loadAnimated, 2500);
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <Image
-      src={src}
+      src={SITE_LOGO_POSTER_SRC}
       alt="Power Orbit"
       width={width}
       height={height}
       priority={priority}
       fetchPriority={priority ? "high" : "auto"}
       loading={priority ? "eager" : "lazy"}
-      unoptimized={isAnimated}
       className={className}
     />
   );

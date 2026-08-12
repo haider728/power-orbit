@@ -1,6 +1,7 @@
 .section {
   position: relative;
-  padding: clamp(4rem, 8vw, 6rem) 0;
+  /* Override theme .about-two { padding: 140px } so late CSS cannot shift this block. */
+  padding: clamp(4rem, 8vw, 6rem) 0 !important;
 }
 
 .inner {

@@ -1,6 +1,5 @@
 "use client";
 
-import CountUp from "react-countup";
 import Link from "next/link";
 import AnimatedTitle from "@/components/elements/AnimatedTitle";
 import { useLanguage } from "@/components/providers/LanguageProvider";
@@ -19,18 +18,9 @@ export default function About() {
       <div className="container">
         <div className={styles.inner}>
           <div className={styles.statsRow}>
-            {stats.map((stat, index) => (
+            {stats.map((stat) => (
               <div key={stat.label} className={styles.stat}>
-                <span className={styles.statValue}>
-                  {index === 0 ? (
-                    <>
-                      <CountUp end={20} duration={2.5} enableScrollSpy scrollSpyOnce />
-                      +
-                    </>
-                  ) : (
-                    stat.value
-                  )}
-                </span>
+                <span className={styles.statValue}>{stat.value}</span>
                 <span className={styles.statLabel}>{stat.label}</span>
               </div>
             ))}

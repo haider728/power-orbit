@@ -6,6 +6,11 @@
   display: none;
 }
 
+.tileImage {
+  object-fit: cover;
+  border-radius: 24px;
+}
+
 @media (max-width: 767px) {
   .desktopCarousel {
     display: none;

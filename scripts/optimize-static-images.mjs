@@ -39,6 +39,38 @@ const jobs = [
     input: "images/choose.png",
     outputs: [{ file: "images/choose.webp", width: 1340 }],
   },
+  {
+    input: "assets/images/project/1.1.png",
+    outputs: [{ file: "assets/images/project/1.1.webp", width: 1200 }],
+  },
+  {
+    input: "assets/images/project/1.2.png",
+    outputs: [{ file: "assets/images/project/1.2.webp", width: 1200 }],
+  },
+  {
+    input: "assets/images/project/1.3.png",
+    outputs: [{ file: "assets/images/project/1.3.webp", width: 1200 }],
+  },
+  {
+    input: "assets/images/project/1.4.png",
+    outputs: [{ file: "assets/images/project/1.4.webp", width: 1200 }],
+  },
+  {
+    input: "assets/images/project/portfolio-2-1.jpg",
+    outputs: [{ file: "assets/images/project/portfolio-2-1.webp", width: 1200 }],
+  },
+  {
+    input: "assets/images/project/portfolio-2-2.jpg",
+    outputs: [{ file: "assets/images/project/portfolio-2-2.webp", width: 1200 }],
+  },
+  {
+    input: "assets/images/project/portfolio-2-3.jpg",
+    outputs: [{ file: "assets/images/project/portfolio-2-3.webp", width: 1200 }],
+  },
+  {
+    input: "assets/images/project/portfolio-2-4.jpg",
+    outputs: [{ file: "assets/images/project/portfolio-2-4.webp", width: 1200 }],
+  },
 ];
 
 async function run() {

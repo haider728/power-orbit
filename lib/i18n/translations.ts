@@ -305,55 +305,55 @@ const en = {
           description:
             "Optimizing cross-border movement with real-time route intelligence and fuel governance.",
           href: "https://avl-ksa.com/en/smart-ambulance-fleet-monitoring-solution/",
-          bg: "/assets/images/project/1.1.png",
+          bg: "/assets/images/project/1.1.webp",
         },
         {
           title: "Health Care",
           description:
             "Ensuring life-saving cargo stays within SFDA-mandated temperature thresholds.",
           href: "https://avl-ksa.com/en/smart-ambulance-fleet-monitoring-solution/",
-          bg: "/assets/images/project/1.2.png",
+          bg: "/assets/images/project/1.2.webp",
         },
         {
           title: "Oil & Gas",
           description:
             "Monitoring remote high-value assets and ensuring fleet safety in high-stakes environments.",
           href: "https://avl-ksa.com/en/oil-and-gas/",
-          bg: "/assets/images/project/1.3.png",
+          bg: "/assets/images/project/1.3.webp",
         },
         {
           title: "Supply Chain Management",
           description: "End-to-end visibility from warehouse to last-mile delivery.",
           href: "https://avl-ksa.com/en/supply-chain-management/",
-          bg: "/assets/images/project/1.4.png",
+          bg: "/assets/images/project/1.4.webp",
         },
         {
           title: "Ready-mix Concrete",
           description:
             "Preserving structural integrity through real-time transit and mixing monitoring.",
           href: "https://avl-ksa.com/en/ready-mix-concrete/",
-          bg: "/assets/images/project/portfolio-2-1.jpg",
+          bg: "/assets/images/project/portfolio-2-1.webp",
         },
         {
           title: "Construction Machinery & Heavy Equipment",
           description:
             "Managing engine hours, location, and maintenance for mission-critical machinery.",
           href: "https://avl-ksa.com/en/construction-machinery-and-heavy-equipment/",
-          bg: "/assets/images/project/portfolio-2-2.jpg",
+          bg: "/assets/images/project/portfolio-2-2.webp",
         },
         {
           title: "Car Rentals",
           description:
             "Protecting vehicle assets and automating returns through smart telematics.",
           href: "https://avl-ksa.com/en/car-rentals/",
-          bg: "/assets/images/project/portfolio-2-3.jpg",
+          bg: "/assets/images/project/portfolio-2-3.webp",
         },
         {
           title: "SFDA & TGA-Compliant Cold Chain",
           description:
             "Certified precision for the Kingdom's most regulated logistics operations.",
           href: "https://avl-ksa.com/en/sfda-tga-compliant-cold-chain-monitoring/",
-          bg: "/assets/images/project/portfolio-2-4.jpg",
+          bg: "/assets/images/project/portfolio-2-4.webp",
         },
       ],
     },
@@ -705,56 +705,56 @@ const ar = {
           description:
             "تحسين مسارات النقل والشحن الدولي عبر الحدود من خلال معرفة الطرق فورياً وإدارة وتوفير الوقود.",
           href: "https://avl-ksa.com/ar/smart-ambulance-fleet-monitoring-solution/",
-          bg: "/assets/images/project/1.1.png",
+          bg: "/assets/images/project/1.1.webp",
         },
         {
           title: "الرعاية الصحية والطبية",
           description:
             "ضمان بقاء الشحنات والأدوية الحيوية المنقذة للحياة ضمن درجات الحرارة المحددة والمطلوبة من هيئة الغذاء والدواء.",
           href: "https://avl-ksa.com/ar/smart-ambulance-fleet-monitoring-solution/",
-          bg: "/assets/images/project/1.2.png",
+          bg: "/assets/images/project/1.2.webp",
         },
         {
           title: "النفط والغاز",
           description:
             "مراقبة المعدات الثمينة في المواقع البعيدة، وضمان سلامة السيارات والسائقين في البيئات عالية الخطورة.",
           href: "https://avl-ksa.com/ar/oil-and-gas/",
-          bg: "/assets/images/project/1.3.png",
+          bg: "/assets/images/project/1.3.webp",
         },
         {
           title: "إدارة سلاسل الإمداد",
           description:
             "رؤية ومتابعة كاملة للشحنات من أول دخولها المستودع وحتى وصولها ليد العميل النهائي.",
           href: "https://avl-ksa.com/ar/supply-chain-management/",
-          bg: "/assets/images/project/1.4.png",
+          bg: "/assets/images/project/1.4.webp",
         },
         {
           title: "الخرسانة الجاهزة",
           description:
             "الحفاظ على جودة وتماسك الخرسانة من خلال مراقبة عملية الخلط وحركة الشاحنات بدقة أثناء النقل.",
           href: "https://avl-ksa.com/ar/ready-mix-concrete/",
-          bg: "/assets/images/project/portfolio-2-1.jpg",
+          bg: "/assets/images/project/portfolio-2-1.webp",
         },
         {
           title: "آلات ومعدات البناء الثقيلة",
           description:
             "متابعة ساعات عمل المحركات ومواقع المعدات وجداول الصيانة لآلات الأساسية في المشاريع.",
           href: "https://avl-ksa.com/ar/construction-machinery-and-heavy-equipment/",
-          bg: "/assets/images/project/portfolio-2-2.jpg",
+          bg: "/assets/images/project/portfolio-2-2.webp",
         },
         {
           title: "تأجير السيارات",
           description:
             "حماية السيارات والأصول، وتسهيل أتمتة عملية استلام وتسليم السيارات عبر أنظمة التتبع الذكية.",
           href: "https://avl-ksa.com/ar/car-rentals/",
-          bg: "/assets/images/project/portfolio-2-3.jpg",
+          bg: "/assets/images/project/portfolio-2-3.webp",
         },
         {
           title: "مراقبة سلسلة التبريد (المطابقة لشروط الغذاء والدواء وهيئة النقل)",
           description:
             "دقة موثقة ومعتمدة لجميع عمليات النقل والتخزين في المملكة.",
           href: "https://avl-ksa.com/ar/sfda-tga-compliant-cold-chain-monitoring/",
-          bg: "/assets/images/project/portfolio-2-4.jpg",
+          bg: "/assets/images/project/portfolio-2-4.webp",
         },
       ],
     },
