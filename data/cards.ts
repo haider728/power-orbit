@@ -39,7 +39,8 @@ export const cards: ProjectCard[] = [
       "Eagle-IoT is a TGA-approved fleet management and vehicle tracking platform for regulated operations in Saudi Arabia. It combines real-time GPS vehicle tracking, driver behavior intelligence, and automated compliance reporting...",
     fullDescription:
       "In an environment where fuel costs, driver safety, and strict regulatory standards define your bottom line, Eagle-IoT provides the answer. As a TGA-Approved Service Provider, we move beyond basic GPS to offer a comprehensive, fully compliant command center for mobile assets.\n\nThe Challenge: Eliminating fuel leakage, preventing unauthorized vehicle use, and managing the high-stakes complexity of Wasl and TGA regulatory compliance.\n\nThe Solution: A unified platform delivering real-time visibility, advanced driver behavior analytics, and automated reporting. Our status as an approved provider ensures that your data is transmitted accurately and securely to the relevant Saudi authorities.\n\nCore Capabilities:\n- TGA & Wasl Integration: Seamless, automated data sharing with the Transport General Authority.\n- Fuel & Cost Governance: Real-time monitoring designed to eliminate waste and theft.\n- Safety Intelligence: Driver behavior scoring to reduce accidents and insurance liabilities.\n\nBest for: Logistics providers, government transport authorities, and large-scale commercial fleets requiring certified solutions.",
-    src: "Vehicle Tracking.png",
+    // Use WebP for better mobile LCP (smaller + faster to decode).
+    src: "Vehicle Tracking.webp",
     color: "#1A1D38",
     url: "https://www.ignant.com/2023/03/25/ad2186-matthias-leidingers-photographic-exploration-of-awe-and-wonder/",
     storeLinks: {

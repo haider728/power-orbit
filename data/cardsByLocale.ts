@@ -4,7 +4,8 @@ import { translations } from "@/lib/i18n/translations";
 
 const cardAssets = [
   {
-    src: "Vehicle Tracking.png",
+    // Use WebP for better mobile LCP performance.
+    src: "Vehicle Tracking.webp",
     color: "#1A1D38",
     url: "https://www.ignant.com/2023/03/25/ad2186-matthias-leidingers-photographic-exploration-of-awe-and-wonder/",
     storeLinks: {
