@@ -42,7 +42,7 @@ export default function MobileMenu({ isSidebar, handleMobileMenu }: MobileMenuPr
           {/* Logo */}
           <div className="logo-box">
             <Link href="/" aria-label="logo image" onClick={handleMobileMenu}>
-              <SiteLogo width={150} height={32} priority />
+              <SiteLogo width={150} height={54} priority />
             </Link>
           </div>
 

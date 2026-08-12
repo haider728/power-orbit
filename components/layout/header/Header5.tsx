@@ -65,7 +65,7 @@ export default function Header5({ scroll, handleMobileMenu }: Header5Props) {
                     <div className="main-menu__wrapper-inner">
                         <div className="main-menu__left">
                             <div className="main-menu__logo">
-                                <Link href="/"><SiteLogo width={186} height={36} priority /></Link>
+                                <Link href="/"><SiteLogo width={186} height={67} priority /></Link>
                             </div>
                         </div>
                         <div className="main-menu__main-menu-box">
@@ -91,7 +91,7 @@ export default function Header5({ scroll, handleMobileMenu }: Header5Props) {
                     <div className="main-menu__wrapper-inner">
                         <div className="main-menu__left">
                             <div className="main-menu__logo">
-                                <Link href="/"><SiteLogo width={186} height={36} priority /></Link>
+                                <Link href="/"><SiteLogo width={186} height={67} priority /></Link>
                             </div>
                         </div>
                         <div className="main-menu__main-menu-box">

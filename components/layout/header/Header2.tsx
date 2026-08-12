@@ -93,7 +93,7 @@ export default function Header2({ scroll, handleMobileMenu, handleSidebar }: Hea
                 <div className="main-menu-two__left">
                   <div className="main-menu-two__logo">
                     <Link href="/">
-                      <SiteLogo width={260} height={50} priority />
+                      <SiteLogo width={260} height={95} priority />
                     </Link>
                   </div>
                 </div>

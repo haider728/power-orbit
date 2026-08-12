@@ -21,7 +21,7 @@ const SidebarPopup: React.FC<SidebarPopupProps> = ({ isOpen, onClose }) => {
                         <div className="content-inner">
                             <div className="logo">
                                 <Link href="/">
-                                  <SiteLogo width={150} height={32} />
+                                  <SiteLogo width={150} height={54} />
                                 </Link>
                             </div>
                             <div className="content-box">

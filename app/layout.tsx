@@ -66,7 +66,7 @@ export default function RootLayout({
           rel="preload"
           as="image"
           href={SITE_LOGO_POSTER_SRC}
-          type="image/webp"
+          type="image/png"
           fetchPriority="high"
         />
       </head>

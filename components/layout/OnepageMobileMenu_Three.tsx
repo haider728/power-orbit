@@ -45,7 +45,7 @@ export default function OnepageMobileMenu_Three({ isSidebar, handleMobileMenu }:
         {/* Logo */}
         <div className="logo-box">
           <Link href="/" onClick={handleMobileMenu} aria-label="logo image">
-            <SiteLogo width={150} height={32} priority />
+            <SiteLogo width={150} height={54} priority />
           </Link>
         </div>
 

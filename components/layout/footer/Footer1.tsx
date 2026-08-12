@@ -29,7 +29,7 @@ export default function Footer1() {
                       src={SITE_FOOTER_LOGO_SRC}
                       alt="Power Orbit"
                       width={320}
-                      height={62}
+                      height={115}
                       loading="lazy"
                       className="site-logo"
                     />

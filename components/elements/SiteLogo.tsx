@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { SITE_LOGO_POSTER_SRC } from "@/lib/site-assets";
+import { SITE_LOGO_SRC } from "@/lib/site-assets";
 
 type SiteLogoProps = {
   width?: number;
@@ -10,13 +10,13 @@ type SiteLogoProps = {
 
 export default function SiteLogo({
   width = 280,
-  height = 54,
+  height = 102,
   priority = false,
   className = "site-logo",
 }: SiteLogoProps) {
   return (
     <Image
-      src={SITE_LOGO_POSTER_SRC}
+      src={SITE_LOGO_SRC}
       alt="Power Orbit"
       width={width}
       height={height}
