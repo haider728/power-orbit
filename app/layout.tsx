@@ -5,6 +5,8 @@ import Script from "next/script";
 import "@/public/assets/css/bootstrap.min.css";
 import "@/public/assets/css/style.css";
 import "@/public/assets/css/responsive.css";
+// Load non-home module styles immediately to avoid CLS from late CSS injection.
+import "@/public/assets/css/style-deferred-modules.css";
 import "@/app/tailwind.css";
 import "@/app/scroll-fix.css";
 import "@/app/theme-overrides.css";
@@ -12,7 +14,6 @@ import "@/app/rtl.css";
 import LanguageProvider from "@/components/providers/LanguageProvider";
 import ClientEnhancements from "@/components/performance/ClientEnhancements";
 import DeferredFontAwesome from "@/components/performance/DeferredFontAwesome";
-import DeferredThemeModules from "@/components/performance/DeferredThemeModules";
 import { SITE_LOGO_ANIMATED_SRC } from "@/lib/site-assets";
 
 const GTM_ID = "GTM-N33WTD2K";
@@ -97,7 +98,6 @@ export default function RootLayout({
 
         <LanguageProvider>
           <DeferredFontAwesome />
-          <DeferredThemeModules />
           <ClientEnhancements />
           <div className={marcellus.className} />
           {children}
