@@ -15,7 +15,7 @@ export default function BannerFirstSlide() {
   return (
     <section className="main-slider-two" id="home">
       <div className="swiper-container thm-swiper__slider">
-        <div className="swiper-slide">
+        <div className="swiper-slide swiper-slide-active">
           <div className="container">
             <div className={styles.heroRow}>
               <div className={styles.contentCol}>
