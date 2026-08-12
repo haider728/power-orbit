@@ -30,6 +30,7 @@ body {
 .process-one,
 #process,
 .portfolio-one,
+.portfolio-two,
 .blog-one,
 .services-one,
 .team-one,
@@ -58,8 +59,11 @@ body {
 
 .team-two::before,
 .team-page::before,
-.team-carousel-page::before {
+.team-carousel-page::before,
+.portfolio-two::before {
   background-color: transparent !important;
+  background-image: none !important;
+  content: none !important;
 }
 
 /* Solutions We Provide — crisp readable text over carousel images */

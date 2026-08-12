@@ -22,6 +22,13 @@ const CRITICAL_FILES = [
   "module-css/about.css",
   "module-css/banner.css",
   "module-css/footer.css",
+  // Homepage sections — must be critical or decor images render in-flow and layouts break
+  "module-css/why-choose.css",
+  "module-css/team.css",
+  "module-css/process.css",
+  "module-css/portfolio.css",
+  "module-css/sliding-text.css",
+  "module-css/blog.css",
   "responsive.css",
 ];
 
@@ -53,6 +60,24 @@ const brandPatch = `
 }
 .thm-btn:hover {
   color: #ffffff !important;
+}
+
+/* Homepage section backgrounds — match theme-overrides */
+.about-two,
+.why-choose-one,
+.team-two,
+.process-one,
+.portfolio-two,
+.blog-one,
+.sliding-text {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+.team-two::before,
+.portfolio-two::before {
+  background-image: none !important;
+  background-color: transparent !important;
+  content: none !important;
 }
 `;
 
