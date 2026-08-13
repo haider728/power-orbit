@@ -12,13 +12,18 @@ export default function OnepageMenu_One() {
   useEffect(() => {
     document.documentElement.style.scrollBehavior = "smooth";
 
+    let ticking = false;
     const handleScroll = () => {
-      const scrollPos = window.scrollY + 100;
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        ticking = false;
+        const scrollPos = window.scrollY + 100;
 
-      for (const section of sections) {
-        if (!section.id) continue;
-        const el = document.querySelector(section.id);
-        if (el) {
+        for (const section of sections) {
+          if (!section.id) continue;
+          const el = document.querySelector(section.id);
+          if (!el) continue;
           const offsetTop = el.getBoundingClientRect().top + window.scrollY;
           const offsetBottom = offsetTop + el.clientHeight;
 
@@ -27,10 +32,10 @@ export default function OnepageMenu_One() {
             break;
           }
         }
-      }
+      });
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll();
 
     return () => {

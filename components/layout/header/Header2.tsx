@@ -10,11 +10,16 @@ import { BarsIcon } from "@/components/elements/icons";
 
 type Header2Props = {
   scroll: boolean;
+  isMobileMenu: boolean;
   handleMobileMenu: () => void;
   handleSidebar: () => void;
 };
 
-export default function Header2({ scroll, handleMobileMenu, handleSidebar }: Header2Props) {
+export default function Header2({
+  scroll,
+  isMobileMenu,
+  handleMobileMenu,
+}: Header2Props) {
   const { t } = useLanguage();
 
   return (
@@ -59,7 +64,7 @@ export default function Header2({ scroll, handleMobileMenu, handleSidebar }: Hea
               <div className="main-menu-two__left">
                 <div className="main-menu-two__logo">
                   <Link href="/">
-                    <SiteLogo priority />
+                    <SiteLogo />
                   </Link>
                 </div>
               </div>
@@ -86,14 +91,15 @@ export default function Header2({ scroll, handleMobileMenu, handleSidebar }: Hea
           </div>
         </nav>
 
-        <div className={`sticky-header main-menu main-menu-two ${scroll ? "animated slideInDown" : ""}`}>
+        {scroll ? (
+        <div className="sticky-header main-menu main-menu-two animated slideInDown">
           <div className="sticky-header__content">
             <div className="main-menu-two__wrapper">
               <div className="main-menu-two__wrapper-inner">
                 <div className="main-menu-two__left">
                   <div className="main-menu-two__logo">
                     <Link href="/">
-                      <SiteLogo width={260} height={95} priority />
+                      <SiteLogo width={260} height={95} />
                     </Link>
                   </div>
                 </div>
@@ -120,8 +126,11 @@ export default function Header2({ scroll, handleMobileMenu, handleSidebar }: Hea
             </div>
           </div>
         </div>
+        ) : null}
 
-        <OnepageMobileMenu_One isSidebar={true} handleMobileMenu={handleMobileMenu} />
+        {isMobileMenu ? (
+          <OnepageMobileMenu_One isSidebar={isMobileMenu} handleMobileMenu={handleMobileMenu} />
+        ) : null}
       </header>
     </>
   );

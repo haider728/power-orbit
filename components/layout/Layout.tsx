@@ -1,12 +1,12 @@
 // components/layout/Layout.tsx
 // ✅ SERVER COMPONENT (no "use client")
 
-import Header from "./Header"; // Client component
-import Footer from "./Footer"; // Server component
+import Header from "./Header";
 import Breadcrumb from "./Breadcrumb";
 import LocaleBoundary from "@/components/providers/LocaleBoundary";
 import HashScrollHandler from "@/components/layout/HashScrollHandler";
 import WhatsAppFloat from "@/components/layout/WhatsAppFloat";
+import DeferredFooter from "@/components/layout/DeferredFooter";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -36,7 +36,7 @@ export default function Layout({
       </main>
 
       {/* Footer (server component) */}
-      <Footer style={footerStyle} />
+      <DeferredFooter style={footerStyle} />
       <WhatsAppFloat />
     </div>
   );

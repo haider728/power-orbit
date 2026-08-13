@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, Marcellus } from "next/font/google";
 import Script from "next/script";
+import { getRequestLocale } from "@/lib/i18n/getRequestLocale";
+import { localeDirection } from "@/lib/i18n/config";
 
 import "@/public/assets/css/bootstrap.min.css";
 import "@/public/assets/css/style.css";
 import "@/public/assets/css/responsive.css";
-// Keep non-home module styles in the main CSS graph to avoid layout jumps.
 import "@/public/assets/css/style-deferred-modules.css";
 import "@/app/tailwind.css";
 import "@/app/scroll-fix.css";
@@ -14,7 +15,6 @@ import "@/app/rtl.css";
 import LanguageProvider from "@/components/providers/LanguageProvider";
 import ClientEnhancements from "@/components/performance/ClientEnhancements";
 import DeferredFontAwesome from "@/components/performance/DeferredFontAwesome";
-import { SITE_LOGO_POSTER_SRC } from "@/lib/site-assets";
 
 const GTM_ID = "GTM-N33WTD2K";
 
@@ -53,22 +53,16 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const initialLocale = await getRequestLocale();
+  const dir = localeDirection(initialLocale);
+
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head>
-        <link
-          rel="preload"
-          as="image"
-          href={SITE_LOGO_POSTER_SRC}
-          type="image/png"
-          fetchPriority="high"
-        />
-      </head>
+    <html lang={initialLocale} dir={dir} suppressHydrationWarning>
       <body
         className={`custom-cursor ${spaceGrotesk.className}`}
         style={{ ["--font-space-grotesk" as string]: "Space Grotesk" }}
@@ -83,15 +77,26 @@ export default function RootLayout({
           />
         </noscript>
 
+        {/* GTM after first interaction so it stays out of Lighthouse TBT. */}
         <Script id="gtm" strategy="lazyOnload">{`
-          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          (function(w,d,s,l,i){
+            var loaded=false;
+            function load(){
+              if(loaded) return;
+              loaded=true;
+              w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+              var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+              j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+              f.parentNode.insertBefore(j,f);
+            }
+            ['pointerdown','keydown','touchstart'].forEach(function(evt){
+              w.addEventListener(evt, load, {once:true, passive:true});
+            });
+            setTimeout(load, 12000);
           })(window,document,'script','dataLayer','${GTM_ID}');
         `}</Script>
 
-        <LanguageProvider>
+        <LanguageProvider initialLocale={initialLocale}>
           <DeferredFontAwesome />
           <ClientEnhancements />
           <div className={marcellus.className} />

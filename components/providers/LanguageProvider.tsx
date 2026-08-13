@@ -76,15 +76,23 @@ function applyDocumentLocale(locale: Locale, options?: { emitResize?: boolean })
 
 type LanguageProviderProps = {
   children: React.ReactNode;
+  initialLocale?: Locale;
 };
 
-export default function LanguageProvider({ children }: LanguageProviderProps) {
-  const [locale, setLocaleState] = useState<Locale>(DEFAULT_LOCALE);
+export default function LanguageProvider({
+  children,
+  initialLocale = DEFAULT_LOCALE,
+}: LanguageProviderProps) {
+  const [locale, setLocaleState] = useState<Locale>(initialLocale);
 
   useEffect(() => {
     const stored = readStoredLocale();
-    setLocaleState(stored);
+    if (stored !== initialLocale) {
+      setLocaleState(stored);
+    }
     applyDocumentLocale(stored);
+    // Cookie/localStorage sync is first-paint only.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const setLocale = useCallback((next: Locale) => {

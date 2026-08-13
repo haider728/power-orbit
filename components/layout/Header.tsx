@@ -1,19 +1,17 @@
-// components/layout/Header.tsx
-'use client';
+"use client";
 
 import { useState, useEffect, useCallback } from "react";
-import BackToTop from "../elements/BackToTop";
-import DataBg from "../elements/DataBg";
-import SidebarPopup from "./SidebarPopup";
-
-import Header1 from "./header/Header1";
+import dynamic from "next/dynamic";
 import Header2 from "./header/Header2";
-import Header3 from "./header/Header3";
-import Header4 from "./header/Header4";
-import Header5 from "./header/Header5";
+
+const Header1 = dynamic(() => import("./header/Header1"));
+const Header3 = dynamic(() => import("./header/Header3"));
+const Header4 = dynamic(() => import("./header/Header4"));
+const Header5 = dynamic(() => import("./header/Header5"));
+const SidebarPopup = dynamic(() => import("./SidebarPopup"), { ssr: false });
+const BackToTop = dynamic(() => import("../elements/BackToTop"), { ssr: false });
 
 interface HeaderProps {
-  /** Choose header style (1–2) */
   style?: 1 | 2 | 3 | 4 | 5;
 }
 
@@ -23,20 +21,27 @@ export default function Header({ style = 1 }: HeaderProps) {
   const [isSidebar, setSidebar] = useState(false);
   const handleSidebar = () => setSidebar((s) => !s);
 
-  // Scroll detection
   useEffect(() => {
-    const onScroll = () => setIsScrolled(window.scrollY > 100);
+    let ticking = false;
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        setIsScrolled(window.scrollY > 100);
+        ticking = false;
+      });
+    };
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Toggle mobile menu
   const handleMobileMenu = useCallback(() => {
-    setMobileMenu((prev) => !prev);
-    if (typeof document !== "undefined") {
-      document.body.classList.toggle("mobile-menu-visible", !isMobileMenu);
-    }
-  }, [isMobileMenu]);
+    setMobileMenu((prev) => {
+      const next = !prev;
+      document.body.classList.toggle("mobile-menu-visible", next);
+      return next;
+    });
+  }, []);
 
   const headerProps = {
     scroll: isScrolled,
@@ -45,28 +50,35 @@ export default function Header({ style = 1 }: HeaderProps) {
     handleSidebar,
   };
 
-  // Map header styles
-  const headers = {
-    1: <Header1 {...headerProps} />,
-    2: <Header2 {...headerProps} />,
-    3: <Header3 {...headerProps} />,
-    4: <Header4 {...headerProps} />,
-    5: <Header5 {...headerProps} />,
-  } as const;
-
   return (
     <>
-      {/* Background animation / image */}
-      <DataBg />
-
-      {/* Header variant */}
-      {headers[style] ?? <Header1 {...headerProps} />}
-
-      {/* sidebar popup */}
-      <SidebarPopup isOpen={isSidebar} onClose={handleSidebar} />
-
-      {/* Back to top button */}
-      <BackToTop scroll={isScrolled} />
+      {style === 2 ? (
+        <Header2 {...headerProps} />
+      ) : style === 3 ? (
+        <Header3 scroll={isScrolled} handleMobileMenu={handleMobileMenu} />
+      ) : style === 4 ? (
+        <Header4
+          scroll={isScrolled}
+          handleMobileMenu={handleMobileMenu}
+          handleSidebar={handleSidebar}
+        />
+      ) : style === 5 ? (
+        <Header5
+          scroll={isScrolled}
+          handleMobileMenu={handleMobileMenu}
+          handleSidebar={handleSidebar}
+        />
+      ) : (
+        <Header1
+          scroll={isScrolled}
+          handleMobileMenu={handleMobileMenu}
+          handleSidebar={handleSidebar}
+        />
+      )}
+      {isSidebar ? (
+        <SidebarPopup isOpen={isSidebar} onClose={handleSidebar} />
+      ) : null}
+      {isScrolled ? <BackToTop scroll={isScrolled} /> : null}
     </>
   );
 }

@@ -13,12 +13,55 @@
       "static/chunks/components_elements_CustomCursor_tsx_0ett2v8._.js"
     ]
   },
+  "[project]/components/layout/header/Header1.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/components/layout/header/Header1.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/components_layout_0t0n_29._.js",
+      "static/chunks/components_layout_header_Header1_tsx_0ei0ie7._.js"
+    ]
+  },
+  "[project]/components/layout/header/Header3.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/components/layout/header/Header3.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/components_layout_00mf6xr._.js",
+      "static/chunks/components_layout_header_Header3_tsx_0ei0ie7._.js"
+    ]
+  },
+  "[project]/components/layout/header/Header4.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/components/layout/header/Header4.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/components_layout_0u22ss_._.js",
+      "static/chunks/components_layout_header_Header4_tsx_0ei0ie7._.js"
+    ]
+  },
+  "[project]/components/layout/header/Header5.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/components/layout/header/Header5.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/components_layout_0nd8erw._.js",
+      "static/chunks/components_layout_header_Header5_tsx_0ei0ie7._.js"
+    ]
+  },
+  "[project]/components/layout/SidebarPopup.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/components/layout/SidebarPopup.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/components_layout_SidebarPopup_tsx_0nw2v3q._.js",
+      "static/chunks/components_layout_SidebarPopup_tsx_0ei0ie7._.js"
+    ]
+  },
+  "[project]/components/elements/BackToTop.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/components/elements/BackToTop.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/components_elements_BackToTop_tsx_0sfzb~4._.js",
+      "static/chunks/components_elements_BackToTop_tsx_0ei0ie7._.js"
+    ]
+  },
   "[project]/components/sections/home1/StackedScrollCards.tsx [app-client] (ecmascript, next/dynamic entry)": {
     "id": "[project]/components/sections/home1/StackedScrollCards.tsx [app-client] (ecmascript, next/dynamic entry)",
     "files": [
       "static/chunks/node_modules_01d-.jl._.js",
-      "static/chunks/_0-75dh~._.js",
-      "static/chunks/components_sections_home1_StackedScrollCards_tsx_02.-x_3._.js"
+      "static/chunks/_0iu4vu-._.js",
+      "static/chunks/components_sections_home1_stacked-cards_module_0hc2pk4.css",
+      "static/chunks/components_sections_home1_StackedScrollCards_tsx_0ei0ie7._.js"
     ]
   }
 }

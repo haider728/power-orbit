@@ -21,8 +21,8 @@ export default function SiteLogo({
       width={width}
       height={height}
       priority={priority}
+      loading="eager"
       fetchPriority={priority ? "high" : "auto"}
-      loading={priority ? "eager" : "lazy"}
       className={className}
     />
   );
